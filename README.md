@@ -79,7 +79,8 @@ Primary inference is the held-out test set (thresholds imported from the validat
 
 ## 5. Code and data release
 
-- Per-case CSVs are ~600 MB in total; for the Zenodo archive we recommend publishing them directly (they are the strongest reproducibility asset), or a downsampled/aggregated version if size is a constraint.
+- Per-case CSVs are ~1.1 GB in total (the held-out test set alone is 3.74 M rows). They are the strongest reproducibility asset, so they are published in full on Zenodo rather than downsampled.
+- **Archiving.** `.zenodo.json` carries the record metadata; enabling the GitHub–Zenodo integration archives each release automatically and mints the DOI. To build the upload payload by hand, run `python scripts/build_zenodo_release.py`, which stages `dist/zenodo/` with the aggregated release package, the per-case CSVs, `CHECKSUMS.sha256`, `zenodo-metadata.json` and a deposit README. Every packed file is verified against `outputs/release/manifest.json` first, and the script aborts on any size or SHA-256 mismatch.
 - This repository is public. The Zenodo DOI is assigned at submission time (author step) and will be added here once available.
 - `scripts/release_prep.py` was run before publication to strip absolute paths and check for leaked local information. The scripts here resolve the interpreter from `$env:SEG_PYTHON` (falling back to `python` on `PATH`) and the dataset root from `$env:SEG_DATA_ROOT`, so no machine-specific paths are baked in. Rerun the checker after any change that adds paths.
 - Aggregated analysis JSONs + paper figures are staged in `outputs/release/` (see `outputs/release/README.md` for the v22 key numbers and QUBIQ 8-point results, and `outputs/release/manifest.json` for per-file SHA-256 sums and the `source_commit` these results were generated from).

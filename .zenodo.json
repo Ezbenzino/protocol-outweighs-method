@@ -1,0 +1,33 @@
+{
+  "title": "Protocol outweighs method: patch sampling, evaluation scope, consensus level and threshold dominate architecture and supervision-target choice in lung nodule segmentation on LIDC-IDRI",
+  "description": "<p>Code, analysis pipeline and aggregated results for a measurement study of <strong>protocol effects</strong> in lung nodule segmentation on LIDC-IDRI.</p><p>Reported Dice scores on LIDC-IDRI span roughly 0.43-0.99, a range far larger than the 0.01-0.03 improvements individual methods claim. Because LIDC provides four independent radiologist annotations, every study must choose a label-fusion rule, a binarisation threshold, a rule for cropping training patches and a spatial extent over which to evaluate. This work treats those choices as explicit controlled factors and quantifies how much of the reported spread they produce, relative to architecture and supervision-target choice.</p><p>Headline results (held-out test set, five-fold ensemble): the evaluation-target effect is 28.58 Dice points, the supervision-target range 3.12, the architecture range 1.19 and the threshold effect 9.99, against a two-sigma noise floor of 1.19. Protocol therefore outweighs learning design by 7.1x (supervision) and 18.7x (architecture). The effect generalises to the seven multi-rater QUBIQ 2021 tasks and decays with annotation agreement (eight points, Spearman rho = -0.86, exact permutation p = 0.011).</p><p>The archive contains the full pipeline (training, evaluation, analysis, figures), the aggregated analysis JSONs with per-file SHA-256 sums, and the per-case results CSVs from which every confidence interval in the paper can be recomputed. Raw LIDC-IDRI DICOM and QUBIQ images are not redistributed; see the repository README for how to obtain them.</p>",
+  "creators": [
+    {
+      "name": "Li, Yize"
+    }
+  ],
+  "license": "mit",
+  "upload_type": "software",
+  "access_right": "open",
+  "version": "v22",
+  "publication_date": "2026-10-03",
+  "language": "eng",
+  "keywords": [
+    "lung nodule segmentation",
+    "LIDC-IDRI",
+    "QUBIQ",
+    "protocol effects",
+    "benchmark methodology",
+    "annotation variability",
+    "reproducibility",
+    "medical image segmentation"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/Ezbenzino/protocol-outweighs-method",
+      "relation": "is supplement to",
+      "scheme": "url"
+    }
+  ],
+  "notes": "Author affiliations and ORCID iDs to be completed before the record is published. Code is MIT licensed (see LICENSE); the manuscript text is CC BY 4.0; LIDC-IDRI and QUBIQ data remain under their original TCIA / grand-challenge.org terms."
+}

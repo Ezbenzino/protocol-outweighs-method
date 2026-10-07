@@ -66,3 +66,7 @@ tmp_*.py
 outputs/paper/_*
 outputs/figures/_*
 outputs/figures_v11/
+outputs/figures_v10/
+
+# ---- 构建产物（Zenodo 上传包，不入库） ----
+dist/
