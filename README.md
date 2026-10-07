@@ -87,7 +87,13 @@ Primary inference is the held-out test set (thresholds imported from the validat
 
 ## 6. License / terms
 
-Code: MIT — see [LICENSE](LICENSE). Data: per LIDC-IDRI TCIA terms and QUBIQ grand-challenge terms (see manuscript Data Availability). Manuscript text: CC BY 4.0.
+- **Code:** MIT — see [LICENSE](LICENSE).
+- **This repository's derived results** (aggregated JSONs, figures, per-case CSVs): CC BY 4.0.
+- **Manuscript text:** CC BY 4.0.
+- **LIDC-IDRI:** distributed by The Cancer Imaging Archive under **CC BY 3.0**; users must abide by the [TCIA Data Usage Policy](https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/). Data citation: Armato III, S. G., McLennan, G., Bidaut, L., et al. (2015). *Data From LIDC-IDRI* [Data set]. The Cancer Imaging Archive. https://doi.org/10.7937/K9/TCIA.2015.LO9QL9SX — *the authors acknowledge the National Cancer Institute and the Foundation for the National Institutes of Health, and their critical role in the creation of the free publicly available LIDC/IDRI Database used in this study.*
+- **QUBIQ 2021:** hosted on grand-challenge.org; cite Li, H. B., Navarro, F., Ezhov, I., et al. (2024). *QUBIQ: Uncertainty Quantification for Biomedical Image Segmentation Challenge*. arXiv:2405.18435. Raw images from either collection are not redistributed here.
+
+CC BY 3.0 is attribution-only and carries no ShareAlike condition, so releasing the derived results under CC BY 4.0 is compatible; the attribution above is the binding requirement.
 
 ---
 
