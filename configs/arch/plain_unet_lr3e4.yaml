@@ -1,0 +1,19 @@
+# plain U-Net 学习率 3e-4（P1-4：LR 调优的中间档）
+# 与 plain_unet.yaml / plain_unet_lr1e3.yaml 组成 1e-4 / 3e-4 / 1e-3 三档预筛，fold0 各跑一次取优。
+model:
+  type: plain_unet
+  in_channels: 3
+  num_classes: 1
+  base_channels: 64
+data:
+  num_workers: 0
+train:
+  lr: 0.0003
+loss:
+  target: majority
+  use_dice: true
+  use_bce: true
+  use_sitl: false
+  use_csl: false
+  use_brbc: false
+  use_lovasz: false

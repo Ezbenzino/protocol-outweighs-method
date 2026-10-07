@@ -1,0 +1,84 @@
+{
+  "center_boost": true,
+  "n_instances": 300,
+  "real_band_ratio": 1.042833457339789,
+  "real_soft_vs_hard_mad": 0.0035339356400072575,
+  "candidates": [
+    {
+      "ksize": 3,
+      "sigma": 0.5,
+      "band_ratio": 0.9644227599500512,
+      "ratio_vs_real": 0.9248099523103533,
+      "mad_vs_real_soft": 0.002932385632982778,
+      "mad_vs_hard": 0.001065629793120746
+    },
+    {
+      "ksize": 3,
+      "sigma": 1.0,
+      "band_ratio": 0.9644227599500512,
+      "ratio_vs_real": 0.9248099523103533,
+      "mad_vs_real_soft": 0.002926328214095258,
+      "mad_vs_hard": 0.0011656231938453106
+    },
+    {
+      "ksize": 3,
+      "sigma": 2.0,
+      "band_ratio": 0.9644227599500512,
+      "ratio_vs_real": 0.9248099523103533,
+      "mad_vs_real_soft": 0.00292418861496609,
+      "mad_vs_hard": 0.0012009428237216041
+    },
+    {
+      "ksize": 5,
+      "sigma": 1.0,
+      "band_ratio": 1.8684797139608926,
+      "ratio_vs_real": 1.7917335705044235,
+      "mad_vs_real_soft": 0.0029425396155550107,
+      "mad_vs_hard": 0.0014065217367091195
+    },
+    {
+      "ksize": 5,
+      "sigma": 1.5,
+      "band_ratio": 1.8684797139608926,
+      "ratio_vs_real": 1.7917335705044235,
+      "mad_vs_real_soft": 0.0029646943868107513,
+      "mad_vs_hard": 0.0016609932210587006
+    },
+    {
+      "ksize": 7,
+      "sigma": 1.5,
+      "band_ratio": 2.7235144094629535,
+      "ratio_vs_real": 2.6116484758846243,
+      "mad_vs_real_soft": 0.0030191852479085654,
+      "mad_vs_hard": 0.0018869210158632002
+    },
+    {
+      "ksize": 7,
+      "sigma": 2.0,
+      "band_ratio": 2.7235144094629535,
+      "ratio_vs_real": 2.6116484758846243,
+      "mad_vs_real_soft": 0.0030805062453017128,
+      "mad_vs_hard": 0.002165240485009606
+    },
+    {
+      "ksize": 9,
+      "sigma": 2.5,
+      "band_ratio": 3.598430677276715,
+      "ratio_vs_real": 3.450628335665519,
+      "mad_vs_real_soft": 0.003247894744136516,
+      "mad_vs_hard": 0.0026625209563553155
+    },
+    {
+      "ksize": 11,
+      "sigma": 3.0,
+      "band_ratio": 4.539431623044467,
+      "ratio_vs_real": 4.352978503992678,
+      "mad_vs_real_soft": 0.003450283564590375,
+      "mad_vs_hard": 0.0031471586612124695
+    }
+  ],
+  "chosen": {
+    "ksize": 3,
+    "sigma": 0.5
+  }
+}

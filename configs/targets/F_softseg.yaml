@@ -1,0 +1,35 @@
+# 文献对照臂 F：SoftSeg（Gros et al., Medical Image Analysis 2021）再实现。
+#
+# 【这一臂不属于受控因子表】
+# 本文其余各臂只改一个变量、输出契约完全相同，所以差值可以归因。
+# SoftSeg 同时改了三样东西：
+#   1) 软 GT（不二值化）           —— 与本文 D 臂相同
+#   2) 归一化 ReLU 最终活化         —— 与其余所有臂都不同
+#   3) Adaptive Wing 回归损失       —— 与其余所有臂都不同
+# 因此它只能作为"与已发表方法的对照"单列成表，并写明三者同时变化、
+# 差值不可归因到任何单一因素。把它塞进受控因子表是错的。
+#
+# 【为什么活化方式不同就不能并列】
+# 归一化 ReLU 是逐样本除以该样本自身的最大响应，所以同一个阈值在不同样本上
+# 对应的原始响应强度不同。阈值的语义变了，阈值扫描曲线也就不可直接对比。
+#
+# 【再实现声明】原文面向多类分割与热图回归；本文是二分类单 logit 设定。
+# Adaptive Wing 超参取原文默认 alpha=2.1 omega=14 epsilon=1 theta=0.5。
+# 未与原作者代码逐位比对。
+model:
+  final_activation: relu_norm    # 见 src/models/activation.py
+
+loss:
+  target: softseg
+  use_dice: false
+  use_bce: false                 # BCE 吃 logits，非 sigmoid 语义下无定义，combo.py 会拦
+  use_awing: true
+  use_sitl: false
+  use_csl: false
+  use_brbc: false
+  use_lovasz: false
+  awing:
+    alpha: 2.1
+    omega: 14.0
+    epsilon: 1.0
+    theta: 0.5

@@ -1,0 +1,120 @@
+{
+  "splits": {
+    "cv_pool": 808,
+    "test": 202,
+    "per_fold": {
+      "0": {
+        "train": 646,
+        "val": 162
+      },
+      "1": {
+        "train": 646,
+        "val": 162
+      },
+      "2": {
+        "train": 646,
+        "val": 162
+      },
+      "3": {
+        "train": 647,
+        "val": 161
+      },
+      "4": {
+        "train": 647,
+        "val": 161
+      }
+    },
+    "cv_test_overlap": 0,
+    "fold_val_duplicates": 0,
+    "legacy_split_size": 858,
+    "legacy_test_overlap": 176
+  },
+  "nodules": {
+    "交叉验证池": {
+      "cases": 808,
+      "cases_with_nodules": 634,
+      "n_nodules": 8471,
+      "diam_median": 6.871078686696859,
+      "diam_q1": 5.0209703231304035,
+      "diam_q3": 10.715438758224963,
+      "diam_min": 3.027759026424192,
+      "diam_max": 30.631286053743093,
+      "size_bins": {
+        "3-5 mm": 2116,
+        "5-10 mm": 3972,
+        "10-30 mm": 2382,
+        ">30 mm": 1
+      },
+      "missing_meta": 0
+    },
+    "测试集": {
+      "cases": 202,
+      "cases_with_nodules": 158,
+      "n_nodules": 2062,
+      "diam_median": 6.387064663310887,
+      "diam_q1": 4.787307364817192,
+      "diam_q3": 9.904058487630056,
+      "diam_min": 3.027759026424192,
+      "diam_max": 25.095720918272118,
+      "size_bins": {
+        "3-5 mm": 592,
+        "5-10 mm": 964,
+        "10-30 mm": 506,
+        ">30 mm": 0
+      },
+      "missing_meta": 0
+    }
+  },
+  "gt_levels": {
+    "验证（5 折）": {
+      "1": {
+        "mean_area": 261.5619171290285,
+        "n_nonempty": 8471,
+        "n_total": 8471
+      },
+      "2": {
+        "mean_area": 203.2015110376579,
+        "n_nonempty": 8471,
+        "n_total": 8471
+      },
+      "3": {
+        "mean_area": 144.129500649274,
+        "n_nonempty": 6773,
+        "n_total": 8471
+      },
+      "4": {
+        "mean_area": 89.7471372919372,
+        "n_nonempty": 4579,
+        "n_total": 8471
+      }
+    },
+    "测试集": {
+      "1": {
+        "mean_area": 245.2502424830262,
+        "n_nonempty": 2062,
+        "n_total": 2062
+      },
+      "2": {
+        "mean_area": 192.2502424830262,
+        "n_nonempty": 2062,
+        "n_total": 2062
+      },
+      "3": {
+        "mean_area": 126.33947623666343,
+        "n_nonempty": 1560,
+        "n_total": 2062
+      },
+      "4": {
+        "mean_area": 70.85887487875848,
+        "n_nonempty": 996,
+        "n_total": 2062
+      }
+    }
+  },
+  "annotations": {
+    "n_series": 1018,
+    "n_sessions": 4075,
+    "n_raw_objects": 20096,
+    "n_kept_samples": 10533
+  }
+}

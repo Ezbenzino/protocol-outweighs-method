@@ -1,0 +1,17 @@
+﻿# QUBIQ-prostate task01 训练靶 B：多数投票 V>=ceil(6/2)=3（与 LIDC B_majority 同构，n_raters=6）。
+loss:
+  target: majority
+  use_dice: true
+  use_bce: true
+  use_sitl: false
+  use_csl: false
+  use_brbc: false
+  use_lovasz: false
+train:
+  batch_size: 4
+
+data:
+  patch_dir: ""
+  n_raters: 6
+  npz_dir: data/qubiq/prostate_task01/npz
+  split_dir: data/qubiq/prostate_task01/splits

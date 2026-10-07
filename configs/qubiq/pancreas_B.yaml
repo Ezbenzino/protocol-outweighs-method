@@ -1,0 +1,18 @@
+﻿# QUBIQ-pancreas 训练靶 B：多数投票 V>=ceil(2/2)=1（与 LIDC B_majority 同构，n_raters=2）。
+loss:
+  target: majority
+  use_dice: true
+  use_bce: true
+  use_sitl: false
+  use_csl: false
+  use_brbc: false
+  use_lovasz: false
+train:
+  batch_size: 4
+
+data:
+  patch_dir: ""
+  n_raters: 2
+  npz_dir: data/qubiq/pancreas/npz
+  split_dir: data/qubiq/pancreas/splits
+

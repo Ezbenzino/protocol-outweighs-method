@@ -1,0 +1,521 @@
+{
+ "fig1": {
+  "case": "LIDC-IDRI-0717",
+  "patch_index": 7,
+  "px_V>=k": [
+   92,
+   53,
+   41,
+   36
+  ],
+  "union_over_unanimous": 2.56,
+  "equivalent_diameter_mm_nominal": 4.93,
+  "crop_px": 48
+ },
+ "fig2": {
+  "tgtA_G1": {
+   "thr": 0.2,
+   "dice": 0.8661
+  },
+  "tgtB_G1": {
+   "thr": 0.002,
+   "dice": 0.8586
+  },
+  "tgtC_G1": {
+   "thr": 0.005,
+   "dice": 0.8592
+  },
+  "tgtD_G1": {
+   "thr": 0.005,
+   "dice": 0.8611
+  },
+  "tgtA_G2": {
+   "thr": 0.99,
+   "dice": 0.867
+  },
+  "tgtB_G2": {
+   "thr": 0.55,
+   "dice": 0.874
+  },
+  "tgtC_G2": {
+   "thr": 0.65,
+   "dice": 0.8752
+  },
+  "tgtD_G2": {
+   "thr": 0.5,
+   "dice": 0.8746
+  },
+  "tgtA_G3": {
+   "thr": 0.998,
+   "dice": 0.7684
+  },
+  "tgtB_G3": {
+   "thr": 0.99,
+   "dice": 0.774
+  },
+  "tgtC_G3": {
+   "thr": 0.97,
+   "dice": 0.7685
+  },
+  "tgtD_G3": {
+   "thr": 0.925,
+   "dice": 0.7676
+  },
+  "tgtA_G4": {
+   "thr": 0.999,
+   "dice": 0.7031
+  },
+  "tgtB_G4": {
+   "thr": 0.998,
+   "dice": 0.7149
+  },
+  "tgtC_G4": {
+   "thr": 0.98,
+   "dice": 0.6899
+  },
+  "tgtD_G4": {
+   "thr": 0.98,
+   "dice": 0.6884
+  }
+ },
+ "fig3": [
+  {
+   "row": "Evaluation field of view | 128 → 512 px, translation-augmented arm",
+   "value": 43.54,
+   "ci95": [
+    41.4,
+    45.8
+   ],
+   "dots": null
+  },
+  {
+   "row": "Evaluation target | $V\\geq1$ to $V\\geq4$, arm A at threshold 0.5",
+   "value": 28.58,
+   "ci95": [
+    24.13,
+    33.5
+   ],
+   "dots": null
+  },
+  {
+   "row": "Lesion offset of 8 px from the patch centre | median of ten arms (dots: each arm)",
+   "value": 26.4,
+   "ci95": null,
+   "dots": [
+    7.11,
+    10.62,
+    18.28,
+    23.0,
+    25.21,
+    27.59,
+    29.36,
+    31.2,
+    31.52,
+    35.78
+   ]
+  },
+  {
+   "row": "Evaluation field of view | 128 → 512 px, both training confounds removed",
+   "value": 22.29,
+   "ci95": [
+    20.18,
+    24.55
+   ],
+   "dots": null
+  },
+  {
+   "row": "Binarisation threshold | arm A against $V\\geq4$",
+   "value": 9.99,
+   "ci95": [
+    9.03,
+    10.9
+   ],
+   "dots": null
+  },
+  {
+   "row": "Cost of translation augmentation | on the centred protocol",
+   "value": 6.1,
+   "ci95": [
+    5.04,
+    7.21
+   ],
+   "dots": null
+  },
+  {
+   "row": "Supervision target | five arms, against $V\\geq4$",
+   "value": 3.12,
+   "ci95": [
+    2.53,
+    3.71
+   ],
+   "dots": null
+  },
+  {
+   "row": "Architecture | five models, 8× parameter range",
+   "value": 1.19,
+   "ci95": [
+    0.57,
+    1.96
+   ],
+   "dots": null
+  },
+  {
+   "row": "Random seed (2σ) | pooled over four references",
+   "value": 1.19,
+   "ci95": [
+    0.97,
+    1.59
+   ],
+   "dots": null
+  }
+ ],
+ "fig4": {
+  "matrix": {
+   "tgtA": [
+    86.61,
+    86.7,
+    76.84,
+    70.31
+   ],
+   "tgtB": [
+    85.86,
+    87.4,
+    77.4,
+    71.49
+   ],
+   "tgtC": [
+    85.92,
+    87.52,
+    76.85,
+    68.99
+   ],
+   "tgtD": [
+    86.11,
+    87.46,
+    76.76,
+    68.84
+   ],
+   "tgtE": [
+    86.24,
+    87.61,
+    77.37,
+    70.94
+   ]
+  },
+  "best_per_column": [
+   "tgtA",
+   "tgtE",
+   "tgtB",
+   "tgtB"
+  ],
+  "within_column_range": [
+   0.74,
+   0.91,
+   0.64,
+   2.65
+  ]
+ },
+ "fig5": {
+  "noise_two_sigma": 1.19,
+  "contrasts": {
+   "tgtC-tgtA_G4": {
+    "diff": -1.29,
+    "ci": [
+     -1.7,
+     -0.86
+    ],
+    "n": 527,
+    "ci_includes_zero": false
+   },
+   "tgtC-tgtA_G3": {
+    "diff": 0.02,
+    "ci": [
+     -0.27,
+     0.32
+    ],
+    "n": 608,
+    "ci_includes_zero": true
+   },
+   "tgtC-tgtA_G2": {
+    "diff": 0.82,
+    "ci": [
+     0.54,
+     1.09
+    ],
+    "n": 634,
+    "ci_includes_zero": false
+   },
+   "tgtC-tgtA_G1": {
+    "diff": -0.69,
+    "ci": [
+     -1.0,
+     -0.39
+    ],
+    "n": 634,
+    "ci_includes_zero": false
+   },
+   "tgtB-tgtA_G4": {
+    "diff": 1.19,
+    "ci": [
+     0.89,
+     1.49
+    ],
+    "n": 527,
+    "ci_includes_zero": false
+   },
+   "tgtB-tgtA_G3": {
+    "diff": 0.57,
+    "ci": [
+     0.35,
+     0.79
+    ],
+    "n": 608,
+    "ci_includes_zero": false
+   },
+   "tgtB-tgtA_G2": {
+    "diff": 0.7,
+    "ci": [
+     0.46,
+     0.94
+    ],
+    "n": 634,
+    "ci_includes_zero": false
+   },
+   "tgtB-tgtA_G1": {
+    "diff": -0.74,
+    "ci": [
+     -1.0,
+     -0.47
+    ],
+    "n": 634,
+    "ci_includes_zero": false
+   },
+   "tgtC-tgtB_G4": {
+    "diff": -2.48,
+    "ci": [
+     -2.91,
+     -2.05
+    ],
+    "n": 527,
+    "ci_includes_zero": false
+   },
+   "tgtC-tgtB_G3": {
+    "diff": -0.55,
+    "ci": [
+     -0.81,
+     -0.29
+    ],
+    "n": 608,
+    "ci_includes_zero": false
+   },
+   "tgtC-tgtB_G2": {
+    "diff": 0.12,
+    "ci": [
+     -0.11,
+     0.34
+    ],
+    "n": 634,
+    "ci_includes_zero": true
+   },
+   "tgtC-tgtB_G1": {
+    "diff": 0.06,
+    "ci": [
+     -0.22,
+     0.34
+    ],
+    "n": 634,
+    "ci_includes_zero": true
+   }
+  }
+ },
+ "fig6": {
+  "gt_case_mean_px": {
+   "G1": 209.7,
+   "G2": 163.4
+  },
+  "area_matched": {
+   "tgtA": {
+    "thr": 0.98,
+    "area": 161.4
+   },
+   "tgtB": {
+    "thr": 0.2,
+    "area": 163.8
+   },
+   "tgtC": {
+    "thr": 0.15,
+    "area": 163.1
+   },
+   "tgtD": {
+    "thr": 0.15,
+    "area": 163.3
+   }
+  },
+  "brier_x1000": {
+   "tgtA": 3.12,
+   "tgtB": 2.26,
+   "tgtC": 2.22,
+   "tgtD": 2.1
+  }
+ },
+ "fig7": {
+  "tgtB_fold0": [
+   0.8699,
+   0.5941,
+   0.3965,
+   0.3195,
+   0.2779,
+   0.1156,
+   0.1263,
+   0.0471
+  ],
+  "tgtBshift_fold0": [
+   0.7796,
+   0.7813,
+   0.7883,
+   0.7905,
+   0.7784,
+   0.7206,
+   0.5829,
+   0.374
+  ],
+  "thresholds": {
+   "tgtA_fold0": 0.99,
+   "tgtB_fold0": 0.55,
+   "tgtC_fold0": 0.65,
+   "tgtD_fold0": 0.5,
+   "tgtE_fold0": 0.75,
+   "tgtF_fold0": 0.45,
+   "tgtBshift_fold0": 0.55,
+   "archR18_fold0": 0.75,
+   "archCNX_fold0": 0.8,
+   "archPVT_fold0": 0.5,
+   "archPU1e3_fold0": 0.6
+  },
+  "n_nodules": 76
+ },
+ "fig8": {
+  "ladder_v2": {
+   "tgtB": {
+    "patch128": 0.872,
+    "win128": 0.2552,
+    "win192": 0.2507,
+    "win256": 0.2465,
+    "win384": 0.2388,
+    "win512": 0.2349,
+    "slice": 0.2181,
+    "volume": 0.0553
+   },
+   "bg_maj": {
+    "patch128": 0.8711,
+    "win128": 0.0515,
+    "win192": 0.0504,
+    "win256": 0.05,
+    "win384": 0.05,
+    "win512": 0.0516,
+    "slice": 0.0505,
+    "volume": 0.0597
+   },
+   "tgtBshift": {
+    "patch128": 0.811,
+    "win128": 0.7598,
+    "win192": 0.6459,
+    "win256": 0.5449,
+    "win384": 0.4038,
+    "win512": 0.3243,
+    "slice": 0.266,
+    "volume": 0.0238
+   },
+   "tgtBshift_bg": {
+    "patch128": 0.7928,
+    "win128": 0.7601,
+    "win192": 0.713,
+    "win256": 0.6646,
+    "win384": 0.591,
+    "win512": 0.5372,
+    "slice": 0.4962,
+    "volume": 0.0784
+   }
+  },
+  "ladder_loss": {
+   "tgtB": {
+    "loss_pts": 2.03,
+    "ci95": [
+     1.5,
+     2.58
+    ],
+    "p": 9.815015764053858e-12
+   },
+   "bg_maj": {
+    "loss_pts": -0.01,
+    "ci95": [
+     -0.39,
+     0.3
+    ],
+    "p": 0.943479719013241
+   },
+   "tgtBshift": {
+    "loss_pts": 43.54,
+    "ci95": [
+     41.4,
+     45.8
+    ],
+    "p": 1.0342858545596313e-80
+   },
+   "tgtBshift_bg": {
+    "loss_pts": 22.29,
+    "ci95": [
+     20.18,
+     24.55
+    ],
+    "p": 2.5536134272628394e-45
+   }
+  }
+ },
+ "fig9": {
+  "spearman_rho": -0.8571,
+  "exact_p": 0.0107,
+  "points": {
+   "LIDC": {
+    "agreement": 0.333,
+    "protocol": 17.27,
+    "supervision": 2.65
+   },
+   "btum-t2": {
+    "agreement": 0.175,
+    "protocol": 30.35,
+    "supervision": 17.83
+   },
+   "brain-growth": {
+    "agreement": 0.489,
+    "protocol": 14.22,
+    "supervision": 9.7
+   },
+   "prostate-t2": {
+    "agreement": 0.766,
+    "protocol": 14.22,
+    "supervision": 2.96
+   },
+   "btum-t3": {
+    "agreement": 0.636,
+    "protocol": 2.98,
+    "supervision": 2.98
+   },
+   "btum-t1": {
+    "agreement": 0.777,
+    "protocol": 2.21,
+    "supervision": 1.77
+   },
+   "kidney": {
+    "agreement": 0.868,
+    "protocol": 0.61,
+    "supervision": 0.79
+   },
+   "prostate-t1": {
+    "agreement": 0.96,
+    "protocol": 2.4,
+    "supervision": 0.52
+   }
+  }
+ }
+}

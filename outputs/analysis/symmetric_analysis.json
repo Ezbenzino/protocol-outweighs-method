@@ -1,0 +1,786 @@
+{
+  "folds": [
+    "val_fold0",
+    "val_fold1",
+    "val_fold2",
+    "val_fold3",
+    "val_fold4"
+  ],
+  "n_cases": 634,
+  "arms": [
+    "tgtB",
+    "seed_tgtA_s3",
+    "seed_tgtB_s3",
+    "bg_maj",
+    "seed_tgtA_s1",
+    "seed_tgtA_s2",
+    "seed_tgtB_s1",
+    "seed_tgtB_s2",
+    "seed_tgtA",
+    "seed_tgtB"
+  ],
+  "table1": {
+    "tgtB": {
+      "1": {
+        "thr": 0.002,
+        "dice_opt": 0.8503555544598174,
+        "dice_05": 0.8168124162768615
+      },
+      "2": {
+        "thr": 0.5,
+        "dice_opt": 0.8675375095349466,
+        "dice_05": 0.8675375095349466
+      },
+      "3": {
+        "thr": 0.98,
+        "dice_opt": 0.8258266551882458,
+        "dice_05": 0.8142592866332115
+      },
+      "4": {
+        "thr": 0.998,
+        "dice_opt": 0.8025205000040151,
+        "dice_05": 0.7535484620025796
+      }
+    },
+    "seed_tgtA_s3": {
+      "1": {
+        "thr": 0.15,
+        "dice_opt": 0.8474581813887488,
+        "dice_05": 0.8464697293266098
+      },
+      "2": {
+        "thr": 0.99,
+        "dice_opt": 0.8468021781013331,
+        "dice_05": 0.8194365861664814
+      },
+      "3": {
+        "thr": 0.999,
+        "dice_opt": 0.8033305491429739,
+        "dice_05": 0.7371585766710682
+      },
+      "4": {
+        "thr": 0.999,
+        "dice_opt": 0.7600878020451775,
+        "dice_05": 0.6685010685584482
+      }
+    },
+    "seed_tgtB_s3": {
+      "1": {
+        "thr": 0.002,
+        "dice_opt": 0.8451665973550482,
+        "dice_05": 0.8153128734759333
+      },
+      "2": {
+        "thr": 0.65,
+        "dice_opt": 0.856381987771356,
+        "dice_05": 0.8558926985727872
+      },
+      "3": {
+        "thr": 0.99,
+        "dice_opt": 0.8110185732226228,
+        "dice_05": 0.7971400227003886
+      },
+      "4": {
+        "thr": 0.998,
+        "dice_opt": 0.7752172338095745,
+        "dice_05": 0.734780062701197
+      }
+    },
+    "bg_maj": {
+      "1": {
+        "thr": 0.005,
+        "dice_opt": 0.8424816211745902,
+        "dice_05": 0.8153740740827479
+      },
+      "2": {
+        "thr": 0.7,
+        "dice_opt": 0.8556348201560104,
+        "dice_05": 0.8552867638089054
+      },
+      "3": {
+        "thr": 0.98,
+        "dice_opt": 0.8106434780598808,
+        "dice_05": 0.7945332327429682
+      },
+      "4": {
+        "thr": 0.995,
+        "dice_opt": 0.7828521837606146,
+        "dice_05": 0.7346221149583478
+      }
+    },
+    "seed_tgtA_s1": {
+      "1": {
+        "thr": 0.05,
+        "dice_opt": 0.8394756925250102,
+        "dice_05": 0.8311769782297839
+      },
+      "2": {
+        "thr": 0.925,
+        "dice_opt": 0.8429242096012068,
+        "dice_05": 0.8324573996177075
+      },
+      "3": {
+        "thr": 0.99,
+        "dice_opt": 0.8015337379556083,
+        "dice_05": 0.758177107150146
+      },
+      "4": {
+        "thr": 0.998,
+        "dice_opt": 0.7682528903091447,
+        "dice_05": 0.6895532215843005
+      }
+    },
+    "seed_tgtA_s2": {
+      "1": {
+        "thr": 0.1,
+        "dice_opt": 0.8467047438794898,
+        "dice_05": 0.8440733009621253
+      },
+      "2": {
+        "thr": 0.98,
+        "dice_opt": 0.8468489553426711,
+        "dice_05": 0.8245837360564929
+      },
+      "3": {
+        "thr": 0.998,
+        "dice_opt": 0.8029162243095248,
+        "dice_05": 0.7457588585008296
+      },
+      "4": {
+        "thr": 0.999,
+        "dice_opt": 0.7604349450325978,
+        "dice_05": 0.6738426037791271
+      }
+    },
+    "seed_tgtB_s1": {
+      "1": {
+        "thr": 0.001,
+        "dice_opt": 0.8398861623808904,
+        "dice_05": 0.7981254499078617
+      },
+      "2": {
+        "thr": 0.2,
+        "dice_opt": 0.855670862468371,
+        "dice_05": 0.8554670705373986
+      },
+      "3": {
+        "thr": 0.98,
+        "dice_opt": 0.8098771957991681,
+        "dice_05": 0.8028995523398573
+      },
+      "4": {
+        "thr": 0.995,
+        "dice_opt": 0.7724032283129835,
+        "dice_05": 0.7432424337062353
+      }
+    },
+    "seed_tgtB_s2": {
+      "1": {
+        "thr": 0.002,
+        "dice_opt": 0.8443627414591204,
+        "dice_05": 0.8058137311308944
+      },
+      "2": {
+        "thr": 0.55,
+        "dice_opt": 0.8548679814208566,
+        "dice_05": 0.8547226369115928
+      },
+      "3": {
+        "thr": 0.97,
+        "dice_opt": 0.8100961816678949,
+        "dice_05": 0.8027599425822328
+      },
+      "4": {
+        "thr": 0.995,
+        "dice_opt": 0.7721244062786158,
+        "dice_05": 0.7442477300278804
+      }
+    },
+    "seed_tgtA": {
+      "1": {
+        "thr": 0.15,
+        "dice_opt": 0.8540587707189795,
+        "dice_05": 0.8527275046064506
+      },
+      "2": {
+        "thr": 0.99,
+        "dice_opt": 0.8510832396564171,
+        "dice_05": 0.828386446508694
+      },
+      "3": {
+        "thr": 0.998,
+        "dice_opt": 0.802622909051579,
+        "dice_05": 0.7368106574915081
+      },
+      "4": {
+        "thr": 0.999,
+        "dice_opt": 0.7796730721369008,
+        "dice_05": 0.6785744231507531
+      }
+    },
+    "seed_tgtB": {
+      "1": {
+        "thr": 0.002,
+        "dice_opt": 0.8505313272999381,
+        "dice_05": 0.823023696060839
+      },
+      "2": {
+        "thr": 0.7,
+        "dice_opt": 0.8625772495603738,
+        "dice_05": 0.8622010266675184
+      },
+      "3": {
+        "thr": 0.99,
+        "dice_opt": 0.8109473384754253,
+        "dice_05": 0.7938503321100657
+      },
+      "4": {
+        "thr": 0.998,
+        "dice_opt": 0.7946810293062729,
+        "dice_05": 0.7397278455771137
+      }
+    }
+  },
+  "table2": {},
+  "table3": [
+    {
+      "factor": "Evaluation target V>=1..4, seed_tgtA_s3 (fixed thr 0.5)",
+      "type": "Protocol",
+      "effect": 0.17796866076816165
+    },
+    {
+      "factor": "Evaluation target V>=1..4, seed_tgtA (fixed thr 0.5)",
+      "type": "Protocol",
+      "effect": 0.17415308145569752
+    },
+    {
+      "factor": "Evaluation target V>=1..4, seed_tgtA_s2 (fixed thr 0.5)",
+      "type": "Protocol",
+      "effect": 0.17023069718299821
+    },
+    {
+      "factor": "Evaluation target V>=1..4, seed_tgtA_s1 (fixed thr 0.5)",
+      "type": "Protocol",
+      "effect": 0.14290417803340694
+    },
+    {
+      "factor": "Evaluation target V>=1..4, seed_tgtB (fixed thr 0.5)",
+      "type": "Protocol",
+      "effect": 0.12247318109040473
+    },
+    {
+      "factor": "Evaluation target V>=1..4, seed_tgtB_s3 (fixed thr 0.5)",
+      "type": "Protocol",
+      "effect": 0.12111263587159016
+    },
+    {
+      "factor": "Evaluation target V>=1..4, bg_maj (fixed thr 0.5)",
+      "type": "Protocol",
+      "effect": 0.12066464885055761
+    },
+    {
+      "factor": "Evaluation target V>=1..4, B Majority (V>=2 hard) (fixed thr 0.5)",
+      "type": "Protocol",
+      "effect": 0.11398904753236694
+    },
+    {
+      "factor": "Evaluation target V>=1..4, seed_tgtB_s1 (fixed thr 0.5)",
+      "type": "Protocol",
+      "effect": 0.11222463683116324
+    },
+    {
+      "factor": "Evaluation target V>=1..4, seed_tgtB_s2 (fixed thr 0.5)",
+      "type": "Protocol",
+      "effect": 0.11047490688371242
+    },
+    {
+      "factor": "Threshold, seed_tgtA @ V>=4 (0.5 vs 1.00)",
+      "type": "Protocol",
+      "effect": 0.10109864898614773
+    },
+    {
+      "factor": "Threshold, seed_tgtA_s3 @ V>=4 (0.5 vs 1.00)",
+      "type": "Protocol",
+      "effect": 0.0915867334867293
+    },
+    {
+      "factor": "Evaluation target V>=1..4, seed_tgtA_s3 (calibrated)",
+      "type": "Protocol",
+      "effect": 0.08737037934357139
+    },
+    {
+      "factor": "Threshold, seed_tgtA_s2 @ V>=4 (0.5 vs 1.00)",
+      "type": "Protocol",
+      "effect": 0.0865923412534707
+    },
+    {
+      "factor": "Evaluation target V>=1..4, seed_tgtA_s2 (calibrated)",
+      "type": "Protocol",
+      "effect": 0.08641401031007334
+    },
+    {
+      "factor": "Evaluation target V>=1..4, seed_tgtB_s1 (calibrated)",
+      "type": "Protocol",
+      "effect": 0.08326763415538752
+    },
+    {
+      "factor": "Evaluation target V>=1..4, seed_tgtB_s2 (calibrated)",
+      "type": "Protocol",
+      "effect": 0.08274357514224084
+    },
+    {
+      "factor": "Evaluation target V>=1..4, seed_tgtB_s3 (calibrated)",
+      "type": "Protocol",
+      "effect": 0.08116475396178147
+    },
+    {
+      "factor": "Threshold, seed_tgtA_s1 @ V>=4 (0.5 vs 1.00)",
+      "type": "Protocol",
+      "effect": 0.07869966872484413
+    },
+    {
+      "factor": "Evaluation target V>=1..4, seed_tgtA_s1 (calibrated)",
+      "type": "Protocol",
+      "effect": 0.07467131929206217
+    },
+    {
+      "factor": "Evaluation target V>=1..4, seed_tgtA (calibrated)",
+      "type": "Protocol",
+      "effect": 0.07438569858207866
+    },
+    {
+      "factor": "Evaluation target V>=1..4, bg_maj (calibrated)",
+      "type": "Protocol",
+      "effect": 0.07278263639539584
+    },
+    {
+      "factor": "Evaluation target V>=1..4, seed_tgtB (calibrated)",
+      "type": "Protocol",
+      "effect": 0.06789622025410091
+    },
+    {
+      "factor": "Threshold, seed_tgtA_s3 @ V>=3 (0.5 vs 1.00)",
+      "type": "Protocol",
+      "effect": 0.06617197247190565
+    },
+    {
+      "factor": "Threshold, seed_tgtA @ V>=3 (0.5 vs 1.00)",
+      "type": "Protocol",
+      "effect": 0.06581225156007087
+    },
+    {
+      "factor": "Evaluation target V>=1..4, B Majority (V>=2 hard) (calibrated)",
+      "type": "Protocol",
+      "effect": 0.06501700953093148
+    },
+    {
+      "factor": "Threshold, seed_tgtA_s2 @ V>=3 (0.5 vs 1.00)",
+      "type": "Protocol",
+      "effect": 0.05715736580869524
+    },
+    {
+      "factor": "Threshold, seed_tgtB @ V>=4 (0.5 vs 1.00)",
+      "type": "Protocol",
+      "effect": 0.05495318372915925
+    },
+    {
+      "factor": "Threshold, B Majority (V>=2 hard) @ V>=4 (0.5 vs 1.00)",
+      "type": "Protocol",
+      "effect": 0.04897203800143546
+    },
+    {
+      "factor": "Threshold, bg_maj @ V>=4 (0.5 vs 0.99)",
+      "type": "Protocol",
+      "effect": 0.04823006880226677
+    },
+    {
+      "factor": "Threshold, seed_tgtA_s1 @ V>=3 (0.5 vs 0.99)",
+      "type": "Protocol",
+      "effect": 0.04335663080546237
+    },
+    {
+      "factor": "Threshold, seed_tgtB_s1 @ V>=1 (0.5 vs 0.00)",
+      "type": "Protocol",
+      "effect": 0.041760712473028705
+    },
+    {
+      "factor": "Threshold, seed_tgtB_s3 @ V>=4 (0.5 vs 1.00)",
+      "type": "Protocol",
+      "effect": 0.04043717110837752
+    },
+    {
+      "factor": "Threshold, seed_tgtB_s2 @ V>=1 (0.5 vs 0.00)",
+      "type": "Protocol",
+      "effect": 0.038549010328226
+    },
+    {
+      "factor": "Threshold, B Majority (V>=2 hard) @ V>=1 (0.5 vs 0.00)",
+      "type": "Protocol",
+      "effect": 0.033543138182955845
+    },
+    {
+      "factor": "Threshold, seed_tgtB_s3 @ V>=1 (0.5 vs 0.00)",
+      "type": "Protocol",
+      "effect": 0.02985372387911489
+    },
+    {
+      "factor": "Threshold, seed_tgtB_s1 @ V>=4 (0.5 vs 0.99)",
+      "type": "Protocol",
+      "effect": 0.02916079460674814
+    },
+    {
+      "factor": "Threshold, seed_tgtB_s2 @ V>=4 (0.5 vs 0.99)",
+      "type": "Protocol",
+      "effect": 0.02787667625073542
+    },
+    {
+      "factor": "Threshold, seed_tgtB @ V>=1 (0.5 vs 0.00)",
+      "type": "Protocol",
+      "effect": 0.02750763123909905
+    },
+    {
+      "factor": "Threshold, seed_tgtA_s3 @ V>=2 (0.5 vs 0.99)",
+      "type": "Protocol",
+      "effect": 0.027365591934851663
+    },
+    {
+      "factor": "Threshold, bg_maj @ V>=1 (0.5 vs 0.01)",
+      "type": "Protocol",
+      "effect": 0.027107547091842377
+    },
+    {
+      "factor": "Architecture: plain U-Net vs ResNet-34+ImageNet [legacy]",
+      "type": "Model",
+      "effect": 0.027100000000000013
+    },
+    {
+      "factor": "Threshold, seed_tgtA @ V>=2 (0.5 vs 0.99)",
+      "type": "Protocol",
+      "effect": 0.022696793147723104
+    },
+    {
+      "factor": "Threshold, seed_tgtA_s2 @ V>=2 (0.5 vs 0.98)",
+      "type": "Protocol",
+      "effect": 0.022265219286178195
+    },
+    {
+      "factor": "Threshold, seed_tgtB @ V>=3 (0.5 vs 0.99)",
+      "type": "Protocol",
+      "effect": 0.0170970063653596
+    },
+    {
+      "factor": "Threshold, bg_maj @ V>=3 (0.5 vs 0.98)",
+      "type": "Protocol",
+      "effect": 0.01611024531691263
+    },
+    {
+      "factor": "Threshold, seed_tgtB_s3 @ V>=3 (0.5 vs 0.99)",
+      "type": "Protocol",
+      "effect": 0.01387855052223419
+    },
+    {
+      "factor": "Threshold, B Majority (V>=2 hard) @ V>=3 (0.5 vs 0.98)",
+      "type": "Protocol",
+      "effect": 0.011567368555034374
+    },
+    {
+      "factor": "Threshold, seed_tgtA_s1 @ V>=2 (0.5 vs 0.93)",
+      "type": "Protocol",
+      "effect": 0.010466809983499359
+    },
+    {
+      "factor": "Threshold, seed_tgtA_s1 @ V>=1 (0.5 vs 0.05)",
+      "type": "Protocol",
+      "effect": 0.008298714295226328
+    },
+    {
+      "factor": "Threshold, seed_tgtB_s2 @ V>=3 (0.5 vs 0.97)",
+      "type": "Protocol",
+      "effect": 0.007336239085662055
+    },
+    {
+      "factor": "Threshold, seed_tgtB_s1 @ V>=3 (0.5 vs 0.98)",
+      "type": "Protocol",
+      "effect": 0.006977643459310734
+    },
+    {
+      "factor": "Loss design: 6-term vs 5-term (BRBC removed) [legacy]",
+      "type": "Model",
+      "effect": 0.0044999999999999485
+    },
+    {
+      "factor": "Loss design: range over 4 weight settings [legacy]",
+      "type": "Model",
+      "effect": 0.0017000000000000348
+    },
+    {
+      "factor": "Architecture: ResNet-18 vs ResNet-34 [legacy]",
+      "type": "Model",
+      "effect": 0.0004
+    }
+  ],
+  "protocol_vs_model": {
+    "protocol_max": 0.17796866076816165,
+    "model_max": 0.027100000000000013,
+    "ratio": 6.567109253437696
+  },
+  "table4": {
+    "tgtB": {
+      "fixed05": [
+        0.7535484620025796,
+        0.8675375095349466,
+        0.11398904753236694
+      ],
+      "calibrated": [
+        0.8025205000040151,
+        0.8675375095349466,
+        0.06501700953093148
+      ]
+    },
+    "seed_tgtA_s3": {
+      "fixed05": [
+        0.6685010685584482,
+        0.8464697293266098,
+        0.17796866076816165
+      ],
+      "calibrated": [
+        0.7600878020451775,
+        0.8474581813887488,
+        0.08737037934357139
+      ]
+    },
+    "seed_tgtB_s3": {
+      "fixed05": [
+        0.734780062701197,
+        0.8558926985727872,
+        0.12111263587159016
+      ],
+      "calibrated": [
+        0.7752172338095745,
+        0.856381987771356,
+        0.08116475396178147
+      ]
+    },
+    "bg_maj": {
+      "fixed05": [
+        0.7346221149583478,
+        0.8552867638089054,
+        0.12066464885055761
+      ],
+      "calibrated": [
+        0.7828521837606146,
+        0.8556348201560104,
+        0.07278263639539584
+      ]
+    },
+    "seed_tgtA_s1": {
+      "fixed05": [
+        0.6895532215843005,
+        0.8324573996177075,
+        0.14290417803340694
+      ],
+      "calibrated": [
+        0.7682528903091447,
+        0.8429242096012068,
+        0.07467131929206217
+      ]
+    },
+    "seed_tgtA_s2": {
+      "fixed05": [
+        0.6738426037791271,
+        0.8440733009621253,
+        0.17023069718299821
+      ],
+      "calibrated": [
+        0.7604349450325978,
+        0.8468489553426711,
+        0.08641401031007334
+      ]
+    },
+    "seed_tgtB_s1": {
+      "fixed05": [
+        0.7432424337062353,
+        0.8554670705373986,
+        0.11222463683116324
+      ],
+      "calibrated": [
+        0.7724032283129835,
+        0.855670862468371,
+        0.08326763415538752
+      ]
+    },
+    "seed_tgtB_s2": {
+      "fixed05": [
+        0.7442477300278804,
+        0.8547226369115928,
+        0.11047490688371242
+      ],
+      "calibrated": [
+        0.7721244062786158,
+        0.8548679814208566,
+        0.08274357514224084
+      ]
+    },
+    "seed_tgtA": {
+      "fixed05": [
+        0.6785744231507531,
+        0.8527275046064506,
+        0.17415308145569752
+      ],
+      "calibrated": [
+        0.7796730721369008,
+        0.8540587707189795,
+        0.07438569858207866
+      ]
+    },
+    "seed_tgtB": {
+      "fixed05": [
+        0.7397278455771137,
+        0.8622010266675184,
+        0.12247318109040473
+      ],
+      "calibrated": [
+        0.7946810293062729,
+        0.8625772495603738,
+        0.06789622025410091
+      ]
+    }
+  },
+  "table5": {
+    "tgtB": {
+      "threshold": 0.15,
+      "area": 199.7020422618345,
+      "dice_v2": 0.8665423572776753,
+      "dice_v1": 0.8269198775179741
+    },
+    "seed_tgtA_s3": {
+      "threshold": 0.95,
+      "area": 202.18187033849685,
+      "dice_v2": 0.8389519708240709,
+      "dice_v1": 0.833616576045837
+    },
+    "seed_tgtB_s3": {
+      "threshold": 0.15,
+      "area": 199.44406196213424,
+      "dice_v2": 0.8532067434418769,
+      "dice_v1": 0.8255677236328506
+    },
+    "bg_maj": {
+      "threshold": 0.2,
+      "area": 200.01220238095237,
+      "dice_v2": 0.8534476310591258,
+      "dice_v1": 0.8241147972865119
+    },
+    "seed_tgtA_s1": {
+      "threshold": 0.75,
+      "area": 200.69363166953528,
+      "dice_v2": 0.838697797618272,
+      "dice_v1": 0.8223984675653967
+    },
+    "seed_tgtA_s2": {
+      "threshold": 0.95,
+      "area": 199.02065404475044,
+      "dice_v2": 0.843274853671022,
+      "dice_v1": 0.8286927340170706
+    },
+    "seed_tgtB_s1": {
+      "threshold": 0.02,
+      "area": 202.2398164084911,
+      "dice_v2": 0.8525851052970429,
+      "dice_v1": 0.8211418490085326
+    },
+    "seed_tgtB_s2": {
+      "threshold": 0.05,
+      "area": 199.0676993689042,
+      "dice_v2": 0.8518162590467034,
+      "dice_v1": 0.8263794517874444
+    },
+    "seed_tgtA": {
+      "threshold": 0.95,
+      "area": 200.33601319315605,
+      "dice_v2": 0.8450091721847502,
+      "dice_v1": 0.8413955175541104
+    },
+    "seed_tgtB": {
+      "threshold": 0.1,
+      "area": 200.79880437023294,
+      "dice_v2": 0.8583425305502682,
+      "dice_v1": 0.8361690122026729
+    }
+  },
+  "table6": {
+    "tgtB": {
+      "val_fold0": 0.8572842340084991,
+      "val_fold1": 0.8612019661295613,
+      "val_fold2": 0.8644910784884406,
+      "val_fold3": 0.874338255358615,
+      "val_fold4": 0.8803720136896167
+    },
+    "seed_tgtA_s3": {
+      "val_fold0": 0.8468021781013331
+    },
+    "seed_tgtB_s3": {
+      "val_fold0": 0.856381987771356
+    },
+    "bg_maj": {
+      "val_fold0": 0.8577052102676939,
+      "val_fold1": 0.8535644300443269
+    },
+    "seed_tgtA_s1": {
+      "val_fold0": 0.8429242096012068
+    },
+    "seed_tgtA_s2": {
+      "val_fold0": 0.8468489553426711
+    },
+    "seed_tgtB_s1": {
+      "val_fold0": 0.855670862468371
+    },
+    "seed_tgtB_s2": {
+      "val_fold0": 0.8548679814208566
+    },
+    "seed_tgtA": {
+      "val_fold1": 0.8510832396564171
+    },
+    "seed_tgtB": {
+      "val_fold1": 0.8625772495603738
+    }
+  },
+  "threshold_free": {
+    "soft_dice": {
+      "B Majority (V>=2 hard)": 0.7388929641633969,
+      "seed_tgtA_s3": 0.7046709222376039,
+      "seed_tgtB_s3": 0.732228719035716,
+      "bg_maj": 0.7271736953922457,
+      "seed_tgtA_s1": 0.6924160694825285,
+      "seed_tgtA_s2": 0.7092736516376542,
+      "seed_tgtB_s1": 0.7315698239868972,
+      "seed_tgtB_s2": 0.731977141788737,
+      "seed_tgtA": 0.7023357183796343,
+      "seed_tgtB": 0.7276503848961348
+    },
+    "brier": {
+      "B Majority (V>=2 hard)": 0.0022608847229395254,
+      "seed_tgtA_s3": 0.0032602056749183265,
+      "seed_tgtB_s3": 0.0023736967876005623,
+      "bg_maj": 0.002576316590873433,
+      "seed_tgtA_s1": 0.002818326372721656,
+      "seed_tgtA_s2": 0.003157871908709095,
+      "seed_tgtB_s1": 0.002420113013963521,
+      "seed_tgtB_s2": 0.0023754329866500358,
+      "seed_tgtA": 0.003338984336302752,
+      "seed_tgtB": 0.0025425723665954587
+    },
+    "prob_mass": {
+      "B Majority (V>=2 hard)": 192.9318293546817,
+      "seed_tgtA_s3": 227.25681723826108,
+      "seed_tgtB_s3": 191.34086422747876,
+      "bg_maj": 193.67666819866886,
+      "seed_tgtA_s1": 217.38640054039618,
+      "seed_tgtA_s2": 224.6821300891782,
+      "seed_tgtB_s1": 183.30430754367742,
+      "seed_tgtB_s2": 183.9426154619787,
+      "seed_tgtA": 221.877550219192,
+      "seed_tgtB": 190.67545034486812
+    }
+  }
+}

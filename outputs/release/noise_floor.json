@@ -1,0 +1,35 @@
+{
+  "date": "2026-09-01",
+  "source": "outputs/analysis_full/per_sample_val_fold0-4.csv (P0 重跑, seed_tgtA/B s1-s3, fold0+fold1)",
+  "method": "逐 (arm,fold,target) 组 3-seed 组内标准差合并；fixed05=固定阈值0.5；opt=每个seed自身阈值网格最优",
+  "fixed_0_5": {
+    "pooled_sigma_pts": 0.6,
+    "two_sigma_pts": 1.19,
+    "dof": 32,
+    "per_target_two_sigma": {
+      "V>=1": 1.19,
+      "V>=2": 0.85,
+      "V>=3": 1.27,
+      "V>=4": 1.39
+    }
+  },
+  "optimal_threshold": {
+    "pooled_sigma_pts": 0.3,
+    "two_sigma_pts": 0.6,
+    "dof": 32,
+    "per_target_two_sigma": {
+      "V>=1": 0.74,
+      "V>=2": 0.49,
+      "V>=3": 0.5,
+      "V>=4": 0.65
+    }
+  },
+  "fixed05_sigma_ci": [
+    0.48,
+    0.79
+  ],
+  "fixed05_two_sigma_ci": [
+    0.97,
+    1.59
+  ]
+}

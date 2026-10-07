@@ -1,0 +1,10 @@
+# 训练靶 D：纯软概率监督。Dice 与 BCE 都拟合 p=V/4，不使用任何硬掩膜。
+# 用于检验"完全不做标签融合"能走多远。
+loss:
+  target: soft
+  use_dice: true
+  use_bce: true
+  use_sitl: false
+  use_csl: false
+  use_brbc: false
+  use_lovasz: false

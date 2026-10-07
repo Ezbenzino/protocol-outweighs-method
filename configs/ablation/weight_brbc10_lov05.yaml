@@ -1,0 +1,5 @@
+# Weight sweep: BRBC=1.0, Lovasz=0.5 (raise both from default 0.5/0.3)
+loss:
+  weights:
+    brbc: 1.0
+    lovasz: 0.5

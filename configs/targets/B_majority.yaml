@@ -1,0 +1,11 @@
+# 训练靶 B：多数投票 V>=2 硬掩膜。Dice 与 BCE 都用它，不含任何软概率监督。
+# 这是拆解混淆变量的关键臂：A 与 C 之间同时差了"掩膜大小定义"和"软/硬监督"，
+# 有了 B 才能归因。若 B 约等于 C，说明软概率监督贡献为零。
+loss:
+  target: majority
+  use_dice: true
+  use_bce: true
+  use_sitl: false
+  use_csl: false
+  use_brbc: false
+  use_lovasz: false

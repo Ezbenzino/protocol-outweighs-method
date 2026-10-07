@@ -1,0 +1,18 @@
+# 核心运行时依赖（发布版；训练/复现所需）
+# 环境：Python 3.10 + CUDA 12.8（Windows 11 / Linux 均可）
+torch==2.10.0
+torchvision==0.25.0
+numpy==2.2.5
+pandas==2.3.3
+scipy==1.15.3
+matplotlib==3.10.9
+seaborn==0.13.2
+scikit-learn==1.7.2
+scikit-image==0.25.2
+python-docx==1.2.0      # 论文 docx 编辑/回灌脚本用
+pymupdf==1.28.2        # 渲染 PDF 残留值扫描用
+PyYAML==6.0.3
+Pillow==11.1.0
+tqdm==4.68.3
+SimpleITK==2.5.5       # 数据预处理（DICOM/掩码）
+einops==0.8.2

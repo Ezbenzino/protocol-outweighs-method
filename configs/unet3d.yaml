@@ -1,0 +1,52 @@
+# 3D U-Net baseline configuration
+# Lightweight 3D U-Net (base_channels=32) on 128x128x16 patches
+# Uses only Dice + BCE losses (3D-safe)
+project:
+  name: lung_nodule_seg_3d
+  seed: 42
+
+data:
+  raw_dir: data/raw/LIDC-IDRI
+  npz_dir: data/processed/npz
+  split_dir: data/splits
+  patch_size: 128
+  depth: 16
+  num_workers: 0
+  max_samples_3d: 3000
+  preload_3d: true
+  window:
+    hu_min: -1000
+    hu_max: 400
+
+model:
+  type: unet3d
+  in_channels: 1
+  num_classes: 1
+  base_channels: 32
+
+loss:
+  target: consensus
+  use_dice: true
+  use_bce: true
+  use_sitl: false
+  use_csl: false
+  use_brbc: false
+  use_lovasz: false
+
+train:
+  batch_size: 16
+  epochs: 30
+  lr: 0.001
+  weight_decay: 0.0001
+  use_amp: true
+  amp_dtype: bf16
+  early_stop_patience: 12
+  early_stop_metric: dice_majority
+
+eval:
+  thresholds: 0.5
+
+outputs:
+  root: outputs
+  checkpoint_dir: outputs/checkpoints
+  log_dir: outputs/logs

@@ -1,0 +1,10 @@
+# 训练靶 C：多数投票硬掩膜（Dice）+ 软共识概率 p=V/4（BCE）。
+# 这是原 main 实验的干净版本 —— 去掉了 SITL/CSL/BRBC/Lovasz 四项辅助损失。
+loss:
+  target: consensus
+  use_dice: true
+  use_bce: true
+  use_sitl: false
+  use_csl: false
+  use_brbc: false
+  use_lovasz: false

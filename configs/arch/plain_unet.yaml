@@ -1,0 +1,21 @@
+# 架构对照 3：标准 U-Net，无预训练。
+# 注意：它没有 encoder/decoder 分组，build_optimizer 会退回单一 cfg.train.lr。
+# 已知坑：num_workers=2 + lr=0.001 会在 epoch 3-4 静默崩溃，故固定 num_workers=0。
+# lr 取值由 stage0 预筛决定（1e-3 vs 1e-4 各跑 fold0 一次，取优者）。
+model:
+  type: plain_unet
+  in_channels: 3
+  num_classes: 1
+  base_channels: 64
+data:
+  num_workers: 0
+train:
+  lr: 0.0001
+loss:
+  target: majority
+  use_dice: true
+  use_bce: true
+  use_sitl: false
+  use_csl: false
+  use_brbc: false
+  use_lovasz: false

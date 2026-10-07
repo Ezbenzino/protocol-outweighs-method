@@ -1,0 +1,22 @@
+# Standard plain U-Net baseline (no pretrained encoder, no auxiliary losses)
+# Isolates the effect of pretrained backbones and auxiliary regularization.
+model:
+  type: plain_unet
+  in_channels: 3
+  num_classes: 1
+  base_channels: 64
+data:
+  num_workers: 0
+train:
+  lr: 0.0001
+  encoder_lr: 0.0001
+  decoder_lr: 0.0001
+  val_every: 2
+loss:
+  target: consensus
+  use_dice: true
+  use_bce: true
+  use_sitl: false
+  use_csl: false
+  use_brbc: false
+  use_lovasz: false

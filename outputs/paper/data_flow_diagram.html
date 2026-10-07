@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>肺结节分割实验 - 数据流走向详解</title>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif; background: #f5f7fa; color: #2c3e50; line-height: 1.7; }
+  .container { max-width: 1200px; margin: 0 auto; padding: 30px 20px; }
+  h1 { text-align: center; font-size: 28px; margin-bottom: 8px; color: #1a365d; }
+  .subtitle { text-align: center; color: #718096; margin-bottom: 40px; font-size: 15px; }
+  .stage { background: #fff; border-radius: 12px; padding: 28px; margin-bottom: 24px; box-shadow: 0 2px 12px rgba(0,0,0,0.06); border-left: 5px solid #3182ce; }
+  .stage h2 { font-size: 20px; color: #2b6cb0; margin-bottom: 16px; display: flex; align-items: center; gap: 10px; }
+  .stage h2 .num { background: #3182ce; color: #fff; width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 15px; flex-shrink: 0; }
+  .def-card { background: #ebf8ff; border-radius: 8px; padding: 16px 20px; margin: 12px 0; border: 1px solid #bee3f8; }
+  .def-card .term { font-weight: 700; color: #2c5282; font-size: 15px; margin-bottom: 4px; }
+  .def-card .desc { color: #4a5568; font-size: 14px; }
+  .def-card .formula { background: #fff; padding: 8px 12px; border-radius: 4px; font-family: 'Consolas', monospace; font-size: 13px; color: #c53030; margin-top: 6px; display: inline-block; }
+  .data-shape { background: #f0fff4; border: 1px solid #9ae6b4; border-radius: 6px; padding: 6px 12px; font-family: 'Consolas', monospace; font-size: 13px; color: #276749; display: inline-block; margin: 4px 4px 4px 0; }
+  .mermaid { background: #fff; border-radius: 8px; padding: 20px; text-align: center; margin: 16px 0; }
+  .arrow-note { color: #e53e3e; font-size: 13px; font-weight: 600; }
+  table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 14px; }
+  th { background: #2b6cb0; color: #fff; padding: 10px 12px; text-align: left; }
+  td { padding: 8px 12px; border-bottom: 1px solid #e2e8f0; }
+  tr:hover { background: #f7fafc; }
+  .highlight { background: #fffbeb; border-left: 4px solid #f59e0b; padding: 12px 16px; margin: 12px 0; border-radius: 0 6px 6px 0; }
+  .highlight strong { color: #b7791f; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>肺结节分割实验 · 数据流走向详解</h1>
+<p class="subtitle">Consensus-Probability Supervision for Pulmonary Nodule Segmentation<br>从原始CT到分割结果的完整数据路径，每个概念均给出严格定义</p>
+
+<!-- 总览图 -->
+<div class="stage">
+<h2><span class="num">0</span>数据流总览</h2>
+<div class="mermaid">
+flowchart TD
+    A["原始CT扫描<br/>DICOM格式<br/>1018例患者"] --> B["XML标注解析<br/>4位放射科医生轮廓"]
+    B --> C["预处理流水线<br/>窗化/切片/共识投票"]
+    C --> D["结节重定义<br/>多数投票+直径≥3mm"]
+    D --> E["Patch Bank预裁剪<br/>128×128结节图块"]
+    E --> F["数据划分<br/>训练/验证/测试+5折CV"]
+    F --> G["数据加载与增强<br/>随机翻转/旋转/亮度"]
+    G --> H["ResNet-34编码器<br/>ImageNet预训练"]
+    H --> I["U-Net解码器<br/>跳跃连接"]
+    I --> J["双分支输出头<br/>区域头 + 边界头"]
+    J --> K["六项损失函数组合<br/>Dice+BCE+SITL+CSL+BRBC+Lovasz"]
+    K --> L["反向传播优化<br/>AdamW + 余弦退火"]
+    L --> M["模型评估<br/>Dice/IoU/HD95/ASSD"]
+    M --> N["测试集最终结果<br/>Dice=0.860"]
+
+    style A fill:#fed7d7,stroke:#c53030
+    style C fill:#feebc8,stroke:#dd6b20
+    style H fill:#c6f6d5,stroke:#2f855a
+    style K fill:#bee3f8,stroke:#2b6cb0
+    style N fill:#e9d8fd,stroke:#6b46c1
+</div>
+</div>
+
+<!-- 阶段1 -->
+<div class="stage">
+<h2><span class="num">1</span>原始数据输入层</h2>
+
+<div class="def-card">
+  <div class="term">CT (Computed Tomography) — 计算机断层扫描</div>
+  <div class="desc">通过X射线环绕人体旋转扫描，经计算机重建得到的人体内部横断面图像。每个像素的值以HU（Hounsfield Unit，亨氏单位）表示，反映组织对X射线的衰减程度。</div>
+  <div class="formula">HU = 1000 × (μ_material - μ_water) / μ_water</div>
+</div>
+
+<div class="def-card">
+  <div class="term">HU值范围与肺窗</div>
+  <div class="desc">空气≈-1000 HU，脂肪≈-100 HU，水=0 HU，软组织≈+40 HU，骨≈+1000 HU。肺组织因含气，HU值约-800至-600。本实验使用肺窗：</div>
+  <div class="formula">窗宽 WW = 1400 HU（-1000 至 +400），窗位 WL = -300 HU</div>
+</div>
+
+<div class="def-card">
+  <div class="term">LIDC-IDRI数据集</div>
+  <div class="desc">Lung Image Database Consortium and Image Database Resource Initiative。包含1018例胸部CT扫描，每例最多由4位放射科医生独立标注结节。是肺结节研究领域最权威的公开数据集。</div>
+</div>
+
+<div class="highlight">
+  <strong>数据形状：</strong>每例CT为3D体数据，维度约为 <span class="data-shape">[切片数, 512, 512]</span>，每个像素为int16类型的HU值。
+</div>
+</div>
+
+<!-- 阶段2 -->
+<div class="stage">
+<h2><span class="num">2</span>标注解析与共识构建层</h2>
+
+<div class="def-card">
+  <div class="term">XML标注文件</div>
+  <div class="desc">每位放射科医生的标注以XML格式存储，包含结节的轮廓坐标（roi坐标点）、结节特征（恶性程度、钙化、毛刺等）。4位医生的标注分别独立存储。</div>
+</div>
+
+<div class="def-card">
+  <div class="term">V(x) — 投票计数函数</div>
+  <div class="desc">对图像中每个像素x，统计有多少位放射科医生将其标记为结节。取值范围为{0, 1, 2, 3, 4}。</div>
+  <div class="formula">V(x) = Σᵢ₌₁⁴ 𝟙[rater_i marks x as nodule]</div>
+</div>
+
+<div class="def-card">
+  <div class="term">p(x) — 共识概率（Consensus Probability）</div>
+  <div class="desc">本实验的核心创新概念。不将4位医生的标注融合为0/1硬标签，而是保留为连续概率值，表示"该像素属于结节的医生投票比例"。</div>
+  <div class="formula">p(x) = V(x) / 4 ∈ {0, 0.25, 0.5, 0.75, 1.0}</div>
+</div>
+
+<div class="def-card">
+  <div class="term">d(x) — 标注分歧度（Disagreement）</div>
+  <div class="desc">衡量医生之间在像素x处的意见不一致程度。当所有医生意见一致时（p=0或p=1），分歧度为0；当2:2平分时（p=0.5），分歧度最大为1。</div>
+  <div class="formula">d(x) = 4 × p(x) × (1 - p(x)) ∈ [0, 1]</div>
+</div>
+
+<div class="def-card">
+  <div class="term">多数投票掩膜（Majority-Vote Mask）</div>
+  <div class="desc">将共识概率二值化得到的硬标签。当至少2位医生（≥半数）标记某像素为结节时，该像素为前景。</div>
+  <div class="formula">M_maj(x) = 𝟙[p(x) ≥ 0.5] = 𝟙[V(x) ≥ 2]</div>
+</div>
+
+<div class="def-card">
+  <div class="term">并集掩膜（Union Mask）</div>
+  <div class="desc">只要有任何一位医生标记为结节，该像素即为前景。这是传统方法常用的训练目标，但会显著高估结节边界。</div>
+  <div class="formula">M_union(x) = 𝟙[V(x) ≥ 1]</div>
+</div>
+
+<div class="highlight">
+  <strong>关键对比：</strong>本实验证明，使用共识概率p(x)作为训练目标比使用并集掩膜M_union(x)的Dice系数高出<strong>4.0个百分点</strong>（0.879 vs 0.838）。这是全文最核心的实验发现。
+</div>
+</div>
+
+<!-- 阶段3 -->
+<div class="stage">
+<h2><span class="num">3</span>结节重定义与Patch裁剪层</h2>
+
+<div class="def-card">
+  <div class="term">连通域（Connected Component）</div>
+  <div class="desc">在二值掩膜中，由相邻（4邻域或8邻域）的前景像素组成的独立区域。每个连通域对应一个候选结节。</div>
+</div>
+
+<div class="def-card">
+  <div class="term">等效直径（Equivalent Diameter）</div>
+  <div class="desc">将不规则形状的连通域面积换算成等面积圆的直径，用于统一衡量结节大小。</div>
+  <div class="formula">D_eq = 2 × √(Area / π)，Area为连通域像素数×像素间距²</div>
+</div>
+
+<div class="def-card">
+  <div class="term">结节定义标准（本实验的关键数据决策）</div>
+  <div class="desc">仅保留同时满足以下两个条件的连通域作为"有效结节"：<br>
+  ① 在多数投票掩膜M_maj中形成连通域（≥2位医生同意）<br>
+  ② 等效直径 ≥ 3 mm<br>
+  过滤掉：&lt;3mm的检测级标注（LIDC-IDRI中&lt;3mm仅记录不要求轮廓）和单医生噪声标注。</div>
+</div>
+
+<div class="def-card">
+  <div class="term">Patch Bank — 预裁剪结节图块库</div>
+  <div class="desc">以每个有效结节的质心为中心，从CT切片中裁剪出固定大小的正方形区域，预先存储为独立文件。训练时直接加载patch，无需从全图动态裁剪，I/O速度提升约30倍。</div>
+</div>
+
+<div class="highlight">
+  <strong>数据形状变化：</strong><br>
+  原始CT切片 <span class="data-shape">[512, 512] int16(HU)</span><br>
+  → 肺窗归一化后 <span class="data-shape">[512, 512] float32[0,1]</span><br>
+  → 共识概率图 <span class="data-shape">[512, 512] float32{0,0.25,0.5,0.75,1.0}</span><br>
+  → 裁剪为Patch <span class="data-shape">[128, 128] float32</span>（单通道CT）<br>
+  → 输入网络时复制为3通道 <span class="data-shape">[3, 128, 128]</span>（适配ImageNet预训练权重）
+</div>
+</div>
+
+<!-- 阶段4 -->
+<div class="stage">
+<h2><span class="num">4</span>数据划分与增强层</h2>
+
+<div class="def-card">
+  <div class="term">病例级划分（Patient-Level Split）</div>
+  <div class="desc">按患者（而非按切片或patch）划分训练/验证/测试集，确保同一患者的所有切片只出现在一个子集中。这是医学影像实验的基本要求，防止数据泄露。</div>
+</div>
+
+<table>
+<tr><th>子集</th><th>患者数</th><th>结节patch数</th><th>用途</th></tr>
+<tr><td>训练集 (train)</td><td>~70%</td><td>~8,800</td><td>模型参数学习</td></tr>
+<tr><td>验证集 (val)</td><td>~15%</td><td>~2,200</td><td>超参数选择、早停、消融实验</td></tr>
+<tr><td>测试集 (test)</td><td>~15%</td><td>~2,209</td><td>最终性能报告（仅使用一次）</td></tr>
+</table>
+
+<div class="def-card">
+  <div class="term">5折交叉验证（5-Fold Cross-Validation）</div>
+  <div class="desc">将训练+验证池划分为5份，轮流用4份训练、1份验证，重复5次。报告5次结果的均值和标准差，用于评估模型的稳定性。本实验结果：0.8675 ± 0.0097。</div>
+</div>
+
+<div class="def-card">
+  <div class="term">数据增强（Data Augmentation）</div>
+  <div class="desc">训练时对输入patch施加随机变换， artificially 扩大训练集分布，防止过拟合。本实验使用：随机水平翻转、随机旋转（±15°）、随机亮度/对比度扰动。</div>
+</div>
+</div>
+
+<!-- 阶段5 -->
+<div class="stage">
+<h2><span class="num">5</span>网络前向传播层</h2>
+
+<div class="mermaid">
+flowchart LR
+    A["输入patch<br/>[3,128,128]"] --> B["ResNet-34编码器<br/>stem+layer1-4"]
+    B --> C["最深特征<br/>[512,4,4]"]
+    C --> D["U-Net解码器<br/>上采样+跳跃连接"]
+    D --> E["融合特征<br/>[64,128,128]"]
+    E --> F["区域头<br/>1×1 Conv"]
+    E --> G["边界头<br/>1×1 Conv"]
+    F --> H["区域logits<br/>[1,128,128]"]
+    G --> I["边界logits<br/>[1,128,128]"]
+    H --> J["Sigmoid<br/>区域概率图"]
+    I --> K["Sigmoid<br/>边界概率图"]
+
+    style B fill:#c6f6d5,stroke:#2f855a
+    style D fill:#fefcbf,stroke:#b7791f
+    style F fill:#bee3f8,stroke:#2b6cb0
+    style G fill:#fed7d7,stroke:#c53030
+</div>
+
+<div class="def-card">
+  <div class="term">ResNet-34编码器</div>
+  <div class="desc">残差网络（Residual Network），34层深度。通过跳跃连接（skip connection）解决深层网络的梯度消失问题。在ImageNet（120万张自然图像）上预训练，迁移到医学影像任务。4个阶段的输出通道数为[64, 64, 128, 256]，空间分辨率逐步降为[1/2, 1/4, 1/8, 1/16]。</div>
+</div>
+
+<div class="def-card">
+  <div class="term">U-Net解码器</div>
+  <div class="desc">对称的上采样路径，通过双线性插值将特征图逐步恢复到原始分辨率。每个上采样步骤与编码器对应层的特征进行拼接（concatenation），即"跳跃连接"，保留浅层的空间细节信息。</div>
+</div>
+
+<div class="def-card">
+  <div class="term">双分支输出头（Dual Head）</div>
+  <div class="desc">解码器输出的共享特征同时送入两个独立的1×1卷积层：<br>
+  ① <strong>区域头（Region Head）</strong>：输出每个像素属于结节区域的概率，是主分割输出。<br>
+  ② <strong>边界头（Boundary Head）</strong>：输出每个像素属于结节边界的概率，用于BRBC损失约束区域预测的边缘锐利度。</div>
+</div>
+
+<div class="def-card">
+  <div class="term">Logits与Sigmoid</div>
+  <div class="desc">网络原始输出为logits（未归一化的实数，范围(-∞,+∞)）。通过Sigmoid函数映射到(0,1)区间，得到可解释为概率的输出。</div>
+  <div class="formula">σ(z) = 1 / (1 + e^(-z))</div>
+</div>
+</div>
+
+<!-- 阶段6 -->
+<div class="stage">
+<h2><span class="num">6</span>损失函数计算层（核心创新区）</h2>
+
+<div class="mermaid">
+flowchart TD
+    A["区域概率图 + 边界概率图"] --> B["Dice损失<br/>vs 多数投票掩膜"]
+    A --> C["BCE损失<br/>vs 共识概率p(x)"]
+    A --> D["SITL损失<br/>实例级Dice"]
+    A --> E["CSL损失<br/>共识加权+分歧惩罚"]
+    A --> F["BRBC损失<br/>区域↔边界一致性"]
+    A --> G["Lovász损失<br/>IoU代理优化"]
+    B --> H["加权求和<br/>总损失L"]
+    C --> H
+    D --> H
+    E --> H
+    F --> H
+    G --> H
+    H --> I["反向传播<br/>更新网络参数"]
+
+    style C fill:#feb2b2,stroke:#c53030
+    style E fill:#feb2b2,stroke:#c53030
+    style H fill:#bee3f8,stroke:#2b6cb0
+</div>
+
+<div class="def-card">
+  <div class="term">Dice损失（Dice Loss）</div>
+  <div class="desc">基于Dice相似系数（衡量两个集合重叠程度）的损失函数。对类别不平衡（前景像素远少于背景）具有天然鲁棒性。本实验中与多数投票硬掩膜M_maj计算。</div>
+  <div class="formula">Dice = 2|A∩B| / (|A|+|B|)，L_dice = 1 - Dice</div>
+</div>
+
+<div class="def-card">
+  <div class="term">BCE损失（Binary Cross-Entropy）— 创新使用方式</div>
+  <div class="desc">传统BCE与0/1硬标签计算。本实验的关键创新：<strong>BCE与连续共识概率p(x)计算</strong>，使网络直接回归医生投票分布，而非被强制拟合一个二值化后的硬标签。这保留了标注分歧中的边界信息。</div>
+  <div class="formula">L_bce = -[p(x)·log(ŷ) + (1-p(x))·log(1-ŷ)]，ŷ为网络预测概率</div>
+</div>
+
+<div class="def-card">
+  <div class="term">SITL — 尺度不变实例监督损失（Scale-Invariant Target Loss）</div>
+  <div class="desc">对每个独立的结节连通域（实例）分别计算Dice，然后对所有实例取等权平均。传统Dice在整图上计算，大结节会主导梯度，微小结节被忽略。SITL确保每个结节无论大小都贡献相等的梯度。</div>
+  <div class="formula">L_sitl = (1/N) Σᵢ₌₁ᴺ (1 - Dice_instance_i)，N为batch中实例总数</div>
+</div>
+
+<div class="def-card">
+  <div class="term">CSL — 共识软标签损失（Consensus Soft Label Loss）</div>
+  <div class="desc">两个子项的组合：<br>
+  ① <strong>共识加权BCE</strong>：医生意见一致的区域（分歧度d低）赋予高权重，分歧区域赋予低权重。权重 w_c = 1 - β·d(x)，β=0.75。<br>
+  ② <strong>分歧低置信惩罚</strong>：在医生分歧区域，强制网络预测概率接近0.5（低置信度），而非强行做出0/1判断。</div>
+  <div class="formula">L_csl = mean[w_c·BCE(ŷ, p)] + mean[d(x)·(ŷ-0.5)²]</div>
+</div>
+
+<div class="def-card">
+  <div class="term">BRBC — 区域-边界双向一致性损失（Boundary-Region Bidirectional Consistency）</div>
+  <div class="desc">利用区域预测和边界预测的内在几何关系进行互约束：<br>
+  ① <strong>r2b（region→boundary）</strong>：区域概率图的梯度幅值（边缘强度）应与边界头的预测一致。<br>
+  ② <strong>b2r（boundary→region）</strong>：边界像素处区域预测应有锐利过渡，非边界处应平滑。<br>
+  ③ 低权重BCE锚定边界头，防止其坍缩。</div>
+</div>
+
+<div class="def-card">
+  <div class="term">Lovász-Softmax损失</div>
+  <div class="desc">IoU（交并比）的凸代理（surrogate）损失函数，直接优化与评估指标一致的目标。与Dice互补，提升小目标的分割质量。</div>
+</div>
+
+<div class="highlight">
+  <strong>总损失公式：</strong><br>
+  <div class="formula" style="font-size:14px;">L = 1.0·L_dice + 1.0·L_bce + 1.0·L_sitl + 1.0·L_csl + 0.5·L_brbc + 0.3·L_lovasz</div>
+</div>
+</div>
+
+<!-- 阶段7 -->
+<div class="stage">
+<h2><span class="num">7</span>优化与训练循环层</h2>
+
+<div class="def-card">
+  <div class="term">AdamW优化器</div>
+  <div class="desc">Adam优化器的变体，将权重衰减（weight decay）从梯度更新中解耦，实现更规范的L2正则化。本实验使用编码器学习率1e-4，解码器学习率1e-3（解码器从头训练需更大学习率）。</div>
+</div>
+
+<div class="def-card">
+  <div class="term">余弦退火学习率调度（Cosine Annealing）</div>
+  <div class="desc">学习率按余弦函数从初始值平滑衰减到最小值，有助于模型在训练后期精细收敛。前3个epoch为warmup（线性升温），防止初始大学习率破坏预训练权重。</div>
+</div>
+
+<div class="def-card">
+  <div class="term">早停（Early Stopping）</div>
+  <div class="desc">监控验证集上的Dice指标，若连续12个epoch没有提升，则停止训练，取验证集性能最好的模型。防止过拟合。本实验主模型在第40个epoch早停（最大60 epoch）。</div>
+</div>
+
+<div class="def-card">
+  <div class="term">混合精度训练（AMP, Automatic Mixed Precision）</div>
+  <div class="desc">使用bf16（Brain Floating Point 16位）格式存储部分张量，减少显存占用和计算量，同时保持与fp32相近的数值稳定性。梯度裁剪（grad_clip_norm=5.0）防止Lovász/BRBC损失的梯度尖峰导致训练不稳定。</div>
+</div>
+</div>
+
+<!-- 阶段8 -->
+<div class="stage">
+<h2><span class="num">8</span>评估与输出层</h2>
+
+<div class="def-card">
+  <div class="term">Dice系数（Dice Similarity Coefficient, DSC）</div>
+  <div class="desc">医学影像分割最常用的评估指标，衡量预测掩膜与真实掩膜的重叠程度。取值范围[0,1]，1为完美重合。</div>
+  <div class="formula">Dice = 2·TP / (2·TP + FP + FN)，TP=真阳性，FP=假阳性，FN=假阴性</div>
+</div>
+
+<div class="def-card">
+  <div class="term">IoU（Intersection over Union，交并比）</div>
+  <div class="desc">预测与真实的交集面积除以并集面积。与Dice单调相关但对小误差更敏感。</div>
+  <div class="formula">IoU = TP / (TP + FP + FN) = Dice / (2 - Dice)</div>
+</div>
+
+<div class="def-card">
+  <div class="term">HD95（95% Hausdorff Distance，95%豪斯多夫距离）</div>
+  <div class="desc">衡量两个点集之间的最大不匹配距离。取95百分位数以排除离群点的极端影响。单位为mm，越小表示边界越精准。</div>
+</div>
+
+<div class="def-card">
+  <div class="term">ASSD（Average Symmetric Surface Distance，平均对称表面距离）</div>
+  <div class="desc">预测边界与真实边界上所有对应点对距离的平均值。比HD95更全面地反映整体边界精度。单位为mm。</div>
+</div>
+
+<div class="def-card">
+  <div class="term">结节大小分层评估</div>
+  <div class="desc">按等效直径将结节分为4层，分别报告Dice：<br>
+  ① 微小结节（micro）：3–5 mm — 临床最关注，最难分割<br>
+  ② 小结节（small）：5–10 mm<br>
+  ③ 中等结节（medium）：10–30 mm<br>
+  ④ 大结节（large）：&gt;30 mm</div>
+</div>
+
+<table>
+<tr><th>指标</th><th>测试集数值</th><th>说明</th></tr>
+<tr><td>Dice（多数投票）</td><td><strong>0.860</strong></td><td>主指标，与多数投票GT比较</td></tr>
+<tr><td>Dice（并集）</td><td>0.818</td><td>与并集GT比较，偏低因并集边界更宽</td></tr>
+<tr><td>IoU（多数投票）</td><td>0.712</td><td>交并比</td></tr>
+<tr><td>HD95 (mm)</td><td>5.71</td><td>95%豪斯多夫距离</td></tr>
+<tr><td>ASSD (mm)</td><td>1.94</td><td>平均对称表面距离</td></tr>
+<tr><td>Dice, micro (3-5mm)</td><td><strong>0.805</strong></td><td>微小结节，从传统方法的~0.32大幅提升</td></tr>
+<tr><td>Dice, small (5-10mm)</td><td>0.820</td><td>小结节</td></tr>
+<tr><td>Dice, medium (10-30mm)</td><td>0.848</td><td>中等结节</td></tr>
+</table>
+</div>
+
+<!-- 消融实验数据流 -->
+<div class="stage">
+<h2><span class="num">9</span>消融实验的数据对照</h2>
+
+<p style="margin-bottom:16px; color:#4a5568;">消融实验通过逐一移除损失组件或改变训练目标，量化每个组件的贡献。所有实验在相同验证集上评估，指标为Dice（多数投票）。</p>
+
+<table>
+<tr><th>实验配置</th><th>验证Dice</th><th>相对基线</th><th>数据解读</th></tr>
+<tr><td>Dice + BCE（基线）</td><td>0.8784</td><td>—</td><td>仅两项基础损失</td></tr>
+<tr><td>+ SITL</td><td>0.8812</td><td>+0.28</td><td>实例级监督有正向贡献</td></tr>
+<tr><td>+ CSL</td><td>0.8793</td><td>+0.09</td><td>共识软标签贡献微弱</td></tr>
+<tr><td>+ BRBC</td><td>0.8834</td><td>+0.50</td><td>边界一致性贡献最大</td></tr>
+<tr><td>+ Lovász</td><td>0.8818</td><td>+0.34</td><td>IoU代理有正向贡献</td></tr>
+<tr><td><strong>完整模型（CPS）</strong></td><td><strong>0.8789</strong></td><td>+0.05</td><td>全部组件组合，未超单组件最佳</td></tr>
+<tr><td>完整模型，改用并集目标</td><td>0.8383</td><td><strong>−4.01</strong></td><td>训练目标改变，性能暴跌</td></tr>
+<tr><td>ResNet-18 U-Net基线</td><td>0.8780</td><td>−0.04</td><td>更浅骨干，几乎无差距</td></tr>
+</table>
+
+<div class="highlight">
+  <strong>关键数据洞察：</strong><br>
+  ① 消融实验中，单个辅助损失（如BRBC +0.50）的提升大于全部组合（+0.05），说明损失之间存在负交互效应。<br>
+  ② 唯一具有决定性影响的变量是<strong>训练目标（共识 vs 并集）</strong>，差距达4.01个点。<br>
+  ③ ResNet-34与ResNet-18差距仅0.04，说明骨干网络深度不是性能瓶颈。
+</div>
+</div>
+
+<div style="text-align:center; padding:30px; color:#a0aec0; font-size:13px;">
+  本文档由实验代码与配置自动生成 · 数据来源：LIDC-IDRI · 模型：ResNet-34 U-Net + CPS
+</div>
+
+</div>
+
+<script>
+mermaid.initialize({ startOnLoad: true, theme: 'default', flowchart: { curve: 'basis', useMaxWidth: true } });
+</script>
+</body>
+</html>

@@ -1,0 +1,127 @@
+{
+  "LIDC": {
+    "fixed0.5": {
+      "protocol": 25.581754291036475,
+      "supervision": 5.9796202342667915,
+      "ratio": 4.278157021484033
+    },
+    "opt_thr": {
+      "protocol": 17.26643343216352,
+      "supervision": 2.6459730452726427,
+      "ratio": 6.525551521778399
+    }
+  },
+  "QUBIQ-brain-growth": {
+    "fixed0.5": {
+      "protocol": 23.068503563271626,
+      "supervision": 10.641704413625941,
+      "ratio": 2.1677451906796112
+    },
+    "opt_thr": {
+      "protocol": 14.216991493437037,
+      "supervision": 9.698275866111128,
+      "ratio": 1.4659297889345202
+    },
+    "n_raters": 7,
+    "modality": "MRI"
+  },
+  "QUBIQ-kidney": {
+    "fixed0.5": {
+      "protocol": 3.7621961037317853,
+      "supervision": 2.595308522383366,
+      "ratio": 1.4496142062820432
+    },
+    "opt_thr": {
+      "protocol": 0.6138712167739868,
+      "supervision": 0.7900961240132731,
+      "ratio": 0.7769576360605892
+    },
+    "n_raters": 3,
+    "modality": "CT"
+  },
+  "QUBIQ-brain-tumor-task1": {
+    "fixed0.5": {
+      "protocol": 2.605806022882451,
+      "supervision": 1.6112677554289467,
+      "ratio": 1.6172396016134147
+    },
+    "opt_thr": {
+      "protocol": 2.2136508921782205,
+      "supervision": 1.7694921443859646,
+      "ratio": 1.2510091662183584
+    },
+    "n_raters": 3,
+    "modality": "MRI"
+  },
+  "QUBIQ-brain-tumor-task2": {
+    "fixed0.5": {
+      "protocol": 44.57578234087365,
+      "supervision": 23.520873087147876,
+      "ratio": 1.8951584907462666
+    },
+    "opt_thr": {
+      "protocol": 30.34698633477092,
+      "supervision": 17.830173840125408,
+      "ratio": 1.7020017082770897
+    },
+    "n_raters": 3,
+    "modality": "MRI"
+  },
+  "QUBIQ-brain-tumor-task3": {
+    "fixed0.5": {
+      "protocol": 6.271288036058348,
+      "supervision": 5.729958074167368,
+      "ratio": 1.0944736339924515
+    },
+    "opt_thr": {
+      "protocol": 2.9776511068145437,
+      "supervision": 2.9820449442292283,
+      "ratio": 0.9985265690166114
+    },
+    "n_raters": 3,
+    "modality": "MRI"
+  },
+  "QUBIQ-prostate-task1": {
+    "fixed0.5": {
+      "protocol": 2.4716492050460337,
+      "supervision": 0.672942336116511,
+      "ratio": 3.6728989578954065
+    },
+    "opt_thr": {
+      "protocol": 2.3950798330562573,
+      "supervision": 0.5232298906360455,
+      "ratio": 4.57749046054071
+    },
+    "n_raters": 6,
+    "modality": "MRI"
+  },
+  "QUBIQ-prostate-task2": {
+    "fixed0.5": {
+      "protocol": 15.119027772120075,
+      "supervision": 2.217826800686984,
+      "ratio": 6.817046203714769
+    },
+    "opt_thr": {
+      "protocol": 14.222405925393101,
+      "supervision": 2.9597995749541695,
+      "ratio": 4.805192231846754
+    },
+    "n_raters": 6,
+    "modality": "MRI"
+  },
+  "agreement_index": {
+    "LIDC": 0.333,
+    "QUBIQ-brain-growth": 0.4891,
+    "QUBIQ-kidney": 0.8677,
+    "QUBIQ-brain-tumor-task1": 0.7767,
+    "QUBIQ-brain-tumor-task2": 0.1746,
+    "QUBIQ-brain-tumor-task3": 0.6364,
+    "QUBIQ-prostate-task1": 0.9596,
+    "QUBIQ-prostate-task2": 0.7658
+  },
+  "_meta": {
+    "version": "v20, 8-point (LIDC + 7 QUBIQ tasks)",
+    "date": "2026-09-05",
+    "note": "Replaces the 3-point version. QUBIQ keys match qubiq_all_effects.json. agreement_index = area_mean_ratio from disagreement_index.json (case-level GT areas)."
+  }
+}

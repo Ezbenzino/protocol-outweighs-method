@@ -1,0 +1,21 @@
+# 架构对照 4：ConvNeXt-Tiny + ImageNet 预训练。
+#
+# 【为什么加这一臂】
+# 审稿人对"协议效应 16.42 点 > 架构效应 1.43 点"最直接的攻击是：
+# 被比较的三个架构（PlainUNet / ResNet-18 / ResNet-34）都是容量相近的同族 CNN
+# U-Net，极差小是必然的，不能支撑"架构不重要"。论点的强度取决于架构轴的
+# 【张成】，不是协议轴的大小。本臂把架构轴扩到现代 CNN 设计（大核深度可分离
+# 卷积 + LayerNorm + 倒瓶颈），与 ResNet 的设计年代相隔七年。
+#
+# 解码器与其余一切保持不变，所以这一臂改变的确实只有编码器族。
+model:
+  backbone: convnext_tiny
+  pretrained: true
+loss:
+  target: majority
+  use_dice: true
+  use_bce: true
+  use_sitl: false
+  use_csl: false
+  use_brbc: false
+  use_lovasz: false

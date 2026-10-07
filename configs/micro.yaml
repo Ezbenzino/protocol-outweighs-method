@@ -1,0 +1,9 @@
+# Micro-nodule (<5mm) focused config: tighter crops + stronger instance supervision.
+# Usage: python scripts/train.py --config configs/micro.yaml --base configs/default.yaml
+data:
+  patch_size: 64             # tighter crop -> less background dilution for tiny nodules
+train:
+  early_stop_metric: dice_micro   # select best model by micro-nodule Dice
+loss:
+  weights:
+    sitl: 1.5                # emphasize per-instance (scale-invariant) supervision

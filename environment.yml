@@ -1,0 +1,13 @@
+# conda 环境定义（发布版）—— 与 requirements.txt 等价
+# 创建：conda env create -f environment.yml
+name: lung_nodule_seg
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - cudatoolkit=12.8
+  - pip:
+      - -r requirements.txt

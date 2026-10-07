@@ -1,0 +1,250 @@
+{
+  "definition": "TOST paired two one-sided t-tests; case-level aggregation (case-internal mean over instances, then across cases); alpha=0.05",
+  "contrast": "tgtC (Consensus, V>=2+soft) minus tgtB (Majority, V>=2 hard)",
+  "noise_floor": "1.19 points = 2-sigma pooled, fixed-0.5 (noise_floor.json)",
+  "bounds_points": [
+    1.0,
+    1.19,
+    1.5
+  ],
+  "results": {
+    "1": {
+      "target": "V>=1 union",
+      "calibrated_thresholds": {
+        "C": 0.005,
+        "B": 0.002
+      },
+      "policies": {
+        "fixed0.5": {
+          "n": 634,
+          "mean_diff_points": 0.32035119355223496,
+          "tost_by_bound": {
+            "±1.0": {
+              "n": 634,
+              "mean_points": 0.32035119355223496,
+              "se_points": 0.12160582117097517,
+              "ci95_points": [
+                0.12003425429804207,
+                0.5206681328064279
+              ],
+              "t_upper": -5.58894960704384,
+              "t_lower": 10.857631491964925,
+              "p_upper": 1.6987344680453763e-08,
+              "p_lower": 0.0,
+              "p_max": 1.6987344680453763e-08,
+              "equivalent": true,
+              "ci_within_bound": true
+            },
+            "±1.19": {
+              "n": 634,
+              "mean_points": 0.32035119355223496,
+              "se_points": 0.12160582117097517,
+              "ci95_points": [
+                0.12003425429804207,
+                0.5206681328064279
+              ],
+              "t_upper": -7.151374811449672,
+              "t_lower": 12.420056696370757,
+              "p_upper": 1.190101981718689e-12,
+              "p_lower": 0.0,
+              "p_max": 1.190101981718689e-12,
+              "equivalent": true,
+              "ci_within_bound": true
+            },
+            "±1.5": {
+              "n": 634,
+              "mean_points": 0.32035119355223496,
+              "se_points": 0.12160582117097517,
+              "ci95_points": [
+                0.12003425429804207,
+                0.5206681328064279
+              ],
+              "t_upper": -9.70059488179603,
+              "t_lower": 14.969276766717115,
+              "p_upper": 3.8813860980494986e-21,
+              "p_lower": 0.0,
+              "p_max": 3.8813860980494986e-21,
+              "equivalent": true,
+              "ci_within_bound": true
+            }
+          },
+          "paired_ttest_p": 0.008636263382203585
+        },
+        "calibrated": {
+          "n": 634,
+          "mean_diff_points": 0.056825818875717124,
+          "tost_by_bound": {
+            "±1.0": {
+              "n": 634,
+              "mean_points": 0.056825818875717124,
+              "se_points": 0.14143860933192365,
+              "ci95_points": [
+                -0.17616096613933171,
+                0.28981260389076596
+              ],
+              "t_upper": -6.668435058710678,
+              "t_lower": 7.471975466017146,
+              "p_upper": 2.8195599207834392e-11,
+              "p_lower": 1.3178347302300608e-13,
+              "p_max": 2.8195599207834392e-11,
+              "equivalent": true,
+              "ci_within_bound": true
+            },
+            "±1.19": {
+              "n": 634,
+              "mean_points": 0.056825818875717124,
+              "se_points": 0.14143860933192365,
+              "ci95_points": [
+                -0.17616096613933171,
+                0.28981260389076596
+              ],
+              "t_upper": -8.011774058559821,
+              "t_lower": 8.815314465866289,
+              "p_upper": 2.7252603988444075e-15,
+              "p_lower": 0.0,
+              "p_max": 2.7252603988444075e-15,
+              "equivalent": true,
+              "ci_within_bound": true
+            },
+            "±1.5": {
+              "n": 634,
+              "mean_points": 0.056825818875717124,
+              "se_points": 0.14143860933192365,
+              "ci95_points": [
+                -0.17616096613933171,
+                0.28981260389076596
+              ],
+              "t_upper": -10.203537689892634,
+              "t_lower": 11.007078097199102,
+              "p_upper": 4.907753616747859e-23,
+              "p_lower": 0.0,
+              "p_max": 4.907753616747859e-23,
+              "equivalent": true,
+              "ci_within_bound": true
+            }
+          },
+          "paired_ttest_p": 0.6879887631646355
+        }
+      }
+    },
+    "2": {
+      "target": "V>=2 majority",
+      "calibrated_thresholds": {
+        "C": 0.65,
+        "B": 0.55
+      },
+      "policies": {
+        "fixed0.5": {
+          "n": 634,
+          "mean_diff_points": 0.10893928677155128,
+          "tost_by_bound": {
+            "±1.0": {
+              "n": 634,
+              "mean_points": 0.10893928677155128,
+              "se_points": 0.11571239881428698,
+              "ci95_points": [
+                -0.08166962767876171,
+                0.29954820122186426
+              ],
+              "t_upper": -7.7006502532071766,
+              "t_lower": 9.583582210160099,
+              "p_upper": 2.6167025562926042e-14,
+              "p_lower": 0.0,
+              "p_max": 2.6167025562926042e-14,
+              "equivalent": true,
+              "ci_within_bound": true
+            },
+            "±1.19": {
+              "n": 634,
+              "mean_points": 0.10893928677155128,
+              "se_points": 0.11571239881428698,
+              "ci95_points": [
+                -0.08166962767876171,
+                0.29954820122186426
+              ],
+              "t_upper": -9.342652337227067,
+              "t_lower": 11.22558429417999,
+              "p_upper": 7.89958645911677e-20,
+              "p_lower": 0.0,
+              "p_max": 7.89958645911677e-20,
+              "equivalent": true,
+              "ci_within_bound": true
+            },
+            "±1.5": {
+              "n": 634,
+              "mean_points": 0.10893928677155128,
+              "se_points": 0.11571239881428698,
+              "ci95_points": [
+                -0.08166962767876171,
+                0.29954820122186426
+              ],
+              "t_upper": -12.021708369048994,
+              "t_lower": 13.904640326001918,
+              "p_upper": 1.9782594939538527e-30,
+              "p_lower": 0.0,
+              "p_max": 1.9782594939538527e-30,
+              "equivalent": true,
+              "ci_within_bound": true
+            }
+          },
+          "paired_ttest_p": 0.3468252615991193
+        },
+        "calibrated": {
+          "n": 634,
+          "mean_diff_points": 0.11606976481120977,
+          "tost_by_bound": {
+            "±1.0": {
+              "n": 634,
+              "mean_points": 0.11606976481120977,
+              "se_points": 0.11598825034530229,
+              "ci95_points": [
+                -0.07499355004403022,
+                0.30713307966644976
+              ],
+              "t_upper": -7.620860152276544,
+              "t_lower": 9.62226571647231,
+              "p_upper": 4.6205250901744897e-14,
+              "p_lower": 0.0,
+              "p_max": 4.6205250901744897e-14,
+              "equivalent": true,
+              "ci_within_bound": true
+            },
+            "±1.19": {
+              "n": 634,
+              "mean_points": 0.11606976481120977,
+              "se_points": 0.11598825034530229,
+              "ci95_points": [
+                -0.07499355004403022,
+                0.30713307966644976
+              ],
+              "t_upper": -9.258957109807683,
+              "t_lower": 11.260362674003451,
+              "p_upper": 1.578993400782878e-19,
+              "p_lower": 0.0,
+              "p_max": 1.578993400782878e-19,
+              "equivalent": true,
+              "ci_within_bound": true
+            },
+            "±1.5": {
+              "n": 634,
+              "mean_points": 0.11606976481120977,
+              "se_points": 0.11598825034530229,
+              "ci95_points": [
+                -0.07499355004403022,
+                0.30713307966644976
+              ],
+              "t_upper": -11.931641619463756,
+              "t_lower": 13.933047183659523,
+              "p_upper": 4.795438455770732e-30,
+              "p_lower": 0.0,
+              "p_max": 4.795438455770732e-30,
+              "equivalent": true,
+              "ci_within_bound": true
+            }
+          },
+          "paired_ttest_p": 0.3173528995774731
+        }
+      }
+    }
+  }
+}

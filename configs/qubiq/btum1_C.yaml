@@ -1,0 +1,18 @@
+# QUBIQ-brain-tumor 任务 1 训练靶 C：多数硬掩膜 + 软共识 p=V/N（与 LIDC 同构，n_raters=3）。
+# 外部数据集验证扩展（2026-09-04）：把 §4.14 的一致性-协议关系从 3 点扩到 10 点。
+loss:
+  target: consensus
+  use_dice: true
+  use_bce: true
+  use_sitl: false
+  use_csl: false
+  use_brbc: false
+  use_lovasz: false
+train:
+  batch_size: 4
+
+data:
+  patch_dir: ""
+  n_raters: 3
+  npz_dir: data/qubiq/btum1/npz
+  split_dir: data/qubiq/btum1/splits

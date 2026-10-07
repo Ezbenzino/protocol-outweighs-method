@@ -1,0 +1,68 @@
+# ---- Python ----
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
+
+# ---- 训练产物 / 大文件（走 Zenodo，不进 git）----
+outputs/runs/
+outputs/checkpoints/
+outputs/predictions/
+outputs/logs/
+outputs/_backup*/
+
+# ---- 逐病例 / 评测大数据 CSV（~数百 MB，发布走 Zenodo）----
+**/per_sample*.csv
+**/scope_test*.csv
+**/qdice*.csv
+**/*.npz
+
+# ---- 论文二进制 / 中间版本（只留 md 镜像）----
+outputs/paper/*.docx
+outputs/paper/*.pdf
+outputs/paper/*.pptx
+outputs/paper/v12_plain.txt
+*.docx
+*.pptx
+
+# ---- 数据（原始 + 派生；README 说明获取方式，Zenodo 归档）----
+data/raw/
+data/processed/
+data/nnunet/
+data/qubiq/
+data/splits/
+
+# ---- 内部文档（含交接记录 / 个人信息，发布前人工挑选）----
+docs/
+
+# ---- 付费文献 PDF（不给公开仓库）----
+refs/*.pdf
+refs/**/*.pdf
+
+# ---- 第三方仓库 ----
+external_repos/
+
+# ---- 个人工作目录（不发布）----
+.ppt_work/
+.ppt_work*/
+ppt_defense_20260920/
+.docx_review_v16/
+outputs/defense/
+outputs/*.zip
+outputs/paper/*_中文版.md
+outputs/paper/中文精读与答辩手册.md
+outputs/paper/待下载文献清单.md
+outputs/paper/paper_draft_*.md
+outputs/paper/paper_v9.md
+outputs/paper/paper_v10.md
+outputs/paper/v9_plain.txt
+.workbuddy/
+
+# ---- 临时文件 ----
+tmp_*.py
+*.log
+.DS_Store
+*_backup_*.py
+outputs/paper/_*
+outputs/figures/_*
+outputs/figures_v11/

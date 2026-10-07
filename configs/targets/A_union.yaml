@@ -1,0 +1,10 @@
+# 训练靶 A：并集 V>=1。Dice 与 BCE 都用并集硬掩膜。
+# 与 default.yaml 的差别只有 loss 一节 —— 遵守"同一变量原则"。
+loss:
+  target: union
+  use_dice: true
+  use_bce: true
+  use_sitl: false
+  use_csl: false
+  use_brbc: false
+  use_lovasz: false

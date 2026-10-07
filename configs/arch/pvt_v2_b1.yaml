@@ -1,0 +1,23 @@
+# 架构对照 5：PVT v2-b1（Transformer 编码器）+ ImageNet 预训练。
+#
+# 【为什么加这一臂】见 src/models/encoder.py 中 TimmEncoder 的说明。
+# 一句话：架构轴此前只有同族 CNN，极差 1.43 点不足以支撑"架构不重要"。
+#
+# 【为什么是 PVT v2】Swin-T / MaxViT 的输入分辨率写死 224/256，128x128 断言失败
+# （scripts/probe_timm.py 实测）；PVT v2 分辨率无关，且是 SegFormer 的编码器家族。
+#
+# 【容量可比】PVT v2-b1 约 14M 参数，夹在 ResNet-18(11M) 与 ResNet-34(21M) 之间。
+# 所以这一臂改变的是架构族，不是模型规模——否则就分不清是谁的功劳。
+#
+# 解码器、损失、优化器、batch、epoch 全部与其它架构臂相同。
+model:
+  backbone: pvt_v2_b1
+  pretrained: true
+loss:
+  target: majority
+  use_dice: true
+  use_bce: true
+  use_sitl: false
+  use_csl: false
+  use_brbc: false
+  use_lovasz: false

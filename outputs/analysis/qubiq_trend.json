@@ -1,0 +1,71 @@
+{
+  "n_points": 7,
+  "rows": [
+    {
+      "label": "QUBIQ-brain-growth",
+      "n": 7,
+      "disagreement": 0.4890833423593811,
+      "protocol": 14.216991493437037,
+      "supervision": 9.698275866111128,
+      "ratio": 1.4659297889345202
+    },
+    {
+      "label": "QUBIQ-kidney",
+      "n": 3,
+      "disagreement": 0.8677022918316768,
+      "protocol": 0.6138712167739868,
+      "supervision": 0.7900961240132731,
+      "ratio": 0.7769576360605892
+    },
+    {
+      "label": "QUBIQ-brain-tumor-task1",
+      "n": 3,
+      "disagreement": 0.7766924799654623,
+      "protocol": 2.2136508921782205,
+      "supervision": 1.7694921443859646,
+      "ratio": 1.2510091662183584
+    },
+    {
+      "label": "QUBIQ-brain-tumor-task2",
+      "n": 3,
+      "disagreement": 0.17457134418380513,
+      "protocol": 30.34698633477092,
+      "supervision": 17.830173840125408,
+      "ratio": 1.7020017082770897
+    },
+    {
+      "label": "QUBIQ-brain-tumor-task3",
+      "n": 3,
+      "disagreement": 0.6363714383796774,
+      "protocol": 2.9776511068145437,
+      "supervision": 2.9820449442292283,
+      "ratio": 0.9985265690166114
+    },
+    {
+      "label": "QUBIQ-prostate-task1",
+      "n": 6,
+      "disagreement": 0.959638763568282,
+      "protocol": 2.3950798330562573,
+      "supervision": 0.5232298906360455,
+      "ratio": 4.57749046054071
+    },
+    {
+      "label": "QUBIQ-prostate-task2",
+      "n": 6,
+      "disagreement": 0.7657751224178052,
+      "protocol": 14.222405925393101,
+      "supervision": 2.9597995749541695,
+      "ratio": 4.805192231846754
+    }
+  ],
+  "trend_protocol": {
+    "spearman_rho": -0.7857142857142859,
+    "perm_p": 0.04801587301587302,
+    "n_perm": 5040
+  },
+  "trend_ratio": {
+    "spearman_rho": -0.07142857142857144,
+    "perm_p": 0.9063492063492063,
+    "n_perm": 5040
+  }
+}

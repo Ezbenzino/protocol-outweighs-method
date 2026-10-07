@@ -1,0 +1,134 @@
+{
+  "report_version": "1.0",
+  "generated_by": "scripts/data_audit_report.py",
+  "checks": {
+    "case_level_splits": {
+      "evidence": "data_verified",
+      "cv_pool_cases": 808,
+      "test_cases": 202,
+      "per_fold": {
+        "0": {
+          "train": 646,
+          "val": 162,
+          "train_val_overlap": 0,
+          "pass": true
+        },
+        "1": {
+          "train": 646,
+          "val": 162,
+          "train_val_overlap": 0,
+          "pass": true
+        },
+        "2": {
+          "train": 646,
+          "val": 162,
+          "train_val_overlap": 0,
+          "pass": true
+        },
+        "3": {
+          "train": 647,
+          "val": 161,
+          "train_val_overlap": 0,
+          "pass": true
+        },
+        "4": {
+          "train": 647,
+          "val": 161,
+          "train_val_overlap": 0,
+          "pass": true
+        }
+      },
+      "cv_test_overlap_cases": 0,
+      "cv_test_overlap_examples": [],
+      "fold_val_mutual_exclusivity_violations": 0,
+      "pass": true
+    },
+    "no_case_across_sets": {
+      "evidence": "data_verified",
+      "n_val_cases_seen_in_per_sample": 634,
+      "n_test_cases_seen_in_per_sample": 158,
+      "case_ids_in_both_val_and_test_per_sample": 0,
+      "cross_examples": [],
+      "val_cases_outside_cv_pool": 0,
+      "test_cases_outside_test_split": 0,
+      "pass": true
+    },
+    "no_nodule_across_sets": {
+      "evidence": "data_verified + code_verified",
+      "definition": "结节实例由 (case_id, slice, cy, cx) 唯一标识，全部位于所属病例的 npz 内；病例集合不相交（check 1/2），故不存在跨集合的同一结节。",
+      "n_cv_pool_nodules": 8471,
+      "n_test_nodules": 2062,
+      "source": "outputs/analysis/dataset_stats.json (nodules)",
+      "pass": true
+    },
+    "test_not_in_threshold_selection": {
+      "evidence": "code_verified",
+      "mechanism": "eval_symmetric.py 在 per_sample CSV 里落盘全部阈值扫描（0.001~0.999, 33 个）；analyze_symmetric.py 对测试集以 --thr-from outputs/analysis_full/symmetric_analysis.json 复用验证折选定的阈值，不在测试集上重新选阈值（docstring: 用于测试集无偏估计）。",
+      "code_refs": [
+        "scripts/eval_symmetric.py",
+        "scripts/analyze_symmetric.py (--thr-from)"
+      ],
+      "analysis_test_command": "analyze_symmetric.py --out-dir outputs/analysis_test --thr-from outputs/analysis_full/symmetric_analysis.json",
+      "pass": true
+    },
+    "pretrained_weights_source": {
+      "evidence": "code_verified",
+      "sources": {
+        "resnet18/resnet34": "torchvision.models.*_Weights.IMAGENET1K_V1",
+        "convnext_tiny": "torchvision.models.ConvNeXt_Tiny_Weights.IMAGENET1K_V1",
+        "pvt_v2_*": "timm.create_model(..., pretrained=True)  (ImageNet-1K 预训练)"
+      },
+      "note": "ImageNet-1K 为外部公开权重，不包含 LIDC 或本测试集信息；输入为单 CT 通道复制 3 通道（configs/default.yaml model.in_channels=3）。",
+      "code_refs": [
+        "src/models/encoder.py",
+        "configs/default.yaml"
+      ],
+      "pass": true
+    },
+    "normalization_no_test_info": {
+      "evidence": "code_verified",
+      "normalization": "固定线性缩放 astype(float32)/255.0，输入为预处理阶段已固定的窗宽 HU[-1000,400]->[0,255] uint8；不计算任何数据集的均值/方差统计量，不依赖 test 集。QUBIQ MRI 子集用逐卷 min-max（per-volume，与标签/test 无关）。",
+      "code_refs": [
+        "src/data/dataset.py (astype(float32)/255.0)",
+        "preprocess/process_lidc.py (window)",
+        "preprocess/build_qubiq.py (--normalize minmax)"
+      ],
+      "pass": true
+    },
+    "external_data_independence": {
+      "evidence": "declared",
+      "lidc": "The Cancer Imaging Archive (TCIA) LIDC-IDRI，1018 例，4 位放射科医生标注。",
+      "qubiq": "grand-challenge.org QUBIQ 2021 挑战数据（需加入挑战并接受数据使用条款）；brain-growth 7 raters / kidney 3 raters / prostate 6 raters，MRI+CT，与 LIDC 机构与标注者完全独立。",
+      "note": "QUBIQ 用于外部泛化验证（评估靶/监督靶效应随标注者一致性的变化），不参与 LIDC 主实验训练。",
+      "code_refs": [
+        "preprocess/build_qubiq.py",
+        "configs/qubiq/*.yaml"
+      ],
+      "pass": true
+    }
+  },
+  "appendix": {
+    "reference_mask_definitions": {
+      "source": "src/data/dataset.py（全部掩膜由 vote 0..N 派生）",
+      "union_mask": "vote >= 1",
+      "hard_consensus_majority": "vote >= ceil(N/2)（LIDC N=4 -> >=2；QUBIQ 肾脏 N=3 -> >=2；脑生长 N=7 -> >=4）",
+      "soft_label": "consensus = V/N in [0,1]",
+      "tie_handling": "LIDC N=4 为偶数，多数阈值为 >=2，不存在票数平局歧义；奇数 N 用 ceil(N/2) 上取整",
+      "nodule_free_cases": "训练/评测以病例内结节样本为单位，背景切片由 bg sampler 采样；GT 面积为 0 的样本在分析阶段被排除（eval doc note 2）",
+      "empty_pred_empty_gt": "Dice 定义中 denom==0 时置 1.0，但仅在 GT 非空样本上统计",
+      "multi_nodule_cases": "case-level 聚合 = 病例内对结节实例指标平均，再跨病例平均（见 docs/分析单元审计_20260904.md）"
+    }
+  },
+  "summary": {
+    "all_checks_pass": true,
+    "check_keys": [
+      "case_level_splits",
+      "no_case_across_sets",
+      "no_nodule_across_sets",
+      "test_not_in_threshold_selection",
+      "pretrained_weights_source",
+      "normalization_no_test_info",
+      "external_data_independence"
+    ]
+  }
+}

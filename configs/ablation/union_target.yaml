@@ -1,0 +1,5 @@
+# Ablation: same full loss stack as main, but classic union-mask targets
+# (BCE/Dice/Lovasz all fit the all-raters union). Demonstrates the effect of
+# consensus-target training vs union-target training with everything else fixed.
+loss:
+  target: union

@@ -1,0 +1,38 @@
+# 对照实验：训练靶 B（多数投票 V>=2）+ 随机平移增强。
+#
+# 【它要回答什么】
+# diag_offset.py 测出：把结节从窗口正中平移 8 px（约 1.6 个病灶半径），
+# tgtB 的 Dice 掉 27.50 点，平移 56 px 掉 82.32 点。根因是训练 patch 库
+# 严格以结节为中心裁出，且 transforms.py 的四个增强全部保中心，
+# 训练集里 100% 的样本结节都在正中。
+#
+# 审稿人必然会问："这只是你们没做平移增强吧？"本配置就是那个对照：
+# 与 configs/targets/B_majority.yaml 【只差平移增强这一项】，其余全部相同。
+#
+# 两种结果都可发表：
+#   偏移曲线变平 -> 量化了一个普遍默认做法的代价，并给出解法；
+#   偏移曲线仍陡 -> 问题比"缺增强"更深，值得单独讨论。
+#
+# 【为什么要另建 192 库】
+# 在现有 128 库内平移必须补零，零边是训练时才有的伪影，模型会去学它，
+# 对照就不干净了。192 库留出 (192-128)/2 = 32 px 余量，平移全程不补零。
+# 建库命令见 docs 或本文件末尾注释。
+data:
+  patch_dir: data/processed/patches192   # 192px 库，留 32px 平移余量
+  random_shift_px: 32                    # 用满余量；超过部分会被 dataset 截断
+
+loss:
+  target: majority
+  use_dice: true
+  use_bce: true
+  use_sitl: false
+  use_csl: false
+  use_brbc: false
+  use_lovasz: false
+
+# 建库（一次性，约 30-60 分钟，输出约 750 MB）：
+#   python preprocess\build_patch_bank.py --bank_size 192 ^
+#          --out_dir data\processed\patches192 --workers 4
+# 训练：
+#   python scripts\train.py --config configs\aug\B_majority_shift.yaml ^
+#          --base configs\default.yaml --name tgtBshift_fold0 --split-tag fold0

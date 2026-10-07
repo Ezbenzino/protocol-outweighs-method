@@ -1,0 +1,155 @@
+{
+  "definition": "Σ|V>=N| / Σ|V>=1|，直接由逐标注者掩膜计算，与模型无关",
+  "reader": "built-in minimal NIfTI-1 reader",
+  "case_scope": "全部训练病例",
+  "tasks": {
+    "brain-growth/task01": {
+      "n_raters": 7,
+      "n_cases": 33,
+      "area_mean_ratio": 0.5011,
+      "per_case_mean": 0.4911,
+      "no_consensus_frac": 0.0,
+      "skipped": [
+        [
+          "case13",
+          "0 raters"
+        ]
+      ],
+      "anatomy": "Brain growth",
+      "modality": "MRI",
+      "subdataset": "brain-growth",
+      "task": "task01"
+    },
+    "brain-tumor/task01": {
+      "n_raters": 3,
+      "n_cases": 28,
+      "area_mean_ratio": 0.7816,
+      "per_case_mean": 0.7694,
+      "no_consensus_frac": 0.0,
+      "skipped": [],
+      "anatomy": "Brain tumour 1",
+      "modality": "MRI",
+      "subdataset": "brain-tumor",
+      "task": "task01"
+    },
+    "brain-tumor/task02": {
+      "n_raters": 3,
+      "n_cases": 28,
+      "area_mean_ratio": 0.1296,
+      "per_case_mean": 0.0993,
+      "no_consensus_frac": 0.2143,
+      "skipped": [],
+      "anatomy": "Brain tumour 2",
+      "modality": "MRI",
+      "subdataset": "brain-tumor",
+      "task": "task02"
+    },
+    "brain-tumor/task03": {
+      "n_raters": 3,
+      "n_cases": 24,
+      "area_mean_ratio": 0.6598,
+      "per_case_mean": 0.6236,
+      "no_consensus_frac": 0.0417,
+      "skipped": [
+        [
+          "case01",
+          "empty union"
+        ],
+        [
+          "case06",
+          "empty union"
+        ],
+        [
+          "case07",
+          "empty union"
+        ],
+        [
+          "case11",
+          "empty union"
+        ]
+      ],
+      "anatomy": "Brain tumour 3",
+      "modality": "MRI",
+      "subdataset": "brain-tumor",
+      "task": "task03"
+    },
+    "kidney/task01": {
+      "n_raters": 3,
+      "n_cases": 20,
+      "area_mean_ratio": 0.862,
+      "per_case_mean": 0.8602,
+      "no_consensus_frac": 0.0,
+      "skipped": [],
+      "anatomy": "Kidney",
+      "modality": "CT",
+      "subdataset": "kidney",
+      "task": "task01"
+    },
+    "pancreas/task01": {
+      "n_raters": 2,
+      "n_cases": 40,
+      "area_mean_ratio": 0.7243,
+      "per_case_mean": 0.7105,
+      "no_consensus_frac": 0.0,
+      "skipped": [],
+      "anatomy": "Pancreas",
+      "modality": "CT",
+      "subdataset": "pancreas",
+      "task": "task01"
+    },
+    "pancreatic-lesion/task01": {
+      "n_raters": 2,
+      "n_cases": 22,
+      "area_mean_ratio": 0.5556,
+      "per_case_mean": 0.5379,
+      "no_consensus_frac": 0.0,
+      "skipped": [],
+      "anatomy": "Pancreatic lesion",
+      "modality": "CT",
+      "subdataset": "pancreatic-lesion",
+      "task": "task01"
+    },
+    "prostate/task01": {
+      "n_raters": 6,
+      "n_cases": 47,
+      "area_mean_ratio": 0.7874,
+      "per_case_mean": 0.785,
+      "no_consensus_frac": 0.0,
+      "skipped": [
+        [
+          "case09",
+          "5 raters"
+        ]
+      ],
+      "anatomy": "Prostate 1",
+      "modality": "MRI",
+      "subdataset": "prostate",
+      "task": "task01"
+    },
+    "prostate/task02": {
+      "n_raters": 6,
+      "n_cases": 45,
+      "area_mean_ratio": 0.7073,
+      "per_case_mean": 0.6691,
+      "no_consensus_frac": 0.0222,
+      "skipped": [
+        [
+          "case09",
+          "5 raters"
+        ],
+        [
+          "case16",
+          "5 raters"
+        ],
+        [
+          "case31",
+          "5 raters"
+        ]
+      ],
+      "anatomy": "Prostate 2",
+      "modality": "MRI",
+      "subdataset": "prostate",
+      "task": "task02"
+    }
+  }
+}

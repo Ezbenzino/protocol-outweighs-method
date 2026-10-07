@@ -1,0 +1,118 @@
+{
+  "date": "2026-10-03",
+  "version": "v22 case-level, independent rebuild",
+  "sources": {
+    "cv": "outputs/analysis_full/symmetric_analysis.json",
+    "test": "outputs/analysis_test/symmetric_analysis_applied.json",
+    "scope": "outputs/analysis_scope/scope_analysis_merged2.json"
+  },
+  "method": "all rebuilt values computed independently from table1/table4/scope; paper values are v22 manuscript numbers",
+  "passed": 13,
+  "total": 13,
+  "checks": [
+    {
+      "check": "CV: supervision range A-E @V4 calibrated",
+      "rebuilt": 2.646,
+      "paper": 2.65,
+      "tol": 0.05,
+      "ok": true,
+      "note": "five controlled supervision targets, max-min dice_opt at V>=4"
+    },
+    {
+      "check": "CV: architecture range 5 models @V2 calibrated",
+      "rebuilt": 0.959,
+      "paper": 0.96,
+      "tol": 0.05,
+      "ok": true,
+      "note": "tgtB/R18/CNX/PVT/PU1e3, max-min dice_opt at V>=2"
+    },
+    {
+      "check": "CV: evaluation-target effect fixed0.5 V1-V4 (arm A)",
+      "rebuilt": 25.582,
+      "paper": 25.58,
+      "tol": 0.05,
+      "ok": true,
+      "note": "table4 fixed05 gap, V>=1 minus V>=4"
+    },
+    {
+      "check": "CV: threshold effect tgtA @V4 (0.5 vs optimal)",
+      "rebuilt": 9.416,
+      "paper": 9.42,
+      "tol": 0.05,
+      "ok": true,
+      "note": "dice_opt minus dice_05 at V>=4"
+    },
+    {
+      "check": "TEST: supervision range A-E @V4 calibrated",
+      "rebuilt": 3.124,
+      "paper": 3.12,
+      "tol": 0.05,
+      "ok": true,
+      "note": "held-out test set, five supervision targets"
+    },
+    {
+      "check": "TEST: architecture range 5 models @V2 calibrated",
+      "rebuilt": 1.189,
+      "paper": 1.19,
+      "tol": 0.05,
+      "ok": true,
+      "note": "held-out test set, tgtB/R18/CNX/PVT/PU1e3"
+    },
+    {
+      "check": "TEST: evaluation-target effect fixed0.5 V1-V4 (arm A)",
+      "rebuilt": 28.576,
+      "paper": 28.58,
+      "tol": 0.05,
+      "ok": true,
+      "note": "held-out test set"
+    },
+    {
+      "check": "TEST: threshold effect tgtA @V4 (0.5 vs optimal)",
+      "rebuilt": 9.988,
+      "paper": 9.99,
+      "tol": 0.05,
+      "ok": true,
+      "note": "held-out test set; Fig.3 uses this value (test-set figure)"
+    },
+    {
+      "check": "TEST: FOV win128->win512, both confounds removed (merged arm)",
+      "rebuilt": 22.29,
+      "paper": 22.29,
+      "tol": 0.05,
+      "ok": true,
+      "note": "scope table4_paired, tgtBshift_bg @V>=2, thr 0.65"
+    },
+    {
+      "check": "TEST: FOV win128->win512, translation-augmented arm",
+      "rebuilt": 43.544,
+      "paper": 43.54,
+      "tol": 0.05,
+      "ok": true,
+      "note": "scope table4_paired, tgtBshift @V>=2, thr 0.55"
+    },
+    {
+      "check": "TEST: offset d0->d8, median of ten arms (fold0)",
+      "rebuilt": 26.399,
+      "paper": 26.4,
+      "tol": 0.05,
+      "ok": true,
+      "note": "diag_offset_allarms.json, each arm at its calibrated threshold"
+    },
+    {
+      "check": "HEADLINE: FOV / supervision-target ratio (test)",
+      "rebuilt": 7.135,
+      "paper": 7.1,
+      "tol": 0.06,
+      "ok": true,
+      "note": "= 22.29 / 3.12; paper reports 7.1x"
+    },
+    {
+      "check": "HEADLINE: FOV / architecture ratio (test)",
+      "rebuilt": 18.743,
+      "paper": 18.7,
+      "tol": 0.06,
+      "ok": true,
+      "note": "= 22.29 / 1.19; paper reports 18.7x"
+    }
+  ]
+}

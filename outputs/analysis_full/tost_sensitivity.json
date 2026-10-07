@@ -1,0 +1,74 @@
+{
+  "bounds": [
+    1.0,
+    1.19,
+    1.5
+  ],
+  "note": "±1.19 为论文采用的噪声底（fixed-0.5 pooled 2σ）",
+  "contrasts": {
+    "C-B @G1 (validation)": {
+      "n": 634,
+      "mean_pts": 0.057,
+      "delta_1.0": {
+        "p_TOST": 2.82e-11,
+        "equivalent": true
+      },
+      "delta_1.19": {
+        "p_TOST": 2.73e-15,
+        "equivalent": true
+      },
+      "delta_1.5": {
+        "p_TOST": 4.91e-23,
+        "equivalent": true
+      }
+    },
+    "C-B @G2 (validation)": {
+      "n": 634,
+      "mean_pts": 0.116,
+      "delta_1.0": {
+        "p_TOST": 4.62e-14,
+        "equivalent": true
+      },
+      "delta_1.19": {
+        "p_TOST": 1.58e-19,
+        "equivalent": true
+      },
+      "delta_1.5": {
+        "p_TOST": 4.8e-30,
+        "equivalent": true
+      }
+    },
+    "C-B @G1 (test)": {
+      "n": 158,
+      "mean_pts": -0.032,
+      "delta_1.0": {
+        "p_TOST": 1.61e-13,
+        "equivalent": true
+      },
+      "delta_1.19": {
+        "p_TOST": 5.59e-19,
+        "equivalent": true
+      },
+      "delta_1.5": {
+        "p_TOST": 6.39e-26,
+        "equivalent": true
+      }
+    },
+    "C-B @G2 (test)": {
+      "n": 158,
+      "mean_pts": 0.102,
+      "delta_1.0": {
+        "p_TOST": 2.12e-21,
+        "equivalent": true
+      },
+      "delta_1.19": {
+        "p_TOST": 9.88e-28,
+        "equivalent": true
+      },
+      "delta_1.5": {
+        "p_TOST": 7.43e-38,
+        "equivalent": true
+      }
+    }
+  }
+}

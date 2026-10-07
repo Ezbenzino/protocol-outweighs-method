@@ -1,0 +1,25 @@
+# P1-3 去混淆臂：训练靶 B（多数投票 V>=2）+ 背景采样。
+# 与 configs/targets/B_majority.yaml 【只差 data.background_ratio 一项】，其余完全相同。
+#
+# 【要回答什么】
+# 4.11 的全切片/全体积评测显示：把评测空间从 nodule-centred patch 扩到全切片后
+# Dice 大幅下降（44.87 点），但该下降混合了"评测空间"与"训练分布"两个因素——
+# 现有模型只见过以结节为中心的 patch，从未见过无结节切片。
+# 本臂在训练中以 50% 概率采样无结节切片（目标全零），让模型学到"没结节就是 0"，
+# 从而在同样评测空间下给出"干净"的全切片/全体积 Dice 点估计。
+#
+# 预期叙事：
+#   bg 臂的全切片 Dice 明显高于 tgtB 臂（位置先验被解除）-> 把"下界"变成"点估计"；
+#   若提升有限 -> "位置先验"比"训练分布"更根本，同样是可发表的结论。
+#
+# 注意：背景样本从 npz 全切片读取（bank 之外），单 epoch 会略慢；num_workers 维持默认。
+loss:
+  target: majority
+  use_dice: true
+  use_bce: true
+  use_sitl: false
+  use_csl: false
+  use_brbc: false
+  use_lovasz: false
+data:
+  background_ratio: 0.5

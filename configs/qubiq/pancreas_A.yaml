@@ -1,0 +1,18 @@
+﻿# QUBIQ-pancreas 训练靶 A：并集 V>=1（与 LIDC A_union 同构，n_raters=2）。
+loss:
+  target: union
+  use_dice: true
+  use_bce: true
+  use_sitl: false
+  use_csl: false
+  use_brbc: false
+  use_lovasz: false
+train:
+  batch_size: 4
+
+data:
+  patch_dir: ""
+  n_raters: 2
+  npz_dir: data/qubiq/pancreas/npz
+  split_dir: data/qubiq/pancreas/splits
+

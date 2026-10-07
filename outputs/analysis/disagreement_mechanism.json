@@ -1,0 +1,13 @@
+{
+  "instance_definition": "vote>=2 connected component, area>=20px, per slice",
+  "n_cases_with_nodules": 792,
+  "n_instances": 10507,
+  "maxV_distribution": {
+    "maxV=2": 2254,
+    "maxV=3": 2753,
+    "maxV=4_with_common_pixel": 5500,
+    "maxV=4_without_common_pixel": 0
+  },
+  "marked_by_two_or_three_pct": 47.653944989054914,
+  "marked_by_all_four_no_common_pct": 0.0
+}

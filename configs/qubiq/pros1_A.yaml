@@ -1,0 +1,18 @@
+# QUBIQ-prostate 任务 1 训练靶 A：并集 V>=1（与 LIDC 同构，n_raters=6）。
+# 外部数据集验证扩展（2026-09-04）：把 §4.14 的一致性-协议关系从 3 点扩到 10 点。
+loss:
+  target: union
+  use_dice: true
+  use_bce: true
+  use_sitl: false
+  use_csl: false
+  use_brbc: false
+  use_lovasz: false
+train:
+  batch_size: 4
+
+data:
+  patch_dir: ""
+  n_raters: 6
+  npz_dir: data/qubiq/pros1/npz
+  split_dir: data/qubiq/pros1/splits

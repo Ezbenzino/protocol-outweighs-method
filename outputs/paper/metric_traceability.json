@@ -1,0 +1,294 @@
+{
+ "date": "2026-09-01",
+ "source": "docx v9 + 各分析 json",
+ "rows": [
+  {
+   "id": "E1",
+   "paper_loc": "§4.1/Abstract",
+   "paper_value": 16.42,
+   "source_file": "symmetric_analysis.json",
+   "source_path": "table1[tgtA][1..4].dice_05",
+   "how": "协议效应 = 同一臂 4 评测靶 fixed-0.5 Dice 极差",
+   "repro": "python -c \"from scripts.cross_validate_rebuild import ...\""
+  },
+  {
+   "id": "E2",
+   "paper_loc": "§4.1",
+   "paper_value": 11.4,
+   "source_file": "symmetric_analysis.json",
+   "source_path": "table1[tgtB][1..4].dice_05",
+   "how": "同上 (arm B)",
+   "repro": ""
+  },
+  {
+   "id": "E3",
+   "paper_loc": "§4.1",
+   "paper_value": 12.07,
+   "source_file": "symmetric_analysis.json",
+   "source_path": "table1[bg_maj][1..4].dice_05",
+   "how": "同上 (背景采样臂)",
+   "repro": ""
+  },
+  {
+   "id": "M1",
+   "paper_loc": "§4.3/Table4",
+   "paper_value": 2.99,
+   "source_file": "symmetric_analysis.json",
+   "source_path": "table1[tgtA-E][4].dice_opt",
+   "how": "训练靶极差 = 5 监督靶(A-E) 校准阈值 @V>=4 的 Dice 极差",
+   "repro": ""
+  },
+  {
+   "id": "M2",
+   "paper_loc": "§4.6/Table4",
+   "paper_value": 1.22,
+   "source_file": "symmetric_analysis.json",
+   "source_path": "table1[archR18/archPU1e3/archCNX/archPVT/tgtB][2].dice_opt",
+   "how": "架构极差 = 5 模型(2族+8倍参数) 校准阈值 @V>=2 的 Dice 极差",
+   "repro": ""
+  },
+  {
+   "id": "M3",
+   "paper_loc": "§4.6",
+   "paper_value": 0.27,
+   "source_file": "symmetric_analysis.json",
+   "source_path": "table1[archR18/archCNX/archPVT/tgtB][2].dice_opt",
+   "how": "四预训练编码器极差 @V>=2",
+   "repro": ""
+  },
+  {
+   "id": "TH1",
+   "paper_loc": "§4.2",
+   "paper_value": 0.1,
+   "source_file": "symmetric_analysis.json",
+   "source_path": "table1[tgtA][1].thr",
+   "how": "tgtA 臂 V>= 1 的验证集校准阈值（0.5 固定比较的标定对照）",
+   "repro": ""
+  },
+  {
+   "id": "TH2",
+   "paper_loc": "§4.2",
+   "paper_value": 0.99,
+   "source_file": "symmetric_analysis.json",
+   "source_path": "table1[tgtA][2].thr",
+   "how": "tgtA 臂 V>= 2 的验证集校准阈值（0.5 固定比较的标定对照）",
+   "repro": ""
+  },
+  {
+   "id": "TH3",
+   "paper_loc": "§4.2",
+   "paper_value": 0.998,
+   "source_file": "symmetric_analysis.json",
+   "source_path": "table1[tgtA][3].thr",
+   "how": "tgtA 臂 V>= 3 的验证集校准阈值（0.5 固定比较的标定对照）",
+   "repro": ""
+  },
+  {
+   "id": "TH4",
+   "paper_loc": "§4.2",
+   "paper_value": 0.999,
+   "source_file": "symmetric_analysis.json",
+   "source_path": "table1[tgtA][4].thr",
+   "how": "tgtA 臂 V>= 4 的验证集校准阈值（0.5 固定比较的标定对照）",
+   "repro": ""
+  },
+  {
+   "id": "N1",
+   "paper_loc": "§4.8",
+   "paper_value": "σ=0.57, 2σ=1.15, CI [0.92, 1.51]",
+   "source_file": "noise_floor.json",
+   "source_path": "fixed_0_5.pooled_sigma_pts / two_sigma_pts",
+   "how": "逐 (arm,fold,target) 3-seed 组内 SD 合并；fixed 0.5；32 dof",
+   "repro": "python scripts/noise_recompute.py && python scripts/save_noise_floor.py"
+  },
+  {
+   "id": "N1V>=1",
+   "paper_loc": "§4.8",
+   "paper_value": 1.29,
+   "source_file": "noise_floor.json",
+   "source_path": "fixed_0_5.per_target_two_sigma[V>=1]",
+   "how": "分靶 2σ",
+   "repro": ""
+  },
+  {
+   "id": "N1V>=2",
+   "paper_loc": "§4.8",
+   "paper_value": 0.7,
+   "source_file": "noise_floor.json",
+   "source_path": "fixed_0_5.per_target_two_sigma[V>=2]",
+   "how": "分靶 2σ",
+   "repro": ""
+  },
+  {
+   "id": "N1V>=3",
+   "paper_loc": "§4.8",
+   "paper_value": 1.18,
+   "source_file": "noise_floor.json",
+   "source_path": "fixed_0_5.per_target_two_sigma[V>=3]",
+   "how": "分靶 2σ",
+   "repro": ""
+  },
+  {
+   "id": "N1V>=4",
+   "paper_loc": "§4.8",
+   "paper_value": 1.31,
+   "source_file": "noise_floor.json",
+   "source_path": "fixed_0_5.per_target_two_sigma[V>=4]",
+   "how": "分靶 2σ",
+   "repro": ""
+  },
+  {
+   "id": "N2",
+   "paper_loc": "§4.8(对照)",
+   "paper_value": 0.7,
+   "source_file": "noise_floor.json",
+   "source_path": "optimal_threshold.two_sigma_pts",
+   "how": "每 seed 独立标定最优阈值口径（未采用，作对照）",
+   "repro": ""
+  },
+  {
+   "id": "DLIDC",
+   "paper_loc": "§5.5",
+   "paper_value": "0.178 (per-case 0.1521)",
+   "source_file": "disagreement_index.json",
+   "source_path": "LIDC.area_mean_ratio",
+   "how": "面积均值之比 Σ|V>=N|/Σ|V>=1|（同代码三数据集）",
+   "repro": "python scripts/compute_disagreement.py"
+  },
+  {
+   "id": "DQUBIQ-brain",
+   "paper_loc": "§5.5",
+   "paper_value": "0.499 (per-case 0.4979)",
+   "source_file": "disagreement_index.json",
+   "source_path": "QUBIQ-brain.area_mean_ratio",
+   "how": "面积均值之比 Σ|V>=N|/Σ|V>=1|（同代码三数据集）",
+   "repro": "python scripts/compute_disagreement.py"
+  },
+  {
+   "id": "DQUBIQ-kidney",
+   "paper_loc": "§5.5",
+   "paper_value": "0.868 (per-case 0.8661)",
+   "source_file": "disagreement_index.json",
+   "source_path": "QUBIQ-kidney.area_mean_ratio",
+   "how": "面积均值之比 Σ|V>=N|/Σ|V>=1|（同代码三数据集）",
+   "repro": "python scripts/compute_disagreement.py"
+  },
+  {
+   "id": "D4",
+   "paper_loc": "§5.5",
+   "paper_value": "64.6%",
+   "source_file": "disagreement_index.json",
+   "source_path": "LIDC.no_consensus_frac",
+   "how": "LIDC 792 病例中无四人一致区的比例",
+   "repro": ""
+  },
+  {
+   "id": "F1",
+   "paper_loc": "§4.13",
+   "paper_value": "win128->win512 22.51 pts (CI [-24.77,-20.41])",
+   "source_file": "scope_analysis_merged2.json",
+   "source_path": "table1_ladder[tgtBshift_bg_v2].win128 - .win512",
+   "how": "合并臂视野效应（G2, 校准阈值, 2 折, 病例级）",
+   "repro": "python scripts/analyze_scope.py ..."
+  },
+  {
+   "id": "F2",
+   "paper_loc": "§4.11/§4.13",
+   "paper_value": "win128->win512 43.84 pts",
+   "source_file": "scope_analysis_merged2.json",
+   "source_path": "table1_ladder[tgtBshift_v2].win128 - .win512",
+   "how": "平移臂视野效应（2 折；5 折主口径 44.87 见论文 §4.11）",
+   "repro": ""
+  },
+  {
+   "id": "X协议效应 tgtA (fixed 0.5, V1-V4)",
+   "paper_loc": "A0.5",
+   "paper_value": "16.42 (paper 16.42)",
+   "source_file": "cross_validation_report.json",
+   "source_path": "checks[]",
+   "how": "重算论文值并与论文核对",
+   "repro": "python scripts/cross_validate_rebuild.py"
+  },
+  {
+   "id": "X协议效应 tgtB (fixed 0.5, V1-V4)",
+   "paper_loc": "A0.5",
+   "paper_value": "11.4 (paper 11.4)",
+   "source_file": "cross_validation_report.json",
+   "source_path": "checks[]",
+   "how": "重算论文值并与论文核对",
+   "repro": "python scripts/cross_validate_rebuild.py"
+  },
+  {
+   "id": "X协议效应 bg_maj (fixed 0.5, V1-V4)",
+   "paper_loc": "A0.5",
+   "paper_value": "12.07 (paper 12.07)",
+   "source_file": "cross_validation_report.json",
+   "source_path": "checks[]",
+   "how": "重算论文值并与论文核对",
+   "repro": "python scripts/cross_validate_rebuild.py"
+  },
+  {
+   "id": "X训练靶 range @V4 (tgtA-D)",
+   "paper_loc": "A0.5",
+   "paper_value": "2.99 (paper 2.99)",
+   "source_file": "cross_validation_report.json",
+   "source_path": "checks[]",
+   "how": "重算论文值并与论文核对",
+   "repro": "python scripts/cross_validate_rebuild.py"
+  },
+  {
+   "id": "X架构 range @V2 (5 模型)",
+   "paper_loc": "A0.5",
+   "paper_value": "1.22 (paper 1.22)",
+   "source_file": "cross_validation_report.json",
+   "source_path": "checks[]",
+   "how": "重算论文值并与论文核对",
+   "repro": "python scripts/cross_validate_rebuild.py"
+  },
+  {
+   "id": "XtgtA 靶1 标定阈值",
+   "paper_loc": "A0.5",
+   "paper_value": "0.1 (paper 0.1)",
+   "source_file": "cross_validation_report.json",
+   "source_path": "checks[]",
+   "how": "重算论文值并与论文核对",
+   "repro": "python scripts/cross_validate_rebuild.py"
+  },
+  {
+   "id": "XtgtA 靶2 标定阈值",
+   "paper_loc": "A0.5",
+   "paper_value": "0.99 (paper 0.99)",
+   "source_file": "cross_validation_report.json",
+   "source_path": "checks[]",
+   "how": "重算论文值并与论文核对",
+   "repro": "python scripts/cross_validate_rebuild.py"
+  },
+  {
+   "id": "XtgtA 靶3 标定阈值",
+   "paper_loc": "A0.5",
+   "paper_value": "0.998 (paper 0.998)",
+   "source_file": "cross_validation_report.json",
+   "source_path": "checks[]",
+   "how": "重算论文值并与论文核对",
+   "repro": "python scripts/cross_validate_rebuild.py"
+  },
+  {
+   "id": "XtgtA 靶4 标定阈值",
+   "paper_loc": "A0.5",
+   "paper_value": "0.999 (paper 0.999)",
+   "source_file": "cross_validation_report.json",
+   "source_path": "checks[]",
+   "how": "重算论文值并与论文核对",
+   "repro": "python scripts/cross_validate_rebuild.py"
+  },
+  {
+   "id": "X预训练编码器 range @V2",
+   "paper_loc": "A0.5",
+   "paper_value": "0.27 (paper 0.27)",
+   "source_file": "cross_validation_report.json",
+   "source_path": "checks[]",
+   "how": "重算论文值并与论文核对",
+   "repro": "python scripts/cross_validate_rebuild.py"
+  }
+ ]
+}

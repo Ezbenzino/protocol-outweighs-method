@@ -1,0 +1,18 @@
+# 仅用于 stage0 的学习率预筛，不参与主表。
+model:
+  type: plain_unet
+  in_channels: 3
+  num_classes: 1
+  base_channels: 64
+data:
+  num_workers: 0
+train:
+  lr: 0.001
+loss:
+  target: majority
+  use_dice: true
+  use_bce: true
+  use_sitl: false
+  use_csl: false
+  use_brbc: false
+  use_lovasz: false

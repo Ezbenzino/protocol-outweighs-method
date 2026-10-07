@@ -1,0 +1,85 @@
+# ---------------------------------------------------------------------------
+# Lung nodule segmentation (2D slice level) - main configuration
+# All hyper-parameters live here; code never hard-codes them.
+# NOTE: use decimal literals (0.0001), not scientific notation (1e-4):
+# PyYAML 6.x parses "1e-4" as a string, not a number.
+# ---------------------------------------------------------------------------
+project:
+  name: lung_nodule_seg
+  seed: 42
+
+data:
+  raw_dir: data/raw/LIDC-IDRI
+  npz_dir: data/processed/npz
+  patch_dir: data/processed/patches   # pre-cropped 128px nodule bank (see preprocess/build_patch_bank.py)
+  split_dir: data/splits
+  # ROI center-crop patch size around a nodule centroid (px)
+  patch_size: 128          # bank is stored at 128 -> zero-crop fast path
+  num_workers: 2          # small worker count is safe on Windows and speeds up loading
+  window:
+    hu_min: -1000
+    hu_max: 400
+
+model:
+  backbone: resnet34       # resnet18 | resnet34 | convnext_tiny
+  in_channels: 3           # single CT channel replicated to 3 for ImageNet weights
+  pretrained: true
+  freeze_stages: []        # e.g. ["stem", "layer1"] to freeze early encoder stages
+  num_classes: 1           # binary segmentation -> 1 logit channel
+  final_activation: sigmoid  # sigmoid | relu_norm(SoftSeg 用)。活化在模型之外做，
+                             # 并随 checkpoint 记录，评测端据此还原概率。
+
+loss:
+  # "consensus": BCE fits rater-vote distribution, Dice/Lovasz fit majority mask
+  # (>= 2/4 raters). "union": classic all-raters-union training (ablation row).
+  target: consensus
+  use_dice: true
+  use_bce: true
+  use_sitl: true
+  use_csl: true
+  use_brbc: true
+  use_lovasz: true
+  weights:
+    dice: 1.0
+    bce: 1.0
+    sitl: 1.0
+    csl: 1.0
+    brbc: 0.5
+    lovasz: 0.3
+  csl:
+    beta: 0.75             # consensus weight: w_c = 1 - beta * disagreement
+  sitl:
+    min_instance_size: 1
+  brbc:
+    r2b_weight: 0.5
+    b2r_weight: 0.5
+    boundary_gt_weight: 0.1  # low-weight BCE anchor for the boundary branch
+
+train:
+  batch_size: 32           # RTX 5060 8GB fits 96x96 patches easily
+  grad_accum_steps: 1      # effective batch = 32
+  epochs: 60
+  lr: 0.0001               # reference lr (used by scheduler)
+  encoder_lr: 0.0001       # fine-tune pretrained encoder conservatively
+  decoder_lr: 0.001        # decoder/heads trained from scratch -> higher lr
+  weight_decay: 0.0001
+  grad_clip_norm: 5.0      # clip mixed-loss gradient spikes (Lovasz/BRBC); 0 = disabled
+  scheduler: cosine
+  warmup_epochs: 3
+  min_lr: 0.000001
+  use_amp: true
+  amp_dtype: bf16          # Blackwell (sm_120) native; fp16 also supported
+  early_stop_patience: 12
+  early_stop_metric: dice_majority  # primary (literature-comparable) target
+  log_every: 20
+  val_every: 1
+
+eval:
+  size_bins_mm: [5, 10, 30]   # micro <5 | small 5-10 | medium 10-30 | large >30
+  thresholds: 0.5
+
+outputs:
+  root: outputs
+  checkpoint_dir: outputs/checkpoints
+  log_dir: outputs/logs
+  prediction_dir: outputs/predictions

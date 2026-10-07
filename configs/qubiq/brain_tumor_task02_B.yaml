@@ -1,0 +1,18 @@
+﻿# QUBIQ-brain_tumor_task02 训练靶 B：多数投票 V>=ceil(3/2)=2（与 LIDC B_majority 同构，n_raters=3）。
+loss:
+  target: majority
+  use_dice: true
+  use_bce: true
+  use_sitl: false
+  use_csl: false
+  use_brbc: false
+  use_lovasz: false
+train:
+  batch_size: 4
+
+data:
+  patch_dir: ""
+  n_raters: 3
+  npz_dir: data/qubiq/brain_tumor_task02/npz
+  split_dir: data/qubiq/brain_tumor_task02/splits
+

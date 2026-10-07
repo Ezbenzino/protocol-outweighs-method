@@ -1,0 +1,96 @@
+{
+  "definition": "case-level bootstrap; supervision range = range over 5 arms (tgtA-E) @V>=4 calibrated; architecture range = range over 5 models @V>=2 calibrated; numerator = |FOV effect| tgtBshift_bg @V>=2 (win512-win128, thr=0.65, validation-calibrated)",
+  "headline_point_estimates": {
+    "fov_effect_pts": 22.29,
+    "fov_threshold": 0.65,
+    "fov_position_invariant_pts": 43.54,
+    "fov_position_invariant_threshold": 0.55,
+    "supervision_range_pts": 3.12,
+    "architecture_range_pts": 1.19,
+    "ratio_protocol_supervision": 7.13,
+    "ratio_protocol_architecture": 18.74,
+    "ratio_position_invariant_supervision": 13.94,
+    "ratio_position_invariant_architecture": 36.62,
+    "source": "本脚本现算：per_sample_test.csv + scope_test_merged.csv（阈值取验证集校准值）"
+  },
+  "own_sample_bootstrap": {
+    "fov_effect_pts": {
+      "n": 158,
+      "point": -22.29,
+      "ci95": [
+        -24.55,
+        -20.18
+      ]
+    },
+    "supervision_range_pts": {
+      "n": 124,
+      "point": 3.12,
+      "ci95": [
+        2.53,
+        3.71
+      ]
+    },
+    "architecture_range_pts": {
+      "n": 158,
+      "point": 1.19,
+      "ci95": [
+        0.57,
+        1.96
+      ]
+    },
+    "fov_position_invariant_pts": {
+      "n": 158,
+      "point": -43.54,
+      "ci95": [
+        -45.8,
+        -41.4
+      ]
+    },
+    "evaluation_target_span_pts": {
+      "n": 158,
+      "point": 28.58,
+      "ci95": [
+        24.13,
+        33.5
+      ],
+      "definition": "tgtA @thr 0.5, max-min over V>=1..4 of case-level means"
+    },
+    "threshold_effect_pts": {
+      "n": 124,
+      "point": 9.99,
+      "ci95": [
+        9.03,
+        10.9
+      ],
+      "definition": "tgtA @V>=4, thr 0.999 minus thr 0.5, paired by case"
+    },
+    "translation_cost_pts": {
+      "n": 158,
+      "point": 6.1,
+      "ci95": [
+        5.04,
+        7.21
+      ],
+      "definition": "tgtB minus tgtBshift @V>=2, each at its imported calibrated threshold, paired by case"
+    }
+  },
+  "joint_ratio_bootstrap": {
+    "n_common_cases": 124,
+    "note": "公共子集 = 三量共同病例（V>=4 GT 非空）；子集收缩使联合点估计偏离头条值，比值结论不受影响",
+    "ratio_protocol_supervision": {
+      "point": 7.03,
+      "ci95": [
+        5.84,
+        8.65
+      ]
+    },
+    "ratio_protocol_architecture": {
+      "point": 15.57,
+      "ci95": [
+        9.27,
+        30.94
+      ]
+    }
+  },
+  "conclusion": "比值 95% CI 完全落在 1 之上（协议/监督 >= 5.84x，协议/架构 >= 9.27x），'协议效应大于学习设计'的结论在抽样不确定性下稳健。"
+}

@@ -1,0 +1,14 @@
+# Quick smoke-test config: tiny settings to verify the pipeline end-to-end.
+# Usage: python scripts/train.py --config configs/fast.yaml --base configs/default.yaml
+model:
+  pretrained: false          # skip ImageNet download for a smoke run
+data:
+  patch_size: 64
+train:
+  batch_size: 2
+  grad_accum_steps: 1
+  epochs: 3
+  warmup_epochs: 0
+  log_every: 5
+  val_every: 1
+  use_amp: false             # also runs on CPU

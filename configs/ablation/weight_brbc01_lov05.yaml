@@ -1,0 +1,5 @@
+# Weight sweep: BRBC=0.1, Lovasz=0.5 (low BRBC, high Lovasz)
+loss:
+  weights:
+    brbc: 0.1
+    lovasz: 0.5

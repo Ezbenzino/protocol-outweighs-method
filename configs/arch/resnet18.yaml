@@ -1,0 +1,12 @@
+# 架构对照 2：ResNet-18 + ImageNet 预训练。只改 backbone，其余与 resnet34 相同。
+model:
+  backbone: resnet18
+  pretrained: true
+loss:
+  target: majority
+  use_dice: true
+  use_bce: true
+  use_sitl: false
+  use_csl: false
+  use_brbc: false
+  use_lovasz: false

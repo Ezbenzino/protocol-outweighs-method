@@ -1,0 +1,162 @@
+{
+  "definition": "case unit = case-internal mean over nodule instances then across cases; lesion unit = direct instance-level mean; same calibrated thresholds for both",
+  "sets": {
+    "cv": {
+      "protocol_effect": {
+        "case": {
+          "per_target": [
+            86.48,
+            84.1,
+            70.23,
+            60.85
+          ],
+          "range_pts": 25.63
+        },
+        "lesion": {
+          "per_target": [
+            85.41,
+            83.71,
+            75.74,
+            69.04
+          ],
+          "range_pts": 16.37
+        }
+      },
+      "supervision_range": {
+        "case": {
+          "per_arm": {
+            "tgtA": 70.26,
+            "tgtB": 71.45,
+            "tgtC": 68.97,
+            "tgtD": 68.8,
+            "tgtE": 70.9
+          },
+          "range_pts": 2.65
+        },
+        "lesion": {
+          "per_arm": {
+            "tgtA": 79.05,
+            "tgtB": 80.26,
+            "tgtC": 77.56,
+            "tgtD": 76.98,
+            "tgtE": 79.88
+          },
+          "range_pts": 3.29
+        }
+      },
+      "architecture_range": {
+        "case": {
+          "per_model": {
+            "tgtB": 87.4,
+            "archR18": 87.44,
+            "archCNX": 87.35,
+            "archPVT": 87.54,
+            "archPU": 86.58
+          },
+          "range_pts": 0.96
+        },
+        "lesion": {
+          "per_model": {
+            "tgtB": 86.73,
+            "archR18": 86.61,
+            "archCNX": 86.66,
+            "archPVT": 86.89,
+            "archPU": 85.65
+          },
+          "range_pts": 1.24
+        }
+      },
+      "ratios": {
+        "case": {
+          "protocol_supervision": 9.67,
+          "protocol_architecture": 26.7
+        },
+        "lesion": {
+          "protocol_supervision": 4.98,
+          "protocol_architecture": 13.2
+        }
+      }
+    },
+    "test": {
+      "protocol_effect": {
+        "case": {
+          "per_target": [
+            86.64,
+            83.31,
+            69.6,
+            58.07
+          ],
+          "range_pts": 28.58
+        },
+        "lesion": {
+          "per_target": [
+            86.44,
+            83.54,
+            76.27,
+            68.43
+          ],
+          "range_pts": 18.0
+        }
+      },
+      "supervision_range": {
+        "case": {
+          "per_arm": {
+            "tgtA": 68.05,
+            "tgtB": 69.41,
+            "tgtC": 66.29,
+            "tgtD": 66.8,
+            "tgtE": 68.5
+          },
+          "range_pts": 3.12
+        },
+        "lesion": {
+          "per_arm": {
+            "tgtA": 79.54,
+            "tgtB": 80.93,
+            "tgtC": 77.69,
+            "tgtD": 77.95,
+            "tgtE": 80.05
+          },
+          "range_pts": 3.24
+        }
+      },
+      "architecture_range": {
+        "case": {
+          "per_model": {
+            "tgtB": 87.2,
+            "archR18": 87.03,
+            "archCNX": 86.92,
+            "archPVT": 87.04,
+            "archPU": 86.01
+          },
+          "range_pts": 1.19
+        },
+        "lesion": {
+          "per_model": {
+            "tgtB": 87.03,
+            "archR18": 86.9,
+            "archCNX": 86.88,
+            "archPVT": 87.04,
+            "archPU": 85.26
+          },
+          "range_pts": 1.78
+        }
+      },
+      "ratios": {
+        "case": {
+          "protocol_supervision": 9.16,
+          "protocol_architecture": 24.02
+        },
+        "lesion": {
+          "protocol_supervision": 5.56,
+          "protocol_architecture": 10.11
+        }
+      }
+    }
+  },
+  "conclusion": {
+    "statement": "评测靶效应在两种分析单元下均远大于监督靶极差与架构极差（比值均 >1.5x），主结论'协议效应 > 学习方法效应'在 case 与 lesion 两种单元下稳健",
+    "cv": true,
+    "test": true
+  }
+}

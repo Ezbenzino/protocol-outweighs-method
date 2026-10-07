@@ -1,0 +1,17 @@
+﻿# QUBIQ-prostate task01 训练靶 C：多数硬掩膜（Dice）+ 软共识 p=V/6（BCE）。
+loss:
+  target: consensus
+  use_dice: true
+  use_bce: true
+  use_sitl: false
+  use_csl: false
+  use_brbc: false
+  use_lovasz: false
+train:
+  batch_size: 4
+
+data:
+  patch_dir: ""
+  n_raters: 6
+  npz_dir: data/qubiq/prostate_task01/npz
+  split_dir: data/qubiq/prostate_task01/splits

@@ -1,0 +1,18 @@
+# QUBIQ-brain-growth 训练靶 A：并集 V>=1（与 LIDC A_union 同构，n_raters=7）。
+# 外部数据集验证（P2-1）：7 标注者稳健性臂，检验"协议效应"是否随标注者数稳健。
+loss:
+  target: union
+  use_dice: true
+  use_bce: true
+  use_sitl: false
+  use_csl: false
+  use_brbc: false
+  use_lovasz: false
+train:
+  batch_size: 4
+
+data:
+  patch_dir: ""
+  n_raters: 7
+  npz_dir: data/qubiq/brain/npz
+  split_dir: data/qubiq/brain/splits

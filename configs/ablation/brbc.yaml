@@ -1,0 +1,7 @@
+loss:
+  use_dice: true
+  use_bce: true
+  use_sitl: false
+  use_csl: false
+  use_brbc: true
+  use_lovasz: false

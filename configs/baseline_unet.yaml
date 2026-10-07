@@ -1,0 +1,12 @@
+# U-Net style baseline: ResNet-18 encoder + plain Dice/BCE loss (no extra components).
+# For fair comparison vs the main model (ResNet-34 + SITL/CSL/BRBC/Lovasz).
+model:
+  backbone: resnet18
+  pretrained: true
+loss:
+  use_dice: true
+  use_bce: true
+  use_sitl: false
+  use_csl: false
+  use_brbc: false
+  use_lovasz: false

@@ -1,0 +1,20 @@
+# P1(b) 合并臂：训练靶 B（多数投票 V>=2）+ 平移增强 + 背景采样。
+# 回答 §4.13 报告的最后一个未检验问题：两种补救（平移增强 / 背景采样）
+# 叠加后，win128→win512 的视野效应是否真的只剩协议项（约 2 点）。
+#
+# 与 configs/aug/B_majority_shift.yaml 只差 data.background_ratio=0.5；
+# 与 configs/targets/B_maj_bg.yaml 只差 patch_dir=patches192 + random_shift_px=32。
+# 依赖：data/processed/patches192（已建）、data/processed/bg_bank192.npz（build_bg_bank192.py 生成）。
+data:
+  patch_dir: data/processed/patches192   # 192px 库，留 32px 平移余量
+  random_shift_px: 32                    # 平移增强（同 tgtBshift）
+  background_ratio: 0.5                  # 背景采样（同 bg 臂）
+
+loss:
+  target: majority
+  use_dice: true
+  use_bce: true
+  use_sitl: false
+  use_csl: false
+  use_brbc: false
+  use_lovasz: false

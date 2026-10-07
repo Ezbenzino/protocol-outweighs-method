@@ -1,0 +1,18 @@
+# QUBIQ-kidney 训练靶 C：多数硬掩膜（Dice）+ 软共识 p=V/3（BCE）。
+# 与 LIDC C_maj_soft 同构，仅 n_raters=3。这是"软概率监督是否有独立贡献"的关键臂。
+loss:
+  target: consensus
+  use_dice: true
+  use_bce: true
+  use_sitl: false
+  use_csl: false
+  use_brbc: false
+  use_lovasz: false
+train:
+  batch_size: 4
+
+data:
+  patch_dir: ""
+  n_raters: 3
+  npz_dir: data/qubiq/kidney/npz
+  split_dir: data/qubiq/kidney/splits

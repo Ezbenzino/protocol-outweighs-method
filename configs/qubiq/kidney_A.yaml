@@ -1,0 +1,18 @@
+# QUBIQ-kidney 训练靶 A：并集 V>=1（与 LIDC A_union 同构，仅 n_raters 改为 3）。
+# 外部数据集验证（P2-1）：验证"协议效应 > 方法效应"在 3 标注者 CT 上是否稳健。
+loss:
+  target: union
+  use_dice: true
+  use_bce: true
+  use_sitl: false
+  use_csl: false
+  use_brbc: false
+  use_lovasz: false
+train:
+  batch_size: 4
+
+data:
+  patch_dir: ""
+  n_raters: 3
+  npz_dir: data/qubiq/kidney/npz
+  split_dir: data/qubiq/kidney/splits

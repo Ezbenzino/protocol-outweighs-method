@@ -1,0 +1,12 @@
+# 架构对照 1：ResNet-34 + ImageNet 预训练（与训练靶 B 完全相同，跑一次即可复用）
+model:
+  backbone: resnet34
+  pretrained: true
+loss:
+  target: majority
+  use_dice: true
+  use_bce: true
+  use_sitl: false
+  use_csl: false
+  use_brbc: false
+  use_lovasz: false

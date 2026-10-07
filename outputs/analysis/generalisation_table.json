@@ -1,0 +1,43 @@
+{
+  "LIDC": {
+    "fixed0.5": {
+      "protocol": 25.581754291036475,
+      "supervision": 5.9796202342667915,
+      "ratio": 4.278157021484033
+    },
+    "opt_thr": {
+      "protocol": 17.26643343216352,
+      "supervision": 2.6459730452726427,
+      "ratio": 6.525551521778399
+    }
+  },
+  "QUBIQ-brain": {
+    "fixed0.5": {
+      "protocol": 23.068503563271626,
+      "supervision": 10.641704413625941,
+      "ratio": 2.1677451906796112
+    },
+    "opt_thr": {
+      "protocol": 14.216991493437037,
+      "supervision": 9.698275866111128,
+      "ratio": 1.4659297889345202
+    }
+  },
+  "QUBIQ-kidney": {
+    "fixed0.5": {
+      "protocol": 3.7621961037317853,
+      "supervision": 2.595308522383366,
+      "ratio": 1.4496142062820432
+    },
+    "opt_thr": {
+      "protocol": 0.6138712167739868,
+      "supervision": 0.7900961240132731,
+      "ratio": 0.7769576360605892
+    }
+  },
+  "agreement_index": {
+    "LIDC": 0.333,
+    "QUBIQ-brain": 0.4891,
+    "QUBIQ-kidney": 0.8677
+  }
+}

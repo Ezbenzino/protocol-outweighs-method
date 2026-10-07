@@ -1,0 +1,2379 @@
+{
+  "n_cases": 202,
+  "n_slices": 49429,
+  "n_nodules": 2062,
+  "arms": [
+    "tgtB",
+    "bg_maj",
+    "tgtBshift",
+    "tgtBshift_bg"
+  ],
+  "scopes": [
+    "patch128",
+    "win128",
+    "win192",
+    "win256",
+    "win384",
+    "win512",
+    "slice",
+    "volume"
+  ],
+  "table0_selfcheck": [
+    {
+      "run": "bg_maj_fold0",
+      "arm": "bg_maj",
+      "level": 1,
+      "thr": 0.005,
+      "ref": null,
+      "n_ref": 0,
+      "n_mine": 2062,
+      "weighted": 0.8574492322987389,
+      "gap_pts": null
+    },
+    {
+      "run": "bg_maj_fold0",
+      "arm": "bg_maj",
+      "level": 2,
+      "thr": 0.8,
+      "ref": null,
+      "n_ref": 0,
+      "n_mine": 2062,
+      "weighted": 0.8696446595538313,
+      "gap_pts": null
+    },
+    {
+      "run": "bg_maj_fold0",
+      "arm": "bg_maj",
+      "level": 3,
+      "thr": 0.99,
+      "ref": null,
+      "n_ref": 0,
+      "n_mine": 1560,
+      "weighted": 0.8419569705128206,
+      "gap_pts": null
+    },
+    {
+      "run": "bg_maj_fold0",
+      "arm": "bg_maj",
+      "level": 4,
+      "thr": 0.995,
+      "ref": null,
+      "n_ref": 0,
+      "n_mine": 996,
+      "weighted": 0.8063672349397588,
+      "gap_pts": null
+    },
+    {
+      "run": "bg_maj_fold1",
+      "arm": "bg_maj",
+      "level": 1,
+      "thr": 0.005,
+      "ref": null,
+      "n_ref": 0,
+      "n_mine": 2062,
+      "weighted": 0.8590320581959263,
+      "gap_pts": null
+    },
+    {
+      "run": "bg_maj_fold1",
+      "arm": "bg_maj",
+      "level": 2,
+      "thr": 0.8,
+      "ref": null,
+      "n_ref": 0,
+      "n_mine": 2062,
+      "weighted": 0.8657901251212414,
+      "gap_pts": null
+    },
+    {
+      "run": "bg_maj_fold1",
+      "arm": "bg_maj",
+      "level": 3,
+      "thr": 0.99,
+      "ref": null,
+      "n_ref": 0,
+      "n_mine": 1560,
+      "weighted": 0.8380461282051281,
+      "gap_pts": null
+    },
+    {
+      "run": "bg_maj_fold1",
+      "arm": "bg_maj",
+      "level": 4,
+      "thr": 0.995,
+      "ref": null,
+      "n_ref": 0,
+      "n_mine": 996,
+      "weighted": 0.805361735943775,
+      "gap_pts": null
+    },
+    {
+      "run": "tgtB_fold0",
+      "arm": "tgtB",
+      "level": 1,
+      "thr": 0.002,
+      "ref": 0.8487458128579662,
+      "n_ref": 2062,
+      "n_mine": 2062,
+      "weighted": 0.8487304316197867,
+      "gap_pts": -0.0015381238179568157
+    },
+    {
+      "run": "tgtB_fold0",
+      "arm": "tgtB",
+      "level": 2,
+      "thr": 0.55,
+      "ref": 0.8698012545889119,
+      "n_ref": 2062,
+      "n_mine": 2062,
+      "weighted": 0.8698026571290011,
+      "gap_pts": 0.00014025400891792827
+    },
+    {
+      "run": "tgtB_fold0",
+      "arm": "tgtB",
+      "level": 3,
+      "thr": 0.99,
+      "ref": 0.8439491561882627,
+      "n_ref": 1560,
+      "n_mine": 1560,
+      "weighted": 0.8439521666666666,
+      "gap_pts": 0.0003010478403897565
+    },
+    {
+      "run": "tgtB_fold0",
+      "arm": "tgtB",
+      "level": 4,
+      "thr": 0.998,
+      "ref": 0.8092596340124087,
+      "n_ref": 996,
+      "n_mine": 996,
+      "weighted": 0.8092490321285141,
+      "gap_pts": -0.0010601883894678643
+    },
+    {
+      "run": "tgtB_fold1",
+      "arm": "tgtB",
+      "level": 1,
+      "thr": 0.002,
+      "ref": 0.8588479251775143,
+      "n_ref": 2062,
+      "n_mine": 2062,
+      "weighted": 0.8588550193986421,
+      "gap_pts": 0.000709422112776803
+    },
+    {
+      "run": "tgtB_fold1",
+      "arm": "tgtB",
+      "level": 2,
+      "thr": 0.55,
+      "ref": 0.8703658799618251,
+      "n_ref": 2062,
+      "n_mine": 2062,
+      "weighted": 0.8703580635305529,
+      "gap_pts": -0.000781643127223397
+    },
+    {
+      "run": "tgtB_fold1",
+      "arm": "tgtB",
+      "level": 3,
+      "thr": 0.99,
+      "ref": 0.8428017173816139,
+      "n_ref": 1560,
+      "n_mine": 1560,
+      "weighted": 0.8427982256410256,
+      "gap_pts": -0.0003491740588335013
+    },
+    {
+      "run": "tgtB_fold1",
+      "arm": "tgtB",
+      "level": 4,
+      "thr": 0.998,
+      "ref": 0.8080089832974007,
+      "n_ref": 996,
+      "n_mine": 996,
+      "weighted": 0.8080067650602409,
+      "gap_pts": -0.00022182371597345707
+    },
+    {
+      "run": "tgtB_fold2",
+      "arm": "tgtB",
+      "level": 1,
+      "thr": 0.002,
+      "ref": 0.8645623431176988,
+      "n_ref": 2062,
+      "n_mine": 2062,
+      "weighted": 0.8645738161978661,
+      "gap_pts": 0.001147308016735682
+    },
+    {
+      "run": "tgtB_fold2",
+      "arm": "tgtB",
+      "level": 2,
+      "thr": 0.55,
+      "ref": 0.8697248539963247,
+      "n_ref": 2062,
+      "n_mine": 2062,
+      "weighted": 0.8697255766246363,
+      "gap_pts": 7.226283116334997e-05
+    },
+    {
+      "run": "tgtB_fold2",
+      "arm": "tgtB",
+      "level": 3,
+      "thr": 0.99,
+      "ref": 0.841373911825343,
+      "n_ref": 1560,
+      "n_mine": 1560,
+      "weighted": 0.8413472846153845,
+      "gap_pts": -0.0026627209958496323
+    },
+    {
+      "run": "tgtB_fold2",
+      "arm": "tgtB",
+      "level": 4,
+      "thr": 0.998,
+      "ref": 0.8102545916648903,
+      "n_ref": 996,
+      "n_mine": 996,
+      "weighted": 0.8102843554216868,
+      "gap_pts": 0.0029763756796419294
+    },
+    {
+      "run": "tgtB_fold3",
+      "arm": "tgtB",
+      "level": 1,
+      "thr": 0.002,
+      "ref": 0.8585959925852846,
+      "n_ref": 2062,
+      "n_mine": 2062,
+      "weighted": 0.858607952958293,
+      "gap_pts": 0.0011960373008323977
+    },
+    {
+      "run": "tgtB_fold3",
+      "arm": "tgtB",
+      "level": 2,
+      "thr": 0.55,
+      "ref": 0.8695562815074163,
+      "n_ref": 2062,
+      "n_mine": 2062,
+      "weighted": 0.8695510877788554,
+      "gap_pts": -0.000519372856089273
+    },
+    {
+      "run": "tgtB_fold3",
+      "arm": "tgtB",
+      "level": 3,
+      "thr": 0.99,
+      "ref": 0.8458340961742812,
+      "n_ref": 1560,
+      "n_mine": 1560,
+      "weighted": 0.8458285423076923,
+      "gap_pts": -0.0005553866588847711
+    },
+    {
+      "run": "tgtB_fold3",
+      "arm": "tgtB",
+      "level": 4,
+      "thr": 0.998,
+      "ref": 0.8119677415409361,
+      "n_ref": 996,
+      "n_mine": 996,
+      "weighted": 0.8120338072289156,
+      "gap_pts": 0.0066065687979510734
+    },
+    {
+      "run": "tgtB_fold4",
+      "arm": "tgtB",
+      "level": 1,
+      "thr": 0.002,
+      "ref": 0.8637278095451405,
+      "n_ref": 2062,
+      "n_mine": 2062,
+      "weighted": 0.8637392361784675,
+      "gap_pts": 0.0011426633326983016
+    },
+    {
+      "run": "tgtB_fold4",
+      "arm": "tgtB",
+      "level": 2,
+      "thr": 0.55,
+      "ref": 0.8721066723253839,
+      "n_ref": 2062,
+      "n_mine": 2062,
+      "weighted": 0.8721013263821534,
+      "gap_pts": -0.0005345943230428141
+    },
+    {
+      "run": "tgtB_fold4",
+      "arm": "tgtB",
+      "level": 3,
+      "thr": 0.99,
+      "ref": 0.839227157824028,
+      "n_ref": 1560,
+      "n_mine": 1560,
+      "weighted": 0.8392376282051283,
+      "gap_pts": 0.0010470381100247117
+    },
+    {
+      "run": "tgtB_fold4",
+      "arm": "tgtB",
+      "level": 4,
+      "thr": 0.998,
+      "ref": 0.8072276200021965,
+      "n_ref": 996,
+      "n_mine": 996,
+      "weighted": 0.8072084919678715,
+      "gap_pts": -0.0019128034325022192
+    },
+    {
+      "run": "tgtBshift_bg_fold0",
+      "arm": "tgtBshift_bg",
+      "level": 1,
+      "thr": 0.01,
+      "ref": null,
+      "n_ref": 0,
+      "n_mine": 2062,
+      "weighted": 0.7747053748787586,
+      "gap_pts": null
+    },
+    {
+      "run": "tgtBshift_bg_fold0",
+      "arm": "tgtBshift_bg",
+      "level": 2,
+      "thr": 0.65,
+      "ref": null,
+      "n_ref": 0,
+      "n_mine": 2062,
+      "weighted": 0.7743003428709991,
+      "gap_pts": null
+    },
+    {
+      "run": "tgtBshift_bg_fold0",
+      "arm": "tgtBshift_bg",
+      "level": 3,
+      "thr": 0.97,
+      "ref": null,
+      "n_ref": 0,
+      "n_mine": 1560,
+      "weighted": 0.7667126538461537,
+      "gap_pts": null
+    },
+    {
+      "run": "tgtBshift_bg_fold0",
+      "arm": "tgtBshift_bg",
+      "level": 4,
+      "thr": 0.99,
+      "ref": null,
+      "n_ref": 0,
+      "n_mine": 996,
+      "weighted": 0.7389854347389558,
+      "gap_pts": null
+    },
+    {
+      "run": "tgtBshift_bg_fold1",
+      "arm": "tgtBshift_bg",
+      "level": 1,
+      "thr": 0.01,
+      "ref": null,
+      "n_ref": 0,
+      "n_mine": 2062,
+      "weighted": 0.781242490300679,
+      "gap_pts": null
+    },
+    {
+      "run": "tgtBshift_bg_fold1",
+      "arm": "tgtBshift_bg",
+      "level": 2,
+      "thr": 0.65,
+      "ref": null,
+      "n_ref": 0,
+      "n_mine": 2062,
+      "weighted": 0.7823217095053346,
+      "gap_pts": null
+    },
+    {
+      "run": "tgtBshift_bg_fold1",
+      "arm": "tgtBshift_bg",
+      "level": 3,
+      "thr": 0.97,
+      "ref": null,
+      "n_ref": 0,
+      "n_mine": 1560,
+      "weighted": 0.772064746153846,
+      "gap_pts": null
+    },
+    {
+      "run": "tgtBshift_bg_fold1",
+      "arm": "tgtBshift_bg",
+      "level": 4,
+      "thr": 0.99,
+      "ref": null,
+      "n_ref": 0,
+      "n_mine": 996,
+      "weighted": 0.7455797078313254,
+      "gap_pts": null
+    },
+    {
+      "run": "tgtBshift_fold0",
+      "arm": "tgtBshift",
+      "level": 1,
+      "thr": 0.01,
+      "ref": 0.7985831137419571,
+      "n_ref": 2062,
+      "n_mine": 2062,
+      "weighted": 0.7985906551891366,
+      "gap_pts": 0.0007541447179515437
+    },
+    {
+      "run": "tgtBshift_fold0",
+      "arm": "tgtBshift",
+      "level": 2,
+      "thr": 0.55,
+      "ref": 0.797576040561581,
+      "n_ref": 2062,
+      "n_mine": 2062,
+      "weighted": 0.7975893404461687,
+      "gap_pts": 0.0013299884587647526
+    },
+    {
+      "run": "tgtBshift_fold0",
+      "arm": "tgtBshift",
+      "level": 3,
+      "thr": 0.98,
+      "ref": 0.7890715655470745,
+      "n_ref": 1560,
+      "n_mine": 1560,
+      "weighted": 0.7890890192307691,
+      "gap_pts": 0.0017453683694657052
+    },
+    {
+      "run": "tgtBshift_fold0",
+      "arm": "tgtBshift",
+      "level": 4,
+      "thr": 0.995,
+      "ref": 0.7673193123715231,
+      "n_ref": 996,
+      "n_mine": 996,
+      "weighted": 0.7673243383534137,
+      "gap_pts": 0.0005025981890671716
+    },
+    {
+      "run": "tgtBshift_fold1",
+      "arm": "tgtBshift",
+      "level": 1,
+      "thr": 0.01,
+      "ref": 0.7961243282288591,
+      "n_ref": 2062,
+      "n_mine": 2062,
+      "weighted": 0.7961344786614937,
+      "gap_pts": 0.0010150432634525863
+    },
+    {
+      "run": "tgtBshift_fold1",
+      "arm": "tgtBshift",
+      "level": 2,
+      "thr": 0.55,
+      "ref": 0.7998133712828929,
+      "n_ref": 2062,
+      "n_mine": 2062,
+      "weighted": 0.7998326731328805,
+      "gap_pts": 0.0019301849987662933
+    },
+    {
+      "run": "tgtBshift_fold1",
+      "arm": "tgtBshift",
+      "level": 3,
+      "thr": 0.98,
+      "ref": 0.7881210459563404,
+      "n_ref": 1560,
+      "n_mine": 1560,
+      "weighted": 0.7881138301282052,
+      "gap_pts": -0.0007215828135120894
+    },
+    {
+      "run": "tgtBshift_fold1",
+      "arm": "tgtBshift",
+      "level": 4,
+      "thr": 0.995,
+      "ref": 0.7603927016750083,
+      "n_ref": 996,
+      "n_mine": 996,
+      "weighted": 0.7603954267068272,
+      "gap_pts": 0.00027250318189731004
+    }
+  ],
+  "selfcheck_max_gap_pts": 0.0066065687979510734,
+  "table1_ladder": {
+    "tgtB_v1": {
+      "patch128": 0.8618701037974682,
+      "win128": 0.30415425443037974,
+      "win192": 0.29230349367088604,
+      "win256": 0.2829083189873418,
+      "win384": 0.2648377215189873,
+      "win512": 0.2531083392405063,
+      "slice": 0.224519664556962,
+      "volume": 0.04268550594059406
+    },
+    "tgtB_v2": {
+      "patch128": 0.8719648797468353,
+      "win128": 0.25515856329113923,
+      "win192": 0.2506657227848101,
+      "win256": 0.24649430253164556,
+      "win384": 0.23876773544303798,
+      "win512": 0.23487974556962027,
+      "slice": 0.2180575329113924,
+      "volume": 0.05534694158415841
+    },
+    "tgtB_v3": {
+      "patch128": 0.7737836026845637,
+      "win128": 0.21346126577181207,
+      "win192": 0.21139494228187916,
+      "win256": 0.21043298255033557,
+      "win384": 0.2073222979865772,
+      "win512": 0.2061421597315436,
+      "slice": 0.19836814899328858,
+      "volume": 0.06972559306930694
+    },
+    "tgtB_v4": {
+      "patch128": 0.694169485483871,
+      "win128": 0.20420466612903226,
+      "win192": 0.20297001129032258,
+      "win256": 0.20307125806451612,
+      "win384": 0.2013630935483871,
+      "win512": 0.20174335645161287,
+      "slice": 0.19831934193548387,
+      "volume": 0.08680187227722773
+    },
+    "bg_maj_v1": {
+      "patch128": 0.8650521392405065,
+      "win128": 0.057272427215189874,
+      "win192": 0.05554142405063292,
+      "win256": 0.05503969620253165,
+      "win384": 0.05481603164556962,
+      "win512": 0.05632384493670887,
+      "slice": 0.055225620253164555,
+      "volume": 0.05885169801980198
+    },
+    "bg_maj_v2": {
+      "patch128": 0.8710565981012657,
+      "win128": 0.051515028481012665,
+      "win192": 0.050364655063291144,
+      "win256": 0.05000721835443037,
+      "win384": 0.04996249367088607,
+      "win512": 0.051641056962025325,
+      "slice": 0.05054097151898734,
+      "volume": 0.059658997524752476
+    },
+    "bg_maj_v3": {
+      "patch128": 0.7734410234899328,
+      "win128": 0.04079353691275168,
+      "win192": 0.04048997986577181,
+      "win256": 0.040232359060402685,
+      "win384": 0.040127976510067116,
+      "win512": 0.04113722147651007,
+      "slice": 0.040921328859060406,
+      "volume": 0.05730323762376238
+    },
+    "bg_maj_v4": {
+      "patch128": 0.6913040282258066,
+      "win128": 0.03405254032258065,
+      "win192": 0.033926165322580644,
+      "win256": 0.03365615725806451,
+      "win384": 0.033619568548387095,
+      "win512": 0.03475623790322581,
+      "slice": 0.03435765725806452,
+      "volume": 0.09580612871287128
+    },
+    "tgtBshift_v1": {
+      "patch128": 0.8086270221518989,
+      "win128": 0.7558829303797469,
+      "win192": 0.6250371613924051,
+      "win256": 0.5140922246835443,
+      "win384": 0.37005451265822786,
+      "win512": 0.2928963860759494,
+      "slice": 0.23831693037974683,
+      "volume": 0.023128056930693065
+    },
+    "tgtBshift_v2": {
+      "patch128": 0.8110023512658228,
+      "win128": 0.7597606234177214,
+      "win192": 0.6459140316455696,
+      "win256": 0.5449444525316456,
+      "win384": 0.40380046835443034,
+      "win512": 0.3243248544303797,
+      "slice": 0.26602186075949363,
+      "volume": 0.023828683168316836
+    },
+    "tgtBshift_v3": {
+      "patch128": 0.7373546744966443,
+      "win128": 0.705720610738255,
+      "win192": 0.6229761577181208,
+      "win256": 0.5480244295302014,
+      "win384": 0.4363956040268456,
+      "win512": 0.3614699899328859,
+      "slice": 0.3065868959731544,
+      "volume": 0.026726678217821785
+    },
+    "tgtBshift_v4": {
+      "patch128": 0.6675593951612905,
+      "win128": 0.6450887822580643,
+      "win192": 0.5917225201612902,
+      "win256": 0.5445578911290321,
+      "win384": 0.46128743951612905,
+      "win512": 0.4120765080645161,
+      "slice": 0.3628436733870968,
+      "volume": 0.029001022277227725
+    },
+    "tgtBshift_bg_v1": {
+      "patch128": 0.7918997056962025,
+      "win128": 0.7575716044303796,
+      "win192": 0.7064537151898734,
+      "win256": 0.6561512246835443,
+      "win384": 0.581105496835443,
+      "win512": 0.5263490316455697,
+      "slice": 0.48674802215189866,
+      "volume": 0.08410062623762377
+    },
+    "tgtBshift_bg_v2": {
+      "patch128": 0.7927730221518987,
+      "win128": 0.760077253164557,
+      "win192": 0.7129547373417722,
+      "win256": 0.6646386487341772,
+      "win384": 0.5909911518987341,
+      "win512": 0.5371810759493671,
+      "slice": 0.49615805063291146,
+      "volume": 0.07841850742574256
+    },
+    "tgtBshift_bg_v3": {
+      "patch128": 0.7222031476510068,
+      "win128": 0.697353755033557,
+      "win192": 0.6632299832214765,
+      "win256": 0.6273964597315436,
+      "win384": 0.5605178892617448,
+      "win512": 0.5098158255033557,
+      "slice": 0.4746651744966443,
+      "volume": 0.07179352970297029
+    },
+    "tgtBshift_bg_v4": {
+      "patch128": 0.6497501370967742,
+      "win128": 0.6290483870967741,
+      "win192": 0.6041166532258063,
+      "win256": 0.5783210040322581,
+      "win384": 0.5198965524193548,
+      "win512": 0.4878046774193548,
+      "slice": 0.45795666532258067,
+      "volume": 0.06055074504950494
+    }
+  },
+  "table2_segments": [
+    {
+      "arm": "tgtB",
+      "level": 1,
+      "segment": "输入上下文",
+      "delta_pts": -55.77158493670884
+    },
+    {
+      "arm": "tgtB",
+      "level": 1,
+      "segment": "纯视野效应",
+      "delta_pts": -5.104591518987345
+    },
+    {
+      "arm": "tgtB",
+      "level": 1,
+      "segment": "窗口->整片",
+      "delta_pts": -2.8588674683544286
+    },
+    {
+      "arm": "tgtB",
+      "level": 1,
+      "segment": "纳入无结节切片",
+      "delta_pts": -18.183415861636796
+    },
+    {
+      "arm": "tgtB",
+      "level": 2,
+      "segment": "输入上下文",
+      "delta_pts": -61.680631645569605
+    },
+    {
+      "arm": "tgtB",
+      "level": 2,
+      "segment": "纯视野效应",
+      "delta_pts": -2.027881772151896
+    },
+    {
+      "arm": "tgtB",
+      "level": 2,
+      "segment": "窗口->整片",
+      "delta_pts": -1.6822212658227864
+    },
+    {
+      "arm": "tgtB",
+      "level": 2,
+      "segment": "纳入无结节切片",
+      "delta_pts": -16.271059132723398
+    },
+    {
+      "arm": "tgtB",
+      "level": 3,
+      "segment": "输入上下文",
+      "delta_pts": -56.03223369127517
+    },
+    {
+      "arm": "tgtB",
+      "level": 3,
+      "segment": "纯视野效应",
+      "delta_pts": -0.7319106040268475
+    },
+    {
+      "arm": "tgtB",
+      "level": 3,
+      "segment": "窗口->整片",
+      "delta_pts": -0.777401073825501
+    },
+    {
+      "arm": "tgtB",
+      "level": 3,
+      "segment": "纳入无结节切片",
+      "delta_pts": -12.864255592398166
+    },
+    {
+      "arm": "tgtB",
+      "level": 4,
+      "segment": "输入上下文",
+      "delta_pts": -48.99648193548388
+    },
+    {
+      "arm": "tgtB",
+      "level": 4,
+      "segment": "纯视野效应",
+      "delta_pts": -0.24613096774193932
+    },
+    {
+      "arm": "tgtB",
+      "level": 4,
+      "segment": "窗口->整片",
+      "delta_pts": -0.34240145161290036
+    },
+    {
+      "arm": "tgtB",
+      "level": 4,
+      "segment": "纳入无结节切片",
+      "delta_pts": -11.151746965825614
+    },
+    {
+      "arm": "bg_maj",
+      "level": 1,
+      "segment": "输入上下文",
+      "delta_pts": -80.77797120253166
+    },
+    {
+      "arm": "bg_maj",
+      "level": 1,
+      "segment": "纯视野效应",
+      "delta_pts": -0.09485822784810055
+    },
+    {
+      "arm": "bg_maj",
+      "level": 1,
+      "segment": "窗口->整片",
+      "delta_pts": -0.10982246835443132
+    },
+    {
+      "arm": "bg_maj",
+      "level": 1,
+      "segment": "纳入无结节切片",
+      "delta_pts": 0.36260777666374255
+    },
+    {
+      "arm": "bg_maj",
+      "level": 2,
+      "segment": "输入上下文",
+      "delta_pts": -81.95415696202531
+    },
+    {
+      "arm": "bg_maj",
+      "level": 2,
+      "segment": "纯视野效应",
+      "delta_pts": 0.012602848101266051
+    },
+    {
+      "arm": "bg_maj",
+      "level": 2,
+      "segment": "窗口->整片",
+      "delta_pts": -0.1100085443037982
+    },
+    {
+      "arm": "bg_maj",
+      "level": 2,
+      "segment": "纳入无结节切片",
+      "delta_pts": 0.9118026005765133
+    },
+    {
+      "arm": "bg_maj",
+      "level": 3,
+      "segment": "输入上下文",
+      "delta_pts": -73.26474865771812
+    },
+    {
+      "arm": "bg_maj",
+      "level": 3,
+      "segment": "纯视野效应",
+      "delta_pts": 0.0343684563758391
+    },
+    {
+      "arm": "bg_maj",
+      "level": 3,
+      "segment": "窗口->整片",
+      "delta_pts": -0.02158926174496631
+    },
+    {
+      "arm": "bg_maj",
+      "level": 3,
+      "segment": "纳入无结节切片",
+      "delta_pts": 1.6381908764701976
+    },
+    {
+      "arm": "bg_maj",
+      "level": 4,
+      "segment": "输入上下文",
+      "delta_pts": -65.72514879032259
+    },
+    {
+      "arm": "bg_maj",
+      "level": 4,
+      "segment": "纯视野效应",
+      "delta_pts": 0.07036975806451601
+    },
+    {
+      "arm": "bg_maj",
+      "level": 4,
+      "segment": "窗口->整片",
+      "delta_pts": -0.039858064516128805
+    },
+    {
+      "arm": "bg_maj",
+      "level": 4,
+      "segment": "纳入无结节切片",
+      "delta_pts": 6.144847145480676
+    },
+    {
+      "arm": "tgtBshift",
+      "level": 1,
+      "segment": "输入上下文",
+      "delta_pts": -5.2744091772152
+    },
+    {
+      "arm": "tgtBshift",
+      "level": 1,
+      "segment": "纯视野效应",
+      "delta_pts": -46.29865443037974
+    },
+    {
+      "arm": "tgtBshift",
+      "level": 1,
+      "segment": "窗口->整片",
+      "delta_pts": -5.457945569620259
+    },
+    {
+      "arm": "tgtBshift",
+      "level": 1,
+      "segment": "纳入无结节切片",
+      "delta_pts": -21.518887344905377
+    },
+    {
+      "arm": "tgtBshift",
+      "level": 2,
+      "segment": "输入上下文",
+      "delta_pts": -5.124172784810133
+    },
+    {
+      "arm": "tgtBshift",
+      "level": 2,
+      "segment": "纯视野效应",
+      "delta_pts": -43.54357689873417
+    },
+    {
+      "arm": "tgtBshift",
+      "level": 2,
+      "segment": "窗口->整片",
+      "delta_pts": -5.830299367088609
+    },
+    {
+      "arm": "tgtBshift",
+      "level": 2,
+      "segment": "纳入无结节切片",
+      "delta_pts": -24.219317759117683
+    },
+    {
+      "arm": "tgtBshift",
+      "level": 3,
+      "segment": "输入上下文",
+      "delta_pts": -3.1634063758389286
+    },
+    {
+      "arm": "tgtBshift",
+      "level": 3,
+      "segment": "纯视野效应",
+      "delta_pts": -34.425062080536904
+    },
+    {
+      "arm": "tgtBshift",
+      "level": 3,
+      "segment": "窗口->整片",
+      "delta_pts": -5.488309395973151
+    },
+    {
+      "arm": "tgtBshift",
+      "level": 3,
+      "segment": "纳入无结节切片",
+      "delta_pts": -27.986021775533267
+    },
+    {
+      "arm": "tgtBshift",
+      "level": 4,
+      "segment": "输入上下文",
+      "delta_pts": -2.247061290322616
+    },
+    {
+      "arm": "tgtBshift",
+      "level": 4,
+      "segment": "纯视野效应",
+      "delta_pts": -23.30122741935482
+    },
+    {
+      "arm": "tgtBshift",
+      "level": 4,
+      "segment": "窗口->整片",
+      "delta_pts": -4.923283467741935
+    },
+    {
+      "arm": "tgtBshift",
+      "level": 4,
+      "segment": "纳入无结节切片",
+      "delta_pts": -33.3842651109869
+    },
+    {
+      "arm": "tgtBshift_bg",
+      "level": 1,
+      "segment": "输入上下文",
+      "delta_pts": -3.4328101265822863
+    },
+    {
+      "arm": "tgtBshift_bg",
+      "level": 1,
+      "segment": "纯视野效应",
+      "delta_pts": -23.122257278480994
+    },
+    {
+      "arm": "tgtBshift_bg",
+      "level": 1,
+      "segment": "窗口->整片",
+      "delta_pts": -3.960100949367101
+    },
+    {
+      "arm": "tgtBshift_bg",
+      "level": 1,
+      "segment": "纳入无结节切片",
+      "delta_pts": -40.26473959142749
+    },
+    {
+      "arm": "tgtBshift_bg",
+      "level": 2,
+      "segment": "输入上下文",
+      "delta_pts": -3.2695768987341722
+    },
+    {
+      "arm": "tgtBshift_bg",
+      "level": 2,
+      "segment": "纯视野效应",
+      "delta_pts": -22.289617721518983
+    },
+    {
+      "arm": "tgtBshift_bg",
+      "level": 2,
+      "segment": "窗口->整片",
+      "delta_pts": -4.102302531645568
+    },
+    {
+      "arm": "tgtBshift_bg",
+      "level": 2,
+      "segment": "纳入无结节切片",
+      "delta_pts": -41.77395432071689
+    },
+    {
+      "arm": "tgtBshift_bg",
+      "level": 3,
+      "segment": "输入上下文",
+      "delta_pts": -2.4849392617449784
+    },
+    {
+      "arm": "tgtBshift_bg",
+      "level": 3,
+      "segment": "纯视野效应",
+      "delta_pts": -18.75379295302013
+    },
+    {
+      "arm": "tgtBshift_bg",
+      "level": 3,
+      "segment": "窗口->整片",
+      "delta_pts": -3.515065100671139
+    },
+    {
+      "arm": "tgtBshift_bg",
+      "level": 3,
+      "segment": "纳入无结节切片",
+      "delta_pts": -40.2871644793674
+    },
+    {
+      "arm": "tgtBshift_bg",
+      "level": 4,
+      "segment": "输入上下文",
+      "delta_pts": -2.0701750000000074
+    },
+    {
+      "arm": "tgtBshift_bg",
+      "level": 4,
+      "segment": "纯视野效应",
+      "delta_pts": -14.124370967741934
+    },
+    {
+      "arm": "tgtBshift_bg",
+      "level": 4,
+      "segment": "窗口->整片",
+      "delta_pts": -2.9848012096774124
+    },
+    {
+      "arm": "tgtBshift_bg",
+      "level": 4,
+      "segment": "纳入无结节切片",
+      "delta_pts": -39.74059202730758
+    }
+  ],
+  "pure_fov_max_pts": 46.29865443037974,
+  "pure_fov_mean_pts": 14.63632961894159,
+  "table3_per_scope_opt": {
+    "tgtB_v1_patch128": {
+      "dice_opt": 0.8618701037974684,
+      "thr": 0.002
+    },
+    "tgtB_v1_win128": {
+      "dice_opt": 0.31999110506329115,
+      "thr": 0.001
+    },
+    "tgtB_v1_win192": {
+      "dice_opt": 0.3051200696202532,
+      "thr": 0.001
+    },
+    "tgtB_v1_win256": {
+      "dice_opt": 0.293629535443038,
+      "thr": 0.001
+    },
+    "tgtB_v1_win384": {
+      "dice_opt": 0.272170270886076,
+      "thr": 0.001
+    },
+    "tgtB_v1_win512": {
+      "dice_opt": 0.25796841265822784,
+      "thr": 0.001
+    },
+    "tgtB_v1_slice": {
+      "dice_opt": 0.22584824556962027,
+      "thr": 0.001
+    },
+    "tgtB_v1_volume": {
+      "dice_opt": 0.07291375643564356,
+      "thr": 0.995
+    },
+    "tgtB_v2_patch128": {
+      "dice_opt": 0.8719648797468355,
+      "thr": 0.55
+    },
+    "tgtB_v2_win128": {
+      "dice_opt": 0.3288015582278481,
+      "thr": 0.001
+    },
+    "tgtB_v2_win192": {
+      "dice_opt": 0.3116453544303798,
+      "thr": 0.001
+    },
+    "tgtB_v2_win256": {
+      "dice_opt": 0.29834228101265825,
+      "thr": 0.001
+    },
+    "tgtB_v2_win384": {
+      "dice_opt": 0.2739791974683545,
+      "thr": 0.001
+    },
+    "tgtB_v2_win512": {
+      "dice_opt": 0.2577572481012658,
+      "thr": 0.001
+    },
+    "tgtB_v2_slice": {
+      "dice_opt": 0.22547717341772153,
+      "thr": 0.01
+    },
+    "tgtB_v2_volume": {
+      "dice_opt": 0.08376393267326732,
+      "thr": 0.999
+    },
+    "tgtB_v3_patch128": {
+      "dice_opt": 0.7737836026845637,
+      "thr": 0.99
+    },
+    "tgtB_v3_win128": {
+      "dice_opt": 0.34047966845637584,
+      "thr": 0.001
+    },
+    "tgtB_v3_win192": {
+      "dice_opt": 0.32107319060402684,
+      "thr": 0.001
+    },
+    "tgtB_v3_win256": {
+      "dice_opt": 0.306409044295302,
+      "thr": 0.001
+    },
+    "tgtB_v3_win384": {
+      "dice_opt": 0.280397955704698,
+      "thr": 0.002
+    },
+    "tgtB_v3_win512": {
+      "dice_opt": 0.2648671932885906,
+      "thr": 0.01
+    },
+    "tgtB_v3_slice": {
+      "dice_opt": 0.23935914765100672,
+      "thr": 0.15
+    },
+    "tgtB_v3_volume": {
+      "dice_opt": 0.09794340297029704,
+      "thr": 0.999
+    },
+    "tgtB_v4_patch128": {
+      "dice_opt": 0.6946700370967742,
+      "thr": 0.999
+    },
+    "tgtB_v4_win128": {
+      "dice_opt": 0.32705760161290326,
+      "thr": 0.001
+    },
+    "tgtB_v4_win192": {
+      "dice_opt": 0.3066614822580645,
+      "thr": 0.001
+    },
+    "tgtB_v4_win256": {
+      "dice_opt": 0.2965870548387097,
+      "thr": 0.03
+    },
+    "tgtB_v4_win384": {
+      "dice_opt": 0.27881257580645163,
+      "thr": 0.3
+    },
+    "tgtB_v4_win512": {
+      "dice_opt": 0.2715445693548387,
+      "thr": 0.55
+    },
+    "tgtB_v4_slice": {
+      "dice_opt": 0.2545350241935484,
+      "thr": 0.85
+    },
+    "tgtB_v4_volume": {
+      "dice_opt": 0.11308018316831682,
+      "thr": 0.999
+    },
+    "bg_maj_v1_patch128": {
+      "dice_opt": 0.8650521392405063,
+      "thr": 0.005
+    },
+    "bg_maj_v1_win128": {
+      "dice_opt": 0.05931809493670886,
+      "thr": 0.001
+    },
+    "bg_maj_v1_win192": {
+      "dice_opt": 0.057534658227848104,
+      "thr": 0.001
+    },
+    "bg_maj_v1_win256": {
+      "dice_opt": 0.057040167721518986,
+      "thr": 0.001
+    },
+    "bg_maj_v1_win384": {
+      "dice_opt": 0.05673596202531646,
+      "thr": 0.001
+    },
+    "bg_maj_v1_win512": {
+      "dice_opt": 0.05814211075949367,
+      "thr": 0.001
+    },
+    "bg_maj_v1_slice": {
+      "dice_opt": 0.057014110759493676,
+      "thr": 0.001
+    },
+    "bg_maj_v1_volume": {
+      "dice_opt": 0.05885169801980198,
+      "thr": 0.005
+    },
+    "bg_maj_v2_patch128": {
+      "dice_opt": 0.8713066329113924,
+      "thr": 0.7
+    },
+    "bg_maj_v2_win128": {
+      "dice_opt": 0.05755517721518988,
+      "thr": 0.001
+    },
+    "bg_maj_v2_win192": {
+      "dice_opt": 0.05606910126582279,
+      "thr": 0.001
+    },
+    "bg_maj_v2_win256": {
+      "dice_opt": 0.05567679746835443,
+      "thr": 0.001
+    },
+    "bg_maj_v2_win384": {
+      "dice_opt": 0.05542006012658228,
+      "thr": 0.001
+    },
+    "bg_maj_v2_win512": {
+      "dice_opt": 0.05687996518987342,
+      "thr": 0.001
+    },
+    "bg_maj_v2_slice": {
+      "dice_opt": 0.055713775316455695,
+      "thr": 0.001
+    },
+    "bg_maj_v2_volume": {
+      "dice_opt": 0.060942475247524754,
+      "thr": 0.05
+    },
+    "bg_maj_v3_patch128": {
+      "dice_opt": 0.7734410234899328,
+      "thr": 0.99
+    },
+    "bg_maj_v3_win128": {
+      "dice_opt": 0.055014563758389264,
+      "thr": 0.001
+    },
+    "bg_maj_v3_win192": {
+      "dice_opt": 0.05393677852348994,
+      "thr": 0.002
+    },
+    "bg_maj_v3_win256": {
+      "dice_opt": 0.05353685234899329,
+      "thr": 0.002
+    },
+    "bg_maj_v3_win384": {
+      "dice_opt": 0.05325273825503356,
+      "thr": 0.002
+    },
+    "bg_maj_v3_win512": {
+      "dice_opt": 0.0539078355704698,
+      "thr": 0.01
+    },
+    "bg_maj_v3_slice": {
+      "dice_opt": 0.05334235906040268,
+      "thr": 0.01
+    },
+    "bg_maj_v3_volume": {
+      "dice_opt": 0.061518893564356435,
+      "thr": 0.998
+    },
+    "bg_maj_v4_patch128": {
+      "dice_opt": 0.695467870967742,
+      "thr": 0.998
+    },
+    "bg_maj_v4_win128": {
+      "dice_opt": 0.05181705645161291,
+      "thr": 0.001
+    },
+    "bg_maj_v4_win192": {
+      "dice_opt": 0.0506790564516129,
+      "thr": 0.001
+    },
+    "bg_maj_v4_win256": {
+      "dice_opt": 0.050312875,
+      "thr": 0.001
+    },
+    "bg_maj_v4_win384": {
+      "dice_opt": 0.04995493145161291,
+      "thr": 0.05
+    },
+    "bg_maj_v4_win512": {
+      "dice_opt": 0.050919092741935484,
+      "thr": 0.05
+    },
+    "bg_maj_v4_slice": {
+      "dice_opt": 0.05037208870967742,
+      "thr": 0.05
+    },
+    "bg_maj_v4_volume": {
+      "dice_opt": 0.1461907698019802,
+      "thr": 0.999
+    },
+    "tgtBshift_v1_patch128": {
+      "dice_opt": 0.8101543512658228,
+      "thr": 0.005
+    },
+    "tgtBshift_v1_win128": {
+      "dice_opt": 0.7558829303797469,
+      "thr": 0.01
+    },
+    "tgtBshift_v1_win192": {
+      "dice_opt": 0.6371835569620253,
+      "thr": 0.3
+    },
+    "tgtBshift_v1_win256": {
+      "dice_opt": 0.5621557183544305,
+      "thr": 0.98
+    },
+    "tgtBshift_v1_win384": {
+      "dice_opt": 0.4727045664556962,
+      "thr": 0.995
+    },
+    "tgtBshift_v1_win512": {
+      "dice_opt": 0.42242297151898733,
+      "thr": 0.998
+    },
+    "tgtBshift_v1_slice": {
+      "dice_opt": 0.38915461392405065,
+      "thr": 0.998
+    },
+    "tgtBshift_v1_volume": {
+      "dice_opt": 0.07816745544554456,
+      "thr": 0.999
+    },
+    "tgtBshift_v2_patch128": {
+      "dice_opt": 0.8110023512658228,
+      "thr": 0.55
+    },
+    "tgtBshift_v2_win128": {
+      "dice_opt": 0.7612441740506329,
+      "thr": 0.925
+    },
+    "tgtBshift_v2_win192": {
+      "dice_opt": 0.6723019272151899,
+      "thr": 0.99
+    },
+    "tgtBshift_v2_win256": {
+      "dice_opt": 0.6033534905063291,
+      "thr": 0.995
+    },
+    "tgtBshift_v2_win384": {
+      "dice_opt": 0.5169611234177215,
+      "thr": 0.998
+    },
+    "tgtBshift_v2_win512": {
+      "dice_opt": 0.4645857753164557,
+      "thr": 0.998
+    },
+    "tgtBshift_v2_slice": {
+      "dice_opt": 0.42888449683544305,
+      "thr": 0.999
+    },
+    "tgtBshift_v2_volume": {
+      "dice_opt": 0.07447482673267326,
+      "thr": 0.999
+    },
+    "tgtBshift_v3_patch128": {
+      "dice_opt": 0.7373546744966443,
+      "thr": 0.98
+    },
+    "tgtBshift_v3_win128": {
+      "dice_opt": 0.7081680973154363,
+      "thr": 0.99
+    },
+    "tgtBshift_v3_win192": {
+      "dice_opt": 0.6427709530201343,
+      "thr": 0.995
+    },
+    "tgtBshift_v3_win256": {
+      "dice_opt": 0.5908440939597316,
+      "thr": 0.998
+    },
+    "tgtBshift_v3_win384": {
+      "dice_opt": 0.5249240000000001,
+      "thr": 0.998
+    },
+    "tgtBshift_v3_win512": {
+      "dice_opt": 0.4761323456375839,
+      "thr": 0.999
+    },
+    "tgtBshift_v3_slice": {
+      "dice_opt": 0.44497357718120806,
+      "thr": 0.999
+    },
+    "tgtBshift_v3_volume": {
+      "dice_opt": 0.0672421410891089,
+      "thr": 0.999
+    },
+    "tgtBshift_v4_patch128": {
+      "dice_opt": 0.6675593951612904,
+      "thr": 0.995
+    },
+    "tgtBshift_v4_win128": {
+      "dice_opt": 0.6450887822580645,
+      "thr": 0.995
+    },
+    "tgtBshift_v4_win192": {
+      "dice_opt": 0.6024643346774193,
+      "thr": 0.998
+    },
+    "tgtBshift_v4_win256": {
+      "dice_opt": 0.5667547298387097,
+      "thr": 0.999
+    },
+    "tgtBshift_v4_win384": {
+      "dice_opt": 0.5161816572580645,
+      "thr": 0.999
+    },
+    "tgtBshift_v4_win512": {
+      "dice_opt": 0.4848871572580645,
+      "thr": 0.999
+    },
+    "tgtBshift_v4_slice": {
+      "dice_opt": 0.4509175443548387,
+      "thr": 0.999
+    },
+    "tgtBshift_v4_volume": {
+      "dice_opt": 0.05369782425742574,
+      "thr": 0.999
+    },
+    "tgtBshift_bg_v1_patch128": {
+      "dice_opt": 0.7919716582278481,
+      "thr": 0.005
+    },
+    "tgtBshift_bg_v1_win128": {
+      "dice_opt": 0.7575716044303797,
+      "thr": 0.01
+    },
+    "tgtBshift_bg_v1_win192": {
+      "dice_opt": 0.7071880506329115,
+      "thr": 0.02
+    },
+    "tgtBshift_bg_v1_win256": {
+      "dice_opt": 0.6583670253164557,
+      "thr": 0.03
+    },
+    "tgtBshift_bg_v1_win384": {
+      "dice_opt": 0.5859352468354431,
+      "thr": 0.05
+    },
+    "tgtBshift_bg_v1_win512": {
+      "dice_opt": 0.5339546297468354,
+      "thr": 0.1
+    },
+    "tgtBshift_bg_v1_slice": {
+      "dice_opt": 0.5001431424050633,
+      "thr": 0.98
+    },
+    "tgtBshift_bg_v1_volume": {
+      "dice_opt": 0.1424045495049505,
+      "thr": 0.998
+    },
+    "tgtBshift_bg_v2_patch128": {
+      "dice_opt": 0.7928523037974683,
+      "thr": 0.75
+    },
+    "tgtBshift_bg_v2_win128": {
+      "dice_opt": 0.7601762025316455,
+      "thr": 0.7
+    },
+    "tgtBshift_bg_v2_win192": {
+      "dice_opt": 0.7142761424050633,
+      "thr": 0.95
+    },
+    "tgtBshift_bg_v2_win256": {
+      "dice_opt": 0.6701721993670886,
+      "thr": 0.97
+    },
+    "tgtBshift_bg_v2_win384": {
+      "dice_opt": 0.6068548702531645,
+      "thr": 0.99
+    },
+    "tgtBshift_bg_v2_win512": {
+      "dice_opt": 0.5658621993670886,
+      "thr": 0.99
+    },
+    "tgtBshift_bg_v2_slice": {
+      "dice_opt": 0.5336488924050633,
+      "thr": 0.995
+    },
+    "tgtBshift_bg_v2_volume": {
+      "dice_opt": 0.15421511633663365,
+      "thr": 0.999
+    },
+    "tgtBshift_bg_v3_patch128": {
+      "dice_opt": 0.722784956375839,
+      "thr": 0.98
+    },
+    "tgtBshift_bg_v3_win128": {
+      "dice_opt": 0.6980833489932886,
+      "thr": 0.98
+    },
+    "tgtBshift_bg_v3_win192": {
+      "dice_opt": 0.6681295704697986,
+      "thr": 0.99
+    },
+    "tgtBshift_bg_v3_win256": {
+      "dice_opt": 0.6391223154362417,
+      "thr": 0.99
+    },
+    "tgtBshift_bg_v3_win384": {
+      "dice_opt": 0.5849256845637584,
+      "thr": 0.995
+    },
+    "tgtBshift_bg_v3_win512": {
+      "dice_opt": 0.5471605906040269,
+      "thr": 0.995
+    },
+    "tgtBshift_bg_v3_slice": {
+      "dice_opt": 0.5199434765100671,
+      "thr": 0.995
+    },
+    "tgtBshift_bg_v3_volume": {
+      "dice_opt": 0.14864875247524753,
+      "thr": 0.999
+    },
+    "tgtBshift_bg_v4_patch128": {
+      "dice_opt": 0.6543700927419355,
+      "thr": 0.995
+    },
+    "tgtBshift_bg_v4_win128": {
+      "dice_opt": 0.6290483870967741,
+      "thr": 0.99
+    },
+    "tgtBshift_bg_v4_win192": {
+      "dice_opt": 0.6080127217741936,
+      "thr": 0.995
+    },
+    "tgtBshift_bg_v4_win256": {
+      "dice_opt": 0.5878486854838709,
+      "thr": 0.995
+    },
+    "tgtBshift_bg_v4_win384": {
+      "dice_opt": 0.5406591854838709,
+      "thr": 0.998
+    },
+    "tgtBshift_bg_v4_win512": {
+      "dice_opt": 0.5226016088709677,
+      "thr": 0.998
+    },
+    "tgtBshift_bg_v4_slice": {
+      "dice_opt": 0.5073988508064516,
+      "thr": 0.998
+    },
+    "tgtBshift_bg_v4_volume": {
+      "dice_opt": 0.12783202475247524,
+      "thr": 0.999
+    }
+  },
+  "table4_paired": [
+    {
+      "arm": "tgtB",
+      "level": 1,
+      "segment": "输入上下文",
+      "n": 158,
+      "diff": -55.77158493670886,
+      "ci": [
+        -58.78255506012657,
+        -52.76513484177215
+      ],
+      "p": 4.590128339941245e-77
+    },
+    {
+      "arm": "tgtB",
+      "level": 1,
+      "segment": "纯视野效应",
+      "n": 158,
+      "diff": -5.104591518987341,
+      "ci": [
+        -5.868816003164557,
+        -4.355875300632912
+      ],
+      "p": 1.6155436883475256e-27
+    },
+    {
+      "arm": "tgtB",
+      "level": 1,
+      "segment": "窗口->整片",
+      "n": 158,
+      "diff": -2.8588674683544304,
+      "ci": [
+        -3.2762955126582276,
+        -2.4558190664556974
+      ],
+      "p": 6.239381204919655e-28
+    },
+    {
+      "arm": "tgtB",
+      "level": 1,
+      "segment": "纳入无结节切片",
+      "n": 158,
+      "diff": -17.346755316455695,
+      "ci": [
+        -19.338270120253167,
+        -15.278005493670884
+      ],
+      "p": 3.139970405383631e-35
+    },
+    {
+      "arm": "tgtB",
+      "level": 2,
+      "segment": "输入上下文",
+      "n": 158,
+      "diff": -61.680631645569626,
+      "ci": [
+        -64.61845016772152,
+        -58.72478240822785
+      ],
+      "p": 4.298056533289378e-84
+    },
+    {
+      "arm": "tgtB",
+      "level": 2,
+      "segment": "纯视野效应",
+      "n": 158,
+      "diff": -2.0278817721518987,
+      "ci": [
+        -2.575314712025316,
+        -1.4952373765822802
+      ],
+      "p": 9.815015764053858e-12
+    },
+    {
+      "arm": "tgtB",
+      "level": 2,
+      "segment": "窗口->整片",
+      "n": 158,
+      "diff": -1.6822212658227846,
+      "ci": [
+        -2.0253398101265825,
+        -1.3636690506329117
+      ],
+      "p": 3.641485500452816e-18
+    },
+    {
+      "arm": "tgtB",
+      "level": 2,
+      "segment": "纳入无结节切片",
+      "n": 158,
+      "diff": -14.730488860759495,
+      "ci": [
+        -16.782593009493667,
+        -12.628979651898735
+      ],
+      "p": 1.5203835415095741e-28
+    },
+    {
+      "arm": "tgtB",
+      "level": 3,
+      "segment": "输入上下文",
+      "n": 149,
+      "diff": -56.03223369127516,
+      "ci": [
+        -59.99238315771812,
+        -52.062896899328855
+      ],
+      "p": 1.77343557597469e-59
+    },
+    {
+      "arm": "tgtB",
+      "level": 3,
+      "segment": "纯视野效应",
+      "n": 149,
+      "diff": -0.7319106040268456,
+      "ci": [
+        -1.1883836946308723,
+        -0.23164120805369182
+      ],
+      "p": 0.003272280953104287
+    },
+    {
+      "arm": "tgtB",
+      "level": 3,
+      "segment": "窗口->整片",
+      "n": 149,
+      "diff": -0.7774010738255036,
+      "ci": [
+        -1.1054364060402686,
+        -0.45842124832214803
+      ],
+      "p": 4.3266267662379495e-06
+    },
+    {
+      "arm": "tgtB",
+      "level": 3,
+      "segment": "纳入无结节切片",
+      "n": 149,
+      "diff": -10.384083489932886,
+      "ci": [
+        -12.347990919463086,
+        -8.400155479865772
+      ],
+      "p": 2.248441829193893e-18
+    },
+    {
+      "arm": "tgtB",
+      "level": 4,
+      "segment": "输入上下文",
+      "n": 124,
+      "diff": -48.996481935483885,
+      "ci": [
+        -53.92825114919356,
+        -44.010661854838716
+      ],
+      "p": 1.6450281441262573e-38
+    },
+    {
+      "arm": "tgtB",
+      "level": 4,
+      "segment": "纯视野效应",
+      "n": 124,
+      "diff": -0.24613096774193538,
+      "ci": [
+        -0.5715972782258066,
+        0.10804795564516063
+      ],
+      "p": 0.15586923630840557
+    },
+    {
+      "arm": "tgtB",
+      "level": 4,
+      "segment": "窗口->整片",
+      "n": 124,
+      "diff": -0.3424014516129033,
+      "ci": [
+        -0.6026118629032258,
+        -0.10369482661290419
+      ],
+      "p": 0.009276097523909751
+    },
+    {
+      "arm": "tgtB",
+      "level": 4,
+      "segment": "纳入无结节切片",
+      "n": 124,
+      "diff": -6.98195177419355,
+      "ci": [
+        -8.940415875,
+        -5.180859653225807
+      ],
+      "p": 3.304700386320637e-11
+    },
+    {
+      "arm": "bg_maj",
+      "level": 1,
+      "segment": "输入上下文",
+      "n": 158,
+      "diff": -80.77797120253163,
+      "ci": [
+        -82.98451594936708,
+        -78.34708397151898
+      ],
+      "p": 1.6616696413999797e-118
+    },
+    {
+      "arm": "bg_maj",
+      "level": 1,
+      "segment": "纯视野效应",
+      "n": 158,
+      "diff": -0.09485822784810127,
+      "ci": [
+        -0.4845850712025317,
+        0.3156941693037973
+      ],
+      "p": 0.6501086771953539
+    },
+    {
+      "arm": "bg_maj",
+      "level": 1,
+      "segment": "窗口->整片",
+      "n": 158,
+      "diff": -0.10982246835443048,
+      "ci": [
+        -0.24062876582278514,
+        0.007614359177215095
+      ],
+      "p": 0.09474438374512259
+    },
+    {
+      "arm": "bg_maj",
+      "level": 1,
+      "segment": "纳入无结节切片",
+      "n": 158,
+      "diff": 1.1390006329113924,
+      "ci": [
+        0.3406433544303798,
+        2.0040160363924047
+      ],
+      "p": 0.00817646462591479
+    },
+    {
+      "arm": "bg_maj",
+      "level": 2,
+      "segment": "输入上下文",
+      "n": 158,
+      "diff": -81.95415696202532,
+      "ci": [
+        -84.03505547468355,
+        -79.64838465981015
+      ],
+      "p": 7.865575233439551e-122
+    },
+    {
+      "arm": "bg_maj",
+      "level": 2,
+      "segment": "纯视野效应",
+      "n": 158,
+      "diff": 0.012602848101265806,
+      "ci": [
+        -0.2981398338607595,
+        0.3850460522151899
+      ],
+      "p": 0.943479719013241
+    },
+    {
+      "arm": "bg_maj",
+      "level": 2,
+      "segment": "窗口->整片",
+      "n": 158,
+      "diff": -0.1100085443037975,
+      "ci": [
+        -0.23956751582278488,
+        0.0038053243670886
+      ],
+      "p": 0.09022012182918805
+    },
+    {
+      "arm": "bg_maj",
+      "level": 2,
+      "segment": "纳入无结节切片",
+      "n": 158,
+      "diff": 1.6238253164556962,
+      "ci": [
+        0.7828728955696204,
+        2.5767002452531647
+      ],
+      "p": 0.0006392821942807808
+    },
+    {
+      "arm": "bg_maj",
+      "level": 3,
+      "segment": "输入上下文",
+      "n": 149,
+      "diff": -73.26474865771812,
+      "ci": [
+        -77.19459783557046,
+        -69.04252448825504
+      ],
+      "p": 6.115812672293864e-72
+    },
+    {
+      "arm": "bg_maj",
+      "level": 3,
+      "segment": "纯视野效应",
+      "n": 149,
+      "diff": 0.03436845637583891,
+      "ci": [
+        -0.2072182382550335,
+        0.3518564513422815
+      ],
+      "p": 0.8105472177823133
+    },
+    {
+      "arm": "bg_maj",
+      "level": 3,
+      "segment": "窗口->整片",
+      "n": 149,
+      "diff": -0.021589261744966497,
+      "ci": [
+        -0.1110744798657718,
+        0.06501494966442939
+      ],
+      "p": 0.6368001585014466
+    },
+    {
+      "arm": "bg_maj",
+      "level": 3,
+      "segment": "纳入无结节切片",
+      "n": 149,
+      "diff": 1.3275006711409396,
+      "ci": [
+        0.5185342114093958,
+        2.2776055872483223
+      ],
+      "p": 0.0032264735840795904
+    },
+    {
+      "arm": "bg_maj",
+      "level": 4,
+      "segment": "输入上下文",
+      "n": 124,
+      "diff": -65.72514879032258,
+      "ci": [
+        -71.05554390120967,
+        -59.93066194556452
+      ],
+      "p": 3.5084762364274813e-47
+    },
+    {
+      "arm": "bg_maj",
+      "level": 4,
+      "segment": "纯视野效应",
+      "n": 124,
+      "diff": 0.07036975806451623,
+      "ci": [
+        -0.11810252016129003,
+        0.2758300504032258
+      ],
+      "p": 0.4926093780199264
+    },
+    {
+      "arm": "bg_maj",
+      "level": 4,
+      "segment": "窗口->整片",
+      "n": 124,
+      "diff": -0.039858064516129006,
+      "ci": [
+        -0.11877473790322579,
+        0.028549516129032282
+      ],
+      "p": 0.29694401872453596
+    },
+    {
+      "arm": "bg_maj",
+      "level": 4,
+      "segment": "纳入无结节切片",
+      "n": 124,
+      "diff": 1.2842649193548386,
+      "ci": [
+        0.5333757056451612,
+        2.1771946572580636
+      ],
+      "p": 0.0036318823616146257
+    },
+    {
+      "arm": "tgtBshift",
+      "level": 1,
+      "segment": "输入上下文",
+      "n": 158,
+      "diff": -5.27440917721519,
+      "ci": [
+        -6.388281139240507,
+        -4.230479351265824
+      ],
+      "p": 5.4269816803916176e-17
+    },
+    {
+      "arm": "tgtBshift",
+      "level": 1,
+      "segment": "纯视野效应",
+      "n": 158,
+      "diff": -46.29865443037974,
+      "ci": [
+        -48.53140644778482,
+        -44.16460462816456
+      ],
+      "p": 7.006312768726006e-86
+    },
+    {
+      "arm": "tgtBshift",
+      "level": 1,
+      "segment": "窗口->整片",
+      "n": 158,
+      "diff": -5.457945569620254,
+      "ci": [
+        -6.1940730221518985,
+        -4.765747610759495
+      ],
+      "p": 1.3415190758185715e-32
+    },
+    {
+      "arm": "tgtBshift",
+      "level": 1,
+      "segment": "纳入无结节切片",
+      "n": 158,
+      "diff": -21.081504746835442,
+      "ci": [
+        -22.655156337025314,
+        -19.450197674050635
+      ],
+      "p": 1.8989336109885571e-57
+    },
+    {
+      "arm": "tgtBshift",
+      "level": 2,
+      "segment": "输入上下文",
+      "n": 158,
+      "diff": -5.124172784810127,
+      "ci": [
+        -6.165707824367088,
+        -4.126117642405064
+      ],
+      "p": 1.8395116370036005e-17
+    },
+    {
+      "arm": "tgtBshift",
+      "level": 2,
+      "segment": "纯视野效应",
+      "n": 158,
+      "diff": -43.54357689873418,
+      "ci": [
+        -45.801290174050635,
+        -41.40056730221518
+      ],
+      "p": 1.0342858545596313e-80
+    },
+    {
+      "arm": "tgtBshift",
+      "level": 2,
+      "segment": "窗口->整片",
+      "n": 158,
+      "diff": -5.830299367088607,
+      "ci": [
+        -6.640248702531646,
+        -5.063835253164558
+      ],
+      "p": 3.342043901576338e-31
+    },
+    {
+      "arm": "tgtBshift",
+      "level": 2,
+      "segment": "纳入无结节切片",
+      "n": 158,
+      "diff": -23.55683734177215,
+      "ci": [
+        -25.243276431962027,
+        -21.80870884493671
+      ],
+      "p": 7.50588179915939e-60
+    },
+    {
+      "arm": "tgtBshift",
+      "level": 3,
+      "segment": "输入上下文",
+      "n": 149,
+      "diff": -3.163406375838926,
+      "ci": [
+        -4.1310726761744965,
+        -2.2435423909395977
+      ],
+      "p": 6.802947957073388e-10
+    },
+    {
+      "arm": "tgtBshift",
+      "level": 3,
+      "segment": "纯视野效应",
+      "n": 149,
+      "diff": -34.42506208053691,
+      "ci": [
+        -37.11421616610738,
+        -31.801841661073826
+      ],
+      "p": 4.932571422345981e-55
+    },
+    {
+      "arm": "tgtBshift",
+      "level": 3,
+      "segment": "窗口->整片",
+      "n": 149,
+      "diff": -5.488309395973155,
+      "ci": [
+        -6.422692265100671,
+        -4.609298229865773
+      ],
+      "p": 2.4279424222166098e-23
+    },
+    {
+      "arm": "tgtBshift",
+      "level": 3,
+      "segment": "纳入无结节切片",
+      "n": 149,
+      "diff": -27.035912080536914,
+      "ci": [
+        -29.29435727348993,
+        -24.624370511744967
+      ],
+      "p": 1.1041915538956153e-48
+    },
+    {
+      "arm": "tgtBshift",
+      "level": 4,
+      "segment": "输入上下文",
+      "n": 124,
+      "diff": -2.2470612903225806,
+      "ci": [
+        -3.279064324596774,
+        -1.315710161290324
+      ],
+      "p": 1.737678714631993e-05
+    },
+    {
+      "arm": "tgtBshift",
+      "level": 4,
+      "segment": "纯视野效应",
+      "n": 124,
+      "diff": -23.301227419354845,
+      "ci": [
+        -26.068853195564518,
+        -20.594420050403226
+      ],
+      "p": 2.830117520964606e-33
+    },
+    {
+      "arm": "tgtBshift",
+      "level": 4,
+      "segment": "窗口->整片",
+      "n": 124,
+      "diff": -4.9232834677419355,
+      "ci": [
+        -6.231443135080646,
+        -3.754496925403226
+      ],
+      "p": 1.464168030473011e-12
+    },
+    {
+      "arm": "tgtBshift",
+      "level": 4,
+      "segment": "纳入无结节切片",
+      "n": 124,
+      "diff": -31.560148387096774,
+      "ci": [
+        -34.904709848790326,
+        -28.201001683467744
+      ],
+      "p": 1.5794168454475704e-36
+    },
+    {
+      "arm": "tgtBshift_bg",
+      "level": 1,
+      "segment": "输入上下文",
+      "n": 158,
+      "diff": -3.4328101265822784,
+      "ci": [
+        -4.410438180379748,
+        -2.528821242088608
+      ],
+      "p": 6.529163512698989e-11
+    },
+    {
+      "arm": "tgtBshift_bg",
+      "level": 1,
+      "segment": "纯视野效应",
+      "n": 158,
+      "diff": -23.122257278481015,
+      "ci": [
+        -25.394449098101266,
+        -20.996685593354435
+      ],
+      "p": 5.995366992389104e-47
+    },
+    {
+      "arm": "tgtBshift_bg",
+      "level": 1,
+      "segment": "窗口->整片",
+      "n": 158,
+      "diff": -3.9601009493670887,
+      "ci": [
+        -4.975192120253165,
+        -3.076906526898735
+      ],
+      "p": 8.825932450634994e-14
+    },
+    {
+      "arm": "tgtBshift_bg",
+      "level": 1,
+      "segment": "纳入无结节切片",
+      "n": 158,
+      "diff": -38.5063414556962,
+      "ci": [
+        -40.86777081487342,
+        -36.161697863924054
+      ],
+      "p": 1.0606118721164703e-70
+    },
+    {
+      "arm": "tgtBshift_bg",
+      "level": 2,
+      "segment": "输入上下文",
+      "n": 158,
+      "diff": -3.2695768987341767,
+      "ci": [
+        -4.126971716772152,
+        -2.459291234177214
+      ],
+      "p": 3.801894978289011e-12
+    },
+    {
+      "arm": "tgtBshift_bg",
+      "level": 2,
+      "segment": "纯视野效应",
+      "n": 158,
+      "diff": -22.289617721518987,
+      "ci": [
+        -24.553618409810124,
+        -20.184867689873414
+      ],
+      "p": 2.5536134272628394e-45
+    },
+    {
+      "arm": "tgtBshift_bg",
+      "level": 2,
+      "segment": "窗口->整片",
+      "n": 158,
+      "diff": -4.102302531645569,
+      "ci": [
+        -5.158260617088607,
+        -3.1833340189873423
+      ],
+      "p": 1.3844832038653518e-13
+    },
+    {
+      "arm": "tgtBshift_bg",
+      "level": 2,
+      "segment": "纳入无结节切片",
+      "n": 158,
+      "diff": -39.594703797468355,
+      "ci": [
+        -42.03716516613923,
+        -37.24101141613924
+      ],
+      "p": 4.2628864053450044e-71
+    },
+    {
+      "arm": "tgtBshift_bg",
+      "level": 3,
+      "segment": "输入上下文",
+      "n": 149,
+      "diff": -2.4849392617449664,
+      "ci": [
+        -3.2984019714765096,
+        -1.6728914429530202
+      ],
+      "p": 1.951750588412174e-08
+    },
+    {
+      "arm": "tgtBshift_bg",
+      "level": 3,
+      "segment": "纯视野效应",
+      "n": 149,
+      "diff": -18.753792953020135,
+      "ci": [
+        -20.99038458053691,
+        -16.565660645973157
+      ],
+      "p": 3.430051580667557e-36
+    },
+    {
+      "arm": "tgtBshift_bg",
+      "level": 3,
+      "segment": "窗口->整片",
+      "n": 149,
+      "diff": -3.5150651006711406,
+      "ci": [
+        -4.5349164932885895,
+        -2.61197437080537
+      ],
+      "p": 4.602055946264752e-11
+    },
+    {
+      "arm": "tgtBshift_bg",
+      "level": 3,
+      "segment": "纳入无结节切片",
+      "n": 149,
+      "diff": -37.735049999999994,
+      "ci": [
+        -40.71752513422819,
+        -34.73402779362416
+      ],
+      "p": 1.9305613072723386e-54
+    },
+    {
+      "arm": "tgtBshift_bg",
+      "level": 4,
+      "segment": "输入上下文",
+      "n": 124,
+      "diff": -2.0701750000000008,
+      "ci": [
+        -3.036106038306453,
+        -1.2072665120967747
+      ],
+      "p": 1.800601063938215e-05
+    },
+    {
+      "arm": "tgtBshift_bg",
+      "level": 4,
+      "segment": "纯视野效应",
+      "n": 124,
+      "diff": -14.124370967741937,
+      "ci": [
+        -16.373443891129035,
+        -12.008740030241935
+      ],
+      "p": 4.866460085536758e-24
+    },
+    {
+      "arm": "tgtBshift_bg",
+      "level": 4,
+      "segment": "窗口->整片",
+      "n": 124,
+      "diff": -2.9848012096774186,
+      "ci": [
+        -4.062416199596774,
+        -2.0166428326612906
+      ],
+      "p": 1.0346651891471708e-07
+    },
+    {
+      "arm": "tgtBshift_bg",
+      "level": 4,
+      "segment": "纳入无结节切片",
+      "n": 124,
+      "diff": -35.932049596774206,
+      "ci": [
+        -39.877302540322574,
+        -32.14764355846775
+      ],
+      "p": 9.12336139917897e-37
+    }
+  ],
+  "table5_ranking": [
+    {
+      "name": "评测视野 128->512 窗口（本节实测，干净）",
+      "pts": 46.29865443037974,
+      "type": "协议"
+    },
+    {
+      "name": "切片->体积（与训练分布混杂，不可单独归因）",
+      "pts": 41.77395432071689,
+      "type": "混杂"
+    },
+    {
+      "name": "评测靶 V>=1..4（固定阈值 0.5）",
+      "pts": 16.42,
+      "type": "协议"
+    },
+    {
+      "name": "二值化阈值（并集臂 @V>=4）",
+      "pts": 10.02,
+      "type": "协议"
+    },
+    {
+      "name": "训练靶 4 臂极差 @V>=4",
+      "pts": 2.99,
+      "type": "方法"
+    },
+    {
+      "name": "架构 3 模型极差 @V>=2",
+      "pts": 1.43,
+      "type": "模型"
+    },
+    {
+      "name": "单次训练随机波动 2sigma",
+      "pts": 1.12,
+      "type": "噪声"
+    }
+  ]
+}

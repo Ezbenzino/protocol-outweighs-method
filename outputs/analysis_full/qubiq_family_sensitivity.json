@@ -1,0 +1,48 @@
+{
+  "original_7qubiq": {
+    "rho": -0.7857,
+    "exact_perm_p": 0.048
+  },
+  "original_8pt_incl_LIDC": {
+    "rho": -0.8571,
+    "exact_perm_p": 0.0107
+  },
+  "family_aggregated_5pt": {
+    "rho": -1.0,
+    "exact_perm_p": 0.0167,
+    "families": {
+      "brain-tumor": {
+        "n_subtasks": 3,
+        "mean_agree": 0.5292,
+        "mean_protocol": 11.85
+      },
+      "prostate": {
+        "n_subtasks": 2,
+        "mean_agree": 0.8627,
+        "mean_protocol": 8.31
+      }
+    },
+    "points": {
+      "LIDC": {
+        "agree": 0.333,
+        "protocol": 17.27
+      },
+      "brain-growth": {
+        "agree": 0.4891,
+        "protocol": 14.22
+      },
+      "kidney": {
+        "agree": 0.8677,
+        "protocol": 0.61
+      },
+      "brain-tumor-family": {
+        "agree": 0.5292,
+        "protocol": 11.85
+      },
+      "prostate-family": {
+        "agree": 0.8627,
+        "protocol": 8.31
+      }
+    }
+  }
+}
