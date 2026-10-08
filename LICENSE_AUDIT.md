@@ -2,7 +2,7 @@
 
 **Audit date: 2026-10-07.** Every check below was re-run on that date against the live pages cited, by fetching the raw HTML (curl) and counting literal substring matches — functionally identical to Ctrl+F on the rendered page. All quotes are verbatim from the page source, including original capitalisation. Pages drift over time; the counts recorded here are the values observed on the audit date. Raw HTML snapshots from the audit run were retained locally but are not redistributed with the repository.
 
-**Updated 2026-10-08:** licence decision recorded (§5); Wayback Machine evidence for QUBIQ added (§3.2, §7); QUBIQ download provenance and verification path documented (§7).
+**Updated 2026-10-08:** licence decision recorded (§5); the software record aligned to `other-open` (§5, §7); Wayback Machine evidence for QUBIQ added (§3.2, §7); QUBIQ download provenance and verification path documented (§7).
 
 **Scope:** the licensing and attribution obligations attached to the third-party data used by this repository (LIDC-IDRI, QUBIQ 2021), the licences declared for this repository's own artifacts, and the classification of every claim as *verified fact* (upstream page text) or *inference* (reasoned, not stated upstream). This document supplements README §6.
 
@@ -118,7 +118,7 @@ arXiv:2405.18435 metadata (2026-10-07): title **"QUBIQ: Uncertainty Quantificati
 
 **Status:** the chain is sound, but no Creative Commons page states verbatim that adaptations of CC BY 3.0 works may be relicensed as CC BY 4.0.
 
-**Decision (2026-10-08): the conservative option was taken.** The dataset record no longer asserts a specific downstream licence. `scripts/build_zenodo_release.py` (the generator) and `dist/zenodo/zenodo-metadata.json` (the staged record) declare `license: other-open`, and the record description states that the derived per-case results are distributed under open access with no restrictions beyond the upstream dataset terms. README §6 and `dist/zenodo/DEPOSIT_README.md` were updated to match. The software record remains MIT (the code is the author's own work); the manuscript text remains CC BY 4.0 (the author's own writing, not a data adaptation). The attribution obligations (facts, §2) are unchanged and already implemented everywhere. The inference chain is retained above so that a specific downstream licence can be asserted later if desired — only the record would need to change, not the attribution.
+**Decision (2026-10-08): the conservative option was taken.** The dataset record no longer asserts a specific downstream licence. `scripts/build_zenodo_release.py` (the generator) and `dist/zenodo/zenodo-metadata.json` (the staged record) declare `license: other-open`, and the record description states that the derived per-case results are distributed under open access with no restrictions beyond the upstream dataset terms. README §6 and `dist/zenodo/DEPOSIT_README.md` were updated to match. The **software** record was initially left as MIT on the grounds that the code is the author's own work, but it archives the whole repository — derived results included — so on 2026-10-08 it was aligned to `other-open` as well, with the per-component split (code MIT, derived results other-open, manuscript CC BY 4.0) stated in its description and notes. The manuscript text remains CC BY 4.0 (the author's own writing, not a data adaptation). The attribution obligations (facts, §2) are unchanged and already implemented everywhere. The inference chain is retained above so that a specific downstream licence can be asserted later if desired — only the record would need to change, not the attribution.
 
 ## 6. Corrections against the pre-audit checklist
 
@@ -134,7 +134,7 @@ Two expected values in the internal checklist did not match the live pages; in b
 |---|---|---|
 | [LICENSE](LICENSE) | MIT, "Copyright (c) 2026 Yize Li" | present |
 | [README.md](README.md) §6 | Per-component terms: MIT code; derived results open access under upstream terms (`other-open`); manuscript text CC BY 4.0; LIDC-IDRI CC BY 3.0 + data citation + verbatim acknowledgement; QUBIQ citation; no raw-data redistribution | present (updated 2026-10-08) |
-| [.zenodo.json](.zenodo.json) | Software record: `license: mit`; related identifier DOI 10.7937/K9/TCIA.2015.LO9QL9SX (`is derived from`); attribution block in description | present |
+| [.zenodo.json](.zenodo.json) | Software record: `license: other-open` (aligned 2026-10-08 — the archive carries derived results as well as code); per-component split stated in description and notes; related identifier DOI 10.7937/K9/TCIA.2015.LO9QL9SX (`is derived from`); attribution block in description | present |
 | `dist/zenodo/zenodo-metadata.json` | Dataset record: `license: other-open` (decision 2026-10-08; was `cc-by-4.0`); attribution block incl. the ToS Results sentence | generated, not committed — `dist/` is a build directory, so this path exists only after running the generator below |
 | `dist/zenodo/DEPOSIT_README.md` | Attribution section: data citation, acknowledgement, QUBIQ citation, licence rationale (`other-open`) | generated, not committed (same reason) |
 | [scripts/build_zenodo_release.py](scripts/build_zenodo_release.py) | Generator of the two dist files above; emits `other-open` and the matching description / deposit-README text | updated 2026-10-08 |
