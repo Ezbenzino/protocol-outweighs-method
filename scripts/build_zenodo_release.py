@@ -153,6 +153,9 @@ def main():
                 'generated from). <strong>protocol-outweighs-method-v22-lidc-per-case-csv.zip</strong> holds the LIDC-IDRI '
                 'per-case CSVs (five validation folds plus the 202-case held-out test set) from which every confidence '
                 'interval in the paper can be recomputed.</p>'
+                '<p>The 201.6 MB per-case CSV bundle is also mirrored on the GitHub release '
+                '(https://github.com/Ezbenzino/protocol-outweighs-method/releases/tag/v22), byte-identical and covered '
+                'by the same CHECKSUMS.sha256, for users on slow links to Zenodo.</p>'
                 '<p><strong>Attribution.</strong> LIDC-IDRI is distributed by The Cancer Imaging Archive under '
                 'CC BY 3.0, and users must abide by the TCIA Data Usage Policy. Data citation: Armato III, S. G., '
                 'McLennan, G., Bidaut, L., et al. (2015). Data From LIDC-IDRI [Data set]. The Cancer Imaging Archive. '
@@ -231,6 +234,14 @@ Every packed file was verified against outputs/release/manifest.json (size + SHA
 ## Verify
 
     sha256sum -c CHECKSUMS.sha256
+
+## Mirror
+
+The per-case CSV bundle (201.6 MB) is also attached to the GitHub release
+
+    https://github.com/Ezbenzino/protocol-outweighs-method/releases/tag/v22
+
+The two copies are byte-identical, and CHECKSUMS.sha256 covers either.
 
 ## Not included
 
