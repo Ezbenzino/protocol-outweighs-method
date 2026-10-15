@@ -1,0 +1,851 @@
+{
+ "000": {
+  "id": "000",
+  "fus": "N",
+  "fus_rule": "consensus by centroid clustering; level not given",
+  "thr": "N",
+  "crop": "C",
+  "ext": "S",
+  "ext_detail": "64x64x64 VOI around nodule centroid",
+  "evc": "Y",
+  "dim": "3D",
+  "data": "LIDC-IDRI, LUNA16",
+  "dice": "91.85 (LIDC)",
+  "fus_ev": [
+   "For nodules with annotations from multiple radiologists, we compute the consensus ground truth mask via centroid clustering analysis to mitigate inter-observer variability."
+  ],
+  "crop_ev": [
+   "From these resampled volumes, Volumes of Interest (VOIs) of size are cropped around the nodule centroids."
+  ],
+  "ext_ev": [
+   "The inference time was measured on a single NVIDIA GeForce RTX 3090 GPU with a standardized input patch size of 64 × 64 × 64."
+  ],
+  "note": "VOI size given only at inference-time statement"
+ },
+ "001": {
+  "id": "001",
+  "fus": "N",
+  "fus_rule": "four radiologists mentioned; no rule",
+  "thr": "N",
+  "crop": "NS",
+  "ext": "N",
+  "evc": "NS",
+  "dim": "2D",
+  "data": "LUNA16, LIDC-IDRI",
+  "dice": "98.75 (LUNA16); 97.68-99.08 (LIDC examples)",
+  "fus_ev": [
+   "Each scan in this dataset was independently reviewed by four experienced radiologists, who provided annotations and malignancy ratings for every identified nodule."
+  ],
+  "note": "only lung-ROI cropping described"
+ },
+ "002": {
+  "id": "002",
+  "fus": "N",
+  "fus_rule": "4-radiologist protocol mentioned; no rule",
+  "thr": "N",
+  "crop": "NS",
+  "ext": "N",
+  "evc": "NS",
+  "dim": "3D",
+  "data": "LUNA16, LIDC-IDRI, NSCLC-Radiomics",
+  "dice": "0.927",
+  "crop_ev": [
+   "Data preprocessing is identical across all methods, including CT windowing ([−1000, 400] HU), z-score normalization, and 64×64×64 voxel patch extraction, with identical data augmentation (random rotation ±15°, random flipping, elastic deformation)."
+  ],
+  "note": "patch size given, placement not stated"
+ },
+ "003": {
+  "id": "003",
+  "fus": "N",
+  "fus_rule": "slices retained by expert annotations; no rule for LIDC",
+  "thr": "N",
+  "crop": "C",
+  "ext": "S",
+  "ext_detail": "128x128 nodule-centred 2-D crop",
+  "evc": "Y",
+  "dim": "2D",
+  "data": "LIDC-IDRI, private",
+  "dice": "92.51 (LIDC)",
+  "crop_ev": [
+   "Based on this, the images were cropped with the nodule region as the center and uniformly resized to 128 × 128 pixels."
+  ],
+  "dice_ev": [
+   "It can be seen that DD-Net achieves the best performance across all key metrics, with mean IoU and Dice scores reaching 88.02% and 92.51%, respectively, outperforming all comparison methods in overall performance."
+  ]
+ },
+ "005": {
+  "id": "005",
+  "fus": "S",
+  "fus_rule": ">=3 readers, majority vote",
+  "thr": "S",
+  "thr_val": "SDF zero level",
+  "crop": "C",
+  "ext": "S",
+  "ext_detail": "64^3 patch at nodule centroid",
+  "evc": "Y",
+  "dim": "3D",
+  "data": "LIDC-IDRI, LUNA16, Tianchi",
+  "dice": "87.3 (LIDC)",
+  "fus_ev": [
+   "To ensure reliable supervision, we select nodules annotated by at least three radiologists and compute a consensus mask using majority voting."
+  ],
+  "thr_ev": [
+   "The final segmentation is obtained by thresholding the zero level-set of the predicted signed distance field (SDF)."
+  ],
+  "crop_ev": [
+   "3D patches of size 64 × 64 × 64 centered at nodule centroids are extracted to serve as inputs."
+  ]
+ },
+ "006": {
+  "id": "006",
+  "fus": "N",
+  "fus_rule": "reading protocol described; no rule",
+  "thr": "N",
+  "crop": "U",
+  "ext": "S",
+  "evc": "N",
+  "dim": "2D",
+  "data": "LIDC-IDRI, LNDb, LUNA16, Tianchi",
+  "dice": "95.5 (LIDC)",
+  "crop_ev": [
+   "During training, we sample full slices or patches that include at least one positive nodule mask when available (hard-example mining)."
+  ],
+  "dice_ev": [
+   "On the widely used LIDC-IDRI dataset, GLANCE achieves a Dice similarity coefficient (DSC) of 95.5%, an Intersection over Union (IoU) of 91.4%, a sensitivity of 96.0%, and a 95% Hausdorff Distance (HD95) of 0.7 mm."
+  ],
+  "ext_detail": "full 512x512 slice (stated working resolution)",
+  "ext_ev": [
+   "Slices are then resized to a fixed working resolution (H = W = 512)."
+  ]
+ },
+ "007": {
+  "id": "007",
+  "fus": "N",
+  "fus_rule": "none",
+  "thr": "N",
+  "crop": "U",
+  "crop_detail": "detector-proposed ROIs (stage 2)",
+  "ext": "N",
+  "evc": "N",
+  "dim": "2D/2.5D cascade",
+  "data": "LIDC-IDRI, DSB2017",
+  "dice": "92.7 (LIDC)",
+  "crop_ev": [
+   "The second stage focuses on fine segmentation of the candidate regions of interest (ROIs) produced in stage one, aiming to discriminate true nodules from false positives such as vascular adhesions."
+  ],
+  "dice_ev": [
+   "In LIDC-IDRI, its Dice coefficient reaches 92.7% (IQR 91.4–94.0), which is significantly ahead of nnU-Net (90.1%) and DeepLabv3+ (88.9%)."
+  ]
+ },
+ "011": {
+  "id": "011",
+  "fus": "N",
+  "fus_rule": "LUNA16 consensus centres/radii; mask rule not given",
+  "thr": "S",
+  "thr_val": "0.35",
+  "crop": "U",
+  "crop_detail": "positive patches containing a nodule plus negatives",
+  "ext": "N",
+  "evc": "NS",
+  "dim": "3D",
+  "data": "LUNA16, LIDC-IDRI",
+  "dice": "0.742",
+  "thr_ev": [
+   "Probability maps were thresholded at 0.35 to obtain binary nodule masks, followed by 3D connected-component filtering to remove regions smaller than the effective 5 mm diameter."
+  ],
+  "crop_ev": [
+   "For every positive patch containing at least one annotated nodule, two negative patches were sampled from lung parenchyma regions free of nodules (2:1 negative-to-positive ratio)."
+  ]
+ },
+ "013": {
+  "id": "013",
+  "fus": "N",
+  "fus_rule": "none",
+  "thr": "N",
+  "crop": "C",
+  "ext": "S",
+  "ext_detail": "64x64 nodule-centred crop",
+  "evc": "Y",
+  "dim": "2D",
+  "data": "LIDC-IDRI",
+  "dice": "see results",
+  "crop_ev": [
+   "To facilitate model learning of nodule positions, images and labels were cropped centered on the nodule at a resolution of 64 × 64 pixels."
+  ]
+ },
+ "014": {
+  "id": "014",
+  "fus": "N",
+  "fus_rule": "nodules confirmed by >=2 readers retained; mask rule not given",
+  "thr": "S",
+  "thr_val": "0.5",
+  "crop": "C",
+  "ext": "S",
+  "ext_detail": "64x64 crop at annotated centroid (resized to 256)",
+  "evc": "Y",
+  "dim": "2D",
+  "data": "LIDC-IDRI",
+  "dice": "85.89",
+  "fus_ev": [
+   "To ensure annotation reliability, only nodules confirmed by at least two radiologists were retained, while ambiguous or highly inconsistent annotations were excluded."
+  ],
+  "thr_ev": [
+   "After binarizing both predicted and ground-truth masks using a threshold of 0.5, the numbers of true positive (TP), false positive (FP), and false negative (FN) pixels were computed."
+  ],
+  "crop_ev": [
+   "For each nodule, a fixed-size region centered at the annotated centroid was cropped to a resolution of 64×64 pixels."
+  ]
+ },
+ "015": {
+  "id": "015",
+  "fus": "N",
+  "fus_rule": "none",
+  "thr": "N",
+  "crop": "U",
+  "crop_detail": "random axial crops of 48 slices from volumes",
+  "ext": "N",
+  "evc": "NS",
+  "dim": "3D",
+  "data": "LIDC-IDRI",
+  "dice": "88.6",
+  "crop_ev": [
+   "We use a batch size of 2 volumes with random axial crops of T = 48 slices."
+  ]
+ },
+ "017": {
+  "id": "017",
+  "fus": "S",
+  "fus_rule": ">=3 annotators consensus",
+  "thr": "S",
+  "thr_val": "0.5 (core map); final SDF thresholded",
+  "crop": "C",
+  "ext": "S",
+  "ext_detail": "64^3 patch centred on ROI",
+  "evc": "Y",
+  "dim": "3D",
+  "data": "LIDC-IDRI, LNDb, NSCLC-Radiomics",
+  "dice": "88.7",
+  "fus_ev": [
+   "Following prior works4, we extract nodules ≥ 3 mm and retain voxels with three or more annotators’ consensus."
+  ],
+  "thr_ev": [
+   "First, the map is binarized using a confidence threshold of 0.5."
+  ],
+  "crop_ev": [
+   "For computational efficiency and to maintain a consistent input size, we extracted 3D patches of 64 × 64 × 64 voxels, each centered on a region of interest (ROI)."
+  ]
+ },
+ "018": {
+  "id": "018",
+  "fus": "S",
+  "fus_rule": "50% agreement (pylidc)",
+  "thr": "N",
+  "crop": "NS",
+  "ext": "N",
+  "evc": "N",
+  "evc_detail": "fully automatic: ROI from nnU-Net output",
+  "dim": "2D",
+  "data": "LIDC-IDRI",
+  "dice": "0.6150",
+  "fus_ev": [
+   "Regarding expert annotations, a consensus mask was generated, representing 50% agreement among all annotations (see Figure 1)."
+  ]
+ },
+ "022": {
+  "id": "022",
+  "fus": "N",
+  "fus_rule": "none",
+  "thr": "N",
+  "crop": "NS",
+  "ext": "N",
+  "evc": "NS",
+  "dim": "2D",
+  "data": "LIDC-IDRI, LUNA16, in-house",
+  "dice": "85.92 (LIDC); 90.88 (LUNA16)",
+  "note": "input size inferable from architecture only"
+ },
+ "025": {
+  "id": "025",
+  "fus": "N",
+  "fus_rule": "none",
+  "thr": "N",
+  "crop": "U",
+  "crop_detail": "full 512x512 slices",
+  "ext": "S",
+  "ext_detail": "full 512x512 slice",
+  "evc": "N",
+  "dim": "2D",
+  "data": "LIDC-IDRI",
+  "dice": "0.990",
+  "crop_ev": [
+   "All scans are standardized to a resolution of 512 × 512 pixels, formatted in three channels, and normalized using Hounsfield Units (HU) to ensure consistency in intensity values."
+  ]
+ },
+ "034": {
+  "id": "034",
+  "fus": "N",
+  "fus_rule": "two-phase reading described; no rule",
+  "thr": "N",
+  "crop": "NS",
+  "ext": "N",
+  "evc": "NS",
+  "dim": "2D",
+  "data": "LIDC-IDRI, LUNA16",
+  "dice": "see paper"
+ },
+ "037": {
+  "id": "037",
+  "fus": "N",
+  "fus_rule": "none",
+  "thr": "N",
+  "crop": "C",
+  "crop_detail": "96x96 crop placed by nodule location",
+  "ext": "S",
+  "ext_detail": "96x96 nodule-located crop",
+  "evc": "Y",
+  "dim": "2D",
+  "data": "LIDC-IDRI",
+  "dice": "see paper",
+  "crop_ev": [
+   "After preprocessing the CT images, we crop them to $$96\\times 96$$ images according to the locations of the nodules"
+  ]
+ },
+ "040": {
+  "id": "040",
+  "fus": "N",
+  "fus_rule": "XML annotations generate masks; no rule",
+  "thr": "N",
+  "thr_val": "threshold applied, value not given",
+  "crop": "C",
+  "ext": "N",
+  "ext_detail": "crop sizes not given",
+  "evc": "Y",
+  "dim": "2D",
+  "data": "LUNA16, LIDC-IDRI",
+  "dice": "0.978 (LUNA16)",
+  "fus_ev": [
+   "The annotations in all cases are provided in XML files, and these annotations generate segmentation ground truth masks."
+  ],
+  "thr_ev": [
+   "The final segmentation map is acquired by applying a threshold to the output feature map y , where values above the threshold are assigned to the nodule region and values below the threshold are assigned to the non-nodule region."
+  ],
+  "crop_ev": [
+   "For cancerous nodule segmentation, the CT image’s nodule patches are cropped based on its annotation nodule center."
+  ]
+ },
+ "041": {
+  "id": "041",
+  "fus": "N",
+  "fus_rule": "'2/3 consensus standard' for nodule adoption; mask rule unclear",
+  "thr": "N",
+  "crop": "C",
+  "crop_detail": "64x64 nodule patches",
+  "ext": "S",
+  "ext_detail": "64x64 nodule patch",
+  "evc": "Y",
+  "dim": "2D",
+  "data": "LIDC-IDRI",
+  "dice": "83.2",
+  "fus_ev": [
+   "Finally, we examined the nodules annotated by the four radiologists, and due to the variability among the four different radiologists, nodules that met the 2/3 consensus standard were adopted to generate ground truth."
+  ],
+  "crop_ev": [
+   "Then the nodule images were uniformly cropped into 64 × 64 CT patches."
+  ]
+ },
+ "042": {
+  "id": "042",
+  "fus": "S",
+  "fus_rule": "each radiologist's annotation used separately (no fusion)",
+  "thr": "N",
+  "crop": "C",
+  "ext": "S",
+  "ext_detail": "128x128 nodule-centred patch",
+  "evc": "Y",
+  "dim": "2D",
+  "data": "LIDC-IDRI, private",
+  "dice": "92.65 (LIDC)",
+  "fus_ev": [
+   "When training models using the LIDC dataset, this study adopted the professional opinion of each radiologist to ensure fairness and validity of the experimental data."
+  ],
+  "crop_ev": [
+   "First, image patches were cropped with the nodule as the center and resized to a fixed resolution of 128 × 128 pixels along the slice dimension only."
+  ],
+  "note": "fusion phrasing indirect; 15,096 images suggests per-reader masks"
+ },
+ "044": {
+  "id": "044",
+  "fus": "S",
+  "fus_rule": "nodules marked by all four readers; 50% consensus",
+  "thr": "N",
+  "crop": "U",
+  "crop_detail": "random 256x256x32 blocks of resized volume",
+  "ext": "S",
+  "ext_detail": "whole resized 256x256 slice",
+  "evc": "N",
+  "dim": "2.5D/3D",
+  "data": "LIDC-IDRI",
+  "dice": "see paper",
+  "fus_ev": [
+   "To construct each CT scan’s ground truth segmentation map, a 50% consensus criteria was applied for each annotated nodule."
+  ],
+  "crop_ev": [
+   "(4) Randomly sample one or several 256 × 256 × 32 image blocks from the processed image."
+  ]
+ },
+ "055": {
+  "id": "055",
+  "fus": "N",
+  "fus_rule": "none",
+  "thr": "N",
+  "crop": "U",
+  "crop_detail": "YOLOv3-detected ROI resized to 64x64",
+  "ext": "S",
+  "ext_detail": "64x64 detector ROI",
+  "evc": "N",
+  "dim": "2D",
+  "data": "LIDC-IDRI",
+  "dice": "95.x",
+  "crop_ev": [
+   "The detected nodules have been cropped and resized to 64 × 64 patches using the inter-cubic interpolation method for further analysis."
+  ]
+ },
+ "056": {
+  "id": "056",
+  "fus": "S",
+  "fus_rule": "area labelled by >=3 readers",
+  "thr": "N",
+  "crop": "U",
+  "crop_detail": "whole case split into two 48x192x192 sub-volumes",
+  "ext": "S",
+  "ext_detail": "whole (resampled) volume",
+  "evc": "N",
+  "dim": "3D",
+  "data": "LIDC-IDRI",
+  "dice": ">0.8 for >10 mm",
+  "fus_ev": [
+   "For the segmentation of lung nodules, the area labeled as nodules by at least three doctors was selected as the ground truth for nodule lesion mask."
+  ],
+  "crop_ev": [
+   "Then we separated a case of CT data along vertical axis into two subcases of 48 × 192 × 192 voxels as the input of segmentation network."
+  ]
+ },
+ "060": {
+  "id": "060",
+  "fus": "N",
+  "fus_rule": "'radiologist-validated masks' (LUNA16); no rule",
+  "thr": "N",
+  "crop": "NS",
+  "ext": "N",
+  "evc": "NS",
+  "dim": "2D",
+  "data": "LUNA16",
+  "dice": "0.80",
+  "note": "'full slice' mentioned only in a comparison table"
+ },
+ "064": {
+  "id": "064",
+  "fus": "N",
+  "fus_rule": "nodules consistently annotated by >=3 readers selected; mask rule not given",
+  "thr": "N",
+  "crop": "C",
+  "ext": "S",
+  "ext_detail": "64x64 nodule-centred crop",
+  "evc": "Y",
+  "dim": "2D",
+  "data": "LIDC-IDRI",
+  "dice": "90.52",
+  "crop_ev": [
+   "在此基础上，以结节为中心裁剪CT图像，最终获得7 335张尺寸为64 × 64的图像，然后将这些数据按8∶2划分为训练集和测试集。"
+  ]
+ },
+ "067": {
+  "id": "067",
+  "fus": "N",
+  "fus_rule": "none",
+  "thr": "N",
+  "crop": "U",
+  "crop_detail": "full slices resized to 224x224",
+  "ext": "S",
+  "ext_detail": "full slice resized to 224x224",
+  "evc": "N",
+  "dim": "2D",
+  "data": "LIDC-IDRI",
+  "dice": "see paper",
+  "crop_ev": [
+   "Finally, all test images are resized to 224 × 224 × 3 and then used for the segmentation and classification task."
+  ]
+ },
+ "088": {
+  "id": "088",
+  "fus": "S",
+  "fus_rule": "50% consensus (pyLIDC)",
+  "thr": "S",
+  "thr_val": "tau selected on validation set (ensemble)",
+  "crop": "U",
+  "crop_detail": "full axial slice plus GT-derived ROI mask",
+  "ext": "N",
+  "evc": "NS",
+  "dim": "2D->3D",
+  "data": "LIDC-IDRI",
+  "dice": "see paper",
+  "fus_ev": [
+   "The ground-truth border for pulmonary nodule segmentation was created using a 50% consensus criterion [31] due to the variability among the four radiologists, and a Python module named pyLIDC was employed."
+  ],
+  "thr_ev": [
+   "τ is the threshold that is determined on the validation set."
+  ],
+  "crop_ev": [
+   "To train our DEHA-Net architecture, we generated ROI masks by using ground-truth nodule masks."
+  ],
+  "note": "ROI hint from GT; test ROI from 'user or CADe system'"
+ },
+ "089": {
+  "id": "089",
+  "fus": "S",
+  "fus_rule": "50% consensus of four readers",
+  "thr": "N",
+  "crop": "C",
+  "crop_detail": "64^3 grid cube containing the nodule (GT-located)",
+  "ext": "S",
+  "ext_detail": "64^3 VOI",
+  "evc": "Y",
+  "dim": "3D",
+  "data": "LIDC-IDRI",
+  "dice": "0.83",
+  "fus_ev": [
+   "The 50% consensus consolidation boundary approximated from the independent boundaries annotated by four radiologists is used as the final annotation."
+  ],
+  "crop_ev": [
+   "The VOI extraction method divides the image into small cubes of equal size and extracts the cube that comprises the nodule."
+  ],
+  "dice_ev": [
+   "The proposed model achieves an overall average DSC of 0.83 ± 0.05 and an IoU of 0.72 ± 0.07 for lung nodule segmentation in the LIDC test dataset."
+  ]
+ },
+ "090": {
+  "id": "090",
+  "fus": "N",
+  "fus_rule": "GT from annotation point set; reader/rule not given",
+  "thr": "N",
+  "crop": "C",
+  "ext": "S",
+  "ext_detail": "128x128 ROI centred on GT moment",
+  "evc": "Y",
+  "dim": "2D",
+  "data": "LIDC-IDRI, LUNA16",
+  "dice": "0.74 range",
+  "fus_ev": [
+   "We extracted the content within the range of −600–1200 Hounsfield Units from the original CT image and generated the ground truth based on the point set described in the annotation file."
+  ],
+  "crop_ev": [
+   "Then, a 128 × 128 region of interest was centered at the second-order moment of the ground truth for extraction."
+  ]
+ },
+ "091": {
+  "id": "091",
+  "fus": "N",
+  "fus_rule": "labels from LIDC XML; rule not given",
+  "thr": "N",
+  "crop": "NS",
+  "crop_detail": "16x96x96 block, placement not stated",
+  "ext": "S",
+  "ext_detail": "16x96x96 block",
+  "evc": "NS",
+  "dim": "3D",
+  "data": "LUNA16 / LIDC-IDRI",
+  "dice": "see paper",
+  "crop_ev": [
+   "In the fourth step, the processed image was cropped and labeled into a volume block of 16×96×96, where 16 is the number of image layers, and 96×96 is the size of each layer of the image."
+  ]
+ },
+ "092": {
+  "id": "092",
+  "fus": "N",
+  "fus_rule": "LUNA16 nodules marked by >=3 readers retained; mask rule not given",
+  "thr": "N",
+  "crop": "C",
+  "crop_detail": "ROI from annotated centre and diameter",
+  "ext": "S",
+  "ext_detail": "16x96x96 patch",
+  "evc": "Y",
+  "dim": "3D",
+  "data": "LUNA16",
+  "dice": "84.30",
+  "fus_ev": [
+   "The LUNA16 dataset retains only nodules with a diameter greater than 3 mm, which were annotated as nodules by at least three radiologists."
+  ],
+  "crop_ev": [
+   "Subsequently, Regions of Interest (ROIs) were extracted based on nodule annotations using the center coordinates and diameter, with a focus on nodule-containing regions to enable detailed segmentation and reduce computational overhead."
+  ]
+ },
+ "098": {
+  "id": "098",
+  "fus": "N",
+  "fus_rule": "four readers mentioned; no rule",
+  "thr": "N",
+  "crop": "U",
+  "crop_detail": "YOLOv3-detected ROI resized to 64x64",
+  "ext": "S",
+  "ext_detail": "64x64 detector ROI",
+  "evc": "N",
+  "dim": "2D",
+  "data": "LUNA16 / LIDC-IDRI",
+  "dice": "see paper",
+  "crop_ev": [
+   "The identified nodules are subsequently cropped and resized to patches with a size of 64 × 64 by the inter-cubic interpolation technique."
+  ]
+ },
+ "099": {
+  "id": "099",
+  "fus": "S",
+  "fus_rule": "LUNA16 masks from an automatic segmentation algorithm (no reader fusion)",
+  "thr": "N",
+  "crop": "C",
+  "crop_detail": "96x96 crop around nodule location",
+  "ext": "S",
+  "ext_detail": "96x96 crop",
+  "evc": "Y",
+  "dim": "2D",
+  "data": "LUNA16, LC183",
+  "dice": "0.5253 / 0.6837",
+  "fus_ev": [
+   "The ground truth was generated using an automatic segmentation algorithm28."
+  ],
+  "crop_ev": [
+   "As shown in Fig. 6, for an original CT image with dimensions of $$512 \\times 512$$ , we first crop it around the lung nodule locations, creating images of size $$96 \\times 96$$ ."
+  ]
+ },
+ "100": {
+  "id": "100",
+  "fus": "S",
+  "fus_rule": "each expert's mask used separately (no fusion)",
+  "thr": "S",
+  "thr_val": "0.5",
+  "crop": "C",
+  "crop_detail": "51 mm cube at mean centre of mass, resized to 64^3",
+  "ext": "S",
+  "ext_detail": "64^3 cube",
+  "evc": "Y",
+  "dim": "3D",
+  "data": "LIDC-IDRI",
+  "dice": "IoU 0.55",
+  "fus_ev": [
+   "Since each nodule can have multiple segmentations (one per expert), iW-Net had to perform different corrections according to the expert’s annotation and the respective simulated user input."
+  ],
+  "thr_ev": [
+   "iW-Net produces pixel-wise predictions ∈[0 1], which are thresholded at 0.5 for the model’s evaluation."
+  ],
+  "crop_ev": [
+   "All nodules were collected by patching a 51 × 51 × 51 mm cube centered at the average center of mass of the specialists annotations and were then isotropically resized to 64 × 64 × 64 voxels."
+  ]
+ },
+ "103": {
+  "id": "103",
+  "fus": "S",
+  "fus_rule": "nodules marked by all four readers; 50% consensus (pyLIDC)",
+  "thr": "N",
+  "crop": "C",
+  "crop_detail": "GT-located ROI with random margins (128x128)",
+  "ext": "N",
+  "evc": "Y",
+  "evc_detail": "initial 2-D ROI supplied (radiologist/GT)",
+  "dim": "2D->3D",
+  "data": "LIDC-IDRI",
+  "dice": "see paper",
+  "fus_ev": [
+   "Because of the inter-variability among the four radiologists, a 50% consensus criterion34 is opted to generate the ground truth boundary of the pulmonary nodule segmentation and a python library named pyLIDC is used for this purpose."
+  ],
+  "crop_ev": [
+   "The values of all four margins are generated with a random function; restricted between zero and the maximum diameter of a nodule within the slice."
+  ]
+ },
+ "111": {
+  "id": "111",
+  "fus": "S",
+  "fus_rule": "average of four readers' marks",
+  "thr": "S",
+  "thr_val": "ROC-optimal threshold",
+  "crop": "C",
+  "crop_detail": "patches centred on voxels inside GT nodule cube (cube = nodule + 10 px margin)",
+  "ext": "S",
+  "ext_detail": "nodule cube with 10-pixel margin",
+  "evc": "Y",
+  "dim": "2.5D",
+  "data": "LIDC-IDRI",
+  "dice": "0.926",
+  "fus_ev": [
+   "In this paper, we use the average results of the four radiologists as the marked area of ​​the lung nodules."
+  ],
+  "thr_ev": [
+   "The value of the point closest to the upper left corner is the optimal threshold."
+  ],
+  "crop_ev": [
+   "We extract lung nodules into voxel cubes, adding 10 pixels in each of the six directions of the nodule to include additional non-nodule tissues inside."
+  ]
+ },
+ "113": {
+  "id": "113",
+  "fus": "N",
+  "fus_rule": "none",
+  "thr": "N",
+  "crop": "C",
+  "crop_detail": "96x96x16 cube at annotated centre",
+  "ext": "S",
+  "ext_detail": "96x96x16 cube",
+  "evc": "Y",
+  "dim": "3D",
+  "data": "LUNA16, LNDb",
+  "dice": "94.9 (LUNA16)",
+  "crop_ev": [
+   "Therefore, according to the coordinates and maximum diameters of the nodule central site provided in the annotation file, the original image and its corresponding label image were cut into a cube with the size of 96*96*16 pixels to retain the informati"
+  ]
+ },
+ "116": {
+  "id": "116",
+  "fus": "N",
+  "fus_rule": "'expert radiologists using semi-automated tools'; no rule",
+  "thr": "N",
+  "crop": "NS",
+  "ext": "N",
+  "evc": "NS",
+  "dim": "2D",
+  "data": "LUNA16",
+  "dice": "87.22-91.76"
+ },
+ "117": {
+  "id": "117",
+  "fus": "N",
+  "fus_rule": "four readers mentioned; no rule",
+  "thr": "N",
+  "crop": "U",
+  "crop_detail": "512x512 CT images",
+  "ext": "S",
+  "ext_detail": "full 512x512 slice",
+  "evc": "N",
+  "dim": "2D",
+  "data": "LIDC-IDRI / LUNA16",
+  "dice": "see paper",
+  "crop_ev": [
+   "The proposed model uses CT images with a size of 512 × 512 pixels; a data augmentation technique was used in the place of a sample strategy to improve the proposed model's generality possible and sturdiness, size, turn, move, rotate, and elastic deform"
+  ]
+ },
+ "130": {
+  "id": "130",
+  "fus": "N",
+  "fus_rule": "none",
+  "thr": "N",
+  "crop": "C",
+  "crop_detail": "128x128 crop by nodule location",
+  "ext": "S",
+  "ext_detail": "128x128 nodule-located crop",
+  "evc": "Y",
+  "dim": "2D",
+  "data": "LUNA16 (+LiTS)",
+  "dice": "84.00 (LUNA16)",
+  "crop_ev": [
+   "Since it contains large non-nodal regions, we crop the image according to the nodal locations and selected an image of 128 × 128 size including all parts of the nodes."
+  ]
+ },
+ "132": {
+  "id": "132",
+  "fus": "S",
+  "fus_rule": "masks from annotations via a cited mask-creation algorithm (DSB2017 kernel)",
+  "thr": "N",
+  "crop": "U",
+  "crop_detail": "512x512 input slice",
+  "ext": "S",
+  "ext_detail": "full 512x512 slice",
+  "evc": "N",
+  "dim": "2D",
+  "data": "LUNA16, QIN",
+  "dice": "82.82",
+  "fus_ev": [
+   "In the pre-processing phase, the CT images and ground truth masks were generated from CT scans, utilizing the Kaggle Data Science Bowl 2017 Competition based on annotations and a mask creation algorithm [49]."
+  ],
+  "crop_ev": [
+   "The proposed U-Det architecture is designed to take a 512×512 image as an input and a 512×512 mask as output."
+  ]
+ },
+ "137": {
+  "id": "137",
+  "fus": "N",
+  "fus_rule": "none",
+  "thr": "N",
+  "crop": "NS",
+  "ext": "N",
+  "evc": "NS",
+  "dim": "2D",
+  "data": "LUNA16, LiTS17",
+  "dice": "0.829 (LUNA16)"
+ },
+ "138": {
+  "id": "138",
+  "fus": "N",
+  "fus_rule": "four readers mentioned; no rule",
+  "thr": "N",
+  "crop": "U",
+  "crop_detail": "512x512 slices",
+  "ext": "S",
+  "ext_detail": "full 512x512 slice",
+  "evc": "N",
+  "dim": "2D",
+  "data": "LIDC-IDRI, private",
+  "dice": "mIoU 87.76",
+  "crop_ev": [
+   "The dataset includes 9265 slices with lung nodules, and the captured images are 512 ×512 in size."
+  ],
+  "note": "extent inferred from stated image size"
+ },
+ "142": {
+  "id": "142",
+  "fus": "N",
+  "fus_rule": "none",
+  "thr": "N",
+  "crop": "U",
+  "crop_detail": "lung-masked slices resized to 512x512",
+  "ext": "S",
+  "ext_detail": "full 512x512 slice",
+  "evc": "N",
+  "dim": "2D",
+  "data": "LUNA16",
+  "dice": "88.34",
+  "crop_ev": [
+   "First, the images were resized to 512 × 512, and then converted to TFRecord to make the dataset compatible with the DeepLab code."
+  ]
+ },
+ "146": {
+  "id": "146",
+  "fus": "N",
+  "fus_rule": "nodules delineated by all four readers selected; mask rule not given",
+  "thr": "N",
+  "crop": "C",
+  "crop_detail": "160x160 ROI centred on tumour",
+  "ext": "S",
+  "ext_detail": "160x160 image (LIDC)",
+  "evc": "Y",
+  "dim": "2D",
+  "data": "LIDC-IDRI (external), TCIA, MSKCC",
+  "dice": "0.68 (LIDC)",
+  "crop_ev": [
+   "Training was performed using patches of size 160×160 or region of interest (ROI) centered around the tumor.",
+   "The MSKCC and LIDC datasets consisted of 256×256 and 160×160 images, respectively."
+  ],
+  "dice_ev": [
+   "Our best performing incremental-MRRN method produced the highest DSC of 0.74±0.13 for TCIA, 0.75±0.12 for MSKCC and 0.68±0.23 for the LIDC datasets."
+  ]
+ },
+ "078": {
+  "id": "078",
+  "fus": "N",
+  "fus_rule": "none for LUNA16 masks",
+  "thr": "N",
+  "crop": "NS",
+  "ext": "N",
+  "evc": "NS",
+  "dim": "3D",
+  "data": "LUNA16",
+  "dice": "F1/mIoU reported",
+  "note": "radiologist-in-the-loop corrections on subset 9"
+ }
+}

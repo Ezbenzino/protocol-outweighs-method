@@ -1,0 +1,658 @@
+{
+"46": [
+"excluded: preprint",
+""
+],
+"71": [
+"excluded: preprint",
+""
+],
+"74": [
+"excluded: preprint",
+""
+],
+"86": [
+"excluded: preprint",
+""
+],
+"107": [
+"excluded: preprint",
+""
+],
+"125": [
+"excluded: preprint",
+""
+],
+"148": [
+"excluded: preprint",
+""
+],
+"153": [
+"excluded: preprint",
+""
+],
+"47": [
+"excluded: duplicate record",
+"duplicate of record 052"
+],
+"50": [
+"excluded: duplicate record",
+"duplicate of record 053"
+],
+"119": [
+"excluded: duplicate record",
+"duplicate of record 120"
+],
+"4": [
+"excluded at title/abstract",
+"detection or false-positive reduction only"
+],
+"9": [
+"excluded at title/abstract",
+"detection or false-positive reduction only"
+],
+"27": [
+"excluded at title/abstract",
+"detection or false-positive reduction only"
+],
+"30": [
+"excluded at title/abstract",
+"detection or false-positive reduction only"
+],
+"36": [
+"excluded at title/abstract",
+"detection or false-positive reduction only"
+],
+"63": [
+"excluded at title/abstract",
+"detection or false-positive reduction only"
+],
+"68": [
+"excluded at title/abstract",
+"detection or false-positive reduction only"
+],
+"93": [
+"excluded at title/abstract",
+"detection or false-positive reduction only"
+],
+"101": [
+"excluded at title/abstract",
+"detection or false-positive reduction only"
+],
+"109": [
+"excluded at title/abstract",
+"detection or false-positive reduction only"
+],
+"110": [
+"excluded at title/abstract",
+"detection or false-positive reduction only"
+],
+"120": [
+"excluded at title/abstract",
+"detection or false-positive reduction only"
+],
+"122": [
+"excluded at title/abstract",
+"detection or false-positive reduction only"
+],
+"139": [
+"excluded at title/abstract",
+"detection or false-positive reduction only"
+],
+"141": [
+"excluded at title/abstract",
+"detection or false-positive reduction only"
+],
+"150": [
+"excluded at title/abstract",
+"detection or false-positive reduction only"
+],
+"154": [
+"excluded at title/abstract",
+"detection or false-positive reduction only"
+],
+"157": [
+"excluded at title/abstract",
+"detection or false-positive reduction only"
+],
+"159": [
+"excluded at title/abstract",
+"detection or false-positive reduction only"
+],
+"161": [
+"excluded at title/abstract",
+"detection or false-positive reduction only"
+],
+"162": [
+"excluded at title/abstract",
+"detection or false-positive reduction only"
+],
+"10": [
+"excluded at title/abstract",
+"classification or diagnosis only (no segmentation overlap result)"
+],
+"20": [
+"excluded at title/abstract",
+"classification or diagnosis only (no segmentation overlap result)"
+],
+"29": [
+"excluded at title/abstract",
+"classification or diagnosis only (no segmentation overlap result)"
+],
+"38": [
+"excluded at title/abstract",
+"classification or diagnosis only (no segmentation overlap result)"
+],
+"43": [
+"excluded at title/abstract",
+"classification or diagnosis only (no segmentation overlap result)"
+],
+"53": [
+"excluded at title/abstract",
+"classification or diagnosis only (no segmentation overlap result)"
+],
+"62": [
+"excluded at title/abstract",
+"classification or diagnosis only (no segmentation overlap result)"
+],
+"69": [
+"excluded at title/abstract",
+"classification or diagnosis only (no segmentation overlap result)"
+],
+"73": [
+"excluded at title/abstract",
+"classification or diagnosis only (no segmentation overlap result)"
+],
+"79": [
+"excluded at title/abstract",
+"classification or diagnosis only (no segmentation overlap result)"
+],
+"118": [
+"excluded at title/abstract",
+"classification or diagnosis only (no segmentation overlap result)"
+],
+"128": [
+"excluded at title/abstract",
+"classification or diagnosis only (no segmentation overlap result)"
+],
+"131": [
+"excluded at title/abstract",
+"classification or diagnosis only (no segmentation overlap result)"
+],
+"151": [
+"excluded at title/abstract",
+"classification or diagnosis only (no segmentation overlap result)"
+],
+"152": [
+"excluded at title/abstract",
+"classification or diagnosis only (no segmentation overlap result)"
+],
+"158": [
+"excluded at title/abstract",
+"classification or diagnosis only (no segmentation overlap result)"
+],
+"24": [
+"excluded at title/abstract",
+"review or survey without original segmentation experiments"
+],
+"57": [
+"excluded at title/abstract",
+"review or survey without original segmentation experiments"
+],
+"65": [
+"excluded at title/abstract",
+"review or survey without original segmentation experiments"
+],
+"112": [
+"excluded at title/abstract",
+"review or survey without original segmentation experiments"
+],
+"31": [
+"excluded at title/abstract",
+"image synthesis or generation"
+],
+"35": [
+"excluded at title/abstract",
+"image synthesis or generation"
+],
+"52": [
+"excluded at title/abstract",
+"dataset, data-format or feature-quantification study"
+],
+"59": [
+"excluded at title/abstract",
+"dataset, data-format or feature-quantification study"
+],
+"66": [
+"excluded at title/abstract",
+"dataset, data-format or feature-quantification study"
+],
+"87": [
+"excluded at title/abstract",
+"dataset, data-format or feature-quantification study"
+],
+"147": [
+"excluded at title/abstract",
+"dataset, data-format or feature-quantification study"
+],
+"48": [
+"excluded at title/abstract",
+"lung or lung-parenchyma segmentation, not nodules"
+],
+"102": [
+"excluded at title/abstract",
+"lung or lung-parenchyma segmentation, not nodules"
+],
+"135": [
+"excluded at title/abstract",
+"lung or lung-parenchyma segmentation, not nodules"
+],
+"143": [
+"excluded at title/abstract",
+"lung or lung-parenchyma segmentation, not nodules"
+],
+"149": [
+"excluded at title/abstract",
+"lung or lung-parenchyma segmentation, not nodules"
+],
+"156": [
+"excluded at title/abstract",
+"lung or lung-parenchyma segmentation, not nodules"
+],
+"83": [
+"excluded at title/abstract",
+"non-learning segmentation method"
+],
+"84": [
+"excluded at title/abstract",
+"non-learning segmentation method"
+],
+"94": [
+"excluded at title/abstract",
+"non-learning segmentation method"
+],
+"95": [
+"excluded at title/abstract",
+"non-learning segmentation method"
+],
+"96": [
+"excluded at title/abstract",
+"non-learning segmentation method"
+],
+"127": [
+"excluded at title/abstract",
+"non-learning segmentation method"
+],
+"134": [
+"excluded at title/abstract",
+"non-learning segmentation method"
+],
+"163": [
+"excluded at title/abstract",
+"non-learning segmentation method"
+],
+"75": [
+"excluded at title/abstract",
+"non-learning segmentation method"
+],
+"77": [
+"excluded at title/abstract",
+"other (no nodule segmentation result)"
+],
+"133": [
+"excluded at title/abstract",
+"other (no nodule segmentation result)"
+],
+"12": [
+"excluded at full text",
+"training-free geometric analysis; no segmentation model trained"
+],
+"19": [
+"excluded at full text",
+"segmentation by classical image processing; no learning-based model"
+],
+"114": [
+"excluded at full text",
+"clustering-based detection; no nodule segmentation overlap result"
+],
+"123": [
+"excluded at full text",
+"no segmentation overlap metric reported"
+],
+"129": [
+"excluded at full text",
+"LUNA16 used only to synthesise training data; segmentation evaluated on other datasets"
+],
+"140": [
+"excluded at full text",
+"IoU reported for lung segmentation and nodule localisation boxes only"
+],
+"8": [
+"eligible; full text not available in PMC",
+""
+],
+"16": [
+"eligible; full text not available in PMC",
+""
+],
+"21": [
+"eligible; full text not available in PMC",
+""
+],
+"23": [
+"eligible; full text not available in PMC",
+""
+],
+"26": [
+"eligible; full text not available in PMC",
+""
+],
+"28": [
+"eligible; full text not available in PMC",
+""
+],
+"32": [
+"eligible; full text not available in PMC",
+""
+],
+"33": [
+"eligible; full text not available in PMC",
+""
+],
+"39": [
+"eligible; full text not available in PMC",
+""
+],
+"45": [
+"eligible; full text not available in PMC",
+""
+],
+"49": [
+"eligible; full text not available in PMC",
+""
+],
+"51": [
+"eligible; full text not available in PMC",
+""
+],
+"54": [
+"eligible; full text not available in PMC",
+""
+],
+"58": [
+"eligible; full text not available in PMC",
+""
+],
+"61": [
+"eligible; full text not available in PMC",
+""
+],
+"70": [
+"eligible; full text not available in PMC",
+""
+],
+"72": [
+"eligible; full text not available in PMC",
+""
+],
+"76": [
+"eligible; full text not available in PMC",
+""
+],
+"80": [
+"eligible; full text not available in PMC",
+""
+],
+"81": [
+"eligible; full text not available in PMC",
+""
+],
+"85": [
+"eligible; full text not available in PMC",
+""
+],
+"104": [
+"eligible; full text not available in PMC",
+""
+],
+"105": [
+"eligible; full text not available in PMC",
+""
+],
+"106": [
+"eligible; full text not available in PMC",
+""
+],
+"108": [
+"eligible; full text not available in PMC",
+""
+],
+"115": [
+"eligible; full text not available in PMC",
+""
+],
+"121": [
+"eligible; full text not available in PMC",
+""
+],
+"124": [
+"eligible; full text not available in PMC",
+""
+],
+"126": [
+"eligible; full text not available in PMC",
+""
+],
+"144": [
+"eligible; full text not available in PMC",
+""
+],
+"145": [
+"eligible; full text not available in PMC",
+""
+],
+"155": [
+"eligible; full text not available in PMC",
+""
+],
+"160": [
+"eligible; full text not available in PMC",
+""
+],
+"97": [
+"eligible; PMC full text not retrievable at survey time",
+""
+],
+"136": [
+"eligible; PMC full text not retrievable at survey time",
+""
+],
+"0": [
+"eligible; full text read and coded",
+""
+],
+"1": [
+"eligible; full text read and coded",
+""
+],
+"2": [
+"eligible; full text read and coded",
+""
+],
+"3": [
+"eligible; full text read and coded",
+""
+],
+"5": [
+"eligible; full text read and coded",
+""
+],
+"6": [
+"eligible; full text read and coded",
+""
+],
+"7": [
+"eligible; full text read and coded",
+""
+],
+"11": [
+"eligible; full text read and coded",
+""
+],
+"13": [
+"eligible; full text read and coded",
+""
+],
+"14": [
+"eligible; full text read and coded",
+""
+],
+"15": [
+"eligible; full text read and coded",
+""
+],
+"17": [
+"eligible; full text read and coded",
+""
+],
+"18": [
+"eligible; full text read and coded",
+""
+],
+"22": [
+"eligible; full text read and coded",
+""
+],
+"25": [
+"eligible; full text read and coded",
+""
+],
+"34": [
+"eligible; full text read and coded",
+""
+],
+"37": [
+"eligible; full text read and coded",
+""
+],
+"40": [
+"eligible; full text read and coded",
+""
+],
+"41": [
+"eligible; full text read and coded",
+""
+],
+"42": [
+"eligible; full text read and coded",
+""
+],
+"44": [
+"eligible; full text read and coded",
+""
+],
+"55": [
+"eligible; full text read and coded",
+""
+],
+"56": [
+"eligible; full text read and coded",
+""
+],
+"60": [
+"eligible; full text read and coded",
+""
+],
+"64": [
+"eligible; full text read and coded",
+""
+],
+"67": [
+"eligible; full text read and coded",
+""
+],
+"88": [
+"eligible; full text read and coded",
+""
+],
+"89": [
+"eligible; full text read and coded",
+""
+],
+"90": [
+"eligible; full text read and coded",
+""
+],
+"91": [
+"eligible; full text read and coded",
+""
+],
+"92": [
+"eligible; full text read and coded",
+""
+],
+"98": [
+"eligible; full text read and coded",
+""
+],
+"99": [
+"eligible; full text read and coded",
+""
+],
+"100": [
+"eligible; full text read and coded",
+""
+],
+"103": [
+"eligible; full text read and coded",
+""
+],
+"111": [
+"eligible; full text read and coded",
+""
+],
+"113": [
+"eligible; full text read and coded",
+""
+],
+"116": [
+"eligible; full text read and coded",
+""
+],
+"117": [
+"eligible; full text read and coded",
+""
+],
+"130": [
+"eligible; full text read and coded",
+""
+],
+"132": [
+"eligible; full text read and coded",
+""
+],
+"137": [
+"eligible; full text read and coded",
+""
+],
+"138": [
+"eligible; full text read and coded",
+""
+],
+"142": [
+"eligible; full text read and coded",
+""
+],
+"146": [
+"eligible; full text read and coded",
+""
+],
+"78": [
+"eligible; full text read and coded",
+""
+],
+"82": [
+"excluded at title/abstract",
+"detection or false-positive reduction only"
+]
+}

@@ -1,0 +1,5921 @@
+{
+"query": "TITLE_ABS:(\"LIDC-IDRI\" OR \"LIDC\" OR \"LUNA16\" OR \"LUNA\") AND TITLE_ABS:(segment*) AND TITLE_ABS:(nodule*) AND PUB_YEAR:[2018 TO 2026]",
+"retrieved": "2026-10-15T10:43:47.493814Z",
+"hitCount": 164,
+"note": "abstracts removed; re-run the query to obtain them",
+"results": [
+{
+"id": "41933165",
+"source": "MED",
+"pmid": "41933165",
+"pmcid": "PMC13199496",
+"doi": "10.1038/s41598-026-47436-3",
+"title": "CA-3DTransUNet with dynamic cross-scale fusion for pulmonary nodule segmentation.",
+"authorString": "Zhang K, Lan X, Wang Y, Wang L, Liu Y, Guo F.",
+"journalInfo": {
+"issue": "1",
+"volume": "16",
+"journalIssueId": 4168316,
+"dateOfPublication": "2026 Apr",
+"monthOfPublication": 4,
+"yearOfPublication": 2026,
+"journal": {
+"medlineAbbreviation": "Sci Rep",
+"title": "Scientific reports",
+"essn": "2045-2322",
+"issn": "2045-2322",
+"nlmid": "101563288",
+"isoabbreviation": "Sci Rep"
+},
+"printPublicationDate": "2026-04-01"
+},
+"pubYear": "2026",
+"pubTypeList": {
+"pubType": [
+"research-article",
+"Journal Article"
+]
+},
+"isOpenAccess": "Y",
+"inEPMC": "Y",
+"inPMC": "Y",
+"hasPDF": "Y",
+"firstPublicationDate": "2026-04-03"
+},
+{
+"id": "41390502",
+"source": "MED",
+"pmid": "41390502",
+"pmcid": "PMC12800184",
+"doi": "10.1038/s41598-025-31147-2",
+"title": "Multi-phase deep learning framework with Multiscale Adaptive Swin Transformer and embedding attention for precision lung nodule detection and classification.",
+"authorString": "M D, B RAP.",
+"journalInfo": {
+"issue": "1",
+"volume": "16",
+"journalIssueId": 4083230,
+"dateOfPublication": "2025 Dec",
+"monthOfPublication": 12,
+"yearOfPublication": 2025,
+"journal": {
+"medlineAbbreviation": "Sci Rep",
+"title": "Scientific reports",
+"essn": "2045-2322",
+"issn": "2045-2322",
+"nlmid": "101563288",
+"isoabbreviation": "Sci Rep"
+},
+"printPublicationDate": "2025-12-01"
+},
+"pubYear": "2025",
+"pubTypeList": {
+"pubType": [
+"research-article",
+"Journal Article"
+]
+},
+"isOpenAccess": "Y",
+"inEPMC": "Y",
+"inPMC": "Y",
+"hasPDF": "Y",
+"firstPublicationDate": "2025-12-13"
+},
+{
+"id": "42430392",
+"source": "MED",
+"pmid": "42430392",
+"pmcid": "PMC13354005",
+"doi": "10.1371/journal.pone.0341096",
+"title": "Adaptive geometric-attention network for two-stage lung nodule segmentation and malignancy classification in federated healthcare IoT edge environments.",
+"authorString": "Sufyan M, Qian J, Li J, Imran A, Sabah F, Sarwar R.",
+"journalInfo": {
+"issue": "7",
+"volume": "21",
+"journalIssueId": 4223974,
+"dateOfPublication": "2026 ",
+"monthOfPublication": 0,
+"yearOfPublication": 2026,
+"journal": {
+"medlineAbbreviation": "PLoS One",
+"title": "PloS one",
+"essn": "1932-6203",
+"issn": "1932-6203",
+"nlmid": "101285081",
+"isoabbreviation": "PLoS One"
+},
+"printPublicationDate": "2026-01-01"
+},
+"pubYear": "2026",
+"pubTypeList": {
+"pubType": [
+"research-article",
+"Journal Article"
+]
+},
+"isOpenAccess": "Y",
+"inEPMC": "Y",
+"inPMC": "Y",
+"hasPDF": "Y",
+"firstPublicationDate": "2026-07-10"
+},
+{
+"id": "42662002",
+"source": "MED",
+"pmid": "42662002",
+"pmcid": "PMC13518582",
+"doi": "10.3389/fmed.2026.1907240",
+"title": "DD-Net: a dual-domain progressive fusion network enhanced by high-low frequency separation for lung nodule segmentation.",
+"authorString": "Fan X, Deng L, Hou J, Ling Z.",
+"journalInfo": {
+"volume": "13",
+"journalIssueId": 4110742,
+"dateOfPublication": "2026 ",
+"monthOfPublication": 0,
+"yearOfPublication": 2026,
+"journal": {
+"medlineAbbreviation": "Front Med (Lausanne)",
+"title": "Frontiers in medicine",
+"essn": "2296-858X",
+"issn": "2296-858X",
+"nlmid": "101648047",
+"isoabbreviation": "Front Med (Lausanne)"
+},
+"printPublicationDate": "2026-01-01"
+},
+"pubYear": "2026",
+"pubTypeList": {
+"pubType": [
+"research-article",
+"Journal Article"
+]
+},
+"isOpenAccess": "Y",
+"inEPMC": "Y",
+"inPMC": "Y",
+"hasPDF": "Y",
+"firstPublicationDate": "2026-08-13"
+},
+{
+"id": "42312470",
+"source": "MED",
+"pmid": "42312470",
+"doi": "10.1080/14737140.2026.2689719",
+"title": "RTsDEN: reverse task attention enabled deep learning model for lung cancer detection using computed tomography.",
+"authorString": "Sundara Raj Retna Bai L, Joseph A, Sundara Raj Retna Bai F.",
+"journalInfo": {
+"journalIssueId": 4203725,
+"dateOfPublication": "2026 Jun",
+"monthOfPublication": 6,
+"yearOfPublication": 2026,
+"journal": {
+"medlineAbbreviation": "Expert Rev Anticancer Ther",
+"title": "Expert review of anticancer therapy",
+"essn": "1744-8328",
+"issn": "1473-7140",
+"nlmid": "101123358",
+"isoabbreviation": "Expert Rev Anticancer Ther"
+},
+"printPublicationDate": "2026-06-01"
+},
+"pubYear": "2026",
+"pubTypeList": {
+"pubType": [
+"Journal Article"
+]
+},
+"isOpenAccess": "N",
+"inEPMC": "N",
+"inPMC": "N",
+"hasPDF": "N",
+"firstPublicationDate": "2026-06-29"
+},
+{
+"id": "41310368",
+"source": "MED",
+"pmid": "41310368",
+"pmcid": "PMC12673127",
+"doi": "10.1038/s41746-025-02041-y",
+"title": "ShapeField-lung: continuous shape embedding for early lung cancer detection via pulmonary nodule segmentation.",
+"authorString": "Gu X, Zhu Y, Li C, Xu X, Jin K, Xu L.",
+"journalInfo": {
+"issue": "1",
+"volume": "8",
+"journalIssueId": 4040841,
+"dateOfPublication": "2025 Nov",
+"monthOfPublication": 11,
+"yearOfPublication": 2025,
+"journal": {
+"medlineAbbreviation": "NPJ Digit Med",
+"title": "NPJ digital medicine",
+"essn": "2398-6352",
+"issn": "2398-6352",
+"nlmid": "101731738",
+"isoabbreviation": "NPJ Digit Med"
+},
+"printPublicationDate": "2025-11-01"
+},
+"pubYear": "2025",
+"pubTypeList": {
+"pubType": [
+"research-article",
+"Journal Article"
+]
+},
+"isOpenAccess": "Y",
+"inEPMC": "Y",
+"inPMC": "Y",
+"hasPDF": "Y",
+"firstPublicationDate": "2025-11-27"
+},
+{
+"id": "41469800",
+"source": "MED",
+"pmid": "41469800",
+"pmcid": "PMC12827329",
+"doi": "10.1038/s41746-025-02251-4",
+"title": "GLANCE: continuous global-local exchange with consensus fusion for robust nodule segmentation.",
+"authorString": "Ming R, Wang F, Zheng T, Yu Z, Huang X, Huang S, Tian H, Wang W, Deng J, Liu H, Zheng Y.",
+"journalInfo": {
+"issue": "1",
+"volume": "9",
+"journalIssueId": 4083254,
+"dateOfPublication": "2025 Dec",
+"monthOfPublication": 12,
+"yearOfPublication": 2025,
+"journal": {
+"medlineAbbreviation": "NPJ Digit Med",
+"title": "NPJ digital medicine",
+"essn": "2398-6352",
+"issn": "2398-6352",
+"nlmid": "101731738",
+"isoabbreviation": "NPJ Digit Med"
+},
+"printPublicationDate": "2025-12-01"
+},
+"pubYear": "2025",
+"pubTypeList": {
+"pubType": [
+"research-article",
+"Journal Article"
+]
+},
+"isOpenAccess": "Y",
+"inEPMC": "Y",
+"inPMC": "Y",
+"hasPDF": "Y",
+"firstPublicationDate": "2025-12-30"
+},
+{
+"id": "41650207",
+"source": "MED",
+"pmid": "41650207",
+"pmcid": "PMC12880664",
+"doi": "10.1371/journal.pone.0341750",
+"title": "MLND-IU: A multi-stage detection model of subcentimeter lung nodule with improved U-Net+.",
+"authorString": "Wen H, Luo X, Zhong B, Xiao Y, Chen D, Zhu L.",
+"journalInfo": {
+"issue": "2",
+"volume": "21",
+"journalIssueId": 4112576,
+"dateOfPublication": "2026 ",
+"monthOfPublication": 0,
+"yearOfPublication": 2026,
+"journal": {
+"medlineAbbreviation": "PLoS One",
+"title": "PloS one",
+"essn": "1932-6203",
+"issn": "1932-6203",
+"nlmid": "101285081",
+"isoabbreviation": "PLoS One"
+},
+"printPublicationDate": "2026-01-01"
+},
+"pubYear": "2026",
+"pubTypeList": {
+"pubType": [
+"research-article",
+"Journal Article"
+]
+},
+"isOpenAccess": "Y",
+"inEPMC": "Y",
+"inPMC": "Y",
+"hasPDF": "Y",
+"firstPublicationDate": "2026-02-06"
+},
+{
+"id": "42773338",
+"source": "MED",
+"pmid": "42773338",
+"doi": "10.1007/s10278-026-02293-4",
+"title": "Node-U-Net: A Lightweight Attention-Guided Network for Pulmonary Nodule Segmentation.",
+"authorString": "Tüyel AU, Aslan YA, Harb MRA.",
+"journalInfo": {
+"journalIssueId": 4257392,
+"dateOfPublication": "2026 Sep",
+"monthOfPublication": 9,
+"yearOfPublication": 2026,
+"journal": {
+"medlineAbbreviation": "J Imaging Inform Med",
+"title": "Journal of imaging informatics in medicine",
+"essn": "2948-2933",
+"issn": "2948-2933",
+"nlmid": "9918663679206676",
+"isoabbreviation": "J Imaging Inform Med"
+},
+"printPublicationDate": "2026-09-01"
+},
+"pubYear": "2026",
+"pubTypeList": {
+"pubType": [
+"Journal Article"
+]
+},
+"isOpenAccess": "N",
+"inEPMC": "N",
+"inPMC": "N",
+"hasPDF": "N",
+"firstPublicationDate": "2026-09-22"
+},
+{
+"id": "41551153",
+"source": "MED",
+"pmid": "41551153",
+"pmcid": "PMC12807957",
+"doi": "10.3389/fonc.2025.1698698",
+"title": "An enhanced YOLOv10 architecture for high-sensitivity and high-specificity lung cancer detection.",
+"authorString": "Li L, Guo J, Li Y, Li C, Du J.",
+"journalInfo": {
+"volume": "15",
+"journalIssueId": 3894978,
+"dateOfPublication": "2025 ",
+"monthOfPublication": 0,
+"yearOfPublication": 2025,
+"journal": {
+"medlineAbbreviation": "Front Oncol",
+"title": "Frontiers in oncology",
+"essn": "2234-943X",
+"issn": "2234-943X",
+"nlmid": "101568867",
+"isoabbreviation": "Front Oncol"
+},
+"printPublicationDate": "2025-01-01"
+},
+"pubYear": "2025",
+"pubTypeList": {
+"pubType": [
+"research-article",
+"Journal Article"
+]
+},
+"isOpenAccess": "Y",
+"inEPMC": "Y",
+"inPMC": "Y",
+"hasPDF": "Y",
+"firstPublicationDate": "2026-01-02"
+},
+{
+"id": "42739235",
+"source": "MED",
+"pmid": "42739235",
+"pmcid": "PMC13564513",
+"doi": "10.3390/diagnostics16172805",
+"title": "AI-Driven Tumor Characterization and Histological Subtype Classification in Lung Cancer Using CT Imaging.",
+"authorString": "Shorfuzzaman M, Iftikhar A, Najam S, Almotiri J, Aljulayfi AF, AlHammadi DA, Jalal A.",
+"journalInfo": {
+"issue": "17",
+"volume": "16",
+"journalIssueId": 4250173,
+"dateOfPublication": "2026 Aug",
+"monthOfPublication": 8,
+"yearOfPublication": 2026,
+"journal": {
+"medlineAbbreviation": "Diagnostics (Basel)",
+"title": "Diagnostics (Basel, Switzerland)",
+"essn": "2075-4418",
+"issn": "2075-4418",
+"nlmid": "101658402",
+"isoabbreviation": "Diagnostics (Basel)"
+},
+"printPublicationDate": "2026-08-01"
+},
+"pubYear": "2026",
+"pubTypeList": {
+"pubType": [
+"research-article",
+"Journal Article"
+]
+},
+"isOpenAccess": "Y",
+"inEPMC": "Y",
+"inPMC": "Y",
+"hasPDF": "Y",
+"firstPublicationDate": "2026-08-31"
+},
+{
+"id": "41590236",
+"source": "MED",
+"pmid": "41590236",
+"pmcid": "PMC12840476",
+"doi": "10.3390/diseases14010021",
+"title": "Segmentation-Guided Hybrid Deep Learning for Pulmonary Nodule Detection and Risk Prediction from Multi-Cohort CT Images.",
+"authorString": "Subramanyam GK, Srinivas K, Indugu VVR, Gondi DS, Subbammagari SKG.",
+"journalInfo": {
+"issue": "1",
+"volume": "14",
+"journalIssueId": 4101924,
+"dateOfPublication": "2026 Jan",
+"monthOfPublication": 1,
+"yearOfPublication": 2026,
+"journal": {
+"medlineAbbreviation": "Diseases",
+"title": "Diseases (Basel, Switzerland)",
+"essn": "2079-9721",
+"issn": "2079-9721",
+"nlmid": "101636232",
+"isoabbreviation": "Diseases"
+},
+"printPublicationDate": "2026-01-01"
+},
+"pubYear": "2026",
+"pubTypeList": {
+"pubType": [
+"research-article",
+"Journal Article"
+]
+},
+"isOpenAccess": "Y",
+"inEPMC": "Y",
+"inPMC": "Y",
+"hasPDF": "Y",
+"firstPublicationDate": "2026-01-06"
+},
+{
+"id": "42793812",
+"source": "MED",
+"pmid": "42793812",
+"pmcid": "PMC13605439",
+"doi": "10.3390/diagnostics16183027",
+"title": "Quantifying the Resolution Ceiling of Prototype-Based Few-Shot Segmentation on Sub-Centimetre Pulmonary Nodules: A Training-Free Geometric Analysis.",
+"authorString": "Cho JH.",
+"journalInfo": {
+"issue": "18",
+"volume": "16",
+"journalIssueId": 4270439,
+"dateOfPublication": "2026 Sep",
+"monthOfPublication": 9,
+"yearOfPublication": 2026,
+"journal": {
+"medlineAbbreviation": "Diagnostics (Basel)",
+"title": "Diagnostics (Basel, Switzerland)",
+"essn": "2075-4418",
+"issn": "2075-4418",
+"nlmid": "101658402",
+"isoabbreviation": "Diagnostics (Basel)"
+},
+"printPublicationDate": "2026-09-01"
+},
+"pubYear": "2026",
+"pubTypeList": {
+"pubType": [
+"research-article",
+"Journal Article"
+]
+},
+"isOpenAccess": "Y",
+"inEPMC": "Y",
+"inPMC": "Y",
+"hasPDF": "Y",
+"firstPublicationDate": "2026-09-18"
+},
+{
+"id": "42143263",
+"source": "MED",
+"pmid": "42143263",
+"pmcid": "PMC13366801",
+"doi": "10.1186/s12880-026-02376-2",
+"title": "MTRFU-Net: a lung nodule segmentation model based on improved U-Net architecture with spatial-frequency fusion.",
+"authorString": "Wu Y, Li B.",
+"journalInfo": {
+"issue": "1",
+"volume": "26",
+"journalIssueId": 4193999,
+"dateOfPublication": "2026 May",
+"monthOfPublication": 5,
+"yearOfPublication": 2026,
+"journal": {
+"medlineAbbreviation": "BMC Med Imaging",
+"title": "BMC medical imaging",
+"essn": "1471-2342",
+"issn": "1471-2342",
+"nlmid": "100968553",
+"isoabbreviation": "BMC Med Imaging"
+},
+"printPublicationDate": "2026-05-01"
+},
+"pubYear": "2026",
+"pubTypeList": {
+"pubType": [
+"research-article",
+"Journal Article"
+]
+},
+"isOpenAccess": "Y",
+"inEPMC": "Y",
+"inPMC": "Y",
+"hasPDF": "Y",
+"firstPublicationDate": "2026-05-16"
+},
+{
+"id": "42358551",
+"source": "MED",
+"pmid": "42358551",
+"pmcid": "PMC13291940",
+"doi": "10.3389/fonc.2026.1802047",
+"title": "DPCrossU-Net: a dual-branch parallel CNN-Transformer network for lung nodule segmentation.",
+"authorString": "Guan X, Zhu W, Wu F.",
+"journalInfo": {
+"volume": "16",
+"journalIssueId": 4110619,
+"dateOfPublication": "2026 ",
+"monthOfPublication": 0,
+"yearOfPublication": 2026,
+"journal": {
+"medlineAbbreviation": "Front Oncol",
+"title": "Frontiers in oncology",
+"essn": "2234-943X",
+"issn": "2234-943X",
+"nlmid": "101568867",
+"isoabbreviation": "Front Oncol"
+},
+"printPublicationDate": "2026-01-01"
+},
+"pubYear": "2026",
+"pubTypeList": {
+"pubType": [
+"research-article",
+"Journal Article"
+]
+},
+"isOpenAccess": "Y",
+"inEPMC": "Y",
+"inPMC": "Y",
+"hasPDF": "Y",
+"firstPublicationDate": "2026-06-09"
+},
+{
+"id": "41634130",
+"source": "MED",
+"pmid": "41634130",
+"pmcid": "PMC12876916",
+"doi": "10.1038/s41746-025-02306-6",
+"title": "StructSAM: structure-aware prompt adaptation for robust lung cancer lesion segmentation in CT.",
+"authorString": "Liu M, Yao Y, Jia J, Yao J, Huang Z, Zeng Z, Pu G, Wu Y, Bai Y, Wang B, Jiang L.",
+"journalInfo": {
+"issue": "1",
+"volume": "9",
+"journalIssueId": 4112760,
+"dateOfPublication": "2026 Feb",
+"monthOfPublication": 2,
+"yearOfPublication": 2026,
+"journal": {
+"medlineAbbreviation": "NPJ Digit Med",
+"title": "NPJ digital medicine",
+"essn": "2398-6352",
+"issn": "2398-6352",
+"nlmid": "101731738",
+"isoabbreviation": "NPJ Digit Med"
+},
+"printPublicationDate": "2026-02-01"
+},
+"pubYear": "2026",
+"pubTypeList": {
+"pubType": [
+"research-article",
+"Journal Article"
+]
+},
+"isOpenAccess": "Y",
+"inEPMC": "Y",
+"inPMC": "Y",
+"hasPDF": "Y",
+"firstPublicationDate": "2026-02-03"
+},
+{
+"id": "42127945",
+"source": "MED",
+"pmid": "42127945",
+"doi": "10.1088/2057-1976/ae6cff",
+"title": "Biwt-UNet: lung nodule segmentation via wavelet transform and multi-scale feature fusion.",
+"authorString": "Zhang H, Huang X, Zhao Y, Zhang Z, Sun G.",
+"journalInfo": {
+"issue": "3",
+"volume": "12",
+"journalIssueId": 4188425,
+"dateOfPublication": "2026 May",
+"monthOfPublication": 5,
+"yearOfPublication": 2026,
+"journal": {
+"medlineAbbreviation": "Biomed Phys Eng Express",
+"title": "Biomedical physics & engineering express",
+"essn": "2057-1976",
+"issn": "2057-1976",
+"nlmid": "101675002",
+"isoabbreviation": "Biomed Phys Eng Express"
+},
+"printPublicationDate": "2026-05-01"
+},
+"pubYear": "2026",
+"pubTypeList": {
+"pubType": [
+"Journal Article"
+]
+},
+"isOpenAccess": "N",
+"inEPMC": "N",
+"inPMC": "N",
+"hasPDF": "N",
+"firstPublicationDate": "2026-05-27"
+},
+{
+"id": "41388190",
+"source": "MED",
+"pmid": "41388190",
+"pmcid": "PMC12804875",
+"doi": "10.1038/s41746-025-02221-w",
+"title": "CoreFormer high fidelity pulmonary nodule segmentation with structural core priors and geodesic implicit fields.",
+"authorString": "Xi Y, Xu C, Ye F, Yuan M, Ye C, Jiang L, Huang Y, Zhang J, Liu M, Liu X, Yu B.",
+"journalInfo": {
+"issue": "1",
+"volume": "9",
+"journalIssueId": 4083254,
+"dateOfPublication": "2025 Dec",
+"monthOfPublication": 12,
+"yearOfPublication": 2025,
+"journal": {
+"medlineAbbreviation": "NPJ Digit Med",
+"title": "NPJ digital medicine",
+"essn": "2398-6352",
+"issn": "2398-6352",
+"nlmid": "101731738",
+"isoabbreviation": "NPJ Digit Med"
+},
+"printPublicationDate": "2025-12-01"
+},
+"pubYear": "2025",
+"pubTypeList": {
+"pubType": [
+"research-article",
+"Journal Article"
+]
+},
+"isOpenAccess": "Y",
+"inEPMC": "Y",
+"inPMC": "Y",
+"hasPDF": "Y",
+"firstPublicationDate": "2025-12-12"
+},
+{
+"id": "42116853",
+"source": "MED",
+"pmid": "42116853",
+"pmcid": "PMC13157531",
+"doi": "10.1177/11795972261431934",
+"title": "Automated Lesion Segmentation in Medical Imaging via Integration of nnU-Net Optimization and SAM Approach.",
+"authorString": "Jerónimo A, Rojas I, Valenzuela O.",
+"journalInfo": {
+"volume": "17",
+"journalIssueId": 4096010,
+"dateOfPublication": "2026 ",
+"monthOfPublication": 0,
+"yearOfPublication": 2026,
+"journal": {
+"medlineAbbreviation": "Biomed Eng Comput Biol",
+"title": "Biomedical engineering and computational biology",
+"essn": "1179-5972",
+"issn": "1179-5972",
+"nlmid": "101633089",
+"isoabbreviation": "Biomed Eng Comput Biol"
+},
+"printPublicationDate": "2026-01-01"
+},
+"pubYear": "2026",
+"pubTypeList": {
+"pubType": [
+"research-article",
+"Journal Article"
+]
+},
+"isOpenAccess": "Y",
+"inEPMC": "Y",
+"inPMC": "Y",
+"hasPDF": "Y",
+"firstPublicationDate": "2026-05-04"
+},
+{
+"id": "41501139",
+"source": "MED",
+"pmid": "41501139",
+"pmcid": "PMC12835009",
+"doi": "10.1038/s41598-025-34569-0",
+"title": "AI driven hybrid convolutional and transformer based deep learning architecture for precise lung nodule classification.",
+"authorString": "Abdullah RY, Venkatesan C, Naresh E, Kumar BPP.",
+"journalInfo": {
+"issue": "1",
+"volume": "16",
+"journalIssueId": 4082835,
+"dateOfPublication": "2026 Jan",
+"monthOfPublication": 1,
+"yearOfPublication": 2026,
+"journal": {
+"medlineAbbreviation": "Sci Rep",
+"title": "Scientific reports",
+"essn": "2045-2322",
+"issn": "2045-2322",
+"nlmid": "101563288",
+"isoabbreviation": "Sci Rep"
+},
+"printPublicationDate": "2026-01-01"
+},
+"pubYear": "2026",
+"pubTypeList": {
+"pubType": [
+"research-article",
+"Journal Article"
+]
+},
+"isOpenAccess": "Y",
+"inEPMC": "Y",
+"inPMC": "Y",
+"hasPDF": "Y",
+"firstPublicationDate": "2026-01-07"
+},
+{
+"id": "41439200",
+"source": "MED",
+"pmid": "41439200",
+"doi": "10.1007/s13755-025-00417-8",
+"title": "A vision-language model-based approach for lung cancer diagnosis using lossless 3D CT images: evaluation of GPT-4.1 and GPT-4o for patient-level malignancy assessment.",
+"authorString": "Shi N, Liu Z, Wan Z, Yang G, Shi Y, Wang P, Liu X.",
+"journalInfo": {
+"issue": "1",
+"volume": "14",
+"journalIssueId": 4052075,
+"dateOfPublication": "2026 Dec",
+"monthOfPublication": 12,
+"yearOfPublication": 2026,
+"journal": {
+"medlineAbbreviation": "Health Inf Sci Syst",
+"title": "Health information science and systems",
+"essn": "2047-2501",
+"issn": "2047-2501",
+"nlmid": "101638060",
+"isoabbreviation": "Health Inf Sci Syst"
+},
+"printPublicationDate": "2026-12-01"
+},
+"pubYear": "2026",
+"pubTypeList": {
+"pubType": [
+"Journal Article"
+]
+},
+"isOpenAccess": "N",
+"inEPMC": "N",
+"inPMC": "N",
+"hasPDF": "N",
+"firstPublicationDate": "2025-12-21"
+},
+{
+"id": "41335850",
+"source": "MED",
+"pmid": "41335850",
+"doi": "10.1109/embc58623.2025.11254801",
+"title": "Exploring Attention-Driven Deep Learning for Accurate Lung Nodule Segmentation.",
+"authorString": "Nezhad NSR, Mansouri M, Ghayour S, Abolhasani R, Azizi S.",
+"journalInfo": {
+"volume": "2025",
+"journalIssueId": 4062261,
+"dateOfPublication": "2025 Jul",
+"monthOfPublication": 7,
+"yearOfPublication": 2025,
+"journal": {
+"medlineAbbreviation": "Annu Int Conf IEEE Eng Med Biol Soc",
+"title": "Annual International Conference of the IEEE Engineering in Medicine and Biology Society. IEEE Engineering in Medicine and Biology Society. Annual International Conference",
+"essn": "2694-0604",
+"issn": "2375-7477",
+"nlmid": "101763872",
+"isoabbreviation": "Annu Int Conf IEEE Eng Med Biol Soc"
+},
+"printPublicationDate": "2025-07-01"
+},
+"pubYear": "2025",
+"pubTypeList": {
+"pubType": [
+"Journal Article"
+]
+},
+"isOpenAccess": "N",
+"inEPMC": "N",
+"inPMC": "N",
+"hasPDF": "N",
+"firstPublicationDate": "2025-07-01"
+},
+{
+"id": "40731756",
+"source": "MED",
+"pmid": "40731756",
+"pmcid": "PMC12300426",
+"doi": "10.3390/medicina61071126",
+"title": "CAAF-ResUNet: Adaptive Attention Fusion with Boundary-Aware Loss for Lung Nodule Segmentation.",
+"authorString": "Pham TQ, Le TH, Lai KD, Ngo DQ, Pham TV, Hua QH, Le KQ, Le HDM, Nguyen TNL.",
+"journalInfo": {
+"issue": "7",
+"volume": "61",
+"journalIssueId": 3984044,
+"dateOfPublication": "2025 Jun",
+"monthOfPublication": 6,
+"yearOfPublication": 2025,
+"journal": {
+"medlineAbbreviation": "Medicina (Kaunas)",
+"title": "Medicina (Kaunas, Lithuania)",
+"essn": "1648-9144",
+"issn": "1010-660X",
+"nlmid": "9425208",
+"isoabbreviation": "Medicina (Kaunas)"
+},
+"printPublicationDate": "2025-06-01"
+},
+"pubYear": "2025",
+"pubTypeList": {
+"pubType": [
+"research-article",
+"Journal Article"
+]
+},
+"isOpenAccess": "Y",
+"inEPMC": "Y",
+"inPMC": "Y",
+"hasPDF": "Y",
+"firstPublicationDate": "2025-06-22"
+},
+{
+"id": "41817877",
+"source": "MED",
+"pmid": "41817877",
+"doi": "10.1007/s10278-026-01901-7",
+"title": "EMeRALDS: Electronic Medical Record Driven Automated Lung Nodule Detection and Classification in Thoracic CT Images.",
+"authorString": "Eman H, Shaukat F, Zafar MH, Anwar SM.",
+"journalInfo": {
+"journalIssueId": 4138161,
+"dateOfPublication": "2026 Mar",
+"monthOfPublication": 3,
+"yearOfPublication": 2026,
+"journal": {
+"medlineAbbreviation": "J Imaging Inform Med",
+"title": "Journal of imaging informatics in medicine",
+"essn": "2948-2933",
+"issn": "2948-2933",
+"nlmid": "9918663679206676",
+"isoabbreviation": "J Imaging Inform Med"
+},
+"printPublicationDate": "2026-03-01"
+},
+"pubYear": "2026",
+"pubTypeList": {
+"pubType": [
+"Journal Article"
+]
+},
+"isOpenAccess": "N",
+"inEPMC": "N",
+"inPMC": "N",
+"hasPDF": "N",
+"firstPublicationDate": "2026-03-12"
+},
+{
+"id": "42496940",
+"source": "MED",
+"pmid": "42496940",
+"doi": "10.1007/s10439-026-04289-1",
+"title": "Deep Learning-Based Lung Cancer Segmentation and Volumetric Analysis Using CT Imaging: A Comprehensive Survey.",
+"authorString": "Tezel TG, Turkan M, Sayilgan E.",
+"journalInfo": {
+"journalIssueId": 4223879,
+"dateOfPublication": "2026 Jul",
+"monthOfPublication": 7,
+"yearOfPublication": 2026,
+"journal": {
+"medlineAbbreviation": "Ann Biomed Eng",
+"title": "Annals of biomedical engineering",
+"essn": "1573-9686",
+"issn": "0090-6964",
+"nlmid": "0361512",
+"isoabbreviation": "Ann Biomed Eng"
+},
+"printPublicationDate": "2026-07-01"
+},
+"pubYear": "2026",
+"pubTypeList": {
+"pubType": [
+"Review",
+"Journal Article"
+]
+},
+"isOpenAccess": "N",
+"inEPMC": "N",
+"inPMC": "N",
+"hasPDF": "N",
+"firstPublicationDate": "2026-07-24"
+},
+{
+"id": "41179656",
+"source": "MED",
+"pmid": "41179656",
+"pmcid": "PMC12571626",
+"doi": "10.3389/fonc.2025.1654466",
+"title": "Trans RCED-UNet3+: a hybrid CNN-transformer model for precise lung nodule segmentation.",
+"authorString": "Raza S, Zia R, Usmani IA, Almujally NA, Alasbali N, Hanif M.",
+"journalInfo": {
+"volume": "15",
+"journalIssueId": 3894978,
+"dateOfPublication": "2025 ",
+"monthOfPublication": 0,
+"yearOfPublication": 2025,
+"journal": {
+"medlineAbbreviation": "Front Oncol",
+"title": "Frontiers in oncology",
+"essn": "2234-943X",
+"issn": "2234-943X",
+"nlmid": "101568867",
+"isoabbreviation": "Front Oncol"
+},
+"printPublicationDate": "2025-01-01"
+},
+"pubYear": "2025",
+"pubTypeList": {
+"pubType": [
+"research-article",
+"Journal Article"
+]
+},
+"isOpenAccess": "Y",
+"inEPMC": "Y",
+"inPMC": "Y",
+"hasPDF": "Y",
+"firstPublicationDate": "2025-10-16"
+},
+{
+"id": "37881081",
+"source": "MED",
+"pmid": "37881081",
+"doi": "10.2174/0115734056252399231011042326",
+"title": "Differential Diagnosis of Benign and Malignant Pulmonary Nodules in CT Images Based on Multitask Learning",
+"authorString": "Song G, Dai Q, Nie Y, Chen G.",
+"journalInfo": {
+"volume": "20",
+"journalIssueId": 3663448,
+"dateOfPublication": "2024 ",
+"monthOfPublication": 0,
+"yearOfPublication": 2024,
+"journal": {
+"medlineAbbreviation": "Curr Med Imaging",
+"title": "Current medical imaging",
+"essn": "1573-4056",
+"issn": "1573-4056",
+"nlmid": "101762461",
+"isoabbreviation": "Curr Med Imaging"
+},
+"printPublicationDate": "2024-01-01"
+},
+"pubYear": "2024",
+"pubTypeList": {
+"pubType": [
+"Journal Article"
+]
+},
+"isOpenAccess": "N",
+"inEPMC": "N",
+"inPMC": "N",
+"hasPDF": "N",
+"firstPublicationDate": "2024-01-01"
+},
+{
+"id": "41107189",
+"source": "MED",
+"pmid": "41107189",
+"doi": "10.1016/j.compbiolchem.2025.108695",
+"title": "A novel Convolutional Shuffle Attention Xtreme Gradient Boost Network for improved lung cancer detection using computed tomography images.",
+"authorString": "Sandhiya R, Sasikumar R.",
+"journalInfo": {
+"issue": "Pt 1",
+"volume": "120",
+"journalIssueId": 4069421,
+"dateOfPublication": "2026 Feb",
+"monthOfPublication": 2,
+"yearOfPublication": 2026,
+"journal": {
+"medlineAbbreviation": "Comput Biol Chem",
+"title": "Computational biology and chemistry",
+"essn": "1476-928X",
+"issn": "1476-9271",
+"nlmid": "101157394",
+"isoabbreviation": "Comput Biol Chem"
+},
+"printPublicationDate": "2026-02-01"
+},
+"pubYear": "2026",
+"pubTypeList": {
+"pubType": [
+"Journal Article"
+]
+},
+"isOpenAccess": "N",
+"inEPMC": "N",
+"inPMC": "N",
+"hasPDF": "N",
+"firstPublicationDate": "2025-09-25"
+},
+{
+"id": "40833547",
+"source": "MED",
+"pmid": "40833547",
+"doi": "10.1007/s11517-025-03425-8",
+"title": "S 3 TU-Net: Structured convolution and superpixel transformer for lung nodule segmentation.",
+"authorString": "Wu Y, Liu X, Shi Y, Chen X, Wang Z, Xu Y, Wang S.",
+"journalInfo": {
+"issue": "12",
+"volume": "63",
+"journalIssueId": 4061988,
+"dateOfPublication": "2025 Dec",
+"monthOfPublication": 12,
+"yearOfPublication": 2025,
+"journal": {
+"medlineAbbreviation": "Med Biol Eng Comput",
+"title": "Medical & biological engineering & computing",
+"essn": "1741-0444",
+"issn": "0140-0118",
+"nlmid": "7704869",
+"isoabbreviation": "Med Biol Eng Comput"
+},
+"printPublicationDate": "2025-12-01"
+},
+"pubYear": "2025",
+"pubTypeList": {
+"pubType": [
+"Journal Article"
+]
+},
+"isOpenAccess": "N",
+"inEPMC": "N",
+"inPMC": "N",
+"hasPDF": "N",
+"firstPublicationDate": "2025-08-20"
+},
+{
+"id": "40762174",
+"source": "MED",
+"pmid": "40762174",
+"doi": "10.1080/0954898x.2025.2533871",
+"title": "A novel lung cancer diagnosis model using hybrid convolution (2D/3D)-based adaptive DenseUnet with attention mechanism.",
+"authorString": "Deepa J, Badhu Sasikala L, Indumathy P, Jerrin Simla A.",
+"journalInfo": {
+"journalIssueId": 3989799,
+"dateOfPublication": "2025 Aug",
+"monthOfPublication": 8,
+"yearOfPublication": 2025,
+"journal": {
+"medlineAbbreviation": "Network",
+"title": "Network (Bristol, England)",
+"essn": "1361-6536",
+"issn": "0954-898X",
+"nlmid": "9431867",
+"isoabbreviation": "Network"
+},
+"printPublicationDate": "2025-08-01"
+},
+"pubYear": "2025",
+"pubTypeList": {
+"pubType": [
+"Journal Article"
+]
+},
+"isOpenAccess": "N",
+"inEPMC": "N",
+"inPMC": "N",
+"hasPDF": "N",
+"firstPublicationDate": "2025-08-05"
+},
+{
+"id": "40171113",
+"source": "MED",
+"pmid": "40171113",
+"pmcid": "PMC11959082",
+"doi": "10.3389/fphys.2025.1511716",
+"title": "Cnidaria herd optimized fuzzy C-means clustering enabled deep learning model for lung nodule detection.",
+"authorString": "Prasada Rao RH, Goswami AD.",
+"journalInfo": {
+"volume": "16",
+"journalIssueId": 3892895,
+"dateOfPublication": "2025 ",
+"monthOfPublication": 0,
+"yearOfPublication": 2025,
+"journal": {
+"medlineAbbreviation": "Front Physiol",
+"title": "Frontiers in physiology",
+"essn": "1664-042X",
+"issn": "1664-042X",
+"nlmid": "101549006",
+"isoabbreviation": "Front Physiol"
+},
+"printPublicationDate": "2025-01-01"
+},
+"pubYear": "2025",
+"pubTypeList": {
+"pubType": [
+"research-article",
+"Journal Article"
+]
+},
+"isOpenAccess": "Y",
+"inEPMC": "Y",
+"inPMC": "Y",
+"hasPDF": "Y",
+"firstPublicationDate": "2025-03-18"
+},
+{
+"id": "41270520",
+"source": "MED",
+"pmid": "41270520",
+"doi": "10.1016/j.compbiomed.2025.111290",
+"title": "Lung-DDPM+: Efficient thoracic CT image synthesis using diffusion probabilistic model.",
+"authorString": "Jiang Y, Shariftabrizi A, Manem VSK.",
+"journalInfo": {
+"volume": "199",
+"journalIssueId": 4068280,
+"dateOfPublication": "2025 Dec",
+"monthOfPublication": 12,
+"yearOfPublication": 2025,
+"journal": {
+"medlineAbbreviation": "Comput Biol Med",
+"title": "Computers in biology and medicine",
+"essn": "1879-0534",
+"issn": "0010-4825",
+"nlmid": "1250250",
+"isoabbreviation": "Comput Biol Med"
+},
+"printPublicationDate": "2025-12-01"
+},
+"pubYear": "2025",
+"pubTypeList": {
+"pubType": [
+"Journal Article"
+]
+},
+"isOpenAccess": "N",
+"inEPMC": "N",
+"inPMC": "N",
+"hasPDF": "N",
+"firstPublicationDate": "2025-11-20"
+},
+{
+"id": "41425478",
+"source": "MED",
+"pmid": "41425478",
+"doi": "10.1007/s13755-025-00414-x",
+"title": "DA&lt;sup&gt;3&lt;/sup&gt;-LUNGNET: a multi-stage deep framework with adaptive attention for early detection of subcentimeter pulmonary nodules.",
+"authorString": "Zhong B, Zhang R, Yu S, Liu C, Wen H.",
+"journalInfo": {
+"issue": "1",
+"volume": "14",
+"journalIssueId": 4052075,
+"dateOfPublication": "2026 Dec",
+"monthOfPublication": 12,
+"yearOfPublication": 2026,
+"journal": {
+"medlineAbbreviation": "Health Inf Sci Syst",
+"title": "Health information science and systems",
+"essn": "2047-2501",
+"issn": "2047-2501",
+"nlmid": "101638060",
+"isoabbreviation": "Health Inf Sci Syst"
+},
+"printPublicationDate": "2026-12-01"
+},
+"pubYear": "2026",
+"pubTypeList": {
+"pubType": [
+"Journal Article"
+]
+},
+"isOpenAccess": "N",
+"inEPMC": "N",
+"inPMC": "N",
+"hasPDF": "N",
+"firstPublicationDate": "2025-12-17"
+},
+{
+"id": "40953563",
+"source": "MED",
+"pmid": "40953563",
+"doi": "10.1016/j.compbiomed.2025.111059",
+"title": "Multi-encoder self-adaptive hard attention network with maximum intensity projections for lung nodule segmentation.",
+"authorString": "Usman M, Rehman A, Ur Rehman A, Shahid A, Khan TM, Razzak I, Chung M, Shin YG.",
+"journalInfo": {
+"issue": "Pt B",
+"volume": "197",
+"journalIssueId": 4027260,
+"dateOfPublication": "2025 Oct",
+"monthOfPublication": 10,
+"yearOfPublication": 2025,
+"journal": {
+"medlineAbbreviation": "Comput Biol Med",
+"title": "Computers in biology and medicine",
+"essn": "1879-0534",
+"issn": "0010-4825",
+"nlmid": "1250250",
+"isoabbreviation": "Comput Biol Med"
+},
+"printPublicationDate": "2025-10-01"
+},
+"pubYear": "2025",
+"pubTypeList": {
+"pubType": [
+"Journal Article"
+]
+},
+"isOpenAccess": "N",
+"inEPMC": "N",
+"inPMC": "N",
+"hasPDF": "N",
+"firstPublicationDate": "2025-09-14"
+},
+{
+"id": "41244614",
+"source": "MED",
+"pmid": "41244614",
+"pmcid": "PMC12611853",
+"doi": "10.3389/frai.2025.1682171",
+"title": "Leveraging multi-scale feature integration in UNet and FPN for semantic segmentation of lung nodules.",
+"authorString": "Prithvika S, Anbarasi J, Narendra M.",
+"journalInfo": {
+"volume": "8",
+"journalIssueId": 3897209,
+"dateOfPublication": "2025 ",
+"monthOfPublication": 0,
+"yearOfPublication": 2025,
+"journal": {
+"medlineAbbreviation": "Front Artif Intell",
+"title": "Frontiers in artificial intelligence",
+"essn": "2624-8212",
+"issn": "2624-8212",
+"nlmid": "101770551",
+"isoabbreviation": "Front Artif Intell"
+},
+"printPublicationDate": "2025-01-01"
+},
+"pubYear": "2025",
+"pubTypeList": {
+"pubType": [
+"research-article",
+"Journal Article"
+]
+},
+"isOpenAccess": "Y",
+"inEPMC": "Y",
+"inPMC": "Y",
+"hasPDF": "Y",
+"firstPublicationDate": "2025-10-30"
+},
+{
+"id": "40917143",
+"source": "MED",
+"pmid": "40917143",
+"pmcid": "PMC12411368",
+"doi": "10.1007/s13534-025-00490-8",
+"title": "Lung nodule synthesis guided by customized multi-confidence masks.",
+"authorString": "Chen H, Liu Y, Liu C, Wang Q, Wang R.",
+"journalInfo": {
+"issue": "5",
+"volume": "15",
+"journalIssueId": 4012437,
+"dateOfPublication": "2025 Sep",
+"monthOfPublication": 9,
+"yearOfPublication": 2025,
+"journal": {
+"medlineAbbreviation": "Biomed Eng Lett",
+"title": "Biomedical engineering letters",
+"essn": "2093-985X",
+"issn": "2093-9868",
+"nlmid": "101567784",
+"isoabbreviation": "Biomed Eng Lett"
+},
+"printPublicationDate": "2025-09-01"
+},
+"pubYear": "2025",
+"pubTypeList": {
+"pubType": [
+"research-article",
+"Journal Article"
+]
+},
+"isOpenAccess": "N",
+"inEPMC": "Y",
+"inPMC": "Y",
+"hasPDF": "Y",
+"firstPublicationDate": "2025-07-12"
+},
+{
+"id": "39986257",
+"source": "MED",
+"pmid": "39986257",
+"doi": "10.1016/j.compbiolchem.2025.108376",
+"title": "DKCN-Net: Deep kronecker convolutional neural network-based lung disease detection with federated learning.",
+"authorString": "Meda A, Nelson L, Jagdish M.",
+"journalInfo": {
+"volume": "116",
+"journalIssueId": 3912485,
+"dateOfPublication": "2025 Jun",
+"monthOfPublication": 6,
+"yearOfPublication": 2025,
+"journal": {
+"medlineAbbreviation": "Comput Biol Chem",
+"title": "Computational biology and chemistry",
+"essn": "1476-928X",
+"issn": "1476-9271",
+"nlmid": "101157394",
+"isoabbreviation": "Comput Biol Chem"
+},
+"printPublicationDate": "2025-06-01"
+},
+"pubYear": "2025",
+"pubTypeList": {
+"pubType": [
+"Journal Article"
+]
+},
+"isOpenAccess": "N",
+"inEPMC": "N",
+"inPMC": "N",
+"hasPDF": "N",
+"firstPublicationDate": "2025-02-08"
+},
+{
+"id": "39738386",
+"source": "MED",
+"pmid": "39738386",
+"pmcid": "PMC11686213",
+"doi": "10.1038/s41598-024-82877-8",
+"title": "A lung nodule segmentation model based on the transformer with multiple thresholds and coordinate attention.",
+"authorString": "Hu T, Lan Y, Zhang Y, Xu J, Li S, Hung CC.",
+"journalInfo": {
+"issue": "1",
+"volume": "14",
+"journalIssueId": 3862029,
+"dateOfPublication": "2024 Dec",
+"monthOfPublication": 12,
+"yearOfPublication": 2024,
+"journal": {
+"medlineAbbreviation": "Sci Rep",
+"title": "Scientific reports",
+"essn": "2045-2322",
+"issn": "2045-2322",
+"nlmid": "101563288",
+"isoabbreviation": "Sci Rep"
+},
+"printPublicationDate": "2024-12-01"
+},
+"pubYear": "2024",
+"pubTypeList": {
+"pubType": [
+"Research Support, Non-U.S. Gov't",
+"research-article",
+"Journal Article"
+]
+},
+"isOpenAccess": "Y",
+"inEPMC": "Y",
+"inPMC": "Y",
+"hasPDF": "Y",
+"firstPublicationDate": "2024-12-30"
+},
+{
+"id": "39970821",
+"source": "MED",
+"pmid": "39970821",
+"doi": "10.1016/j.compmedimag.2025.102511",
+"title": "Prior knowledge-based multi-task learning network for pulmonary nodule classification.",
+"authorString": "Xue P, Lu H, Fu Y, Ji H, Ren M, Xiao T, Zhang Z, Dong E.",
+"journalInfo": {
+"volume": "121",
+"journalIssueId": 3906807,
+"dateOfPublication": "2025 Apr",
+"monthOfPublication": 4,
+"yearOfPublication": 2025,
+"journal": {
+"medlineAbbreviation": "Comput Med Imaging Graph",
+"title": "Computerized medical imaging and graphics : the official journal of the Computerized Medical Imaging Society",
+"essn": "1879-0771",
+"issn": "0895-6111",
+"nlmid": "8806104",
+"isoabbreviation": "Comput Med Imaging Graph"
+},
+"printPublicationDate": "2025-04-01"
+},
+"pubYear": "2025",
+"pubTypeList": {
+"pubType": [
+"Research Support, Non-U.S. Gov't",
+"Journal Article"
+]
+},
+"isOpenAccess": "N",
+"inEPMC": "N",
+"inPMC": "N",
+"hasPDF": "N",
+"firstPublicationDate": "2025-02-16"
+},
+{
+"id": "38815486",
+"source": "MED",
+"pmid": "38815486",
+"doi": "10.1016/j.compbiomed.2024.108674",
+"title": "SaraNet: Semantic aggregation reverse attention network for pulmonary nodule segmentation.",
+"authorString": "Wang J, Qi M, Xiang Z, Tian Y, Tong D.",
+"journalInfo": {
+"volume": "177",
+"journalIssueId": 3785363,
+"dateOfPublication": "2024 Jul",
+"monthOfPublication": 7,
+"yearOfPublication": 2024,
+"journal": {
+"medlineAbbreviation": "Comput Biol Med",
+"title": "Computers in biology and medicine",
+"essn": "1879-0534",
+"issn": "0010-4825",
+"nlmid": "1250250",
+"isoabbreviation": "Comput Biol Med"
+},
+"printPublicationDate": "2024-07-01"
+},
+"pubYear": "2024",
+"pubTypeList": {
+"pubType": [
+"Research Support, Non-U.S. Gov't",
+"Journal Article"
+]
+},
+"isOpenAccess": "N",
+"inEPMC": "N",
+"inPMC": "N",
+"hasPDF": "N",
+"firstPublicationDate": "2024-05-27"
+},
+{
+"id": "38347393",
+"source": "MED",
+"pmid": "38347393",
+"pmcid": "PMC11169448",
+"doi": "10.1007/s10278-024-01004-1",
+"title": "Overcoming the Challenge of Accurate Segmentation of Lung Nodules: A Multi-crop CNN Approach.",
+"authorString": "Sweetline BC, Vijayakumaran C, Samydurai A.",
+"journalInfo": {
+"issue": "3",
+"volume": "37",
+"journalIssueId": 3785303,
+"dateOfPublication": "2024 Jun",
+"monthOfPublication": 6,
+"yearOfPublication": 2024,
+"journal": {
+"medlineAbbreviation": "J Imaging Inform Med",
+"title": "Journal of imaging informatics in medicine",
+"essn": "2948-2933",
+"issn": "2948-2933",
+"nlmid": "9918663679206676",
+"isoabbreviation": "J Imaging Inform Med"
+},
+"printPublicationDate": "2024-06-01"
+},
+"pubYear": "2024",
+"pubTypeList": {
+"pubType": [
+"research-article",
+"Journal Article"
+]
+},
+"isOpenAccess": "N",
+"inEPMC": "Y",
+"inPMC": "Y",
+"hasPDF": "Y",
+"firstPublicationDate": "2024-02-12"
+},
+{
+"id": "39330454",
+"source": "MED",
+"pmid": "39330454",
+"pmcid": "PMC11433280",
+"doi": "10.3390/jimaging10090234",
+"title": "A Multi-Task Model for Pulmonary Nodule Segmentation and Classification.",
+"authorString": "Tang T, Zhang R.",
+"journalInfo": {
+"issue": "9",
+"volume": "10",
+"journalIssueId": 3832662,
+"dateOfPublication": "2024 Sep",
+"monthOfPublication": 9,
+"yearOfPublication": 2024,
+"journal": {
+"medlineAbbreviation": "J Imaging",
+"title": "Journal of imaging",
+"essn": "2313-433X",
+"issn": "2313-433X",
+"nlmid": "101698819",
+"isoabbreviation": "J Imaging"
+},
+"printPublicationDate": "2024-09-01"
+},
+"pubYear": "2024",
+"pubTypeList": {
+"pubType": [
+"research-article",
+"Journal Article"
+]
+},
+"isOpenAccess": "Y",
+"inEPMC": "Y",
+"inPMC": "Y",
+"hasPDF": "Y",
+"firstPublicationDate": "2024-09-20"
+},
+{
+"id": "42465571",
+"source": "MED",
+"pmid": "42465571",
+"pmcid": "PMC13372605",
+"doi": "10.3389/fonc.2026.1875891",
+"title": "EGP-Net: a lung nodule segmentation network integrating edge guidance and pyramidal multi-scale contextual attention mechanisms.",
+"authorString": "Fan X, Deng L, Hou J, Li T, Ling Z, Li S.",
+"journalInfo": {
+"volume": "16",
+"journalIssueId": 4110619,
+"dateOfPublication": "2026 ",
+"monthOfPublication": 0,
+"yearOfPublication": 2026,
+"journal": {
+"medlineAbbreviation": "Front Oncol",
+"title": "Frontiers in oncology",
+"essn": "2234-943X",
+"issn": "2234-943X",
+"nlmid": "101568867",
+"isoabbreviation": "Front Oncol"
+},
+"printPublicationDate": "2026-01-01"
+},
+"pubYear": "2026",
+"pubTypeList": {
+"pubType": [
+"research-article",
+"Journal Article"
+]
+},
+"isOpenAccess": "Y",
+"inEPMC": "Y",
+"inPMC": "Y",
+"hasPDF": "Y",
+"firstPublicationDate": "2026-07-02"
+},
+{
+"id": "38688129",
+"source": "MED",
+"pmid": "38688129",
+"doi": "10.1016/j.compbiomed.2024.108505",
+"title": "Nodule-CLIP: Lung nodule classification based on multi-modal contrastive learning.",
+"authorString": "Sun L, Zhang M, Lu Y, Zhu W, Yi Y, Yan F.",
+"journalInfo": {
+"volume": "175",
+"journalIssueId": 3771148,
+"dateOfPublication": "2024 Jun",
+"monthOfPublication": 6,
+"yearOfPublication": 2024,
+"journal": {
+"medlineAbbreviation": "Comput Biol Med",
+"title": "Computers in biology and medicine",
+"essn": "1879-0534",
+"issn": "0010-4825",
+"nlmid": "1250250",
+"isoabbreviation": "Comput Biol Med"
+},
+"printPublicationDate": "2024-06-01"
+},
+"pubYear": "2024",
+"pubTypeList": {
+"pubType": [
+"Research Support, Non-U.S. Gov't",
+"Journal Article"
+]
+},
+"isOpenAccess": "N",
+"inEPMC": "N",
+"inPMC": "N",
+"hasPDF": "N",
+"firstPublicationDate": "2024-04-26"
+},
+{
+"id": "37941779",
+"source": "MED",
+"pmid": "37941779",
+"pmcid": "PMC10628569",
+"doi": "10.1515/biol-2022-0727",
+"title": "Lung nodule segmentation via semi-residual multi-resolution neural networks.",
+"authorString": "Wang C, Dai W.",
+"journalInfo": {
+"issue": "1",
+"volume": "18",
+"journalIssueId": 3492476,
+"dateOfPublication": "2023 ",
+"monthOfPublication": 0,
+"yearOfPublication": 2023,
+"journal": {
+"medlineAbbreviation": "Open Life Sci",
+"title": "Open life sciences",
+"essn": "2391-5412",
+"issn": "2391-5412",
+"nlmid": "101669614",
+"isoabbreviation": "Open Life Sci"
+},
+"printPublicationDate": "2023-01-01"
+},
+"pubYear": "2023",
+"pubTypeList": {
+"pubType": [
+"research-article",
+"Journal Article"
+]
+},
+"isOpenAccess": "Y",
+"inEPMC": "Y",
+"inPMC": "Y",
+"hasPDF": "Y",
+"firstPublicationDate": "2023-10-24"
+},
+{
+"id": "37598474",
+"source": "MED",
+"pmid": "37598474",
+"doi": "10.1016/j.cmpb.2023.107748",
+"title": "MANet: Multi-branch attention auxiliary learning for lung nodule detection and segmentation.",
+"authorString": "Nguyen TC, Nguyen TP, Cao T, Dao TTP, Ho TN, Nguyen TV, Tran MT.",
+"journalInfo": {
+"volume": "241",
+"journalIssueId": 3630516,
+"dateOfPublication": "2023 Nov",
+"monthOfPublication": 11,
+"yearOfPublication": 2023,
+"journal": {
+"medlineAbbreviation": "Comput Methods Programs Biomed",
+"title": "Computer methods and programs in biomedicine",
+"essn": "1872-7565",
+"issn": "0169-2607",
+"nlmid": "8506513",
+"isoabbreviation": "Comput Methods Programs Biomed"
+},
+"printPublicationDate": "2023-11-01"
+},
+"pubYear": "2023",
+"pubTypeList": {
+"pubType": [
+"Journal Article"
+]
+},
+"isOpenAccess": "N",
+"inEPMC": "N",
+"inPMC": "N",
+"hasPDF": "N",
+"firstPublicationDate": "2023-08-08"
+},
+{
+"id": "PPR1236613",
+"source": "PPR",
+"doi": "10.21203/rs.3.rs-8837540/v1",
+"title": "A Bayesian TransUNet for Uncertainty-AwareSegmentation of Pulmonary Nodules in CT Scans",
+"authorString": "Shen M, Sun R, Xie R.",
+"pubYear": "2026",
+"pubTypeList": {
+"pubType": [
+"Preprint"
+]
+},
+"isOpenAccess": "N",
+"inEPMC": "N",
+"inPMC": "N",
+"hasPDF": "N",
+"firstPublicationDate": "2026-05-22",
+"bookOrReportDetails": {
+"publisher": "Research Square",
+"yearOfPublication": 2026
+}
+},
+{
+"id": "IND608208094",
+"source": "AGR",
+"title": "Preparing CT imaging datasets for deep learning in lung nodule analysis: Insights from four well-known datasets",
+"authorString": "Wang J, Sourlos N, Zheng S, van der Velden N, Pelgrim GJ, Vliegenthart R, van Ooijen P.",
+"journalInfo": {
+"issue": "6",
+"volume": "9",
+"journalIssueId": 4015195,
+"dateOfPublication": "2023 Jun",
+"monthOfPublication": 6,
+"yearOfPublication": 2023,
+"journal": {
+"title": "Heliyon"
+},
+"printPublicationDate": "2023-06-01"
+},
+"pubYear": "2023",
+"pubTypeList": {
+"pubType": [
+"Journal Article"
+]
+},
+"isOpenAccess": "N",
+"inEPMC": "N",
+"inPMC": "N",
+"hasPDF": "N",
+"firstPublicationDate": "2023-06-01"
+},
+{
+"id": "37576094",
+"source": "MED",
+"pmid": "37576094",
+"pmcid": "PMC10419745",
+"doi": "10.4103/jmp.jmp_1_23",
+"title": "Boundary Aware Semantic Segmentation using Pyramid-dilated Dense U-Net for Lung Segmentation in Computed Tomography Images.",
+"authorString": "Agnes SA.",
+"journalInfo": {
+"issue": "2",
+"volume": "48",
+"journalIssueId": 3614754,
+"dateOfPublication": "2023 Apr-Jun",
+"monthOfPublication": 0,
+"yearOfPublication": 2023,
+"journal": {
+"medlineAbbreviation": "J Med Phys",
+"title": "Journal of medical physics",
+"essn": "1998-3913",
+"issn": "0971-6203",
+"nlmid": "9441104",
+"isoabbreviation": "J Med Phys"
+},
+"printPublicationDate": "2023-04-01"
+},
+"pubYear": "2023",
+"pubTypeList": {
+"pubType": [
+"research-article",
+"Journal Article"
+]
+},
+"isOpenAccess": "Y",
+"inEPMC": "Y",
+"inPMC": "Y",
+"hasPDF": "Y",
+"firstPublicationDate": "2023-04-01"
+},
+{
+"id": "37966939",
+"source": "MED",
+"pmid": "37966939",
+"doi": "10.1109/tmi.2023.3332944",
+"title": "Lung Nodule Segmentation and Uncertain Region Prediction With an Uncertainty-Aware Attention Mechanism.",
+"authorString": "Yang H, Wang Q, Zhang Y, An Z, Liu C, Zhang X, Zhou SK.",
+"journalInfo": {
+"issue": "4",
+"volume": "43",
+"journalIssueId": 3749751,
+"dateOfPublication": "2024 Apr",
+"monthOfPublication": 4,
+"yearOfPublication": 2024,
+"journal": {
+"medlineAbbreviation": "IEEE Trans Med Imaging",
+"title": "IEEE transactions on medical imaging",
+"essn": "1558-254X",
+"issn": "0278-0062",
+"nlmid": "8310780",
+"isoabbreviation": "IEEE Trans Med Imaging"
+},
+"printPublicationDate": "2024-04-01"
+},
+"pubYear": "2024",
+"pubTypeList": {
+"pubType": [
+"Research Support, Non-U.S. Gov't",
+"Journal Article"
+]
+},
+"isOpenAccess": "N",
+"inEPMC": "N",
+"inPMC": "N",
+"hasPDF": "N",
+"firstPublicationDate": "2024-04-03"
+},
+{
+"id": "IND608565045",
+"source": "AGR",
+"title": "Attention-guided deep neural network with a multichannel architecture for lung nodule classification",
+"authorString": "Zheng R, Wen H, Zhu F, Lan W.",
+"journalInfo": {
+"issue": "1",
+"volume": "10",
+"journalIssueId": 4092898,
+"dateOfPublication": "2024 Jan",
+"monthOfPublication": 1,
+"yearOfPublication": 2024,
+"journal": {
+"title": "Heliyon"
+},
+"printPublicationDate": "2024-01-01"
+},
+"pubYear": "2024",
+"pubTypeList": {
+"pubType": [
+"Journal Article"
+]
+},
+"isOpenAccess": "N",
+"inEPMC": "N",
+"inPMC": "N",
+"hasPDF": "N",
+"firstPublicationDate": "2024-01-01"
+},
+{
+"id": "35984795",
+"source": "MED",
+"pmid": "35984795",
+"doi": "10.1109/jbhi.2022.3198509",
+"title": "A Cascaded Multi-Stage Framework for Automatic Detection and Segmentation of Pulmonary Nodules in Developing Countries.",
+"authorString": "Zhou Z, Gou F, Tan Y, Wu J.",
+"journalInfo": {
+"issue": "11",
+"volume": "26",
+"journalIssueId": 3455091,
+"dateOfPublication": "2022 Nov",
+"monthOfPublication": 11,
+"yearOfPublication": 2022,
+"journal": {
+"medlineAbbreviation": "IEEE J Biomed Health Inform",
+"title": "IEEE journal of biomedical and health informatics",
+"essn": "2168-2208",
+"issn": "2168-2194",
+"nlmid": "101604520",
+"isoabbreviation": "IEEE J Biomed Health Inform"
+},
+"printPublicationDate": "2022-11-01"
+},
+"pubYear": "2022",
+"pubTypeList": {
+"pubType": [
+"Research Support, Non-U.S. Gov't",
+"Journal Article"
+]
+},
+"isOpenAccess": "N",
+"inEPMC": "N",
+"inPMC": "N",
+"hasPDF": "N",
+"firstPublicationDate": "2022-11-10"
+},
+{
+"id": "37484314",
+"source": "MED",
+"pmid": "37484314",
+"pmcid": "PMC10361226",
+"doi": "10.1016/j.heliyon.2023.e17104",
+"title": "Preparing CT imaging datasets for deep learning in lung nodule analysis: Insights from four well-known datasets.",
+"authorString": "Wang J, Sourlos N, Zheng S, van der Velden N, Pelgrim GJ, Vliegenthart R, van Ooijen P.",
+"journalInfo": {
+"issue": "6",
+"volume": "9",
+"journalIssueId": 3575923,
+"dateOfPublication": "2023 Jun",
+"monthOfPublication": 6,
+"yearOfPublication": 2023,
+"journal": {
+"medlineAbbreviation": "Heliyon",
+"title": "Heliyon",
+"essn": "2405-8440",
+"issn": "2405-8440",
+"nlmid": "101672560",
+"isoabbreviation": "Heliyon"
+},
+"printPublicationDate": "2023-06-01"
+},
+"pubYear": "2023",
+"pubTypeList": {
+"pubType": [
+"research-article",
+"Journal Article"
+]
+},
+"isOpenAccess": "Y",
+"inEPMC": "Y",
+"inPMC": "Y",
+"hasPDF": "Y",
+"firstPublicationDate": "2023-06-16"
+},
+{
+"id": "38169878",
+"source": "MED",
+"pmid": "38169878",
+"pmcid": "PMC10758786",
+"doi": "10.1016/j.heliyon.2023.e23508",
+"title": "Attention-guided deep neural network with a multichannel architecture for lung nodule classification.",
+"authorString": "Zheng R, Wen H, Zhu F, Lan W.",
+"journalInfo": {
+"issue": "1",
+"volume": "10",
+"journalIssueId": 3684525,
+"dateOfPublication": "2024 Jan",
+"monthOfPublication": 1,
+"yearOfPublication": 2024,
+"journal": {
+"medlineAbbreviation": "Heliyon",
+"title": "Heliyon",
+"essn": "2405-8440",
+"issn": "2405-8440",
+"nlmid": "101672560",
+"isoabbreviation": "Heliyon"
+},
+"printPublicationDate": "2024-01-01"
+},
+"pubYear": "2024",
+"pubTypeList": {
+"pubType": [
+"research-article",
+"Journal Article"
+]
+},
+"isOpenAccess": "Y",
+"inEPMC": "Y",
+"inPMC": "Y",
+"hasPDF": "Y",
+"firstPublicationDate": "2023-12-10"
+},
+{
+"id": "37936446",
+"source": "MED",
+"pmid": "37936446",
+"doi": "10.2174/0115734056268487231029154123",
+"title": "Blend U-Net: Redesigning Skip Connections to Obtain Multiscale Features for Lung CT Images Segmentation",
+"authorString": "Leng P, Xu Z, Zhu Z, Pan Z.",
+"journalInfo": {
+"volume": "20",
+"journalIssueId": 3663448,
+"dateOfPublication": "2024 ",
+"monthOfPublication": 0,
+"yearOfPublication": 2024,
+"journal": {
+"medlineAbbreviation": "Curr Med Imaging",
+"title": "Current medical imaging",
+"essn": "1573-4056",
+"issn": "1573-4056",
+"nlmid": "101762461",
+"isoabbreviation": "Curr Med Imaging"
+},
+"printPublicationDate": "2024-01-01"
+},
+"pubYear": "2024",
+"pubTypeList": {
+"pubType": [
+"Journal Article"
+]
+},
+"isOpenAccess": "N",
+"inEPMC": "N",
+"inPMC": "N",
+"hasPDF": "N",
+"firstPublicationDate": "2024-01-01"
+},
+{
+"id": "36434060",
+"source": "MED",
+"pmid": "36434060",
+"pmcid": "PMC9700685",
+"doi": "10.1038/s41598-022-24900-4",
+"title": "Lung_PAYNet: a pyramidal attention based deep learning network for lung nodule segmentation.",
+"authorString": "Bruntha PM, Pandian SIA, Sagayam KM, Bandopadhyay S, Pomplun M, Dang H.",
+"journalInfo": {
+"issue": "1",
+"volume": "12",
+"journalIssueId": 3448668,
+"dateOfPublication": "2022 Nov",
+"monthOfPublication": 11,
+"yearOfPublication": 2022,
+"journal": {
+"medlineAbbreviation": "Sci Rep",
+"title": "Scientific reports",
+"essn": "2045-2322",
+"issn": "2045-2322",
+"nlmid": "101563288",
+"isoabbreviation": "Sci Rep"
+},
+"printPublicationDate": "2022-11-01"
+},
+"pubYear": "2022",
+"pubTypeList": {
+"pubType": [
+"research-article",
+"Journal Article"
+]
+},
+"isOpenAccess": "Y",
+"inEPMC": "Y",
+"inPMC": "Y",
+"hasPDF": "Y",
+"firstPublicationDate": "2022-11-25"
+},
+{
+"id": "34749636",
+"source": "MED",
+"pmid": "34749636",
+"pmcid": "PMC8576909",
+"doi": "10.1186/s12859-021-04234-0",
+"title": "Design of lung nodules segmentation and recognition algorithm based on deep learning.",
+"authorString": "Yu H, Li J, Zhang L, Cao Y, Yu X, Sun J.",
+"journalInfo": {
+"issue": "Suppl 5",
+"volume": "22",
+"journalIssueId": 3266427,
+"dateOfPublication": "2021 Nov",
+"monthOfPublication": 11,
+"yearOfPublication": 2021,
+"journal": {
+"medlineAbbreviation": "BMC Bioinformatics",
+"title": "BMC bioinformatics",
+"essn": "1471-2105",
+"issn": "1471-2105",
+"nlmid": "100965194",
+"isoabbreviation": "BMC Bioinformatics"
+},
+"printPublicationDate": "2021-11-01"
+},
+"pubYear": "2021",
+"pubTypeList": {
+"pubType": [
+"research-article",
+"Journal Article"
+]
+},
+"isOpenAccess": "Y",
+"inEPMC": "Y",
+"inPMC": "Y",
+"hasPDF": "Y",
+"firstPublicationDate": "2021-11-08"
+},
+{
+"id": "34461501",
+"source": "MED",
+"pmid": "34461501",
+"doi": "10.1016/j.compbiomed.2021.104806",
+"title": "A survey of computer-aided diagnosis of lung nodules from CT scans using deep learning.",
+"authorString": "Gu Y, Chi J, Liu J, Yang L, Zhang B, Yu D, Zhao Y, Lu X.",
+"journalInfo": {
+"volume": "137",
+"journalIssueId": 3242769,
+"dateOfPublication": "2021 Oct",
+"monthOfPublication": 10,
+"yearOfPublication": 2021,
+"journal": {
+"medlineAbbreviation": "Comput Biol Med",
+"title": "Computers in biology and medicine",
+"essn": "1879-0534",
+"issn": "0010-4825",
+"nlmid": "1250250",
+"isoabbreviation": "Comput Biol Med"
+},
+"printPublicationDate": "2021-10-01"
+},
+"pubYear": "2021",
+"pubTypeList": {
+"pubType": [
+"Research Support, Non-U.S. Gov't",
+"Review",
+"Journal Article"
+]
+},
+"isOpenAccess": "N",
+"inEPMC": "N",
+"inPMC": "N",
+"hasPDF": "N",
+"firstPublicationDate": "2021-08-25"
+},
+{
+"id": "35877020",
+"source": "MED",
+"pmid": "35877020",
+"doi": "10.1007/s13246-022-01157-9",
+"title": "Pulmonary nodule segmentation based on REMU-Net.",
+"authorString": "Li D, Yuan S, Yao G.",
+"journalInfo": {
+"issue": "3",
+"volume": "45",
+"journalIssueId": 3418801,
+"dateOfPublication": "2022 Sep",
+"monthOfPublication": 9,
+"yearOfPublication": 2022,
+"journal": {
+"medlineAbbreviation": "Phys Eng Sci Med",
+"title": "Physical and engineering sciences in medicine",
+"essn": "2662-4737",
+"issn": "2662-4729",
+"nlmid": "101760671",
+"isoabbreviation": "Phys Eng Sci Med"
+},
+"printPublicationDate": "2022-09-01"
+},
+"pubYear": "2022",
+"pubTypeList": {
+"pubType": [
+"Journal Article"
+]
+},
+"isOpenAccess": "N",
+"inEPMC": "N",
+"inPMC": "N",
+"hasPDF": "N",
+"firstPublicationDate": "2022-07-25"
+},
+{
+"id": "36198166",
+"source": "MED",
+"pmid": "36198166",
+"pmcid": "PMC9527770",
+"doi": "10.1007/978-3-031-16443-9_2",
+"title": "CIRDataset: A large-scale Dataset for Clinically-Interpretable lung nodule Radiomics and malignancy prediction.",
+"authorString": "Choi W, Dahiya N, Nadeem S.",
+"journalInfo": {
+"volume": "2022",
+"journalIssueId": 3431102,
+"dateOfPublication": "2022 Sep",
+"monthOfPublication": 9,
+"yearOfPublication": 2022,
+"journal": {
+"medlineAbbreviation": "Med Image Comput Comput Assist Interv",
+"title": "Medical image computing and computer-assisted intervention : MICCAI ... International Conference on Medical Image Computing and Computer-Assisted Intervention",
+"nlmid": "101249582",
+"isoabbreviation": "Med Image Comput Comput Assist Interv"
+},
+"printPublicationDate": "2022-09-01"
+},
+"pubYear": "2022",
+"pubTypeList": {
+"pubType": [
+"research-article",
+"Journal Article"
+]
+},
+"isOpenAccess": "N",
+"inEPMC": "Y",
+"inPMC": "Y",
+"hasPDF": "Y",
+"firstPublicationDate": "2022-09-16"
+},
+{
+"id": "41535408",
+"source": "MED",
+"pmid": "41535408",
+"pmcid": "PMC12881645",
+"doi": "10.1038/s41598-026-35243-9",
+"title": "Federated lung nodule segmentation using a hybrid transformer-U-Net architecture.",
+"authorString": "Turjya SM, Fawakherji M.",
+"journalInfo": {
+"issue": "1",
+"volume": "16",
+"journalIssueId": 4082835,
+"dateOfPublication": "2026 Jan",
+"monthOfPublication": 1,
+"yearOfPublication": 2026,
+"journal": {
+"medlineAbbreviation": "Sci Rep",
+"title": "Scientific reports",
+"essn": "2045-2322",
+"issn": "2045-2322",
+"nlmid": "101563288",
+"isoabbreviation": "Sci Rep"
+},
+"printPublicationDate": "2026-01-01"
+},
+"pubYear": "2026",
+"pubTypeList": {
+"pubType": [
+"research-article",
+"Journal Article"
+]
+},
+"isOpenAccess": "Y",
+"inEPMC": "Y",
+"inPMC": "Y",
+"hasPDF": "Y",
+"firstPublicationDate": "2026-01-14"
+},
+{
+"id": "38227405",
+"source": "MED",
+"pmid": "38227405",
+"doi": "10.1109/jbhi.2024.3355008",
+"title": "A Dual-Branch Framework With Prior Knowledge for Precise Segmentation of Lung Nodules in Challenging CT Scans.",
+"authorString": "Jiang W, Zhi L, Zhang S, Zhou T.",
+"journalInfo": {
+"issue": "3",
+"volume": "28",
+"journalIssueId": 3735324,
+"dateOfPublication": "2024 Mar",
+"monthOfPublication": 3,
+"yearOfPublication": 2024,
+"journal": {
+"medlineAbbreviation": "IEEE J Biomed Health Inform",
+"title": "IEEE journal of biomedical and health informatics",
+"essn": "2168-2208",
+"issn": "2168-2194",
+"nlmid": "101604520",
+"isoabbreviation": "IEEE J Biomed Health Inform"
+},
+"printPublicationDate": "2024-03-01"
+},
+"pubYear": "2024",
+"pubTypeList": {
+"pubType": [
+"Research Support, Non-U.S. Gov't",
+"Journal Article"
+]
+},
+"isOpenAccess": "N",
+"inEPMC": "N",
+"inPMC": "N",
+"hasPDF": "N",
+"firstPublicationDate": "2024-03-06"
+},
+{
+"id": "37362706",
+"source": "MED",
+"pmid": "37362706",
+"pmcid": "PMC10116084",
+"doi": "10.1007/s11042-023-14900-5",
+"title": "Automatic classification of pulmonary nodules in computed tomography images using pre-trained networks and bag of features.",
+"authorString": "Lima T, Luz D, Oseas A, Veras R, Araújo F.",
+"journalInfo": {
+"journalIssueId": 3594329,
+"dateOfPublication": "2023 Apr",
+"monthOfPublication": 4,
+"yearOfPublication": 2023,
+"journal": {
+"medlineAbbreviation": "Multimed Tools Appl",
+"title": "Multimedia tools and applications",
+"essn": "1573-7721",
+"issn": "1380-7501",
+"nlmid": "101555932",
+"isoabbreviation": "Multimed Tools Appl"
+},
+"printPublicationDate": "2023-04-01"
+},
+"pubYear": "2023",
+"pubTypeList": {
+"pubType": [
+"research-article",
+"Journal Article"
+]
+},
+"isOpenAccess": "Y",
+"inEPMC": "Y",
+"inPMC": "Y",
+"hasPDF": "Y",
+"firstPublicationDate": "2023-04-20"
+},
+{
+"id": "40596996",
+"source": "MED",
+"pmid": "40596996",
+"pmcid": "PMC12219450",
+"doi": "10.1186/s12880-025-01784-0",
+"title": "Enhanced pulmonary nodule detection with U-Net, YOLOv8, and swin transformer.",
+"authorString": "Wang X, Wu H, Wang L, Chen J, Li Y, He X, Chen T, Wang M, Guo L.",
+"journalInfo": {
+"issue": "1",
+"volume": "25",
+"journalIssueId": 3969803,
+"dateOfPublication": "2025 Jul",
+"monthOfPublication": 7,
+"yearOfPublication": 2025,
+"journal": {
+"medlineAbbreviation": "BMC Med Imaging",
+"title": "BMC medical imaging",
+"essn": "1471-2342",
+"issn": "1471-2342",
+"nlmid": "100968553",
+"isoabbreviation": "BMC Med Imaging"
+},
+"printPublicationDate": "2025-07-01"
+},
+"pubYear": "2025",
+"pubTypeList": {
+"pubType": [
+"research-article",
+"Journal Article"
+]
+},
+"isOpenAccess": "Y",
+"inEPMC": "Y",
+"inPMC": "Y",
+"hasPDF": "Y",
+"firstPublicationDate": "2025-07-01"
+},
+{
+"id": "42037339",
+"source": "MED",
+"pmid": "42037339",
+"pmcid": "PMC13112225",
+"doi": "10.7507/1001-5515.202505072",
+"title": "[Lung nodule segmentation method based on multiscale feature interaction and coordinate information].",
+"authorString": "Xu Q, Zhu H, Wang Y, Liu W.",
+"journalInfo": {
+"issue": "2",
+"volume": "43",
+"journalIssueId": 4185887,
+"dateOfPublication": "2026 Apr",
+"monthOfPublication": 4,
+"yearOfPublication": 2026,
+"journal": {
+"medlineAbbreviation": "Sheng Wu Yi Xue Gong Cheng Xue Za Zhi",
+"title": "Sheng wu yi xue gong cheng xue za zhi = Journal of biomedical engineering = Shengwu yixue gongchengxue zazhi",
+"issn": "1001-5515",
+"nlmid": "9426398",
+"isoabbreviation": "Sheng Wu Yi Xue Gong Cheng Xue Za Zhi"
+},
+"printPublicationDate": "2026-04-01"
+},
+"pubYear": "2026",
+"pubTypeList": {
+"pubType": [
+"research-article",
+"Journal Article",
+"English Abstract"
+]
+},
+"isOpenAccess": "N",
+"inEPMC": "Y",
+"inPMC": "Y",
+"hasPDF": "Y",
+"firstPublicationDate": "2026-04-01"
+},
+{
+"id": "31815727",
+"source": "MED",
+"pmid": "31815727",
+"doi": "10.3233/xst-190581",
+"title": "Research progress of computer aided diagnosis system for pulmonary nodules in CT images.",
+"authorString": "Wang Y, Wu B, Zhang N, Liu J, Ren F, Zhao L.",
+"journalInfo": {
+"issue": "1",
+"volume": "28",
+"journalIssueId": 2915165,
+"dateOfPublication": "2020 ",
+"monthOfPublication": 0,
+"yearOfPublication": 2020,
+"journal": {
+"medlineAbbreviation": "J Xray Sci Technol",
+"title": "Journal of X-ray science and technology",
+"essn": "1095-9114",
+"issn": "0895-3996",
+"nlmid": "9000080",
+"isoabbreviation": "J Xray Sci Technol"
+},
+"printPublicationDate": "2020-01-01"
+},
+"pubYear": "2020",
+"pubTypeList": {
+"pubType": [
+"Research Support, Non-U.S. Gov't",
+"Review",
+"Journal Article"
+]
+},
+"isOpenAccess": "N",
+"inEPMC": "N",
+"inPMC": "N",
+"hasPDF": "N",
+"firstPublicationDate": "2020-01-01"
+},
+{
+"id": "32772385",
+"source": "MED",
+"pmid": "32772385",
+"pmcid": "PMC7721965",
+"doi": "10.1002/mp.14445",
+"title": "DICOM re-encoding of volumetrically annotated Lung Imaging Database Consortium (LIDC) nodules.",
+"authorString": "Fedorov A, Hancock M, Clunie D, Brochhausen M, Bona J, Kirby J, Freymann J, Pieper S, J W L Aerts H, Kikinis R, Prior F.",
+"journalInfo": {
+"issue": "11",
+"volume": "47",
+"journalIssueId": 3062595,
+"dateOfPublication": "2020 Nov",
+"monthOfPublication": 11,
+"yearOfPublication": 2020,
+"journal": {
+"medlineAbbreviation": "Med Phys",
+"title": "Medical physics",
+"essn": "2473-4209",
+"issn": "0094-2405",
+"nlmid": "0425746",
+"isoabbreviation": "Med Phys"
+},
+"printPublicationDate": "2020-11-01"
+},
+"pubYear": "2020",
+"pubTypeList": {
+"pubType": [
+"other",
+"Journal Article"
+]
+},
+"isOpenAccess": "Y",
+"inEPMC": "Y",
+"inPMC": "Y",
+"hasPDF": "Y",
+"firstPublicationDate": "2020-09-06"
+},
+{
+"id": "34943443",
+"source": "MED",
+"pmid": "34943443",
+"pmcid": "PMC8699868",
+"doi": "10.3390/diagnostics11122208",
+"title": "VGG19 Network Assisted Joint Segmentation and Classification of Lung Nodules in CT Images.",
+"authorString": "Khan MA, Rajinikanth V, Satapathy SC, Taniar D, Mohanty JR, Tariq U, Damaševičius R.",
+"journalInfo": {
+"issue": "12",
+"volume": "11",
+"journalIssueId": 3283430,
+"dateOfPublication": "2021 Nov",
+"monthOfPublication": 11,
+"yearOfPublication": 2021,
+"journal": {
+"medlineAbbreviation": "Diagnostics (Basel)",
+"title": "Diagnostics (Basel, Switzerland)",
+"essn": "2075-4418",
+"issn": "2075-4418",
+"nlmid": "101658402",
+"isoabbreviation": "Diagnostics (Basel)"
+},
+"printPublicationDate": "2021-11-01"
+},
+"pubYear": "2021",
+"pubTypeList": {
+"pubType": [
+"research-article",
+"Journal Article"
+]
+},
+"isOpenAccess": "Y",
+"inEPMC": "Y",
+"inPMC": "Y",
+"hasPDF": "Y",
+"firstPublicationDate": "2021-11-26"
+},
+{
+"id": "36544067",
+"source": "MED",
+"pmid": "36544067",
+"pmcid": "PMC10039158",
+"doi": "10.1007/s10278-022-00749-x",
+"title": "A Novel Deep Learning Model Based on Multi-Scale and Multi-View for Detection of Pulmonary Nodules.",
+"authorString": "Chen Y, Hou X, Yang Y, Ge Q, Zhou Y, Nie S.",
+"journalInfo": {
+"issue": "2",
+"volume": "36",
+"journalIssueId": 3530410,
+"dateOfPublication": "2023 Apr",
+"monthOfPublication": 4,
+"yearOfPublication": 2023,
+"journal": {
+"medlineAbbreviation": "J Digit Imaging",
+"title": "Journal of digital imaging",
+"essn": "1618-727X",
+"issn": "0897-1889",
+"nlmid": "9100529",
+"isoabbreviation": "J Digit Imaging"
+},
+"printPublicationDate": "2023-04-01"
+},
+"pubYear": "2023",
+"pubTypeList": {
+"pubType": [
+"Research Support, Non-U.S. Gov't",
+"research-article",
+"Journal Article"
+]
+},
+"isOpenAccess": "N",
+"inEPMC": "Y",
+"inPMC": "Y",
+"hasPDF": "Y",
+"firstPublicationDate": "2022-12-21"
+},
+{
+"id": "36709519",
+"source": "MED",
+"pmid": "36709519",
+"doi": "10.1016/j.compbiomed.2023.106587",
+"title": "WS-LungNet: A two-stage weakly-supervised lung cancer detection and diagnosis network.",
+"authorString": "Shen Z, Cao P, Yang J, Zaiane OR.",
+"journalInfo": {
+"volume": "154",
+"journalIssueId": 3510835,
+"dateOfPublication": "2023 Mar",
+"monthOfPublication": 3,
+"yearOfPublication": 2023,
+"journal": {
+"medlineAbbreviation": "Comput Biol Med",
+"title": "Computers in biology and medicine",
+"essn": "1879-0534",
+"issn": "0010-4825",
+"nlmid": "1250250",
+"isoabbreviation": "Comput Biol Med"
+},
+"printPublicationDate": "2023-03-01"
+},
+"pubYear": "2023",
+"pubTypeList": {
+"pubType": [
+"Research Support, Non-U.S. Gov't",
+"Journal Article"
+]
+},
+"isOpenAccess": "N",
+"inEPMC": "N",
+"inPMC": "N",
+"hasPDF": "N",
+"firstPublicationDate": "2023-01-24"
+},
+{
+"id": "37243853",
+"source": "MED",
+"pmid": "37243853",
+"doi": "10.1007/s11517-023-02852-9",
+"title": "TPFR-Net: U-shaped model for lung nodule segmentation based on transformer pooling and dual-attention feature reorganization.",
+"authorString": "Li X, Jiang A, Qiu Y, Li M, Zhang X, Yan S.",
+"journalInfo": {
+"issue": "8",
+"volume": "61",
+"journalIssueId": 3602842,
+"dateOfPublication": "2023 Aug",
+"monthOfPublication": 8,
+"yearOfPublication": 2023,
+"journal": {
+"medlineAbbreviation": "Med Biol Eng Comput",
+"title": "Medical & biological engineering & computing",
+"essn": "1741-0444",
+"issn": "0140-0118",
+"nlmid": "7704869",
+"isoabbreviation": "Med Biol Eng Comput"
+},
+"printPublicationDate": "2023-08-01"
+},
+"pubYear": "2023",
+"pubTypeList": {
+"pubType": [
+"Journal Article"
+]
+},
+"isOpenAccess": "N",
+"inEPMC": "N",
+"inPMC": "N",
+"hasPDF": "N",
+"firstPublicationDate": "2023-05-27"
+},
+{
+"id": "PPR589443",
+"source": "PPR",
+"doi": "10.20944/preprints202212.0532.v1",
+"title": "DEHA-Net: Dual-Encoder based Hard Attention Network with Adaptive ROI Mechanism for Lung Nodule Segmentation",
+"authorString": "Usman M, Shin YG.",
+"pubYear": "2022",
+"pubTypeList": {
+"pubType": [
+"Preprint"
+]
+},
+"isOpenAccess": "N",
+"inEPMC": "N",
+"inPMC": "N",
+"hasPDF": "N",
+"firstPublicationDate": "2022-12-28",
+"bookOrReportDetails": {
+"publisher": "Preprints.org",
+"yearOfPublication": 2022
+}
+},
+{
+"id": "41568943",
+"source": "MED",
+"pmid": "41568943",
+"doi": "10.1080/17538157.2025.2611342",
+"title": "Effective lung nodule segmentation and classification by employing a SPPUNet model and global context attention-based InceptionV3.",
+"authorString": "L KK, R R.",
+"journalInfo": {
+"journalIssueId": 4085786,
+"dateOfPublication": "2026 Jan",
+"monthOfPublication": 1,
+"yearOfPublication": 2026,
+"journal": {
+"medlineAbbreviation": "Inform Health Soc Care",
+"title": "Informatics for health & social care",
+"essn": "1753-8165",
+"issn": "1753-8157",
+"nlmid": "101475011",
+"isoabbreviation": "Inform Health Soc Care"
+},
+"printPublicationDate": "2026-01-01"
+},
+"pubYear": "2026",
+"pubTypeList": {
+"pubType": [
+"Journal Article"
+]
+},
+"isOpenAccess": "N",
+"inEPMC": "N",
+"inPMC": "N",
+"hasPDF": "N",
+"firstPublicationDate": "2026-01-22"
+},
+{
+"id": "36174073",
+"source": "MED",
+"pmid": "36174073",
+"pmcid": "PMC9521911",
+"doi": "10.1371/journal.pone.0274516",
+"title": "Deep fusion of gray level co-occurrence matrices for lung nodule classification.",
+"authorString": "Saihood A, Karshenas H, Nilchi ARN.",
+"journalInfo": {
+"issue": "9",
+"volume": "17",
+"journalIssueId": 3415376,
+"dateOfPublication": "2022 ",
+"monthOfPublication": 0,
+"yearOfPublication": 2022,
+"journal": {
+"medlineAbbreviation": "PLoS One",
+"title": "PloS one",
+"essn": "1932-6203",
+"issn": "1932-6203",
+"nlmid": "101285081",
+"isoabbreviation": "PLoS One"
+},
+"printPublicationDate": "2022-01-01"
+},
+"pubYear": "2022",
+"pubTypeList": {
+"pubType": [
+"research-article",
+"Journal Article"
+]
+},
+"isOpenAccess": "Y",
+"inEPMC": "Y",
+"inPMC": "Y",
+"hasPDF": "Y",
+"firstPublicationDate": "2022-09-29"
+},
+{
+"id": "PPR624898",
+"source": "PPR",
+"doi": "10.1101/2023.03.01.23286632",
+"title": "Early Detection of Lung Cancer in the NLST Dataset<sup>*</sup>",
+"authorString": "Mukherjee P, Brezhneva A, Napel S, Gevaert O.",
+"pubYear": "2023",
+"pubTypeList": {
+"pubType": [
+"Preprint"
+]
+},
+"isOpenAccess": "N",
+"inEPMC": "N",
+"inPMC": "N",
+"hasPDF": "N",
+"firstPublicationDate": "2023-03-02",
+"bookOrReportDetails": {
+"publisher": "medRxiv",
+"yearOfPublication": 2023
+}
+},
+{
+"id": "35349837",
+"source": "MED",
+"pmid": "35349837",
+"doi": "10.1016/j.media.2022.102398",
+"title": "Robust Bayesian fusion of continuous segmentation maps.",
+"authorString": "Audelan B, Hamzaoui D, Montagne S, Renard-Penna R, Delingette H.",
+"journalInfo": {
+"volume": "78",
+"journalIssueId": 3345593,
+"dateOfPublication": "2022 May",
+"monthOfPublication": 5,
+"yearOfPublication": 2022,
+"journal": {
+"medlineAbbreviation": "Med Image Anal",
+"title": "Medical image analysis",
+"essn": "1361-8423",
+"issn": "1361-8415",
+"nlmid": "9713490",
+"isoabbreviation": "Med Image Anal"
+},
+"printPublicationDate": "2022-05-01"
+},
+"pubYear": "2022",
+"pubTypeList": {
+"pubType": [
+"Research Support, Non-U.S. Gov't",
+"Journal Article"
+]
+},
+"isOpenAccess": "N",
+"inEPMC": "N",
+"inPMC": "N",
+"hasPDF": "N",
+"firstPublicationDate": "2022-03-02"
+},
+{
+"id": "36450216",
+"source": "MED",
+"pmid": "36450216",
+"doi": "10.1016/j.compbiomed.2022.106330",
+"title": "DPBET: A dual-path lung nodules segmentation model based on boundary enhancement and hybrid transformer.",
+"authorString": "Wang S, Jiang A, Li X, Qiu Y, Li M, Li F.",
+"journalInfo": {
+"issue": "Pt B",
+"volume": "151",
+"journalIssueId": 3468998,
+"dateOfPublication": "2022 Dec",
+"monthOfPublication": 12,
+"yearOfPublication": 2022,
+"journal": {
+"medlineAbbreviation": "Comput Biol Med",
+"title": "Computers in biology and medicine",
+"essn": "1879-0534",
+"issn": "0010-4825",
+"nlmid": "1250250",
+"isoabbreviation": "Comput Biol Med"
+},
+"printPublicationDate": "2022-12-01"
+},
+"pubYear": "2022",
+"pubTypeList": {
+"pubType": [
+"Research Support, Non-U.S. Gov't",
+"Journal Article"
+]
+},
+"isOpenAccess": "N",
+"inEPMC": "N",
+"inPMC": "N",
+"hasPDF": "N",
+"firstPublicationDate": "2022-11-20"
+},
+{
+"id": "40434310",
+"source": "MED",
+"pmid": "40434310",
+"doi": "10.1148/ryai.240484",
+"title": "Estimating Total Lung Volume from Pixel-Level Thickness Maps of Chest Radiographs Using Deep Learning.",
+"authorString": "Dorosti T, Schultheiß M, Schmette P, Heuchert J, Thalhammer J, Gassert FT, Sellerer T, Schick R, Taphorn K, Mechlem K, Birnbacher L, Schaff F, Pfeiffer F, Pfeiffer D.",
+"journalInfo": {
+"issue": "4",
+"volume": "7",
+"journalIssueId": 3955352,
+"dateOfPublication": "2025 Jul",
+"monthOfPublication": 7,
+"yearOfPublication": 2025,
+"journal": {
+"medlineAbbreviation": "Radiol Artif Intell",
+"title": "Radiology. Artificial intelligence",
+"essn": "2638-6100",
+"issn": "2638-6100",
+"nlmid": "101746556",
+"isoabbreviation": "Radiol Artif Intell"
+},
+"printPublicationDate": "2025-07-01"
+},
+"pubYear": "2025",
+"pubTypeList": {
+"pubType": [
+"Research Support, Non-U.S. Gov't",
+"Journal Article"
+]
+},
+"isOpenAccess": "N",
+"inEPMC": "N",
+"inPMC": "N",
+"hasPDF": "N",
+"firstPublicationDate": "2025-07-01"
+},
+{
+"id": "40625549",
+"source": "MED",
+"pmid": "40625549",
+"pmcid": "PMC12229428",
+"doi": "10.1007/s13534-025-00474-8",
+"title": "A study for expert-informed active pulmonary nodule segmentation.",
+"authorString": "Tan S, Zhang T, Deng Y, Nie Z, Wu X, Yan X, Zhang X, Yi H, Song X, Li J.",
+"journalInfo": {
+"issue": "4",
+"volume": "15",
+"journalIssueId": 3974393,
+"dateOfPublication": "2025 Jul",
+"monthOfPublication": 7,
+"yearOfPublication": 2025,
+"journal": {
+"medlineAbbreviation": "Biomed Eng Lett",
+"title": "Biomedical engineering letters",
+"essn": "2093-985X",
+"issn": "2093-9868",
+"nlmid": "101567784",
+"isoabbreviation": "Biomed Eng Lett"
+},
+"printPublicationDate": "2025-07-01"
+},
+"pubYear": "2025",
+"pubTypeList": {
+"pubType": [
+"research-article",
+"Journal Article"
+]
+},
+"isOpenAccess": "N",
+"inEPMC": "Y",
+"inPMC": "Y",
+"hasPDF": "Y",
+"firstPublicationDate": "2025-04-25"
+},
+{
+"id": "33448905",
+"source": "MED",
+"pmid": "33448905",
+"doi": "10.1080/03091902.2020.1853837",
+"title": "Classification of malignant lung cancer using deep learning.",
+"authorString": "Kumar V, Bakariya B.",
+"journalInfo": {
+"issue": "2",
+"volume": "45",
+"journalIssueId": 3125689,
+"dateOfPublication": "2021 Feb",
+"monthOfPublication": 2,
+"yearOfPublication": 2021,
+"journal": {
+"medlineAbbreviation": "J Med Eng Technol",
+"title": "Journal of medical engineering & technology",
+"essn": "1464-522X",
+"issn": "0309-1902",
+"nlmid": "7702125",
+"isoabbreviation": "J Med Eng Technol"
+},
+"printPublicationDate": "2021-02-01"
+},
+"pubYear": "2021",
+"pubTypeList": {
+"pubType": [
+"Letter"
+]
+},
+"isOpenAccess": "N",
+"inEPMC": "N",
+"inPMC": "N",
+"hasPDF": "N",
+"firstPublicationDate": "2021-01-15"
+},
+{
+"id": "40701761",
+"source": "MED",
+"pmid": "40701761",
+"doi": "10.1016/j.medengphy.2025.104376",
+"title": "Gradient-driven pixel connectivity convolutional neural networks classification based on U-Net lung nodule segmentation.",
+"authorString": "Ahmed N, Ayadi A, Hammami I.",
+"journalInfo": {
+"volume": "142",
+"journalIssueId": 3982259,
+"dateOfPublication": "2025 Aug",
+"monthOfPublication": 8,
+"yearOfPublication": 2025,
+"journal": {
+"medlineAbbreviation": "Med Eng Phys",
+"title": "Medical engineering & physics",
+"essn": "1873-4030",
+"issn": "1350-4533",
+"nlmid": "9422753",
+"isoabbreviation": "Med Eng Phys"
+},
+"printPublicationDate": "2025-08-01"
+},
+"pubYear": "2025",
+"pubTypeList": {
+"pubType": [
+"Journal Article"
+]
+},
+"isOpenAccess": "N",
+"inEPMC": "N",
+"inPMC": "N",
+"hasPDF": "N",
+"firstPublicationDate": "2025-06-03"
+},
+{
+"id": "36637749",
+"source": "MED",
+"pmid": "36637749",
+"doi": "10.1007/s11548-022-02817-7",
+"title": "Multi-scale dense selective network based on border modeling for lung nodule segmentation.",
+"authorString": "Wang H, Xiao N, Luo S, Li R, Zhao J, Ma Y, Zhao J, Qiang Y, Wang L, Lian J.",
+"journalInfo": {
+"issue": "5",
+"volume": "18",
+"journalIssueId": 3547019,
+"dateOfPublication": "2023 May",
+"monthOfPublication": 5,
+"yearOfPublication": 2023,
+"journal": {
+"medlineAbbreviation": "Int J Comput Assist Radiol Surg",
+"title": "International journal of computer assisted radiology and surgery",
+"essn": "1861-6429",
+"issn": "1861-6410",
+"nlmid": "101499225",
+"isoabbreviation": "Int J Comput Assist Radiol Surg"
+},
+"printPublicationDate": "2023-05-01"
+},
+"pubYear": "2023",
+"pubTypeList": {
+"pubType": [
+"Journal Article"
+]
+},
+"isOpenAccess": "N",
+"inEPMC": "N",
+"inPMC": "N",
+"hasPDF": "N",
+"firstPublicationDate": "2023-01-13"
+},
+{
+"id": "38224306",
+"source": "MED",
+"pmid": "38224306",
+"pmcid": "PMC10939846",
+"doi": "10.1002/mp.16937",
+"title": "Robust explanation supervision for false positive reduction in pulmonary nodule detection.",
+"authorString": "Zhao Q, Chang CW, Yang X, Zhao L.",
+"journalInfo": {
+"issue": "3",
+"volume": "51",
+"journalIssueId": 3738602,
+"dateOfPublication": "2024 Mar",
+"monthOfPublication": 3,
+"yearOfPublication": 2024,
+"journal": {
+"medlineAbbreviation": "Med Phys",
+"title": "Medical physics",
+"essn": "2473-4209",
+"issn": "0094-2405",
+"nlmid": "0425746",
+"isoabbreviation": "Med Phys"
+},
+"printPublicationDate": "2024-03-01"
+},
+"pubYear": "2024",
+"pubTypeList": {
+"pubType": [
+"research-article",
+"Journal Article"
+]
+},
+"isOpenAccess": "N",
+"inEPMC": "Y",
+"inPMC": "Y",
+"hasPDF": "Y",
+"firstPublicationDate": "2024-01-15"
+},
+{
+"id": "32877818",
+"source": "MED",
+"pmid": "32877818",
+"doi": "10.1016/j.cmpb.2020.105720",
+"title": "An adaptive morphology based segmentation technique for lung nodule detection in thoracic CT image.",
+"authorString": "Halder A, Chatterjee S, Dey D, Kole S, Munshi S.",
+"journalInfo": {
+"volume": "197",
+"journalIssueId": 3057308,
+"dateOfPublication": "2020 Dec",
+"monthOfPublication": 12,
+"yearOfPublication": 2020,
+"journal": {
+"medlineAbbreviation": "Comput Methods Programs Biomed",
+"title": "Computer methods and programs in biomedicine",
+"essn": "1872-7565",
+"issn": "0169-2607",
+"nlmid": "8506513",
+"isoabbreviation": "Comput Methods Programs Biomed"
+},
+"printPublicationDate": "2020-12-01"
+},
+"pubYear": "2020",
+"pubTypeList": {
+"pubType": [
+"Journal Article"
+]
+},
+"isOpenAccess": "N",
+"inEPMC": "N",
+"inPMC": "N",
+"hasPDF": "N",
+"firstPublicationDate": "2020-08-25"
+},
+{
+"id": "32552724",
+"source": "MED",
+"pmid": "32552724",
+"pmcid": "PMC7302391",
+"doi": "10.1186/s12938-020-00793-0",
+"title": "Segmentation of small ground glass opacity pulmonary nodules based on Markov random field energy and Bayesian probability difference.",
+"authorString": "Zhang S, Chen X, Zhu Z, Feng B, Chen Y, Long W.",
+"journalInfo": {
+"issue": "1",
+"volume": "19",
+"journalIssueId": 2963277,
+"dateOfPublication": "2020 Jun",
+"monthOfPublication": 6,
+"yearOfPublication": 2020,
+"journal": {
+"medlineAbbreviation": "Biomed Eng Online",
+"title": "Biomedical engineering online",
+"essn": "1475-925X",
+"issn": "1475-925X",
+"nlmid": "101147518",
+"isoabbreviation": "Biomed Eng Online"
+},
+"printPublicationDate": "2020-06-01"
+},
+"pubYear": "2020",
+"pubTypeList": {
+"pubType": [
+"research-article",
+"Journal Article"
+]
+},
+"isOpenAccess": "Y",
+"inEPMC": "Y",
+"inPMC": "Y",
+"hasPDF": "Y",
+"firstPublicationDate": "2020-06-17"
+},
+{
+"id": "37595518",
+"source": "MED",
+"pmid": "37595518",
+"doi": "10.1016/j.compbiomed.2023.107321",
+"title": "Deep neural network pulmonary nodule segmentation methods for CT images: Literature review and experimental comparisons.",
+"authorString": "Zhi L, Jiang W, Zhang S, Zhou T.",
+"journalInfo": {
+"volume": "164",
+"journalIssueId": 3629962,
+"dateOfPublication": "2023 Sep",
+"monthOfPublication": 9,
+"yearOfPublication": 2023,
+"journal": {
+"medlineAbbreviation": "Comput Biol Med",
+"title": "Computers in biology and medicine",
+"essn": "1879-0534",
+"issn": "0010-4825",
+"nlmid": "1250250",
+"isoabbreviation": "Comput Biol Med"
+},
+"printPublicationDate": "2023-09-01"
+},
+"pubYear": "2023",
+"pubTypeList": {
+"pubType": [
+"Research Support, Non-U.S. Gov't",
+"Review",
+"Journal Article"
+]
+},
+"isOpenAccess": "N",
+"inEPMC": "N",
+"inPMC": "N",
+"hasPDF": "N",
+"firstPublicationDate": "2023-08-09"
+},
+{
+"id": "PPR999785",
+"source": "PPR",
+"doi": "10.20944/preprints202504.0056.v1",
+"title": "Multi-center Validation of Pulmonary Nodule Classification Model for Lung Cancer Screening",
+"authorString": "Park D, Kang J, Park C.",
+"pubYear": "2025",
+"pubTypeList": {
+"pubType": [
+"Preprint"
+]
+},
+"isOpenAccess": "N",
+"inEPMC": "N",
+"inPMC": "N",
+"hasPDF": "N",
+"firstPublicationDate": "2025-04-01",
+"bookOrReportDetails": {
+"publisher": "Preprints.org",
+"yearOfPublication": 2025
+}
+},
+{
+"id": "33221055",
+"source": "MED",
+"pmid": "33221055",
+"pmcid": "PMC7920914",
+"doi": "10.1016/j.cmpb.2020.105839",
+"title": "Reproducible and Interpretable Spiculation Quantification for Lung Cancer Screening.",
+"authorString": "Choi W, Nadeem S, Alam SR, Deasy JO, Tannenbaum A, Lu W.",
+"journalInfo": {
+"volume": "200",
+"journalIssueId": 3120336,
+"dateOfPublication": "2021 Mar",
+"monthOfPublication": 3,
+"yearOfPublication": 2021,
+"journal": {
+"medlineAbbreviation": "Comput Methods Programs Biomed",
+"title": "Computer methods and programs in biomedicine",
+"essn": "1872-7565",
+"issn": "0169-2607",
+"nlmid": "8506513",
+"isoabbreviation": "Comput Methods Programs Biomed"
+},
+"printPublicationDate": "2021-03-01"
+},
+"pubYear": "2021",
+"pubTypeList": {
+"pubType": [
+"research-article",
+"Journal Article"
+]
+},
+"isOpenAccess": "N",
+"inEPMC": "Y",
+"inPMC": "Y",
+"hasPDF": "Y",
+"firstPublicationDate": "2020-11-13"
+},
+{
+"id": "36850583",
+"source": "MED",
+"pmid": "36850583",
+"pmcid": "PMC9960760",
+"doi": "10.3390/s23041989",
+"title": "<i>DEHA</i>-Net: A Dual-Encoder-Based Hard Attention Network with an Adaptive ROI Mechanism for Lung Nodule Segmentation.",
+"authorString": "Usman M, Shin YG.",
+"journalInfo": {
+"issue": "4",
+"volume": "23",
+"journalIssueId": 3513521,
+"dateOfPublication": "2023 Feb",
+"monthOfPublication": 2,
+"yearOfPublication": 2023,
+"journal": {
+"medlineAbbreviation": "Sensors (Basel)",
+"title": "Sensors (Basel, Switzerland)",
+"essn": "1424-8220",
+"issn": "1424-8220",
+"nlmid": "101204366",
+"isoabbreviation": "Sensors (Basel)"
+},
+"printPublicationDate": "2023-02-01"
+},
+"pubYear": "2023",
+"pubTypeList": {
+"pubType": [
+"research-article",
+"Journal Article"
+]
+},
+"isOpenAccess": "Y",
+"inEPMC": "Y",
+"inPMC": "Y",
+"hasPDF": "Y",
+"firstPublicationDate": "2023-02-10"
+},
+{
+"id": "35573467",
+"source": "MED",
+"pmid": "35573467",
+"pmcid": "PMC9093212",
+"doi": "10.1117/1.jmi.9.5.052402",
+"title": "Efficient multiscale fully convolutional UNet model for segmentation of 3D lung nodule from CT image.",
+"authorString": "Agnes SA, Anitha J.",
+"journalInfo": {
+"issue": "5",
+"volume": "9",
+"journalIssueId": 3360608,
+"dateOfPublication": "2022 Sep",
+"monthOfPublication": 9,
+"yearOfPublication": 2022,
+"journal": {
+"medlineAbbreviation": "J Med Imaging (Bellingham)",
+"title": "Journal of medical imaging (Bellingham, Wash.)",
+"essn": "2329-4310",
+"issn": "2329-4302",
+"nlmid": "101643461",
+"isoabbreviation": "J Med Imaging (Bellingham)"
+},
+"printPublicationDate": "2022-09-01"
+},
+"pubYear": "2022",
+"pubTypeList": {
+"pubType": [
+"research-article",
+"Journal Article"
+]
+},
+"isOpenAccess": "N",
+"inEPMC": "Y",
+"inPMC": "Y",
+"hasPDF": "Y",
+"firstPublicationDate": "2022-05-11"
+},
+{
+"id": "40828814",
+"source": "MED",
+"pmid": "40828814",
+"pmcid": "PMC12364326",
+"doi": "10.1371/journal.pone.0328629",
+"title": "HEE-SegGAN: A holistically-nested edge enhanced GAN for pulmonary nodule segmentation.",
+"authorString": "Wang Y, Mustaza SM, Ab-Rahman MS, Mokri SS.",
+"journalInfo": {
+"issue": "8",
+"volume": "20",
+"journalIssueId": 3987016,
+"dateOfPublication": "2025 ",
+"monthOfPublication": 0,
+"yearOfPublication": 2025,
+"journal": {
+"medlineAbbreviation": "PLoS One",
+"title": "PloS one",
+"essn": "1932-6203",
+"issn": "1932-6203",
+"nlmid": "101285081",
+"isoabbreviation": "PLoS One"
+},
+"printPublicationDate": "2025-01-01"
+},
+"pubYear": "2025",
+"pubTypeList": {
+"pubType": [
+"research-article",
+"Journal Article"
+]
+},
+"isOpenAccess": "Y",
+"inEPMC": "Y",
+"inPMC": "Y",
+"hasPDF": "Y",
+"firstPublicationDate": "2025-08-19"
+},
+{
+"id": "41081196",
+"source": "MED",
+"pmid": "41081196",
+"pmcid": "PMC12514721",
+"doi": "10.21037/qims-24-2434",
+"title": "Dual-channel grouped cross-dimension attention V-Net for pulmonary nodule segmentation.",
+"authorString": "Zhang L, Liu T, Liang Y, Li Y, Zhang W, Sun J.",
+"journalInfo": {
+"issue": "10",
+"volume": "15",
+"journalIssueId": 4032524,
+"dateOfPublication": "2025 Oct",
+"monthOfPublication": 10,
+"yearOfPublication": 2025,
+"journal": {
+"medlineAbbreviation": "Quant Imaging Med Surg",
+"title": "Quantitative imaging in medicine and surgery",
+"essn": "2223-4306",
+"issn": "2223-4292",
+"nlmid": "101577942",
+"isoabbreviation": "Quant Imaging Med Surg"
+},
+"printPublicationDate": "2025-10-01"
+},
+"pubYear": "2025",
+"pubTypeList": {
+"pubType": [
+"research-article",
+"Journal Article"
+]
+},
+"isOpenAccess": "Y",
+"inEPMC": "Y",
+"inPMC": "Y",
+"hasPDF": "Y",
+"firstPublicationDate": "2025-09-18"
+},
+{
+"id": "40947694",
+"source": "MED",
+"pmid": "40947694",
+"pmcid": "PMC13223473",
+"doi": "10.2174/0115734056386382250902064757",
+"title": "Enhanced U-Net with Attention Mechanisms for Improved Feature Representation in Lung Nodule Segmentation.",
+"authorString": "Aung TMM, Khan AA.",
+"journalInfo": {
+"journalIssueId": 4010477,
+"dateOfPublication": "2025 Sep",
+"monthOfPublication": 9,
+"yearOfPublication": 2025,
+"journal": {
+"medlineAbbreviation": "Curr Med Imaging",
+"title": "Current medical imaging",
+"essn": "1573-4056",
+"issn": "1573-4056",
+"nlmid": "101762461",
+"isoabbreviation": "Curr Med Imaging"
+},
+"printPublicationDate": "2025-09-01"
+},
+"pubYear": "2025",
+"pubTypeList": {
+"pubType": [
+"research-article",
+"Journal Article"
+]
+},
+"isOpenAccess": "Y",
+"inEPMC": "Y",
+"inPMC": "Y",
+"hasPDF": "Y",
+"firstPublicationDate": "2025-09-11"
+},
+{
+"id": "31705347",
+"source": "MED",
+"pmid": "31705347",
+"doi": "10.1007/s10916-019-1455-6",
+"title": "Lung Nodule Detection based on Ensemble of Hand Crafted and Deep Features.",
+"authorString": "Saba T, Sameh A, Khan F, Shad SA, Sharif M.",
+"journalInfo": {
+"issue": "12",
+"volume": "43",
+"journalIssueId": 2876363,
+"dateOfPublication": "2019 Nov",
+"monthOfPublication": 11,
+"yearOfPublication": 2019,
+"journal": {
+"medlineAbbreviation": "J Med Syst",
+"title": "Journal of medical systems",
+"essn": "1573-689X",
+"issn": "0148-5598",
+"nlmid": "7806056",
+"isoabbreviation": "J Med Syst"
+},
+"printPublicationDate": "2019-11-01"
+},
+"pubYear": "2019",
+"pubTypeList": {
+"pubType": [
+"Journal Article"
+]
+},
+"isOpenAccess": "N",
+"inEPMC": "N",
+"inPMC": "N",
+"hasPDF": "N",
+"firstPublicationDate": "2019-11-08"
+},
+{
+"id": "32556911",
+"source": "MED",
+"pmid": "32556911",
+"pmcid": "PMC7572960",
+"doi": "10.1007/s10278-020-00346-w",
+"title": "Optical Flow Methods for Lung Nodule Segmentation on LIDC-IDRI Images.",
+"authorString": "Suji RJ, Bhadouria SS, Dhar J, Godfrey WW.",
+"journalInfo": {
+"issue": "5",
+"volume": "33",
+"journalIssueId": 3040846,
+"dateOfPublication": "2020 Oct",
+"monthOfPublication": 10,
+"yearOfPublication": 2020,
+"journal": {
+"medlineAbbreviation": "J Digit Imaging",
+"title": "Journal of digital imaging",
+"essn": "1618-727X",
+"issn": "0897-1889",
+"nlmid": "9100529",
+"isoabbreviation": "J Digit Imaging"
+},
+"printPublicationDate": "2020-10-01"
+},
+"pubYear": "2020",
+"pubTypeList": {
+"pubType": [
+"Research Support, Non-U.S. Gov't",
+"research-article",
+"Journal Article"
+]
+},
+"isOpenAccess": "N",
+"inEPMC": "Y",
+"inPMC": "Y",
+"hasPDF": "Y",
+"firstPublicationDate": "2020-10-01"
+},
+{
+"id": "35371983",
+"source": "MED",
+"pmid": "35371983",
+"pmcid": "PMC8966585",
+"doi": "10.3389/fonc.2022.822827",
+"title": "Study on Identification Method of Pulmonary Nodules: Improved Random Walk Pulmonary Parenchyma Segmentation and Fusion Multi-Feature VGG16 Nodule Classification.",
+"authorString": "Zhang Y, Meng L.",
+"journalInfo": {
+"volume": "12",
+"journalIssueId": 3307025,
+"dateOfPublication": "2022 ",
+"monthOfPublication": 0,
+"yearOfPublication": 2022,
+"journal": {
+"medlineAbbreviation": "Front Oncol",
+"title": "Frontiers in oncology",
+"essn": "2234-943X",
+"issn": "2234-943X",
+"nlmid": "101568867",
+"isoabbreviation": "Front Oncol"
+},
+"printPublicationDate": "2022-01-01"
+},
+"pubYear": "2022",
+"pubTypeList": {
+"pubType": [
+"research-article",
+"Journal Article"
+]
+},
+"isOpenAccess": "Y",
+"inEPMC": "Y",
+"inPMC": "Y",
+"hasPDF": "Y",
+"firstPublicationDate": "2022-03-16"
+},
+{
+"id": "29175099",
+"source": "MED",
+"pmid": "29175099",
+"doi": "10.1016/j.compbiomed.2017.11.013",
+"title": "Ground-glass nodule segmentation in chest CT images using asymmetric multi-phase deformable model and pulmonary vessel removal.",
+"authorString": "Jung J, Hong H, Goo JM.",
+"journalInfo": {
+"volume": "92",
+"journalIssueId": 2638577,
+"dateOfPublication": "2018 Jan",
+"monthOfPublication": 1,
+"yearOfPublication": 2018,
+"journal": {
+"medlineAbbreviation": "Comput Biol Med",
+"title": "Computers in biology and medicine",
+"essn": "1879-0534",
+"issn": "0010-4825",
+"nlmid": "1250250",
+"isoabbreviation": "Comput Biol Med"
+},
+"printPublicationDate": "2018-01-01"
+},
+"pubYear": "2018",
+"pubTypeList": {
+"pubType": [
+"Research Support, Non-U.S. Gov't",
+"Journal Article"
+]
+},
+"isOpenAccess": "N",
+"inEPMC": "N",
+"inPMC": "N",
+"hasPDF": "N",
+"firstPublicationDate": "2017-11-20"
+},
+{
+"id": "32026218",
+"source": "MED",
+"pmid": "32026218",
+"pmcid": "PMC7256136",
+"doi": "10.1007/s10278-019-00301-4",
+"title": "Deep Deconvolutional Residual Network Based Automatic Lung Nodule Segmentation.",
+"authorString": "Singadkar G, Mahajan A, Thakur M, Talbar S.",
+"journalInfo": {
+"issue": "3",
+"volume": "33",
+"journalIssueId": 2959806,
+"dateOfPublication": "2020 Jun",
+"monthOfPublication": 6,
+"yearOfPublication": 2020,
+"journal": {
+"medlineAbbreviation": "J Digit Imaging",
+"title": "Journal of digital imaging",
+"essn": "1618-727X",
+"issn": "0897-1889",
+"nlmid": "9100529",
+"isoabbreviation": "J Digit Imaging"
+},
+"printPublicationDate": "2020-06-01"
+},
+"pubYear": "2020",
+"pubTypeList": {
+"pubType": [
+"Research Support, Non-U.S. Gov't",
+"research-article",
+"Journal Article"
+]
+},
+"isOpenAccess": "N",
+"inEPMC": "Y",
+"inPMC": "Y",
+"hasPDF": "Y",
+"firstPublicationDate": "2020-06-01"
+},
+{
+"id": "39885263",
+"source": "MED",
+"pmid": "39885263",
+"pmcid": "PMC11782676",
+"doi": "10.1038/s41598-025-85199-5",
+"title": "Improved lung nodule segmentation with a squeeze excitation dilated attention based residual UNet.",
+"authorString": "Alhajim D, Ansari-Asl K, Akbarizadeh G, Soorki MN.",
+"journalInfo": {
+"issue": "1",
+"volume": "15",
+"journalIssueId": 3878777,
+"dateOfPublication": "2025 Jan",
+"monthOfPublication": 1,
+"yearOfPublication": 2025,
+"journal": {
+"medlineAbbreviation": "Sci Rep",
+"title": "Scientific reports",
+"essn": "2045-2322",
+"issn": "2045-2322",
+"nlmid": "101563288",
+"isoabbreviation": "Sci Rep"
+},
+"printPublicationDate": "2025-01-01"
+},
+"pubYear": "2025",
+"pubTypeList": {
+"pubType": [
+"Research Support, Non-U.S. Gov't",
+"research-article",
+"Journal Article"
+]
+},
+"isOpenAccess": "Y",
+"inEPMC": "Y",
+"inPMC": "Y",
+"hasPDF": "Y",
+"firstPublicationDate": "2025-01-30"
+},
+{
+"id": "40148406",
+"source": "MED",
+"pmid": "40148406",
+"pmcid": "PMC11950440",
+"doi": "10.1038/s41598-025-94132-9",
+"title": "A semisupervised knowledge distillation model for lung nodule segmentation.",
+"authorString": "Liu W, Zhang L, Li X, Liu H, Feng M, Li Y.",
+"journalInfo": {
+"issue": "1",
+"volume": "15",
+"journalIssueId": 3906907,
+"dateOfPublication": "2025 Mar",
+"monthOfPublication": 3,
+"yearOfPublication": 2025,
+"journal": {
+"medlineAbbreviation": "Sci Rep",
+"title": "Scientific reports",
+"essn": "2045-2322",
+"issn": "2045-2322",
+"nlmid": "101563288",
+"isoabbreviation": "Sci Rep"
+},
+"printPublicationDate": "2025-03-01"
+},
+"pubYear": "2025",
+"pubTypeList": {
+"pubType": [
+"research-article",
+"Journal Article"
+]
+},
+"isOpenAccess": "Y",
+"inEPMC": "Y",
+"inPMC": "Y",
+"hasPDF": "Y",
+"firstPublicationDate": "2025-03-27"
+},
+{
+"id": "31406194",
+"source": "MED",
+"pmid": "31406194",
+"pmcid": "PMC6690893",
+"doi": "10.1038/s41598-019-48004-8",
+"title": "iW-Net: an automatic and minimalistic interactive lung nodule segmentation deep network.",
+"authorString": "Aresta G, Jacobs C, Araújo T, Cunha A, Ramos I, van Ginneken B, Campilho A.",
+"journalInfo": {
+"issue": "1",
+"volume": "9",
+"journalIssueId": 2844024,
+"dateOfPublication": "2019 Aug",
+"monthOfPublication": 8,
+"yearOfPublication": 2019,
+"journal": {
+"medlineAbbreviation": "Sci Rep",
+"title": "Scientific reports",
+"essn": "2045-2322",
+"issn": "2045-2322",
+"nlmid": "101563288",
+"isoabbreviation": "Sci Rep"
+},
+"printPublicationDate": "2019-08-01"
+},
+"pubYear": "2019",
+"pubTypeList": {
+"pubType": [
+"Research Support, Non-U.S. Gov't",
+"research-article",
+"Journal Article"
+]
+},
+"isOpenAccess": "Y",
+"inEPMC": "Y",
+"inPMC": "Y",
+"hasPDF": "Y",
+"firstPublicationDate": "2019-08-12"
+},
+{
+"id": "31062113",
+"source": "MED",
+"pmid": "31062113",
+"pmcid": "PMC6841817",
+"doi": "10.1007/s10278-019-00221-3",
+"title": "Lung Nodule Detection in CT Images Using a Raw Patch-Based Convolutional Neural Network.",
+"authorString": "Wang Q, Shen F, Shen L, Huang J, Sheng W.",
+"journalInfo": {
+"issue": "6",
+"volume": "32",
+"journalIssueId": 2879996,
+"dateOfPublication": "2019 Dec",
+"monthOfPublication": 12,
+"yearOfPublication": 2019,
+"journal": {
+"medlineAbbreviation": "J Digit Imaging",
+"title": "Journal of digital imaging",
+"essn": "1618-727X",
+"issn": "0897-1889",
+"nlmid": "9100529",
+"isoabbreviation": "J Digit Imaging"
+},
+"printPublicationDate": "2019-12-01"
+},
+"pubYear": "2019",
+"pubTypeList": {
+"pubType": [
+"Research Support, Non-U.S. Gov't",
+"research-article",
+"Journal Article"
+]
+},
+"isOpenAccess": "N",
+"inEPMC": "Y",
+"inPMC": "Y",
+"hasPDF": "Y",
+"firstPublicationDate": "2019-12-01"
+},
+{
+"id": "40038928",
+"source": "MED",
+"pmid": "40038928",
+"doi": "10.1109/embc53108.2024.10782129",
+"title": "Unsupervised 3D Lung Segmentation by Leveraging 2D Segment Anything Model.",
+"authorString": "Liu T, Wei Q, Chen J, Liu W, Huang W, Srivastava R, Cheng Z, Zeng Z, Veeravalli B, Yang X.",
+"journalInfo": {
+"volume": "2024",
+"journalIssueId": 3908808,
+"dateOfPublication": "2024 Jul",
+"monthOfPublication": 7,
+"yearOfPublication": 2024,
+"journal": {
+"medlineAbbreviation": "Annu Int Conf IEEE Eng Med Biol Soc",
+"title": "Annual International Conference of the IEEE Engineering in Medicine and Biology Society. IEEE Engineering in Medicine and Biology Society. Annual International Conference",
+"essn": "2694-0604",
+"issn": "2375-7477",
+"nlmid": "101763872",
+"isoabbreviation": "Annu Int Conf IEEE Eng Med Biol Soc"
+},
+"printPublicationDate": "2024-07-01"
+},
+"pubYear": "2024",
+"pubTypeList": {
+"pubType": [
+"Journal Article"
+]
+},
+"isOpenAccess": "N",
+"inEPMC": "N",
+"inPMC": "N",
+"hasPDF": "N",
+"firstPublicationDate": "2024-07-01"
+},
+{
+"id": "32732963",
+"source": "MED",
+"pmid": "32732963",
+"pmcid": "PMC7393083",
+"doi": "10.1038/s41598-020-69817-y",
+"title": "Volumetric lung nodule segmentation using adaptive ROI with multi-view residual learning.",
+"authorString": "Usman M, Lee BD, Byon SS, Kim SH, Lee BI, Shin YG.",
+"journalInfo": {
+"issue": "1",
+"volume": "10",
+"journalIssueId": 2972095,
+"dateOfPublication": "2020 Jul",
+"monthOfPublication": 7,
+"yearOfPublication": 2020,
+"journal": {
+"medlineAbbreviation": "Sci Rep",
+"title": "Scientific reports",
+"essn": "2045-2322",
+"issn": "2045-2322",
+"nlmid": "101563288",
+"isoabbreviation": "Sci Rep"
+},
+"printPublicationDate": "2020-07-01"
+},
+"pubYear": "2020",
+"pubTypeList": {
+"pubType": [
+"research-article",
+"Journal Article"
+]
+},
+"isOpenAccess": "Y",
+"inEPMC": "Y",
+"inPMC": "Y",
+"hasPDF": "Y",
+"firstPublicationDate": "2020-07-30"
+},
+{
+"id": "38478388",
+"source": "MED",
+"pmid": "38478388",
+"doi": "10.1002/acm2.14331",
+"title": "Dual-branch feature fusion S3D V-Net network for lung nodules segmentation.",
+"authorString": "Xu X, Du L, Yin D.",
+"journalInfo": {
+"issue": "6",
+"volume": "25",
+"journalIssueId": 3783934,
+"dateOfPublication": "2024 Jun",
+"monthOfPublication": 6,
+"yearOfPublication": 2024,
+"journal": {
+"medlineAbbreviation": "J Appl Clin Med Phys",
+"title": "Journal of applied clinical medical physics",
+"essn": "1526-9914",
+"issn": "1526-9914",
+"nlmid": "101089176",
+"isoabbreviation": "J Appl Clin Med Phys"
+},
+"printPublicationDate": "2024-06-01"
+},
+"pubYear": "2024",
+"pubTypeList": {
+"pubType": [
+"Journal Article"
+]
+},
+"isOpenAccess": "N",
+"inEPMC": "N",
+"inPMC": "N",
+"hasPDF": "N",
+"firstPublicationDate": "2024-03-13"
+},
+{
+"id": "35777084",
+"source": "MED",
+"pmid": "35777084",
+"doi": "10.1016/j.compbiomed.2022.105781",
+"title": "CSE-GAN: A 3D conditional generative adversarial network with concurrent squeeze-and-excitation blocks for lung nodule segmentation.",
+"authorString": "Tyagi S, Talbar SN.",
+"journalInfo": {
+"volume": "147",
+"journalIssueId": 3389791,
+"dateOfPublication": "2022 Aug",
+"monthOfPublication": 8,
+"yearOfPublication": 2022,
+"journal": {
+"medlineAbbreviation": "Comput Biol Med",
+"title": "Computers in biology and medicine",
+"essn": "1879-0534",
+"issn": "0010-4825",
+"nlmid": "1250250",
+"isoabbreviation": "Comput Biol Med"
+},
+"printPublicationDate": "2022-08-01"
+},
+"pubYear": "2022",
+"pubTypeList": {
+"pubType": [
+"Journal Article"
+]
+},
+"isOpenAccess": "N",
+"inEPMC": "N",
+"inPMC": "N",
+"hasPDF": "N",
+"firstPublicationDate": "2022-06-22"
+},
+{
+"id": "32428969",
+"source": "MED",
+"pmid": "32428969",
+"doi": "10.1002/mp.14248",
+"title": "Segmentation of pulmonary nodules in CT images based on 3D-UNET combined with three-dimensional conditional random field optimization.",
+"authorString": "Wu W, Gao L, Duan H, Huang G, Ye X, Nie S.",
+"journalInfo": {
+"issue": "9",
+"volume": "47",
+"journalIssueId": 3062592,
+"dateOfPublication": "2020 Sep",
+"monthOfPublication": 9,
+"yearOfPublication": 2020,
+"journal": {
+"medlineAbbreviation": "Med Phys",
+"title": "Medical physics",
+"essn": "2473-4209",
+"issn": "0094-2405",
+"nlmid": "0425746",
+"isoabbreviation": "Med Phys"
+},
+"printPublicationDate": "2020-09-01"
+},
+"pubYear": "2020",
+"pubTypeList": {
+"pubType": [
+"Journal Article"
+]
+},
+"isOpenAccess": "N",
+"inEPMC": "N",
+"inPMC": "N",
+"hasPDF": "N",
+"firstPublicationDate": "2020-06-04"
+},
+{
+"id": "PPR93541",
+"source": "PPR",
+"doi": "10.20944/preprints201909.0139.v1",
+"title": "Lungs Nodule Detection Using Semantic Segmentation and Classification with Optimal Features",
+"authorString": "Meraj T, Hassan A, Zahoor S, Rauf HT, Lali M, Ali L, Bukhari SAC.",
+"pubYear": "2019",
+"pubTypeList": {
+"pubType": [
+"Preprint"
+]
+},
+"isOpenAccess": "N",
+"inEPMC": "N",
+"inPMC": "N",
+"hasPDF": "N",
+"firstPublicationDate": "2019-09-14",
+"bookOrReportDetails": {
+"publisher": "Preprints.org",
+"yearOfPublication": 2019
+}
+},
+{
+"id": "33130496",
+"source": "MED",
+"pmid": "33130496",
+"doi": "10.1016/j.cmpb.2020.105792",
+"title": "CoLe-CNN: Context-learning convolutional neural network with adaptive loss function for lung nodule segmentation.",
+"authorString": "Pezzano G, Ribas Ripoll V, Radeva P.",
+"journalInfo": {
+"volume": "198",
+"journalIssueId": 3062923,
+"dateOfPublication": "2021 Jan",
+"monthOfPublication": 1,
+"yearOfPublication": 2021,
+"journal": {
+"medlineAbbreviation": "Comput Methods Programs Biomed",
+"title": "Computer methods and programs in biomedicine",
+"essn": "1872-7565",
+"issn": "0169-2607",
+"nlmid": "8506513",
+"isoabbreviation": "Comput Methods Programs Biomed"
+},
+"printPublicationDate": "2021-01-01"
+},
+"pubYear": "2021",
+"pubTypeList": {
+"pubType": [
+"Journal Article"
+]
+},
+"isOpenAccess": "N",
+"inEPMC": "N",
+"inPMC": "N",
+"hasPDF": "N",
+"firstPublicationDate": "2020-10-15"
+},
+{
+"id": "32239521",
+"source": "MED",
+"pmid": "32239521",
+"doi": "10.1002/mp.14161",
+"title": "Pulmonary nodule detection using hybrid two-stage 3D CNNs.",
+"authorString": "Tan M, Wu F, Yang B, Ma J, Kong D, Chen Z, Long D.",
+"journalInfo": {
+"issue": "8",
+"volume": "47",
+"journalIssueId": 2996274,
+"dateOfPublication": "2020 Aug",
+"monthOfPublication": 8,
+"yearOfPublication": 2020,
+"journal": {
+"medlineAbbreviation": "Med Phys",
+"title": "Medical physics",
+"essn": "2473-4209",
+"issn": "0094-2405",
+"nlmid": "0425746",
+"isoabbreviation": "Med Phys"
+},
+"printPublicationDate": "2020-08-01"
+},
+"pubYear": "2020",
+"pubTypeList": {
+"pubType": [
+"Journal Article"
+]
+},
+"isOpenAccess": "N",
+"inEPMC": "N",
+"inPMC": "N",
+"hasPDF": "N",
+"firstPublicationDate": "2020-07-06"
+},
+{
+"id": "29359462",
+"source": "MED",
+"pmid": "29359462",
+"doi": "10.1002/mp.12746",
+"title": "Automatic detection of multisize pulmonary nodules in CT images: Large-scale validation of the false-positive reduction step.",
+"authorString": "Gupta A, Saar T, Martens O, Moullec YL.",
+"journalInfo": {
+"issue": "3",
+"volume": "45",
+"journalIssueId": 2660714,
+"dateOfPublication": "2018 Mar",
+"monthOfPublication": 3,
+"yearOfPublication": 2018,
+"journal": {
+"medlineAbbreviation": "Med Phys",
+"title": "Medical physics",
+"essn": "2473-4209",
+"issn": "0094-2405",
+"nlmid": "0425746",
+"isoabbreviation": "Med Phys"
+},
+"printPublicationDate": "2018-03-01"
+},
+"pubYear": "2018",
+"pubTypeList": {
+"pubType": [
+"Validation Study",
+"Journal Article"
+]
+},
+"isOpenAccess": "N",
+"inEPMC": "N",
+"inPMC": "N",
+"hasPDF": "N",
+"firstPublicationDate": "2018-01-23"
+},
+{
+"id": "32738913",
+"source": "MED",
+"pmid": "32738913",
+"pmcid": "PMC7395980",
+"doi": "10.1186/s40644-020-00331-0",
+"title": "Multi-view secondary input collaborative deep learning for lung nodule 3D segmentation.",
+"authorString": "Dong X, Dong X, Xu S, Liu Y, Wang A, Saripan MI, Li L, Zhang X, Lu L.",
+"journalInfo": {
+"issue": "1",
+"volume": "20",
+"journalIssueId": 2989542,
+"dateOfPublication": "2020 Aug",
+"monthOfPublication": 8,
+"yearOfPublication": 2020,
+"journal": {
+"medlineAbbreviation": "Cancer Imaging",
+"title": "Cancer imaging : the official publication of the International Cancer Imaging Society",
+"essn": "1470-7330",
+"issn": "1740-5025",
+"nlmid": "101172931",
+"isoabbreviation": "Cancer Imaging"
+},
+"printPublicationDate": "2020-08-01"
+},
+"pubYear": "2020",
+"pubTypeList": {
+"pubType": [
+"research-article",
+"Journal Article"
+]
+},
+"isOpenAccess": "Y",
+"inEPMC": "Y",
+"inPMC": "Y",
+"hasPDF": "Y",
+"firstPublicationDate": "2020-08-01"
+},
+{
+"id": "38932536",
+"source": "MED",
+"pmid": "38932536",
+"pmcid": "PMC11208657",
+"doi": "10.7507/1001-5515.202310044",
+"title": "[A design of interactive review for computer aided diagnosis of pulmonary nodules based on active learning].",
+"authorString": "Tan S, Li J, Zhang X, Yan X, Zhang T, Wu X, Liu Z, Li L, Feng J, Han H, Tang G, Han J, Deng Y.",
+"journalInfo": {
+"issue": "3",
+"volume": "41",
+"journalIssueId": 3790832,
+"dateOfPublication": "2024 Jun",
+"monthOfPublication": 6,
+"yearOfPublication": 2024,
+"journal": {
+"medlineAbbreviation": "Sheng Wu Yi Xue Gong Cheng Xue Za Zhi",
+"title": "Sheng wu yi xue gong cheng xue za zhi = Journal of biomedical engineering = Shengwu yixue gongchengxue zazhi",
+"issn": "1001-5515",
+"nlmid": "9426398",
+"isoabbreviation": "Sheng Wu Yi Xue Gong Cheng Xue Za Zhi"
+},
+"printPublicationDate": "2024-06-01"
+},
+"pubYear": "2024",
+"pubTypeList": {
+"pubType": [
+"research-article",
+"Journal Article",
+"English Abstract"
+]
+},
+"isOpenAccess": "N",
+"inEPMC": "Y",
+"inPMC": "Y",
+"hasPDF": "Y",
+"firstPublicationDate": "2024-06-01"
+},
+{
+"id": "38413699",
+"source": "MED",
+"pmid": "38413699",
+"pmcid": "PMC10899216",
+"doi": "10.1038/s41598-024-55178-3",
+"title": "An improved V-Net lung nodule segmentation model based on pixel threshold separation and attention mechanism.",
+"authorString": "Ma X, Song H, Jia X, Wang Z.",
+"journalInfo": {
+"issue": "1",
+"volume": "14",
+"journalIssueId": 3704658,
+"dateOfPublication": "2024 Feb",
+"monthOfPublication": 2,
+"yearOfPublication": 2024,
+"journal": {
+"medlineAbbreviation": "Sci Rep",
+"title": "Scientific reports",
+"essn": "2045-2322",
+"issn": "2045-2322",
+"nlmid": "101563288",
+"isoabbreviation": "Sci Rep"
+},
+"printPublicationDate": "2024-02-01"
+},
+"pubYear": "2024",
+"pubTypeList": {
+"pubType": [
+"research-article",
+"Journal Article"
+]
+},
+"isOpenAccess": "Y",
+"inEPMC": "Y",
+"inPMC": "Y",
+"hasPDF": "Y",
+"firstPublicationDate": "2024-02-27"
+},
+{
+"id": "39518324",
+"source": "MED",
+"pmid": "39518324",
+"pmcid": "PMC11545829",
+"doi": "10.3390/diagnostics14212356",
+"title": "Lightweight Advanced Deep Neural Network (DNN) Model for Early-Stage Lung Cancer Detection.",
+"authorString": "Bhatia I, Aarti, Ansarullah SI, Amin F, Alabrah A.",
+"journalInfo": {
+"issue": "21",
+"volume": "14",
+"journalIssueId": 3850263,
+"dateOfPublication": "2024 Oct",
+"monthOfPublication": 10,
+"yearOfPublication": 2024,
+"journal": {
+"medlineAbbreviation": "Diagnostics (Basel)",
+"title": "Diagnostics (Basel, Switzerland)",
+"essn": "2075-4418",
+"issn": "2075-4418",
+"nlmid": "101658402",
+"isoabbreviation": "Diagnostics (Basel)"
+},
+"printPublicationDate": "2024-10-01"
+},
+"pubYear": "2024",
+"pubTypeList": {
+"pubType": [
+"research-article",
+"Journal Article"
+]
+},
+"isOpenAccess": "Y",
+"inEPMC": "Y",
+"inPMC": "Y",
+"hasPDF": "Y",
+"firstPublicationDate": "2024-10-22"
+},
+{
+"id": "38642628",
+"source": "MED",
+"pmid": "38642628",
+"doi": "10.1016/j.ymeth.2024.04.008",
+"title": "MRUNet-3D: A multi-stride residual 3D UNet for lung nodule segmentation.",
+"authorString": "Bbosa R, Gui H, Luo F, Liu F, Efio-Akolly K, Chen YP.",
+"journalInfo": {
+"volume": "226",
+"journalIssueId": 3772439,
+"dateOfPublication": "2024 Jun",
+"monthOfPublication": 6,
+"yearOfPublication": 2024,
+"journal": {
+"medlineAbbreviation": "Methods",
+"title": "Methods (San Diego, Calif.)",
+"essn": "1095-9130",
+"issn": "1046-2023",
+"nlmid": "9426302",
+"isoabbreviation": "Methods"
+},
+"printPublicationDate": "2024-06-01"
+},
+"pubYear": "2024",
+"pubTypeList": {
+"pubType": [
+"Journal Article"
+]
+},
+"isOpenAccess": "N",
+"inEPMC": "N",
+"inPMC": "N",
+"hasPDF": "N",
+"firstPublicationDate": "2024-04-18"
+},
+{
+"id": "39099589",
+"source": "MED",
+"pmid": "39099589",
+"pmcid": "PMC11294942",
+"doi": "10.3389/fmed.2024.1429291",
+"title": "Hybrid healthcare unit recommendation system using computational techniques with lung cancer segmentation.",
+"authorString": "Albalawi E, Neal Joshua ES, Joys NM, Bhatia Khan S, Shaiba H, Ahmad S, Nazeer J.",
+"journalInfo": {
+"volume": "11",
+"journalIssueId": 3703812,
+"dateOfPublication": "2024 ",
+"monthOfPublication": 0,
+"yearOfPublication": 2024,
+"journal": {
+"medlineAbbreviation": "Front Med (Lausanne)",
+"title": "Frontiers in medicine",
+"essn": "2296-858X",
+"issn": "2296-858X",
+"nlmid": "101648047",
+"isoabbreviation": "Front Med (Lausanne)"
+},
+"printPublicationDate": "2024-01-01"
+},
+"pubYear": "2024",
+"pubTypeList": {
+"pubType": [
+"research-article",
+"Journal Article"
+]
+},
+"isOpenAccess": "Y",
+"inEPMC": "Y",
+"inPMC": "Y",
+"hasPDF": "Y",
+"firstPublicationDate": "2024-07-19"
+},
+{
+"id": "36097497",
+"source": "MED",
+"pmid": "36097497",
+"pmcid": "PMC9453728",
+"doi": "10.1007/s00371-022-02657-1",
+"title": "A bi-directional deep learning architecture for lung nodule semantic segmentation.",
+"authorString": "Bhattacharyya D, Thirupathi Rao N, Joshua ESN, Hu YC.",
+"journalInfo": {
+"journalIssueId": 3422236,
+"dateOfPublication": "2022 Sep",
+"monthOfPublication": 9,
+"yearOfPublication": 2022,
+"journal": {
+"medlineAbbreviation": "Vis Comput",
+"title": "The Visual computer",
+"essn": "1432-2315",
+"issn": "0178-2789",
+"nlmid": "101584127",
+"isoabbreviation": "Vis Comput"
+},
+"printPublicationDate": "2022-09-01"
+},
+"pubYear": "2022",
+"pubTypeList": {
+"pubType": [
+"research-article",
+"Journal Article"
+]
+},
+"isOpenAccess": "Y",
+"inEPMC": "Y",
+"inPMC": "Y",
+"hasPDF": "Y",
+"firstPublicationDate": "2022-09-08"
+},
+{
+"id": "30746555",
+"source": "MED",
+"pmid": "30746555",
+"doi": "10.1007/s10916-019-1190-z",
+"title": "ECM-CSD: An Efficient Classification Model for Cancer Stage Diagnosis in CT Lung Images Using FCM and SVM Techniques.",
+"authorString": "Kavitha MS, Shanthini J, Sabitha R.",
+"journalInfo": {
+"issue": "3",
+"volume": "43",
+"journalIssueId": 2776538,
+"dateOfPublication": "2019 Feb",
+"monthOfPublication": 2,
+"yearOfPublication": 2019,
+"journal": {
+"medlineAbbreviation": "J Med Syst",
+"title": "Journal of medical systems",
+"essn": "1573-689X",
+"issn": "0148-5598",
+"nlmid": "7806056",
+"isoabbreviation": "J Med Syst"
+},
+"printPublicationDate": "2019-02-01"
+},
+"pubYear": "2019",
+"pubTypeList": {
+"pubType": [
+"Journal Article"
+]
+},
+"isOpenAccess": "N",
+"inEPMC": "N",
+"inPMC": "N",
+"hasPDF": "N",
+"firstPublicationDate": "2019-02-12"
+},
+{
+"id": "IND608208611",
+"source": "AGR",
+"title": "Pulmonary nodule detection on lung parenchyma images using hyber-deep algorithm",
+"authorString": "Fang D, Jiang H, Chen W, Qin Z, Shi J, Zhang J.",
+"journalInfo": {
+"issue": "7",
+"volume": "9",
+"journalIssueId": 4015166,
+"dateOfPublication": "2023 Jul",
+"monthOfPublication": 7,
+"yearOfPublication": 2023,
+"journal": {
+"title": "Heliyon"
+},
+"printPublicationDate": "2023-07-01"
+},
+"pubYear": "2023",
+"pubTypeList": {
+"pubType": [
+"Journal Article"
+]
+},
+"isOpenAccess": "N",
+"inEPMC": "N",
+"inPMC": "N",
+"hasPDF": "N",
+"firstPublicationDate": "2023-07-01"
+},
+{
+"id": "37449096",
+"source": "MED",
+"pmid": "37449096",
+"pmcid": "PMC10336504",
+"doi": "10.1016/j.heliyon.2023.e17599",
+"title": "Pulmonary nodule detection on lung parenchyma images using hyber-deep algorithm.",
+"authorString": "Fang D, Jiang H, Chen W, Qin Z, Shi J, Zhang J.",
+"journalInfo": {
+"issue": "7",
+"volume": "9",
+"journalIssueId": 3595818,
+"dateOfPublication": "2023 Jul",
+"monthOfPublication": 7,
+"yearOfPublication": 2023,
+"journal": {
+"medlineAbbreviation": "Heliyon",
+"title": "Heliyon",
+"essn": "2405-8440",
+"issn": "2405-8440",
+"nlmid": "101672560",
+"isoabbreviation": "Heliyon"
+},
+"printPublicationDate": "2023-07-01"
+},
+"pubYear": "2023",
+"pubTypeList": {
+"pubType": [
+"research-article",
+"Journal Article"
+]
+},
+"isOpenAccess": "Y",
+"inEPMC": "Y",
+"inPMC": "Y",
+"hasPDF": "Y",
+"firstPublicationDate": "2023-06-24"
+},
+{
+"id": "30575046",
+"source": "MED",
+"pmid": "30575046",
+"doi": "10.1002/mp.13349",
+"title": "Pulmonary nodule segmentation with CT sample synthesis using adversarial networks.",
+"authorString": "Qin Y, Zheng H, Huang X, Yang J, Zhu YM.",
+"journalInfo": {
+"issue": "3",
+"volume": "46",
+"journalIssueId": 2793352,
+"dateOfPublication": "2019 Mar",
+"monthOfPublication": 3,
+"yearOfPublication": 2019,
+"journal": {
+"medlineAbbreviation": "Med Phys",
+"title": "Medical physics",
+"essn": "2473-4209",
+"issn": "0094-2405",
+"nlmid": "0425746",
+"isoabbreviation": "Med Phys"
+},
+"printPublicationDate": "2019-03-01"
+},
+"pubYear": "2019",
+"pubTypeList": {
+"pubType": [
+"Journal Article"
+]
+},
+"isOpenAccess": "N",
+"inEPMC": "N",
+"inPMC": "N",
+"hasPDF": "N",
+"firstPublicationDate": "2019-01-31"
+},
+{
+"id": "29154123",
+"source": "MED",
+"pmid": "29154123",
+"doi": "10.1016/j.compbiomed.2017.11.008",
+"title": "3D skeletonization feature based computer-aided detection system for pulmonary nodules in CT datasets.",
+"authorString": "Zhang W, Wang X, Li X, Chen J.",
+"journalInfo": {
+"volume": "92",
+"journalIssueId": 2638577,
+"dateOfPublication": "2018 Jan",
+"monthOfPublication": 1,
+"yearOfPublication": 2018,
+"journal": {
+"medlineAbbreviation": "Comput Biol Med",
+"title": "Computers in biology and medicine",
+"essn": "1879-0534",
+"issn": "0010-4825",
+"nlmid": "1250250",
+"isoabbreviation": "Comput Biol Med"
+},
+"printPublicationDate": "2018-01-01"
+},
+"pubYear": "2018",
+"pubTypeList": {
+"pubType": [
+"Research Support, Non-U.S. Gov't",
+"Journal Article"
+]
+},
+"isOpenAccess": "N",
+"inEPMC": "N",
+"inPMC": "N",
+"hasPDF": "N",
+"firstPublicationDate": "2017-11-11"
+},
+{
+"id": "37538561",
+"source": "MED",
+"pmid": "37538561",
+"pmcid": "PMC10396675",
+"doi": "10.1155/2023/6357252",
+"title": "Identification and Classification of Lungs Focal Opacity Using CNN Segmentation and Optimal Feature Selection.",
+"authorString": "Javed MA, Bin Liaqat H, Meraj T, Alotaibi A, Alshammari M.",
+"journalInfo": {
+"volume": "2023",
+"journalIssueId": 3488964,
+"dateOfPublication": "2023 ",
+"monthOfPublication": 0,
+"yearOfPublication": 2023,
+"journal": {
+"medlineAbbreviation": "Comput Intell Neurosci",
+"title": "Computational intelligence and neuroscience",
+"essn": "1687-5273",
+"issn": "1687-5265",
+"nlmid": "101279357",
+"isoabbreviation": "Comput Intell Neurosci"
+},
+"printPublicationDate": "2023-01-01"
+},
+"pubYear": "2023",
+"pubTypeList": {
+"pubType": [
+"research-article",
+"Journal Article"
+]
+},
+"isOpenAccess": "Y",
+"inEPMC": "Y",
+"inPMC": "Y",
+"hasPDF": "Y",
+"firstPublicationDate": "2023-07-26"
+},
+{
+"id": "38189528",
+"source": "MED",
+"pmid": "38189528",
+"doi": "10.1002/mp.16933",
+"title": "Few-shot segmentation framework for lung nodules via an optimized active contour model.",
+"authorString": "Yang L, Shao D, Huang Z, Geng M, Zhang N, Chen L, Wang X, Liang D, Pang ZF, Hu Z.",
+"journalInfo": {
+"issue": "4",
+"volume": "51",
+"journalIssueId": 3750885,
+"dateOfPublication": "2024 Apr",
+"monthOfPublication": 4,
+"yearOfPublication": 2024,
+"journal": {
+"medlineAbbreviation": "Med Phys",
+"title": "Medical physics",
+"essn": "2473-4209",
+"issn": "0094-2405",
+"nlmid": "0425746",
+"isoabbreviation": "Med Phys"
+},
+"printPublicationDate": "2024-04-01"
+},
+"pubYear": "2024",
+"pubTypeList": {
+"pubType": [
+"Journal Article"
+]
+},
+"isOpenAccess": "N",
+"inEPMC": "N",
+"inPMC": "N",
+"hasPDF": "N",
+"firstPublicationDate": "2024-01-08"
+},
+{
+"id": "PPR612988",
+"source": "PPR",
+"doi": "10.21203/rs.3.rs-2541317/v1",
+"title": "CNN based pulmonary nodule segmentation using lung-range-standardization",
+"authorString": "O C, Ri J, Om C.",
+"pubYear": "2023",
+"pubTypeList": {
+"pubType": [
+"Preprint"
+]
+},
+"isOpenAccess": "N",
+"inEPMC": "N",
+"inPMC": "N",
+"hasPDF": "N",
+"firstPublicationDate": "2023-02-06",
+"bookOrReportDetails": {
+"publisher": "Research Square",
+"yearOfPublication": 2023
+}
+},
+{
+"id": "37343581",
+"source": "MED",
+"pmid": "37343581",
+"doi": "10.1088/1361-6560/ace09d",
+"title": "A semantic segmentation of the lung nodules using a shape attention-guided contextual residual network.",
+"authorString": "Zhang X, Fei L, Gong Q.",
+"journalInfo": {
+"issue": "16",
+"volume": "68",
+"journalIssueId": 3608376,
+"dateOfPublication": "2023 Aug",
+"monthOfPublication": 8,
+"yearOfPublication": 2023,
+"journal": {
+"medlineAbbreviation": "Phys Med Biol",
+"title": "Physics in medicine and biology",
+"essn": "1361-6560",
+"issn": "0031-9155",
+"nlmid": "0401220",
+"isoabbreviation": "Phys Med Biol"
+},
+"printPublicationDate": "2023-08-01"
+},
+"pubYear": "2023",
+"pubTypeList": {
+"pubType": [
+"Journal Article"
+]
+},
+"isOpenAccess": "N",
+"inEPMC": "N",
+"inPMC": "N",
+"hasPDF": "N",
+"firstPublicationDate": "2023-08-09"
+},
+{
+"id": "37449711",
+"source": "MED",
+"pmid": "37449711",
+"doi": "10.2174/1573405620666230714110914",
+"title": "Lung Cancer Detection from CT Images: Modified Adaptive Threshold Segmentation with Support Vector Machines and Artificial Neural Network Classifier.",
+"authorString": "S Nair S, Meena Devi VN, Bhasi S.",
+"journalInfo": {
+"volume": "20",
+"journalIssueId": 3663448,
+"dateOfPublication": "2024 ",
+"monthOfPublication": 0,
+"yearOfPublication": 2024,
+"journal": {
+"medlineAbbreviation": "Curr Med Imaging",
+"title": "Current medical imaging",
+"essn": "1573-4056",
+"issn": "1573-4056",
+"nlmid": "101762461",
+"isoabbreviation": "Curr Med Imaging"
+},
+"printPublicationDate": "2024-01-01"
+},
+"pubYear": "2024",
+"pubTypeList": {
+"pubType": [
+"Journal Article"
+]
+},
+"isOpenAccess": "N",
+"inEPMC": "N",
+"inPMC": "N",
+"hasPDF": "N",
+"firstPublicationDate": "2024-01-01"
+},
+{
+"id": "36785839",
+"source": "MED",
+"pmid": "36785839",
+"pmcid": "PMC9922185",
+"doi": "10.1155/2023/8262741",
+"title": "An Efficient Model for Lungs Nodule Classification Using Supervised Learning Technique.",
+"authorString": "Eid Alazemi F, Jehangir B, Imran M, Song OY, Karamat T.",
+"journalInfo": {
+"volume": "2023",
+"journalIssueId": 3488979,
+"dateOfPublication": "2023 ",
+"monthOfPublication": 0,
+"yearOfPublication": 2023,
+"journal": {
+"medlineAbbreviation": "J Healthc Eng",
+"title": "Journal of healthcare engineering",
+"essn": "2040-2309",
+"issn": "2040-2295",
+"nlmid": "101528166",
+"isoabbreviation": "J Healthc Eng"
+},
+"printPublicationDate": "2023-01-01"
+},
+"pubYear": "2023",
+"pubTypeList": {
+"pubType": [
+"Retracted Publication",
+"Research Support, Non-U.S. Gov't",
+"research-article",
+"Journal Article"
+]
+},
+"isOpenAccess": "Y",
+"inEPMC": "Y",
+"inPMC": "Y",
+"hasPDF": "N",
+"firstPublicationDate": "2023-02-04"
+},
+{
+"id": "34337394",
+"source": "MED",
+"pmid": "34337394",
+"pmcid": "PMC8322116",
+"doi": "10.3389/frai.2021.694815",
+"title": "Lung Cancer Segmentation With Transfer Learning: Usefulness of a Pretrained Model Constructed From an Artificial Dataset Generated Using a Generative Adversarial Network.",
+"authorString": "Nishio M, Fujimoto K, Matsuo H, Muramatsu C, Sakamoto R, Fujita H.",
+"journalInfo": {
+"volume": "4",
+"journalIssueId": 3135009,
+"dateOfPublication": "2021 ",
+"monthOfPublication": 0,
+"yearOfPublication": 2021,
+"journal": {
+"medlineAbbreviation": "Front Artif Intell",
+"title": "Frontiers in artificial intelligence",
+"essn": "2624-8212",
+"issn": "2624-8212",
+"nlmid": "101770551",
+"isoabbreviation": "Front Artif Intell"
+},
+"printPublicationDate": "2021-01-01"
+},
+"pubYear": "2021",
+"pubTypeList": {
+"pubType": [
+"research-article",
+"Journal Article"
+]
+},
+"isOpenAccess": "Y",
+"inEPMC": "Y",
+"inPMC": "Y",
+"hasPDF": "Y",
+"firstPublicationDate": "2021-07-16"
+},
+{
+"id": "37841008",
+"source": "MED",
+"pmid": "37841008",
+"pmcid": "PMC10569032",
+"doi": "10.3389/fmed.2023.1273441",
+"title": "SW-UNet: a U-Net fusing sliding window transformer block with CNN for segmentation of lung nodules.",
+"authorString": "Ma J, Yuan G, Guo C, Gang X, Zheng M.",
+"journalInfo": {
+"volume": "10",
+"journalIssueId": 3497195,
+"dateOfPublication": "2023 ",
+"monthOfPublication": 0,
+"yearOfPublication": 2023,
+"journal": {
+"medlineAbbreviation": "Front Med (Lausanne)",
+"title": "Frontiers in medicine",
+"essn": "2296-858X",
+"issn": "2296-858X",
+"nlmid": "101648047",
+"isoabbreviation": "Front Med (Lausanne)"
+},
+"printPublicationDate": "2023-01-01"
+},
+"pubYear": "2023",
+"pubTypeList": {
+"pubType": [
+"research-article",
+"Journal Article"
+]
+},
+"isOpenAccess": "Y",
+"inEPMC": "Y",
+"inPMC": "Y",
+"hasPDF": "Y",
+"firstPublicationDate": "2023-09-28"
+},
+{
+"id": "36623436",
+"source": "MED",
+"pmid": "36623436",
+"doi": "10.1016/j.compbiomed.2022.106532",
+"title": "3D SAACNet with GBM for the classification of benign and malignant lung nodules.",
+"authorString": "Guo Z, Yang J, Zhao L, Yuan J, Yu H.",
+"journalInfo": {
+"volume": "153",
+"journalIssueId": 3493635,
+"dateOfPublication": "2023 Feb",
+"monthOfPublication": 2,
+"yearOfPublication": 2023,
+"journal": {
+"medlineAbbreviation": "Comput Biol Med",
+"title": "Computers in biology and medicine",
+"essn": "1879-0534",
+"issn": "0010-4825",
+"nlmid": "1250250",
+"isoabbreviation": "Comput Biol Med"
+},
+"printPublicationDate": "2023-02-01"
+},
+"pubYear": "2023",
+"pubTypeList": {
+"pubType": [
+"Research Support, Non-U.S. Gov't",
+"Journal Article"
+]
+},
+"isOpenAccess": "N",
+"inEPMC": "N",
+"inPMC": "N",
+"hasPDF": "N",
+"firstPublicationDate": "2023-01-04"
+},
+{
+"id": "37189507",
+"source": "MED",
+"pmid": "37189507",
+"pmcid": "PMC10137204",
+"doi": "10.3390/diagnostics13081406",
+"title": "A Bi-FPN-Based Encoder-Decoder Model for Lung Nodule Image Segmentation.",
+"authorString": "Annavarapu CSR, Parisapogu SAB, Keetha NV, Donta PK, Rajita G.",
+"journalInfo": {
+"issue": "8",
+"volume": "13",
+"journalIssueId": 3553424,
+"dateOfPublication": "2023 Apr",
+"monthOfPublication": 4,
+"yearOfPublication": 2023,
+"journal": {
+"medlineAbbreviation": "Diagnostics (Basel)",
+"title": "Diagnostics (Basel, Switzerland)",
+"essn": "2075-4418",
+"issn": "2075-4418",
+"nlmid": "101658402",
+"isoabbreviation": "Diagnostics (Basel)"
+},
+"printPublicationDate": "2023-04-01"
+},
+"pubYear": "2023",
+"pubTypeList": {
+"pubType": [
+"research-article",
+"Journal Article"
+]
+},
+"isOpenAccess": "Y",
+"inEPMC": "Y",
+"inPMC": "Y",
+"hasPDF": "Y",
+"firstPublicationDate": "2023-04-13"
+},
+{
+"id": "37018263",
+"source": "MED",
+"pmid": "37018263",
+"doi": "10.1109/tpami.2023.3234002",
+"title": "A Unified Visual Information Preservation Framework for Self-supervised Pre-Training in Medical Image Analysis.",
+"authorString": "Zhou HY, Lu C, Chen C, Yang S, Yu Y.",
+"journalInfo": {
+"issue": "7",
+"volume": "45",
+"journalIssueId": 3582934,
+"dateOfPublication": "2023 Jul",
+"monthOfPublication": 7,
+"yearOfPublication": 2023,
+"journal": {
+"medlineAbbreviation": "IEEE Trans Pattern Anal Mach Intell",
+"title": "IEEE transactions on pattern analysis and machine intelligence",
+"essn": "1939-3539",
+"issn": "0162-8828",
+"nlmid": "9885960",
+"isoabbreviation": "IEEE Trans Pattern Anal Mach Intell"
+},
+"printPublicationDate": "2023-07-01"
+},
+"pubYear": "2023",
+"pubTypeList": {
+"pubType": [
+"Journal Article"
+]
+},
+"isOpenAccess": "N",
+"inEPMC": "N",
+"inPMC": "N",
+"hasPDF": "N",
+"firstPublicationDate": "2023-06-05"
+},
+{
+"id": "36212245",
+"source": "MED",
+"pmid": "36212245",
+"pmcid": "PMC9537033",
+"doi": "10.1155/2022/6727957",
+"title": "An Automatic Random Walker Algorithm for Segmentation of Ground Glass Opacity Pulmonary Nodules.",
+"authorString": "Li X, Li B, Yin H, Xu B.",
+"journalInfo": {
+"volume": "2022",
+"journalIssueId": 3292158,
+"dateOfPublication": "2022 ",
+"monthOfPublication": 0,
+"yearOfPublication": 2022,
+"journal": {
+"medlineAbbreviation": "J Healthc Eng",
+"title": "Journal of healthcare engineering",
+"essn": "2040-2309",
+"issn": "2040-2295",
+"nlmid": "101528166",
+"isoabbreviation": "J Healthc Eng"
+},
+"printPublicationDate": "2022-01-01"
+},
+"pubYear": "2022",
+"pubTypeList": {
+"pubType": [
+"Research Support, Non-U.S. Gov't",
+"research-article",
+"Journal Article"
+]
+},
+"isOpenAccess": "Y",
+"inEPMC": "Y",
+"inPMC": "Y",
+"hasPDF": "Y",
+"firstPublicationDate": "2022-09-29"
+},
+{
+"id": "37594684",
+"source": "MED",
+"pmid": "37594684",
+"doi": "10.1007/s11548-023-03010-0",
+"title": "Fully automatic deep learning-based lung parenchyma segmentation and boundary correction in thoracic CT scans.",
+"authorString": "Rikhari H, Baidya Kayal E, Ganguly S, Sasi A, Sharma S, Dheeksha DS, Saini M, Rangarajan K, Bakhshi S, Kandasamy D, Mehndiratta A.",
+"journalInfo": {
+"issue": "2",
+"volume": "19",
+"journalIssueId": 3708118,
+"dateOfPublication": "2024 Feb",
+"monthOfPublication": 2,
+"yearOfPublication": 2024,
+"journal": {
+"medlineAbbreviation": "Int J Comput Assist Radiol Surg",
+"title": "International journal of computer assisted radiology and surgery",
+"essn": "1861-6429",
+"issn": "1861-6410",
+"nlmid": "101499225",
+"isoabbreviation": "Int J Comput Assist Radiol Surg"
+},
+"printPublicationDate": "2024-02-01"
+},
+"pubYear": "2024",
+"pubTypeList": {
+"pubType": [
+"Journal Article"
+]
+},
+"isOpenAccess": "N",
+"inEPMC": "N",
+"inPMC": "N",
+"hasPDF": "N",
+"firstPublicationDate": "2023-08-18"
+},
+{
+"id": "35788513",
+"source": "MED",
+"pmid": "35788513",
+"pmcid": "PMC10950767",
+"doi": "10.7507/1001-5515.202010051",
+"title": "[Segmentation of ground glass pulmonary nodules using full convolution residual network based on atrous spatial pyramid pooling structure and attention mechanism].",
+"authorString": "Dong T, Wei L, Ye X, Chen Y, Hou X, Nie S.",
+"journalInfo": {
+"issue": "3",
+"volume": "39",
+"journalIssueId": 3386071,
+"dateOfPublication": "2022 Jun",
+"monthOfPublication": 6,
+"yearOfPublication": 2022,
+"journal": {
+"medlineAbbreviation": "Sheng Wu Yi Xue Gong Cheng Xue Za Zhi",
+"title": "Sheng wu yi xue gong cheng xue za zhi = Journal of biomedical engineering = Shengwu yixue gongchengxue zazhi",
+"issn": "1001-5515",
+"nlmid": "9426398",
+"isoabbreviation": "Sheng Wu Yi Xue Gong Cheng Xue Za Zhi"
+},
+"printPublicationDate": "2022-06-01"
+},
+"pubYear": "2022",
+"pubTypeList": {
+"pubType": [
+"research-article",
+"Journal Article"
+]
+},
+"isOpenAccess": "N",
+"inEPMC": "Y",
+"inPMC": "Y",
+"hasPDF": "Y",
+"firstPublicationDate": "2022-06-01"
+},
+{
+"id": "36256637",
+"source": "MED",
+"pmid": "36256637",
+"pmcid": "PMC9578635",
+"doi": "10.1371/journal.pone.0274522",
+"title": "Data augmentation based on multiple oversampling fusion for medical image segmentation.",
+"authorString": "Wu L, Zhuang J, Chen W, Tang Y, Hou C, Li C, Zhong Z, Luo S.",
+"journalInfo": {
+"issue": "10",
+"volume": "17",
+"journalIssueId": 3433438,
+"dateOfPublication": "2022 ",
+"monthOfPublication": 0,
+"yearOfPublication": 2022,
+"journal": {
+"medlineAbbreviation": "PLoS One",
+"title": "PloS one",
+"essn": "1932-6203",
+"issn": "1932-6203",
+"nlmid": "101285081",
+"isoabbreviation": "PLoS One"
+},
+"printPublicationDate": "2022-01-01"
+},
+"pubYear": "2022",
+"pubTypeList": {
+"pubType": [
+"Research Support, Non-U.S. Gov't",
+"research-article",
+"Journal Article"
+]
+},
+"isOpenAccess": "Y",
+"inEPMC": "Y",
+"inPMC": "Y",
+"hasPDF": "Y",
+"firstPublicationDate": "2022-10-18"
+},
+{
+"id": "37035155",
+"source": "MED",
+"pmid": "37035155",
+"pmcid": "PMC10076852",
+"doi": "10.3389/fonc.2023.1084096",
+"title": "RAD-UNet: Research on an improved lung nodule semantic segmentation algorithm based on deep learning.",
+"authorString": "Wu Z, Li X, Zuo J.",
+"journalInfo": {
+"volume": "13",
+"journalIssueId": 3497087,
+"dateOfPublication": "2023 ",
+"monthOfPublication": 0,
+"yearOfPublication": 2023,
+"journal": {
+"medlineAbbreviation": "Front Oncol",
+"title": "Frontiers in oncology",
+"essn": "2234-943X",
+"issn": "2234-943X",
+"nlmid": "101568867",
+"isoabbreviation": "Front Oncol"
+},
+"printPublicationDate": "2023-01-01"
+},
+"pubYear": "2023",
+"pubTypeList": {
+"pubType": [
+"research-article",
+"Journal Article"
+]
+},
+"isOpenAccess": "Y",
+"inEPMC": "Y",
+"inPMC": "Y",
+"hasPDF": "Y",
+"firstPublicationDate": "2023-03-23"
+},
+{
+"id": "35020016",
+"source": "MED",
+"pmid": "35020016",
+"doi": "10.1007/s00330-021-08456-x",
+"title": "A radiomics approach for lung nodule detection in thoracic CT images based on the dynamic patterns of morphological variation.",
+"authorString": "Lin FY, Chang YC, Huang HY, Li CC, Chen YC, Chen CM.",
+"journalInfo": {
+"issue": "6",
+"volume": "32",
+"journalIssueId": 3361761,
+"dateOfPublication": "2022 Jun",
+"monthOfPublication": 6,
+"yearOfPublication": 2022,
+"journal": {
+"medlineAbbreviation": "Eur Radiol",
+"title": "European radiology",
+"essn": "1432-1084",
+"issn": "0938-7994",
+"nlmid": "9114774",
+"isoabbreviation": "Eur Radiol"
+},
+"printPublicationDate": "2022-06-01"
+},
+"pubYear": "2022",
+"pubTypeList": {
+"pubType": [
+"Journal Article"
+]
+},
+"isOpenAccess": "N",
+"inEPMC": "N",
+"inPMC": "N",
+"hasPDF": "N",
+"firstPublicationDate": "2022-01-12"
+},
+{
+"id": "36522545",
+"source": "MED",
+"pmid": "36522545",
+"pmcid": "PMC9754998",
+"doi": "10.1007/s11548-022-02807-9",
+"title": "A hierarchical GAN method with ensemble CNN for accurate nodule detection.",
+"authorString": "Rezaei SR, Ahmadi A.",
+"journalInfo": {
+"issue": "4",
+"volume": "18",
+"journalIssueId": 3530405,
+"dateOfPublication": "2023 Apr",
+"monthOfPublication": 4,
+"yearOfPublication": 2023,
+"journal": {
+"medlineAbbreviation": "Int J Comput Assist Radiol Surg",
+"title": "International journal of computer assisted radiology and surgery",
+"essn": "1861-6429",
+"issn": "1861-6410",
+"nlmid": "101499225",
+"isoabbreviation": "Int J Comput Assist Radiol Surg"
+},
+"printPublicationDate": "2023-04-01"
+},
+"pubYear": "2023",
+"pubTypeList": {
+"pubType": [
+"research-article",
+"Journal Article"
+]
+},
+"isOpenAccess": "Y",
+"inEPMC": "Y",
+"inPMC": "Y",
+"hasPDF": "Y",
+"firstPublicationDate": "2022-12-16"
+},
+{
+"id": "33471772",
+"source": "MED",
+"pmid": "33471772",
+"doi": "10.1109/jbhi.2021.3053023",
+"title": "Integrating Lung Parenchyma Segmentation and Nodule Detection With Deep Multi-Task Learning.",
+"authorString": "Liu W, Liu X, Li H, Li M, Zhao X, Zhu Z.",
+"journalInfo": {
+"issue": "8",
+"volume": "25",
+"journalIssueId": 3213846,
+"dateOfPublication": "2021 Aug",
+"monthOfPublication": 8,
+"yearOfPublication": 2021,
+"journal": {
+"medlineAbbreviation": "IEEE J Biomed Health Inform",
+"title": "IEEE journal of biomedical and health informatics",
+"essn": "2168-2208",
+"issn": "2168-2194",
+"nlmid": "101604520",
+"isoabbreviation": "IEEE J Biomed Health Inform"
+},
+"printPublicationDate": "2021-08-01"
+},
+"pubYear": "2021",
+"pubTypeList": {
+"pubType": [
+"Research Support, Non-U.S. Gov't",
+"Journal Article"
+]
+},
+"isOpenAccess": "N",
+"inEPMC": "N",
+"inPMC": "N",
+"hasPDF": "N",
+"firstPublicationDate": "2021-08-05"
+},
+{
+"id": "32121281",
+"source": "MED",
+"pmid": "32121281",
+"pmcid": "PMC7151085",
+"doi": "10.3390/diagnostics10030131",
+"title": "A Two-Stage Framework for Automated Malignant Pulmonary Nodule Detection in CT Scans.",
+"authorString": "El-Bana S, Al-Kabbany A, Sharkas M.",
+"journalInfo": {
+"issue": "3",
+"volume": "10",
+"journalIssueId": 2917138,
+"dateOfPublication": "2020 Feb",
+"monthOfPublication": 2,
+"yearOfPublication": 2020,
+"journal": {
+"medlineAbbreviation": "Diagnostics (Basel)",
+"title": "Diagnostics (Basel, Switzerland)",
+"essn": "2075-4418",
+"issn": "2075-4418",
+"nlmid": "101658402",
+"isoabbreviation": "Diagnostics (Basel)"
+},
+"printPublicationDate": "2020-02-01"
+},
+"pubYear": "2020",
+"pubTypeList": {
+"pubType": [
+"research-article",
+"Journal Article"
+]
+},
+"isOpenAccess": "Y",
+"inEPMC": "Y",
+"inPMC": "Y",
+"hasPDF": "Y",
+"firstPublicationDate": "2020-02-28"
+},
+{
+"id": "33018234",
+"source": "MED",
+"pmid": "33018234",
+"doi": "10.1109/embc44109.2020.9175649",
+"title": "Lung Segmentation and Nodule Detection in Computed Tomography Scan using a Convolutional Neural Network Trained Adversarially using Turing Test Loss.",
+"authorString": "Sathish R, Sathish R, Sethuraman R, Sheet D.",
+"journalInfo": {
+"volume": "2020",
+"journalIssueId": 3031942,
+"dateOfPublication": "2020 Jul",
+"monthOfPublication": 7,
+"yearOfPublication": 2020,
+"journal": {
+"medlineAbbreviation": "Annu Int Conf IEEE Eng Med Biol Soc",
+"title": "Annual International Conference of the IEEE Engineering in Medicine and Biology Society. IEEE Engineering in Medicine and Biology Society. Annual International Conference",
+"essn": "2694-0604",
+"issn": "2375-7477",
+"nlmid": "101763872",
+"isoabbreviation": "Annu Int Conf IEEE Eng Med Biol Soc"
+},
+"printPublicationDate": "2020-07-01"
+},
+"pubYear": "2020",
+"pubTypeList": {
+"pubType": [
+"Journal Article"
+]
+},
+"isOpenAccess": "N",
+"inEPMC": "N",
+"inPMC": "N",
+"hasPDF": "N",
+"firstPublicationDate": "2020-07-01"
+},
+{
+"id": "31221402",
+"source": "MED",
+"pmid": "31221402",
+"doi": "10.1016/j.ejmp.2019.06.003",
+"title": "A cascaded dual-pathway residual network for lung nodule segmentation in CT images.",
+"authorString": "Liu H, Cao H, Song E, Ma G, Xu X, Jin R, Jin Y, Hung CC.",
+"journalInfo": {
+"volume": "63",
+"journalIssueId": 2830086,
+"dateOfPublication": "2019 Jul",
+"monthOfPublication": 7,
+"yearOfPublication": 2019,
+"journal": {
+"medlineAbbreviation": "Phys Med",
+"title": "Physica medica : PM : an international journal devoted to the applications of physics to medicine and biology : official journal of the Italian Association of Biomedical Physics (AIFB)",
+"essn": "1724-191X",
+"issn": "1120-1797",
+"nlmid": "9302888",
+"isoabbreviation": "Phys Med"
+},
+"printPublicationDate": "2019-07-01"
+},
+"pubYear": "2019",
+"pubTypeList": {
+"pubType": [
+"Journal Article"
+]
+},
+"isOpenAccess": "N",
+"inEPMC": "N",
+"inPMC": "N",
+"hasPDF": "N",
+"firstPublicationDate": "2019-06-12"
+},
+{
+"id": "34530212",
+"source": "MED",
+"pmid": "34530212",
+"doi": "10.1016/j.ejmp.2021.08.011",
+"title": "A segmentation tool for pulmonary nodules in lung cancer screening: Testing and clinical usage.",
+"authorString": "Garau N, Paganelli C, Summers P, Bassis D, Lanza C, Minotti M, De Fiori E, Baroni G, Rampinelli C.",
+"journalInfo": {
+"volume": "90",
+"journalIssueId": 3246686,
+"dateOfPublication": "2021 Oct",
+"monthOfPublication": 10,
+"yearOfPublication": 2021,
+"journal": {
+"medlineAbbreviation": "Phys Med",
+"title": "Physica medica : PM : an international journal devoted to the applications of physics to medicine and biology : official journal of the Italian Association of Biomedical Physics (AIFB)",
+"essn": "1724-191X",
+"issn": "1120-1797",
+"nlmid": "9302888",
+"isoabbreviation": "Phys Med"
+},
+"printPublicationDate": "2021-10-01"
+},
+"pubYear": "2021",
+"pubTypeList": {
+"pubType": [
+"Journal Article"
+]
+},
+"isOpenAccess": "N",
+"inEPMC": "N",
+"inPMC": "N",
+"hasPDF": "N",
+"firstPublicationDate": "2021-09-13"
+},
+{
+"id": "30040632",
+"source": "MED",
+"pmid": "30040632",
+"pmcid": "PMC6402577",
+"doi": "10.1109/tmi.2018.2857800",
+"title": "Multiple Resolution Residually Connected Feature Streams for Automatic Lung Tumor Segmentation From CT Images.",
+"authorString": "Jiang J, Hu YC, Liu CJ, Halpenny D, Hellmann MD, Deasy JO, Mageras G, Veeraraghavan H.",
+"journalInfo": {
+"issue": "1",
+"volume": "38",
+"journalIssueId": 2765471,
+"dateOfPublication": "2019 Jan",
+"monthOfPublication": 1,
+"yearOfPublication": 2019,
+"journal": {
+"medlineAbbreviation": "IEEE Trans Med Imaging",
+"title": "IEEE transactions on medical imaging",
+"essn": "1558-254X",
+"issn": "0278-0062",
+"nlmid": "8310780",
+"isoabbreviation": "IEEE Trans Med Imaging"
+},
+"printPublicationDate": "2019-01-01"
+},
+"pubYear": "2019",
+"pubTypeList": {
+"pubType": [
+"Research Support, Non-U.S. Gov't",
+"research-article",
+"Journal Article",
+"Research Support, N.I.H., Extramural"
+]
+},
+"isOpenAccess": "N",
+"inEPMC": "Y",
+"inPMC": "Y",
+"hasPDF": "Y",
+"firstPublicationDate": "2018-07-23"
+},
+{
+"id": "32815466",
+"source": "MED",
+"pmid": "32815466",
+"pmcid": "PMC8291834",
+"doi": "10.1080/21655979.2020.1807125",
+"title": "Texture recognition of pulmonary nodules based on volume local direction ternary pattern.",
+"authorString": "Fan Z, Sun H, Ren C, Han X, Zhao Z.",
+"journalInfo": {
+"issue": "1",
+"volume": "11",
+"journalIssueId": 2895067,
+"dateOfPublication": "2020 Dec",
+"monthOfPublication": 12,
+"yearOfPublication": 2020,
+"journal": {
+"medlineAbbreviation": "Bioengineered",
+"title": "Bioengineered",
+"essn": "2165-5987",
+"issn": "2165-5979",
+"nlmid": "101581063",
+"isoabbreviation": "Bioengineered"
+},
+"printPublicationDate": "2020-12-01"
+},
+"pubYear": "2020",
+"pubTypeList": {
+"pubType": [
+"Research Support, Non-U.S. Gov't",
+"research-article",
+"Journal Article"
+]
+},
+"isOpenAccess": "Y",
+"inEPMC": "Y",
+"inPMC": "Y",
+"hasPDF": "Y",
+"firstPublicationDate": "2020-12-01"
+},
+{
+"id": "PPR152467",
+"source": "PPR",
+"doi": "10.1101/2020.04.14.040931",
+"title": "An automatic and efficient pulmonary nodule detection system based on multi-model ensemble",
+"authorString": "Chen J, Wang W, Ju B, Jiang J, Zhang L, He H, Zhang X, Shen Y.",
+"pubYear": "2020",
+"pubTypeList": {
+"pubType": [
+"Preprint"
+]
+},
+"isOpenAccess": "N",
+"inEPMC": "N",
+"inPMC": "N",
+"hasPDF": "N",
+"firstPublicationDate": "2020-04-20",
+"bookOrReportDetails": {
+"publisher": "bioRxiv",
+"yearOfPublication": 2020
+}
+},
+{
+"id": "32750948",
+"source": "MED",
+"pmid": "32750948",
+"doi": "10.1109/jbhi.2020.3004296",
+"title": "Structure Correction for Robust Volume Segmentation in Presence of Tumors.",
+"authorString": "Sahu P, Zhao Y, Bhatia P, Bogoni L, Jerebko A, Qin H.",
+"journalInfo": {
+"issue": "4",
+"volume": "25",
+"journalIssueId": 3147560,
+"dateOfPublication": "2021 Apr",
+"monthOfPublication": 4,
+"yearOfPublication": 2021,
+"journal": {
+"medlineAbbreviation": "IEEE J Biomed Health Inform",
+"title": "IEEE journal of biomedical and health informatics",
+"essn": "2168-2208",
+"issn": "2168-2194",
+"nlmid": "101604520",
+"isoabbreviation": "IEEE J Biomed Health Inform"
+},
+"printPublicationDate": "2021-04-01"
+},
+"pubYear": "2021",
+"pubTypeList": {
+"pubType": [
+"Research Support, Non-U.S. Gov't",
+"Research Support, U.S. Gov't, Non-P.H.S.",
+"Journal Article"
+]
+},
+"isOpenAccess": "N",
+"inEPMC": "N",
+"inPMC": "N",
+"hasPDF": "N",
+"firstPublicationDate": "2021-04-06"
+},
+{
+"id": "32845877",
+"source": "MED",
+"pmid": "32845877",
+"pmcid": "PMC7449493",
+"doi": "10.1371/journal.pone.0235672",
+"title": "Detection of pulmonary nodules based on a multiscale feature 3D U-Net convolutional neural network of transfer learning.",
+"authorString": "Tang S, Yang M, Bai J.",
+"journalInfo": {
+"issue": "8",
+"volume": "15",
+"journalIssueId": 2990558,
+"dateOfPublication": "2020 ",
+"monthOfPublication": 0,
+"yearOfPublication": 2020,
+"journal": {
+"medlineAbbreviation": "PLoS One",
+"title": "PloS one",
+"essn": "1932-6203",
+"issn": "1932-6203",
+"nlmid": "101285081",
+"isoabbreviation": "PLoS One"
+},
+"printPublicationDate": "2020-01-01"
+},
+"pubYear": "2020",
+"pubTypeList": {
+"pubType": [
+"Research Support, Non-U.S. Gov't",
+"research-article",
+"Journal Article"
+]
+},
+"isOpenAccess": "Y",
+"inEPMC": "Y",
+"inPMC": "Y",
+"hasPDF": "Y",
+"firstPublicationDate": "2020-08-26"
+},
+{
+"id": "32400982",
+"source": "MED",
+"pmid": "32400982",
+"doi": "10.3969/j.issn.1671-7104.2020.02.004",
+"title": "[Application of Radiomics in Classification and Prediction of Benign and Malignant Lung Tumors].",
+"authorString": "Zhou T, Zhu C, Shi F.",
+"journalInfo": {
+"issue": "2",
+"volume": "44",
+"journalIssueId": 2955072,
+"dateOfPublication": "2020 Feb",
+"monthOfPublication": 2,
+"yearOfPublication": 2020,
+"journal": {
+"medlineAbbreviation": "Zhongguo Yi Liao Qi Xie Za Zhi",
+"title": "Zhongguo yi liao qi xie za zhi = Chinese journal of medical instrumentation",
+"issn": "1671-7104",
+"nlmid": "9426153",
+"isoabbreviation": "Zhongguo Yi Liao Qi Xie Za Zhi"
+},
+"printPublicationDate": "2020-02-01"
+},
+"pubYear": "2020",
+"pubTypeList": {
+"pubType": [
+"Journal Article"
+]
+},
+"isOpenAccess": "N",
+"inEPMC": "N",
+"inPMC": "N",
+"hasPDF": "N",
+"firstPublicationDate": "2020-02-01"
+},
+{
+"id": "31299053",
+"source": "MED",
+"pmid": "31299053",
+"pmcid": "PMC6625700",
+"doi": "10.1371/journal.pone.0219369",
+"title": "A CAD system for pulmonary nodule prediction based on deep three-dimensional convolutional neural networks and ensemble learning.",
+"authorString": "Huang W, Xue Y, Wu Y.",
+"journalInfo": {
+"issue": "7",
+"volume": "14",
+"journalIssueId": 2839758,
+"dateOfPublication": "2019",
+"monthOfPublication": 0,
+"yearOfPublication": 2019,
+"journal": {
+"medlineAbbreviation": "PLoS One",
+"title": "PloS one",
+"essn": "1932-6203",
+"issn": "1932-6203",
+"nlmid": "101285081",
+"isoabbreviation": "PLoS One"
+},
+"printPublicationDate": "2019-01-01"
+},
+"pubYear": "2019",
+"pubTypeList": {
+"pubType": [
+"Research Support, Non-U.S. Gov't",
+"research-article",
+"Journal Article"
+]
+},
+"isOpenAccess": "Y",
+"inEPMC": "Y",
+"inPMC": "Y",
+"hasPDF": "Y",
+"firstPublicationDate": "2019-07-12"
+},
+{
+"id": "PPR499983",
+"source": "PPR",
+"doi": "10.21203/rs.3.rs-1658720/v1",
+"title": "Segmentation of Pulmonary Nodules Using SegNet and Adversarial Networks",
+"authorString": "Cheppamkuzhi VC, D DM.",
+"pubYear": "2022",
+"pubTypeList": {
+"pubType": [
+"Preprint"
+]
+},
+"isOpenAccess": "N",
+"inEPMC": "N",
+"inPMC": "N",
+"hasPDF": "N",
+"firstPublicationDate": "2022-05-31",
+"bookOrReportDetails": {
+"publisher": "Research Square",
+"yearOfPublication": 2022
+}
+},
+{
+"id": "30899052",
+"source": "MED",
+"pmid": "30899052",
+"pmcid": "PMC6428823",
+"doi": "10.1038/s41598-019-41510-9",
+"title": "Effective and Reliable Framework for Lung Nodules Detection from CT Scan Images.",
+"authorString": "Khan SA, Hussain S, Yang S, Iqbal K.",
+"journalInfo": {
+"issue": "1",
+"volume": "9",
+"journalIssueId": 2787935,
+"dateOfPublication": "2019 Mar",
+"monthOfPublication": 3,
+"yearOfPublication": 2019,
+"journal": {
+"medlineAbbreviation": "Sci Rep",
+"title": "Scientific reports",
+"essn": "2045-2322",
+"issn": "2045-2322",
+"nlmid": "101563288",
+"isoabbreviation": "Sci Rep"
+},
+"printPublicationDate": "2019-03-01"
+},
+"pubYear": "2019",
+"pubTypeList": {
+"pubType": [
+"Research Support, Non-U.S. Gov't",
+"research-article",
+"Journal Article"
+]
+},
+"isOpenAccess": "Y",
+"inEPMC": "Y",
+"inPMC": "Y",
+"hasPDF": "Y",
+"firstPublicationDate": "2019-03-21"
+},
+{
+"id": "32140870",
+"source": "MED",
+"pmid": "32140870",
+"doi": "10.1007/s10916-020-1541-9",
+"title": "Conventional Filtering Versus U-Net Based Models for Pulmonary Nodule Segmentation in CT Images.",
+"authorString": "Rocha J, Cunha A, Mendonça AM.",
+"journalInfo": {
+"issue": "4",
+"volume": "44",
+"journalIssueId": 2919161,
+"dateOfPublication": "2020 Mar",
+"monthOfPublication": 3,
+"yearOfPublication": 2020,
+"journal": {
+"medlineAbbreviation": "J Med Syst",
+"title": "Journal of medical systems",
+"essn": "1573-689X",
+"issn": "0148-5598",
+"nlmid": "7806056",
+"isoabbreviation": "J Med Syst"
+},
+"printPublicationDate": "2020-03-01"
+},
+"pubYear": "2020",
+"pubTypeList": {
+"pubType": [
+"Journal Article"
+]
+},
+"isOpenAccess": "N",
+"inEPMC": "N",
+"inPMC": "N",
+"hasPDF": "N",
+"firstPublicationDate": "2020-03-06"
+},
+{
+"id": "32831492",
+"source": "MED",
+"pmid": "32831492",
+"pmcid": "PMC7416858",
+"doi": "10.4103/jmp.jmp_101_19",
+"title": "Appraisal of Deep-Learning Techniques on Computer-Aided Lung Cancer Diagnosis with Computed Tomography Screening.",
+"authorString": "Agnes SA, Anitha J.",
+"journalInfo": {
+"issue": "2",
+"volume": "45",
+"journalIssueId": 2999354,
+"dateOfPublication": "2020 Apr-Jun",
+"monthOfPublication": 0,
+"yearOfPublication": 2020,
+"journal": {
+"medlineAbbreviation": "J Med Phys",
+"title": "Journal of medical physics",
+"essn": "1998-3913",
+"issn": "0971-6203",
+"nlmid": "9441104",
+"isoabbreviation": "J Med Phys"
+},
+"printPublicationDate": "2020-04-01"
+},
+"pubYear": "2020",
+"pubTypeList": {
+"pubType": [
+"research-article",
+"Journal Article"
+]
+},
+"isOpenAccess": "Y",
+"inEPMC": "Y",
+"inPMC": "Y",
+"hasPDF": "Y",
+"firstPublicationDate": "2020-04-01"
+},
+{
+"id": "31905154",
+"source": "MED",
+"pmid": "31905154",
+"doi": "10.1109/jbhi.2019.2963720",
+"title": "A Two-Stage Convolutional Neural Networks for Lung Nodule Detection.",
+"authorString": "Cao H, Liu H, Song E, Ma G, Xu X, Jin R, Liu T, Hung CC.",
+"journalInfo": {
+"issue": "7",
+"volume": "24",
+"journalIssueId": 2972978,
+"dateOfPublication": "2020 Jul",
+"monthOfPublication": 7,
+"yearOfPublication": 2020,
+"journal": {
+"medlineAbbreviation": "IEEE J Biomed Health Inform",
+"title": "IEEE journal of biomedical and health informatics",
+"essn": "2168-2208",
+"issn": "2168-2194",
+"nlmid": "101604520",
+"isoabbreviation": "IEEE J Biomed Health Inform"
+},
+"printPublicationDate": "2020-07-01"
+},
+"pubYear": "2020",
+"pubTypeList": {
+"pubType": [
+"Research Support, Non-U.S. Gov't",
+"Journal Article"
+]
+},
+"isOpenAccess": "N",
+"inEPMC": "N",
+"inPMC": "N",
+"hasPDF": "N",
+"firstPublicationDate": "2020-01-03"
+},
+{
+"id": "30702087",
+"source": "MED",
+"pmid": "30702087",
+"doi": "10.1088/1361-6560/aafab0",
+"title": "Malignant-benign classification of pulmonary nodules based on random forest aided by clustering analysis.",
+"authorString": "Wu W, Hu H, Gong J, Li X, Huang G, Nie S.",
+"journalInfo": {
+"issue": "3",
+"volume": "64",
+"journalIssueId": 2772866,
+"dateOfPublication": "2019 Jan",
+"monthOfPublication": 1,
+"yearOfPublication": 2019,
+"journal": {
+"medlineAbbreviation": "Phys Med Biol",
+"title": "Physics in medicine and biology",
+"essn": "1361-6560",
+"issn": "0031-9155",
+"nlmid": "0401220",
+"isoabbreviation": "Phys Med Biol"
+},
+"printPublicationDate": "2019-01-01"
+},
+"pubYear": "2019",
+"pubTypeList": {
+"pubType": [
+"Research Support, Non-U.S. Gov't",
+"Journal Article"
+]
+},
+"isOpenAccess": "N",
+"inEPMC": "N",
+"inPMC": "N",
+"hasPDF": "N",
+"firstPublicationDate": "2019-01-31"
+},
+{
+"id": "30629724",
+"source": "MED",
+"pmid": "30629724",
+"pmcid": "PMC6328111",
+"doi": "10.1371/journal.pone.0210551",
+"title": "Automatic lung nodule detection using multi-scale dot nodule-enhancement filter and weighted support vector machines in chest computed tomography.",
+"authorString": "Gu Y, Lu X, Zhang B, Zhao Y, Yu D, Gao L, Cui G, Wu L, Zhou T.",
+"journalInfo": {
+"issue": "1",
+"volume": "14",
+"journalIssueId": 2765643,
+"dateOfPublication": "2019 ",
+"monthOfPublication": 0,
+"yearOfPublication": 2019,
+"journal": {
+"medlineAbbreviation": "PLoS One",
+"title": "PloS one",
+"essn": "1932-6203",
+"issn": "1932-6203",
+"nlmid": "101285081",
+"isoabbreviation": "PLoS One"
+},
+"printPublicationDate": "2019-01-01"
+},
+"pubYear": "2019",
+"pubTypeList": {
+"pubType": [
+"Research Support, Non-U.S. Gov't",
+"research-article",
+"Journal Article"
+]
+},
+"isOpenAccess": "Y",
+"inEPMC": "Y",
+"inPMC": "Y",
+"hasPDF": "Y",
+"firstPublicationDate": "2019-01-10"
+},
+{
+"id": "30440495",
+"source": "MED",
+"pmid": "30440495",
+"doi": "10.1109/embc.2018.8512294",
+"title": "Semi-Supervised Multi-Task Learning for Lung Cancer Diagnosis.",
+"authorString": "Khosravan N, Bagci U.",
+"journalInfo": {
+"volume": "2018",
+"journalIssueId": 3016915,
+"dateOfPublication": "2018 Jul",
+"monthOfPublication": 7,
+"yearOfPublication": 2018,
+"journal": {
+"medlineAbbreviation": "Annu Int Conf IEEE Eng Med Biol Soc",
+"title": "Annual International Conference of the IEEE Engineering in Medicine and Biology Society. IEEE Engineering in Medicine and Biology Society. Annual International Conference",
+"essn": "2694-0604",
+"issn": "2375-7477",
+"nlmid": "101763872",
+"isoabbreviation": "Annu Int Conf IEEE Eng Med Biol Soc"
+},
+"printPublicationDate": "2018-07-01"
+},
+"pubYear": "2018",
+"pubTypeList": {
+"pubType": [
+"Journal Article"
+]
+},
+"isOpenAccess": "N",
+"inEPMC": "N",
+"inPMC": "N",
+"hasPDF": "N",
+"firstPublicationDate": "2018-07-01"
+},
+{
+"id": "30390571",
+"source": "MED",
+"pmid": "30390571",
+"doi": "10.1016/j.compbiomed.2018.10.011",
+"title": "Automatic lung nodule detection using a 3D deep convolutional neural network combined with a multi-scale prediction strategy in chest CTs.",
+"authorString": "Gu Y, Lu X, Yang L, Zhang B, Yu D, Zhao Y, Gao L, Wu L, Zhou T.",
+"journalInfo": {
+"volume": "103",
+"journalIssueId": 2846856,
+"dateOfPublication": "2018 Dec",
+"monthOfPublication": 12,
+"yearOfPublication": 2018,
+"journal": {
+"medlineAbbreviation": "Comput Biol Med",
+"title": "Computers in biology and medicine",
+"essn": "1879-0534",
+"issn": "0010-4825",
+"nlmid": "1250250",
+"isoabbreviation": "Comput Biol Med"
+},
+"printPublicationDate": "2018-12-01"
+},
+"pubYear": "2018",
+"pubTypeList": {
+"pubType": [
+"Research Support, Non-U.S. Gov't",
+"Journal Article"
+]
+},
+"isOpenAccess": "N",
+"inEPMC": "N",
+"inPMC": "N",
+"hasPDF": "N",
+"firstPublicationDate": "2018-10-12"
+},
+{
+"id": "29519398",
+"source": "MED",
+"pmid": "29519398",
+"doi": "10.1016/j.ejmp.2018.01.019",
+"title": "Automatic detection of pulmonary nodules in CT images by incorporating 3D tensor filtering with local image feature analysis.",
+"authorString": "Gong J, Liu JY, Wang LJ, Sun XW, Zheng B, Nie SD.",
+"journalInfo": {
+"volume": "46",
+"journalIssueId": 2659909,
+"dateOfPublication": "2018 Feb",
+"monthOfPublication": 2,
+"yearOfPublication": 2018,
+"journal": {
+"medlineAbbreviation": "Phys Med",
+"title": "Physica medica : PM : an international journal devoted to the applications of physics to medicine and biology : official journal of the Italian Association of Biomedical Physics (AIFB)",
+"essn": "1724-191X",
+"issn": "1120-1797",
+"nlmid": "9302888",
+"isoabbreviation": "Phys Med"
+},
+"printPublicationDate": "2018-02-01"
+},
+"pubYear": "2018",
+"pubTypeList": {
+"pubType": [
+"Journal Article"
+]
+},
+"isOpenAccess": "N",
+"inEPMC": "N",
+"inPMC": "N",
+"hasPDF": "N",
+"firstPublicationDate": "2018-02-06"
+},
+{
+"id": "29164630",
+"source": "MED",
+"pmid": "29164630",
+"doi": "10.1002/mp.12690",
+"title": "Segmentation and tracking of lung nodules via graph-cuts incorporating shape prior and motion from 4D CT.",
+"authorString": "Cha J, Farhangi MM, Dunlap N, Amini AA.",
+"journalInfo": {
+"issue": "1",
+"volume": "45",
+"journalIssueId": 2640168,
+"dateOfPublication": "2018 Jan",
+"monthOfPublication": 1,
+"yearOfPublication": 2018,
+"journal": {
+"medlineAbbreviation": "Med Phys",
+"title": "Medical physics",
+"essn": "2473-4209",
+"issn": "0094-2405",
+"nlmid": "0425746",
+"isoabbreviation": "Med Phys"
+},
+"printPublicationDate": "2018-01-01"
+},
+"pubYear": "2018",
+"pubTypeList": {
+"pubType": [
+"Journal Article"
+]
+},
+"isOpenAccess": "N",
+"inEPMC": "N",
+"inPMC": "N",
+"hasPDF": "N",
+"firstPublicationDate": "2017-12-11"
+}
+]
+}
