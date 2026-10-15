@@ -216,8 +216,8 @@
   "id": "017",
   "fus": "S",
   "fus_rule": ">=3 annotators consensus",
-  "thr": "S",
-  "thr_val": "0.5 (core map); final SDF thresholded",
+  "thr": "N",
+  "thr_val": "0.5 applies to the intermediate core map only; level of the final SDF threshold not stated",
   "crop": "C",
   "ext": "S",
   "ext_detail": "64^3 patch centred on ROI",
@@ -233,7 +233,8 @@
   ],
   "crop_ev": [
    "For computational efficiency and to maintain a consistent input size, we extracted 3D patches of 64 × 64 × 64 voxels, each centered on a region of interest (ROI)."
-  ]
+  ],
+  "note": "second check: final mask from a thresholded SDF whose level is not given"
  },
  "018": {
   "id": "018",
