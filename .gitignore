@@ -70,3 +70,24 @@ outputs/figures_v10/
 
 # ---- 构建产物（Zenodo 上传包，不入库） ----
 dist/
+
+# ---- AI 工作痕迹 / 提示文档（发布前排除）----
+.canvas/
+.runtime/
+.dsh_acl_recovery/
+.idea/
+_journal_analysis/
+outputs/paper/PMB_submission_*/
+outputs/paper/reader_*/
+outputs/paper/*_build/
+
+# ---- 被 v25 取代的旧图件（仅保留 source_data 与 figure_values）----
+outputs/figures/v23/Fig[0-9]*
+outputs/figures/v23/figure_values_v23.json
+outputs/figures/v24/Fig[0-9]*
+outputs/figures/v24/qa/
+
+# ---- v25 投稿专用大图件（svg/tiff 与 QA 不入库，仅保留 pdf/png/json）----
+outputs/figures/v25_pmb/*.svg
+outputs/figures/v25_pmb/*.tiff
+outputs/figures/v25_pmb/qa/
